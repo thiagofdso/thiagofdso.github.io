@@ -291,7 +291,7 @@ Esmaga inimigos entre 2 pilares de terra, infligindo até {#}% de dano.`,
 	"Desmoronamento Primitivo": {
 		baseSkill: "Desmoronamento",
 		connections: [ "Desmoronamento Melhorado" ],
-		description: `Quando Imobilizar ou Paralizar um inimigo, voce ganha um Terramote. Cada inimigo atingido pelo Desmoronamento consome um Terramote causando um Ataque Crítico garantido com x{#}% de Dano Crítico. Chefes sempre teram até a {#}% de chance para gerar um Terramote quando acertados.`,
+		description: `Quando Imobilizar ou Paralizar um inimigo, você ganha um Terramote. Cada inimigo atingido pelo Desmoronamento consome um Terramote causando um Ataque Crítico garantido com x{#}% de Dano Crítico. Chefes sempre teram até a {#}% de chance para gerar um Terramote quando acertados.`,
 		id: 23,
 		maxPoints: 1,
 		values: [ "10", "30" ],
@@ -353,7 +353,7 @@ Conjura um tornado rodopiante que inflige {#}% de dano.`,
 	"Tornado Melhorado": {
 		baseSkill: "Tornado",
 		connections: [ "Tornado", "Tornado Furioso", "Tornado Primitivo" ],
-		description: `Cada vez que voce usar Tornado, voce tem {#}% de chance para gerar um Tornado adicional.`,
+		description: `Cada vez que você usar Tornado, você tem {#}% de chance para gerar um Tornado adicional.`,
 		id: 29,
 		maxPoints: 1,
 		values: [ "20" ],
@@ -525,181 +525,181 @@ Esse bônus persiste por {#} segundos depoisde sair daforma de Lobisomen.`,
 };
 
 druidData["Defensiva"] = {
-	"Earthen Bulwark": {
-		connections: [ "Defensiva", "Melhorado Earthen Bulwark" ],
+	"Baluarte de Terra": {
+		connections: [ "Defensiva", "Baluarte de Terra Melhorada" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Rocks surround you for {#} segundos, granting a Barrier that absorbs {#}% of your Base Life ({#}) in damage.`,
+Rochas rodeam você por {#} segundos, garantindo uma Barreira que absorve {#}% da sua Vida Base ({#}) em dano.`,
 		id: 43,
 		maxPoints: 5,
 		values: [ "16.0", "50", "3", "10", "" ],
 		x: -2.035,
 		y: -310.27
 	},
-	"Melhorado Earthen Bulwark": {
-		baseSkill: "Earthen Bulwark",
-		connections: [ "Earthen Bulwark", "Innate Earthen Bulwark", "Preserving Earthen Bulwark" ],
-		description: `Earthen Bulwark makes you Unstoppable while active.`,
+	"Baluarte de Terra Melhorado": {
+		baseSkill: "Baluarte de Terra",
+		connections: [ "Baluarte de Terra", "Baluarte de Terra Inato", "Baluarte de Terra Preservado" ],
+		description: `Baluarte de Terra torna você Imparável enquanto ativo.`,
 		id: 44,
 		maxPoints: 1,
 		x: 5.025,
 		y: -529.025
 	},
-	"Innate Earthen Bulwark": {
-		baseSkill: "Earthen Bulwark",
-		connections: [ "Melhorado Earthen Bulwark" ],
-		description: `Rock shrapnel flies outward when Earthen Bulwark is destroyed or expires, dealing {#}% para os inimigos ao redor. This damage is increased by Barrier bonuses.`,
+	"Baluarte de Terra Inato": {
+		baseSkill: "Baluarte de Terra",
+		connections: [ "Baluarte de Terra Melhorado" ],
+		description: `Estilhaços de rocha voam para fora quando Baluarte de Terra é destruído ou expira, infligindo  {#}% para os inimigos ao redor. Esse dano é aumentado pelo bonus de Barreira.`,
 		id: 45,
 		maxPoints: 1,
 		values: [ "300" ],
 		x: -159.395,
 		y: -636.45
 	},
-	"Preserving Earthen Bulwark": {
-		baseSkill: "Earthen Bulwark",
-		connections: [ "Melhorado Earthen Bulwark" ],
-		description: `Casting Earthen Bulwark grants {#}% Base Life ({#}) as Fortify.`,
+	"Baluarte de Terra Preservado": {
+		baseSkill: "Baluarte de Terra",
+		connections: [ "Baluarte de Terra Melhorado" ],
+		description: `Lançar Baluarte de Terra garante {#}% de Vida Base ({#}) como Fortificação.`,
 		id: 46,
 		maxPoints: 1,
 		values: [ "7.2", "" ],
 		x: 160.175,
 		y: -637.145
 	},
-	"Debilitating Roar": {
-		connections: [ "Defensiva", "Melhorado Debilitating Roar" ],
+	"Rugido Debilitante": {
+		connections: [ "Defensiva", "Rugido Debilitante Melhorado" ],
 		description: `Cooldown: {#} segundos
-Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' damage dealt by {#}% for {#} segundos.`,
+Se transforma em Urso e solta um berre rugido poderoso, reduzindo o dano de inimigos Próximosem {#}% por {#} segundos.`,
 		id: 47,
 		maxPoints: 5,
 		values: [ "22.0", "50", "4" ],
 		x: 4.69,
 		y: 314.825
 	},
-	"Melhorado Debilitating Roar": {
-		baseSkill: "Debilitating Roar",
-		connections: [ "Debilitating Roar", "Preserving Debilitating Roar", "Innate Debilitating Roar" ],
-		description: `Debilitating Roar also Fortifies you for {#}% Base Life ({#}).`,
+	"Rugido Debilitante Melhorado": {
+		baseSkill: "Rugido Debilitante",
+		connections: [ "Rugido Debilitante", "Rugido Debilitante Preservado", "Rugido Debilitante Inato" ],
+		description: `Rugido Debilitante também Fortifica você em {#}% da sua Vida Base({#}).`,
 		id: 48,
 		maxPoints: 1,
 		values: [ "8.8", "" ],
 		x: 4.11,
 		y: 515.641
 	},
-	"Preserving Debilitating Roar": {
-		baseSkill: "Debilitating Roar",
-		connections: [ "Melhorado Debilitating Roar" ],
-		description: `Debilitating Roar also Heals you for {#}% of your Maximum Life ({#}) each second for its duration.`,
+	"Rugido Debilitante Preservado": {
+		baseSkill: "Rugido Debilitante",
+		connections: [ "Rugido Debilitante Melhorado" ],
+		description: `Rugido Debilitante também Cura você em {#}% da sua Vida Máxima ({#}) cada segundo da sua duração.`,
 		id: 49,
 		maxPoints: 1,
 		values: [ "4", "" ],
 		x: 158.01,
 		y: 633.444
 	},
-	"Innate Debilitating Roar": {
-		baseSkill: "Debilitating Roar",
-		connections: [ "Melhorado Debilitating Roar" ],
-		description: `Debilitating Roar also Slows enemies by {#}% for its duration.`,
+	"Rugido Debilitante Inato": {
+		baseSkill: "Rugido Debilitante",
+		connections: [ "Rugido Debilitante Melhorado" ],
+		description: `Rugido Debilitante também causa Lentidão nos inimigos em {#}% durante sua duração.`,
 		id: 50,
 		maxPoints: 1,
 		values: [ "40" ],
 		x: -150.868,
 		y: 633.023
 	},
-	"Ancestral Fortitude": {
+	"Fortaleza Ancestral": {
 		connections: [ "Defensiva", "Vigilance" ],
-		description: `Increase your Non-Physical Resistances by {#}%.`,
+		description: `Aumenta sua Resistência Não Física em {#}%.`,
 		id: 51,
 		maxPoints: 3,
 		values: [ "" ],
 		x: -552.215,
 		y: 1.025
 	},
-	"Vigilance": {
-		connections: [ "Ancestral Fortitude" ],
-		description: `You gain {#}% de dano Reduction for {#} segundos after using a Defensiva Skill.`,
+	"Vigilância": {
+		connections: [ "Fortaleza Ancestral" ],
+		description: `Você ganha {#}% de Redução de dano em {#} segundos depois de usar uma habilidade Defensiva.`,
 		id: 52,
 		maxPoints: 3,
 		values: [ "", "" ],
 		x: -923.905,
 		y: 0.39
 	},
-	"Blood Howl": {
-		connections: [ "Defensiva", "Melhorado Blood Howl" ],
+	"Uivo de Sangue": {
+		connections: [ "Defensiva", "Uivo de Sangue Melhorado" ],
 		description: `Cooldown: {#} segundos
-Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maximum Life ({#}).`,
+Se transforma em um Lobisomem e uiva ferosmente, Curando você em {#}% da sua Vida Máxima ({#}).`,
 		id: 53,
 		maxPoints: 5,
 		values: [ "15.0", "20.0", "" ],
 		x: 445.755,
 		y: 169.805
 	},
-	"Melhorado Blood Howl": {
-		baseSkill: "Blood Howl",
-		connections: [ "Blood Howl", "Innate Blood Howl", "Preserving Blood Howl" ],
-		description: `Kills reduce the Cooldown of Blood Howl by {#} second.`,
+	"Uivo de Sangue Melhorado": {
+		baseSkill: "Uivo de Sangue",
+		connections: [ "Uivo de Sangue", "Uivo de Sangue Inato", "Uivo de Sangue Preservado" ],
+		description: `Mortes reduzem o Cooldown do Uivo de Sangue em {#} segundo.`,
 		id: 54,
 		maxPoints: 1,
 		values: [ "1" ],
 		x: 774.845,
 		y: 289.015
 	},
-	"Innate Blood Howl": {
-		baseSkill: "Blood Howl",
-		connections: [ "Melhorado Blood Howl" ],
-		description: `Blood Howl also generates {#} Espírito.`,
+	"Uivo de Sangue Inato": {
+		baseSkill: "Uivo de Sangue",
+		connections: [ "Uivo de Sangue Melhorado" ],
+		description: `Uivo de Sangue também gera {#} Espírito.`,
 		id: 55,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: 848.495,
 		y: 414.8
 	},
-	"Preserving Blood Howl": {
-		baseSkill: "Blood Howl",
-		connections: [ "Melhorado Blood Howl" ],
-		description: `Blood Howl also increases your Attack Speed by +{#}% for {#} segundos.`,
+	"Uivo de Sangue Preservado": {
+		baseSkill: "Uivo de Sangue",
+		connections: [ "Uivo de Sangue Melhorado" ],
+		description: `Uivo de Sangue também aumenta sua Velocidade de Ataque em +{#}% por {#} segundos.`,
 		id: 56,
 		maxPoints: 1,
 		values: [ "15", "4" ],
 		x: 1024.25,
 		y: 280.42
 	},
-	"Cyclone Armor": {
-		connections: [ "Defensiva", "Melhorado Cyclone Armor" ],
+	"Armadura de Ciclone": {
+		connections: [ "Defensiva", "Armadura de Ciclone Melhorada" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Passive: Powerful winds surround you, granting {#}% Non-Physical Damage Reduction.
+Passiva: Ventos fortes rodeam você, garantindo {#}% Redução de Dano Não Físico.
 
-Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% de dano.`,
+Ativa: Esses ventos se expandem rapidamente, Derrubando inimigos e infligindo {#}% de dano.`,
 		id: 57,
 		maxPoints: 5,
 		values: [ "15.0", "25", "20", "15.75" ],
 		x: 415.99,
 		y: -192.375
 	},
-	"Melhorado Cyclone Armor": {
-		baseSkill: "Cyclone Armor",
-		connections: [ "Cyclone Armor", "Preserving Cyclone Armor", "Innate Cyclone Armor" ],
-		description: `Enemies who are Knocked Back by Cyclone Armor are also Slowed by {#}% for {#} segundos.`,
+	"Armadura de Ciclone Melhorada": {
+		baseSkill: "Armadura de Ciclone",
+		connections: [ "Armadura de Ciclone", "Armadura de Ciclone Preservada", "Armadura de Ciclone Inata" ],
+		description: `Inimigos que forem Derrubados pela Armadura de Ciclone também sofrem Lentidão em {#}% por {#} segundos.`,
 		id: 58,
 		maxPoints: 1,
 		values: [ "40", "3" ],
 		x: 726.745,
 		y: -326.92
 	},
-	"Preserving Cyclone Armor": {
-		baseSkill: "Cyclone Armor",
-		connections: [ "Melhorado Cyclone Armor" ],
-		description: `Every {#} segundos, Cyclone Armor intensifies, causing incoming damage to grant you {#}% de dano Reduction for {#} segundos.`,
+	"Armadura de Ciclone Preservada": {
+		baseSkill: "Armadura de Ciclone",
+		connections: [ "Armadura de Ciclone Melhorada" ],
+		description: `A cada {#} segundos, Armadura de Ciclone se intensfica, causando Redução de {#}% de dano por {#} segundos.`,
 		id: 59,
 		maxPoints: 1,
 		values: [ "10", "40", "" ],
 		x: 754.5,
 		y: -466.305
 	},
-	"Innate Cyclone Armor": {
-		baseSkill: "Cyclone Armor",
-		connections: [ "Melhorado Cyclone Armor" ],
-		description: `Enemies Knocked Back by Cyclone Armor become Vulnerable for {#} segundos.`,
+	"Armadura de Ciclone Inata": {
+		baseSkill: "Armadura de Ciclone",
+		connections: [ "Armadura de Ciclone Melhorada" ],
+		description: `Inimigos Derrubados pela Armadura de Ciclone se tornam Vulneráveis por {#} segundos.`,
 		id: 60,
 		maxPoints: 1,
 		values: [ "" ],
