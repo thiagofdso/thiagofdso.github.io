@@ -1553,7 +1553,7 @@ function drawAllNodes() {
 		}
 
 		const classText = $(classString).text();
-
+		console.log(classText);
 		const paragonBoardCount = Object.keys(paragonData[classText]["Board"]).length;
 		if (paragonBoardCount > 0) {
 			const paragonBoardNodes = 21;
