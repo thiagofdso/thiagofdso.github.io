@@ -709,11 +709,11 @@ Ativa: Esses ventos se expandem rapidamente, Derrubando inimigos e infligindo {#
 };
 
 druidData["Pet"] = {
-	"Ravens": {
-		connections: [ "Pet", "Melhorado Ravens" ],
+	"Corvos": {
+		connections: [ "Pet", "Corvos Melhorado" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Passive: {#} Ravens fly above you and periodically attack your enemies for {#}% de dano every {#} segundos.
+Passive: {#} Corvos fly above you and periodically attack your enemies for {#}% de dano every {#} segundos.
 
 Active: The target area is swarmed with ravens, infligindo {#}% de dano over {#} segundos.`,
 		id: 62,
@@ -722,30 +722,30 @@ Active: The target area is swarmed with ravens, infligindo {#}% de dano over {#}
 		x: 0.92,
 		y: 293.68
 	},
-	"Melhorado Ravens": {
-		baseSkill: "Ravens",
-		connections: [ "Ravens", "Brutal Ravens", "Ferocious Ravens" ],
-		description: `You have +{#}% increased Critical Strike Chance for {#} segundos against Enemies hit by Ravens.`,
+	"Corvos Melhorado": {
+		baseSkill: "Corvos",
+		connections: [ "Corvos", "Brutal Corvos", "Ferocious Corvos" ],
+		description: `You have +{#}% increased Critical Strike Chance for {#} segundos against Enemies hit by Corvos.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "13.85", "5" ],
 		x: 1.905,
 		y: 492.536
 	},
-	"Brutal Ravens": {
-		baseSkill: "Ravens",
-		connections: [ "Melhorado Ravens" ],
-		description: `{#} additional Ravens periodically attack enemies.`,
+	"Brutal Corvos": {
+		baseSkill: "Corvos",
+		connections: [ "Corvos Melhorado" ],
+		description: `{#} additional Corvos periodically attack enemies.`,
 		id: 64,
 		maxPoints: 1,
 		values: [ "2" ],
 		x: -148.35,
 		y: 612.144
 	},
-	"Ferocious Ravens": {
-		baseSkill: "Ravens",
-		connections: [ "Melhorado Ravens" ],
-		description: `Enemies inside the swarm of Ravens when it is activated become Vulnerable for {#} segundos.`,
+	"Ferocious Corvos": {
+		baseSkill: "Corvos",
+		connections: [ "Corvos Melhorado" ],
+		description: `Enemies inside the swarm of Corvos when it is activated become Vulnerable for {#} segundos.`,
 		id: 65,
 		maxPoints: 1,
 		values: [ "3" ],
