@@ -1,7 +1,7 @@
 let druidData = {};
 
 druidData["Trunk Data"] = {
-	"Basico": {
+	"Básico": {
 		connections: [ "Espírito" ],
 		x: 0,
 		y: 0
@@ -41,15 +41,15 @@ druidData["Trunk Data"] = {
 		x: -12.662,
 		y: 4864.15
 	},
-	"Dadivas Espirituais": {
+	"Dádivas Espirituais": {
 		x: 2500,
 		y: 0
 	},
 };
 
-druidData["Basico"] = {
+druidData["Básico"] = {
 	"Pico da Terra": {
-		connections: [ "Basico", "Pico da Terra Melhorado" ],
+		connections: [ "Básico", "Pico da Terra Melhorado" ],
 		description: `Cooldown: {#} segundos
 Espírito Gerado: {#}
 Chande de Golpe de Sorte: {#}%
@@ -90,7 +90,7 @@ Divida a terra, empalando o primeiro inimigo atingido por {#}% de dano.`,
 		y: -208.475
 	},
 	"Espancar": {
-		connections: [ "Basico", "Espancar Melhorado" ],
+		connections: [ "Básico", "Espancar Melhorado" ],
 		description: `Espírito Gerado: {#}
 Chande de Golpe de Sorte: {#}%
 Se transforma em um Urso e ataca os inimos a sua frente, infligindo {#}% de dano.`,
@@ -131,7 +131,7 @@ Se transforma em um Urso e ataca os inimos a sua frente, infligindo {#}% de dano
 		y: 279.665
 	},
 	"Corte de Vento": {
-		connections: [ "Basico", "Corte de Vento Melhorado" ],
+		connections: [ "Básico", "Corte de Vento Melhorado" ],
 		description: `Espírito Gerado: {#}
 Chande de Golpe de Sorte: {#}%
 Conjura uma espada de vento, infligindo {#}% de dano.`,
@@ -172,7 +172,7 @@ Conjura uma espada de vento, infligindo {#}% de dano.`,
 		y: -552.75
 	},
 	"Ataque de Tempestade": {
-		connections: [ "Basico", "Ataque de Tempestade Melhorado" ],
+		connections: [ "Básico", "Ataque de Tempestade Melhorado" ],
 		description: `Espírito Gerado: {#}
 Chande de Golpe de Sorte: {#}%
 Reune eletricinadae na sua arma, infligindo {#}% de dano no seu alvo e encadeando para {#} inimigos ao redor, infligindo {#}% menos dano cada vez que encadeia.
@@ -215,7 +215,7 @@ Você ganha {#}% de Reducao de Dano por {#} segundos depois que infligir dano co
 		y: -381.855
 	},
 	"Garra": {
-		connections: [ "Basico", "Garra Melhorada" ],
+		connections: [ "Básico", "Garra Melhorada" ],
 		description: `Espírito Gerado: {#}
 Chande de Golpe de Sorte: {#}%
 Se transforma em um lobo e ataca um inimigo com {#}% de dano.`,
@@ -424,98 +424,98 @@ Se transforma em um Lobisomem e executa um combo de ataque triplo:
 		x: -709.735,
 		y: 566.865
 	},
-	"Lightning Storm": {
-		connections: [ "Espírito", "Melhorado Lightning Storm" ],
-		description: `Custo de Espírito: {#} per strike
+	"Tempestade de Relâmpago": {
+		connections: [ "Espírito", "Tempestade de Relâmpago Melhorada" ],
+		description: `Custo de Espírito: {#} por golpe
 Chande de Golpe de Sorte: {#}%
-Conjure a growing lightning storm that inflige {#}% de dano per strike and increases the number of strikes the longer it is channeled up to a maximum of {#}.`,
+Conjura uma tempestade de relâmpago crescente que inflige {#}% de dano por golpe e aumenta o número de golpes quanto mais tempo é canalizado até um máximo de {#}.`,
 		id: 37,
 		maxPoints: 5,
 		values: [ "15", "15", "26.25", "5" ],
 		x: -452.28,
 		y: -268.415
 	},
-	"Melhorado Lightning Storm": {
-		baseSkill: "Lightning Storm",
-		connections: [ "Lightning Storm", "Primitivo Lightning Storm", "Furioso Lightning Storm" ],
-		description: `The size of your Lightning Storm is preserved for {#} segundos after channeling.`,
+	"Tempestade de Relâmpago Melhorada": {
+		baseSkill: "Tempestade de Relâmpago",
+		connections: [ "Tempestade de Relâmpago", "Tempestade de Relâmpago Primitiva", "Tempestade de Relâmpago Furiosa" ],
+		description: `O tamanho da sua Tempestade de Relâmpago é preservado por {#} segundos depois de canalizar.`,
 		id: 38,
 		maxPoints: 1,
 		values: [ "4" ],
 		x: -684.545,
 		y: -435.935
 	},
-	"Primitivo Lightning Storm": {
-		baseSkill: "Lightning Storm",
-		connections: [ "Melhorado Lightning Storm" ],
-		description: `Lightning Storm has a {#}% chance to Immobilize enemies hit for {#} segundos.`,
+	"Tempestade de Relâmpago Primitiva": {
+		baseSkill: "Tempestade de Relâmpago",
+		connections: [ "Tempestade de Relâmpago Melhorada" ],
+		description: `Tempestade de Relâmpago possui {#}% de chance para Imobilizar inimigos atingidos por {#} segundos.`,
 		id: 39,
 		maxPoints: 1,
 		values: [ "8", "3" ],
 		x: -956.755,
 		y: -443.375
 	},
-	"Furioso Lightning Storm": {
-		baseSkill: "Lightning Storm",
-		connections: [ "Melhorado Lightning Storm" ],
-		description: `Lightning Storm gains 1 additional lightning strike.`,
+	"Tempestade de Relâmpago Furiosa": {
+		baseSkill: "Tempestade de Relâmpago",
+		connections: [ "Tempestade de Relâmpago Melhorada" ],
+		description: `Tempestade de Relâmpago garante 1 golpe de relâmpago adicional.`,
 		id: 40,
 		maxPoints: 1,
 		x: -700.415,
 		y: -572.245
 	},
-	"Heart of the Selvagem": {
-		connections: [ "Espírito", "Selvagem Impulses", "Abundance" ],
-		description: `Maximum Espírito is increased by {#}.`,
+	"Coração Selvagem": {
+		connections: [ "Espírito", "Impulso Selvagem", "Abundância" ],
+		description: `Espírito máximo é aumentado em {#}.`,
 		id: 42,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -2.48,
 		y: -269.805
 	},
-	"Selvagem Impulses": {
-		connections: [ "Heart of the Selvagem" ],
-		description: `Your Core Skills cost x{#}% more Espírito but deal x{#}% increased damage.`,
+	"Impulso Selvagem": {
+		connections: [ "Coração Selvagem" ],
+		description: `Suas Habilidades Core consomem x{#}% mais Espírito mas causam x{#}% de dano aumentado.`,
 		id: 32,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "{10/20/30}" ],
 		x: 140.505,
 		y: -403.84
 	},
-	"Abundance": {
-		connections: [ "Heart of the Selvagem" ],
-		description: `Basico Skills generate x{#}% more Espírito.`,
+	"Abundância": {
+		connections: [ "Coração Selvagem" ],
+		description: `Habilidades Básicas geram x{#}% mais Espírito.`,
 		id: 41,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: -151.965,
 		y: -404.925
 	},
-	"Predatory Instinct": {
-		connections: [ "Espírito", "Iron Fur", "Digitigrade Gait" ],
-		description: `Critical Strike Chance against Close enemies is increased by +{#}%.`,
+	"Instinto Predatório": {
+		connections: [ "Espírito", "Pele de Ferro", "Marcha Digitígrada" ],
+		description: `A Chance de Golpe Crítico contra inimigos Próximos é aumentada em +{#}%.`,
 		id: 136,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -4.22,
 		y: 274.21
 	},
-	"Iron Fur": {
-		connections: [ "Predatory Instinct" ],
-		description: `You gain {#}% de dano Reduction while in Werebear form.
+	"Pele de Ferro": {
+		connections: [ "Instinto Predatório" ],
+		description: `Você ganha {#}% de Redução de dano enquanto estiver na forma de Urso.
 
-This bonus persists for {#} segundos after leaving Werebear form.`,
+Esse bônus persiste por{#} segundos depois de sair da forma de Urso.`,
 		id: 137,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "3" ],
 		x: 126.735,
 		y: 410.19
 	},
-	"Digitigrade Gait": {
-		connections: [ "Predatory Instinct" ],
-		description: `You gain +{#}% Movement Speed while in Werewolf form.
+	"Marcha Digitígrada": {
+		connections: [ "Instinto Predatório" ],
+		description: `Você ganha +{#}% de Velocidade de Movimento enquanto estier na forma de Lobisomen.
 
-This bonus persists for {#} segundos after leaving Werewolf form.`,
+Esse bônus persiste por {#} segundos depoisde sair daforma de Lobisomen.`,
 		id: 138,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "3" ],
@@ -1455,7 +1455,7 @@ While Healthy, deal x{#}% increased damage.`,
 	},
 };
 
-druidData["Dadivas Espirituais"] = {
+druidData["Dádivas Espirituais"] = {
 	"Deer": {
 		id: 158,
 		"Prickleskin": {
