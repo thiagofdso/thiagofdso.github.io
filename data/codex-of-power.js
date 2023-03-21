@@ -1,13 +1,13 @@
 let codexData = {
 	"Slots": {
-		"Defensive": "Shield, Helmet, Chest, Pants, Amulet [+50%].",
+		"Defensiva": "Shield, Helmet, Chest, Pants, Amulet [+50%].",
 		"Offensive": "1H Weapon, 2H Weapon [+100%], Off-Hand, Gloves, Amulet [+50%], Ring.",
 		"Resource": "Helmet, Amulet [+50%], Ring.",
 		"Utility": "Helmet, Chest, Boots, Gloves, Amulet [+50%].",
 		"Mobility": "Boots, Amulet [+50%]."
 	},
 	"General": {
-		"Defensive": {
+		"Defensiva": {
 			"Aspect of the Deflecting Barrier": {
 				"power": "While you have a Barrier active, there is a 20% chance to ignore incoming direct damage from Distant enemies.",
 				"region": "Hawezar",
@@ -15,25 +15,25 @@ let codexData = {
 			},
 			"Aspect of Disobedience": {
 				"dungeon": "Halls of the Damned",
-				"power": "You gain 0.25% increased Armor for 4 seconds when you deal any form of damage, stacking up to 25.00%.",
+				"power": "You gain 0.25% increased Armor for 4 segundos when you deal any form of damage, stacking up to 25.00%.",
 				"region": "Kehjistan",
 				"id": 1
 			},
 			"Aspect of Might": {
 				"dungeon": "Dark Ravine",
-				"power": "Basic Skills grant 25% Damage Reduction for 4.0 seconds.",
+				"power": "Basico Skills grant 25% Damage Reduction for 4.0 segundos.",
 				"region": "Dry Steppes",
 				"id": 2
 			},
 			"Protecting Aspect": {
 				"dungeon": "Caldera Gate",
-				"power": "When struck, a magical bubble forms around you for 8 seconds, absorbing # damage. Can only occur once per 10 seconds.",
+				"power": "When struck, a magical bubble forms around you for 8 segundos, absorbing # damage. Can only occur once per 10 segundos.",
 				"region": "Fractured Peaks",
 				"id": 3
 			},
 			"Aspect of the Protector": {
 				"dungeon": "Lost Archives",
-				"power": "Every 10 seconds, gain a Barrier absorbing up to # damage.",
+				"power": "Every 10 segundos, gain a Barrier absorbing up to # damage.",
 				"region": "Fractured Peaks",
 				"id": 4
 			}
@@ -45,7 +45,7 @@ let codexData = {
 				"id": 5
 			},
 			"Aspect of the Expectant": {
-				"power": "Enemies hit with Basic Skills increases the damage of your next Core Skill by x5.0%, up to x50%.",
+				"power": "Enemies hit with Basico Skills increases the damage of your next Core Skill by x5.0%, up to x50%.",
 				"region": "Scosglen",
 				"id": 6
 			},
@@ -65,13 +65,13 @@ let codexData = {
 				"id": 9
 			},
 			"Rapid Aspect": {
-				"power": "Basic Skills gain 23% Attack Speed.",
+				"power": "Basico Skills gain 23% Attack Speed.",
 				"region": "Dry Steppes",
 				"id": 10
 			},
 			"Aspect of Retribution": {
 				"dungeon": "Abandoned Mineworks",
-				"power": "Distant enemies have a 15% chance to be Stunned for 2 seconds when they hit you. You deal 30% increased damage to Stunned enemies.",
+				"power": "Distant enemies have a 15% chance to be Stunned for 2 segundos when they hit you. You deal 30% increased damage to Stunned enemies.",
 				"region": "Kehjistan",
 				"id": 11
 			}
@@ -104,9 +104,9 @@ let codexData = {
 		}
 	},
 	"Barbarian": {
-		"Defensive": {
+		"Defensiva": {
 			"Aspect of Bul-Kathos": {
-				"power": "Leap creates an Earthquake that deals # Physical damage over 4 seconds. While standing in Earthquakes, you gain 5% increased Damage Reduction.",
+				"power": "Leap creates an Earthquake that deals # Physical damage over 4 segundos. While standing in Earthquakes, you gain 5% increased Damage Reduction.",
 				"region": "Hawezar",
 				"id": 16
 			},
@@ -115,7 +115,7 @@ let codexData = {
 				"region": "Dry Steppes",
 				"id": 17
 			},
-			"Aspect of Numbing Wrath": {
+			"Aspect of Numbing Furia": {
 				"power": "Each point of Fury generated while at maximum Fury grants # Fortify.",
 				"region": "Hawezar",
 				"id": 18
@@ -129,7 +129,7 @@ let codexData = {
 		},
 		"Offensive": {
 			"Aspect of Ancestral Echoes": {
-				"power": "Lucky Hit: Damaging enemies with Leap, Upheaval, or Whirlwind has up to a 40% chance to summon an Ancient to perform the same Skill. Can only happen once every 5 seconds.",
+				"power": "Lucky Hit: Damaging enemies with Leap, Upheaval, or Whirlwind has up to a 40% chance to summon an Ancient to perform the same Skill. Can only happen once every 5 segundos.",
 				"region": "Hawezar",
 				"id": 20
 			},
@@ -139,12 +139,12 @@ let codexData = {
 				"id": 21
 			},
 			"Aspect of Berserk Ripping": {
-				"power": "Whenever you deal direct damage while Berserking, inflict 22% of the base damage dealt as additional Bleeding damage over 5 seconds.",
+				"power": "Whenever you deal direct damage while Berserking, inflict 22% of the base damage dealt as additional Bleeding damage over 5 segundos.",
 				"region": "Dry Steppes",
 				"id": 22
 			},
 			"Brawler's Aspect": {
-				"power": "Enemies damaged by Kick or Charge will explode if they are killed within the next 2 seconds, dealing # damage to surrounding enemies.",
+				"power": "Enemies damaged by Kick or Charge will explode if they are killed within the next 2 segundos, dealing # damage to surrounding enemies.",
 				"region": "Hawezar",
 				"id": 23
 			},
@@ -159,7 +159,7 @@ let codexData = {
 				"id": 25
 			},
 			"Aspect of Quickening Pulse": {
-				"power": "Lucky Hit: Up to a 20% chance to reduce the Cooldowns of your non-Ultimate Skills by 1.5 seconds when you inflict Bleeding on Elites.",
+				"power": "Lucky Hit: Up to a 20% chance to reduce the Cooldowns of your non-Ultimate Skills by 1.5 segundos when you inflict Bleeding on Elites.",
 				"region": "Kehjistan",
 				"id": 26
 			},
@@ -169,7 +169,7 @@ let codexData = {
 				"id": 27
 			},
 			"Windstriker's Aspect": {
-				"power": "After swapping weapons 6 times, gain 20% increased Attack Speed for 4 seconds.",
+				"power": "After swapping weapons 6 times, gain 20% increased Attack Speed for 4 segundos.",
 				"region": "Hawezar",
 				"id": 28
 			}
@@ -200,7 +200,7 @@ let codexData = {
 		"Utility": {
 			"Aspect of Anemia": {
 				"dungeon": "Kor Dragan Barracks",
-				"power": "Lucky Hit: Direct damage against Bleeding enemies has up to a 31% chance to Stun them for 2 seconds.",
+				"power": "Lucky Hit: Direct damage against Bleeding enemies has up to a 31% chance to Stun them for 2 segundos.",
 				"region": "Fractured Peaks",
 				"id": 33
 			},
@@ -219,14 +219,14 @@ let codexData = {
 		}
 	},
 	"Druid": {
-		"Defensive": {
+		"Defensiva": {
 			"Aspect of Cyclonic Force": {
 				"power": "Cyclone Armor also provides Physical Damage Reduction. In addition, Cyclone Armor will also be applied to all Nearby Allies.",
 				"region": "Kehjistan",
 				"id": 36
 			},
 			"Aspect of Mending Stone": {
-				"power": "The duration of Earthen Bulwark is increased by 6 seconds. In addition, killing an enemy with Earth Skills replenishes # of your active Earthen Bulwark's barrier.",
+				"power": "The duration of Earthen Bulwark is increased by 6 segundos. In addition, killing an enemy with Earth Skills replenishes # of your active Earthen Bulwark's barrier.",
 				"region": "Dry Steppes",
 				"id": 37
 			},
@@ -238,7 +238,7 @@ let codexData = {
 			},
 			"Stalking Beast Aspect": {
 				"dungeon": "Anica's Claim",
-				"power": "Gain Stealth for 2 seconds when killing enemies with Shred. Breaking Stealth with an attack grants Ambush which guarantees Critical Strikes for 1.0 seconds.",
+				"power": "Gain Stealth for 2 segundos when killing enemies with Shred. Breaking Stealth with an attack grants Ambush which guarantees Critical Strikes for 1.0 segundos.",
 				"region": "Fractured Peaks",
 				"id": 39
 			},
@@ -256,17 +256,17 @@ let codexData = {
 			},
 			"Nighthowler's Aspect": {
 				"dungeon": "Forbidden City",
-				"power": "Blood Howl increases Critical Strike Chance by 5.0%. In addition, Blood Howl also affects Nearby Companions and Players for 3 seconds.",
+				"power": "Blood Howl increases Critical Strike Chance by 5.0%. In addition, Blood Howl also affects Nearby Pets and Players for 3 segundos.",
 				"region": "Fractured Peaks",
 				"id": 42
 			},
 			"Overcharged Aspect": {
-				"power": "Lucky Hit: Up to a 10% chance when dealing Lightning damage to overload the target for 3 seconds, causing any direct damage you deal to them to pulse # additional damage to surrounding enemies.",
+				"power": "Lucky Hit: Up to a 10% chance when dealing Lightning damage to overload the target for 3 segundos, causing any direct damage you deal to them to pulse # additional damage to surrounding enemies.",
 				"region": "Scosglen",
 				"id": 43
 			},
 			"Aspect of the Rampaging Werebeast": {
-				"power": "The duration of Grizzly Rage is increased by 1 seconds. In addition, Critical Strikes while Grizzly Rage is active increase your Critical Strike Damage by 10% for the duration.",
+				"power": "The duration of Grizzly Rage is increased by 1 segundos. In addition, Critical Strikes while Grizzly Rage is active increase your Critical Strike Damage by 10% for the duration.",
 				"region": "Hawezar",
 				"id": 44
 			},
@@ -276,7 +276,7 @@ let codexData = {
 				"id": 45
 			},
 			"Shepherd's Aspect": {
-				"power": "Core Skills deal an additional 6.0% damage for each active Companion.",
+				"power": "Core Skills deal an additional 6.0% damage for each active Pet.",
 				"region": "Dry Steppes",
 				"id": 46
 			},
@@ -287,31 +287,31 @@ let codexData = {
 			},
 			"Aspect of the Ursine Horror": {
 				"dungeon": "Belfry Zakara",
-				"power": "Pulverize is now also an Earth Skill. After casting Pulverize, tectonic spikes continue to deal # damage over 2 seconds.",
+				"power": "Pulverize is now also an Earth Skill. After casting Pulverize, tectonic spikes continue to deal # damage over 2 segundos.",
 				"region": "Hawezar",
 				"id": 48
 			}
 		},
 		"Resource": {
 			"Aspect of the Changeling's Debt": {
-				"power": "Werebear Skills restore 1.0 Spirit when you hit enemies afflicted by your Poisons. When Spirit is restored, your Poison effects are removed from the enemy.",
+				"power": "Werebear Skills restore 1.0 Espirito when you hit enemies afflicted by your Poisons. When Espirito is restored, your Poison effects are removed from the enemy.",
 				"region": "Kehjistan",
 				"id": 49
 			},
 			"Mangled Aspect": {
 				"dungeon": "Immortal Emanation",
-				"power": "Gain 1 Spirit when you are struck as a Werebear.",
+				"power": "Gain 1 Espirito when you are struck as a Werebear.",
 				"region": "Fractured Peaks",
 				"id": 50
 			},
 			"Storm Beast's Aspect": {
-				"power": "Lucky Hit: Storm Skills have up to a 15% chance to grant 10 Spirit.\n\nYour base Storm Skills are now also Werewolf Skills.",
+				"power": "Lucky Hit: Storm Skills have up to a 15% chance to grant 10 Espirito.\n\nYour base Storm Skills are now also Werewolf Skills.",
 				"region": "Dry Steppes",
 				"id": 51
 			},
 			"Aspect of the Unsatiated": {
 				"dungeon": "Tormented Ruins",
-				"power": "After killing an enemy with Shred, your next Werewolf Skill generates x20% more Spirit and deals x20% increased damage.",
+				"power": "After killing an enemy with Shred, your next Werewolf Skill generates x20% more Espirito and deals x20% increased damage.",
 				"region": "Fractured Peaks",
 				"id": 52
 			}
@@ -323,7 +323,7 @@ let codexData = {
 				"id": 53
 			},
 			"Aspect of Quicksand": {
-				"power": "Damage from Earth Skills Slow enemies hit by 25% for 5 seconds.",
+				"power": "Damage from Earth Skills Slow enemies hit by 25% for 5 segundos.",
 				"region": "Scosglen",
 				"id": 54
 			},
@@ -336,7 +336,7 @@ let codexData = {
 		"Mobility": {}
 	},
 	"Necromancer": {
-		"Defensive": {
+		"Defensiva": {
 			"Aspect of Grasping Veins": {
 				"power": "Enemies who are Stunned by Corpse Tendrils are also made Vulnerable for its duration. If they die while Stunned, they have a 15% chance to spawn a Blood Orb.",
 				"region": "Kehjistan",
@@ -376,12 +376,12 @@ let codexData = {
 				"id": 62
 			},
 			"Aspect of Possessed Blood": {
-				"power": "When you pick up 5 Blood Orbs, a free Bone Spirit is spawned, dealing bonus damage based on your current Life percent.",
+				"power": "When you pick up 5 Blood Orbs, a free Bone Espirito is spawned, dealing bonus damage based on your current Life percent.",
 				"region": "Dry Steppes",
 				"id": 63
 			},
 			"Aspect of Reanimation": {
-				"power": "Your Skeletons gain increased damage while alive, up to x20% after 10 seconds.",
+				"power": "Your Skeletons gain increased damage while alive, up to x20% after 10 segundos.",
 				"region": "Scosglen",
 				"id": 64
 			},
@@ -391,7 +391,7 @@ let codexData = {
 				"id": 65
 			},
 			"Aspect of Swelling Curse": {
-				"power": "Bone Spirit deals increased damage based on distance traveled, up to x15%.",
+				"power": "Bone Espirito deals increased damage based on distance traveled, up to x15%.",
 				"region": "Scosglen",
 				"id": 66
 			},
@@ -403,7 +403,7 @@ let codexData = {
 		},
 		"Resource": {
 			"Fastblood Aspect": {
-				"power": "Blood Orbs reduce your Ultimate Cooldown by 0.5 seconds.",
+				"power": "Blood Orbs reduce your Ultimate Cooldown by 0.5 segundos.",
 				"region": "Hawezar",
 				"id": 68
 			},
@@ -413,7 +413,7 @@ let codexData = {
 				"id": 69
 			},
 			"Hulking Aspect": {
-				"power": "Each time your Golem damages an enemy, its active Cooldown is reduced by 1 seconds.",
+				"power": "Each time your Golem damages an enemy, its active Cooldown is reduced by 1 segundos.",
 				"region": "Kehjistan",
 				"id": 70
 			},
@@ -431,7 +431,7 @@ let codexData = {
 		"Utility": {
 			"Aspect of Torment": {
 				"dungeon": "Black Asylum",
-				"power": "Critical Strikes with Bone Skills increase your Essence Regeneration by x20% for 4 seconds.",
+				"power": "Critical Strikes with Bone Skills increase your Essence Regeneration by x20% for 4 segundos.",
 				"region": "Fractured Peaks",
 				"id": 73
 			},
@@ -450,36 +450,36 @@ let codexData = {
 		"Mobility": {}
 	},
 	"Rogue": {
-		"Defensive": {
+		"Defensiva": {
 			"Cheat's Aspect": {
-				"power": "You take 15.0% less damage from Crowd Controlled enemies. Whenever a Crowd Controlled enemy deals direct damage to you, gain +15% Movement Speed for 2 seconds.",
+				"power": "You take 15.0% less damage from Crowd Controlled enemies. Whenever a Crowd Controlled enemy deals direct damage to you, gain +15% Movement Speed for 2 segundos.",
 				"region": "Scosglen",
 				"id": 76
 			},
 			"Enshrouding Aspect": {
-				"power": "Gain a Dark Shroud shadow every 3 seconds when standing still. Each Dark Shroud shadow grants 2.0% increased Damage Reduction.",
+				"power": "Gain a Dark Shroud shadow every 3 segundos when standing still. Each Dark Shroud shadow grants 2.0% increased Damage Reduction.",
 				"region": "Hawezar",
 				"id": 77
 			},
 			"Aspect of Siphoned Protection": {
-				"power": "Lucky Hit: Damaging a Vulnerable enemy with a Core Skill has up to a 20% chance to grant a Barrier for 5 seconds that absorbs # damage, up to a maximum of #.",
+				"power": "Lucky Hit: Damaging a Vulnerable enemy with a Core Skill has up to a 20% chance to grant a Barrier for 5 segundos that absorbs # damage, up to a maximum of #.",
 				"region": "Hawezar",
 				"id": 78
 			},
 			"Aspect of Uncanny Resilience": {
-				"power": "Whenever you trigger a Lucky Hit, gain x5% increased Damage Reduction for 5 seconds, up to a maximum of x15%.",
+				"power": "Whenever you trigger a Lucky Hit, gain x5% increased Damage Reduction for 5 segundos, up to a maximum of x15%.",
 				"region": "Scosglen",
 				"id": 79
 			}
 		},
 		"Offensive": {
 			"Aspect of Arrow Storms": {
-				"power": "Lucky Hit: Your Ranged Skills have up to a 10% chance to create an arrow storm at the target's present location, dealing # Physical damage over 3 seconds. You can have up to 5 active arrow storms.",
+				"power": "Lucky Hit: Your Ranged Skills have up to a 10% chance to create an arrow storm at the target's present location, dealing # Physical damage over 3 segundos. You can have up to 5 active arrow storms.",
 				"region": "Scosglen",
 				"id": 80
 			},
 			"Blast-Trapper's Aspect": {
-				"power": "Lucky Hit: Dealing direct damage to enemies affected by your Trap Skills has up to a 30% chance to make them Vulnerable for 3 seconds.",
+				"power": "Lucky Hit: Dealing direct damage to enemies affected by your Trap Skills has up to a 30% chance to make them Vulnerable for 3 segundos.",
 				"region": "Fractured Peaks",
 				"id": 81
 			},
@@ -500,7 +500,7 @@ let codexData = {
 				"id": 84
 			},
 			"Opportunist's Aspect": {
-				"power": "When you break Concealment, you drop a cluster of Stun Grenades around your location that explode, dealing # total Physical damage and Stunning enemies for 0.25 seconds.",
+				"power": "When you break Concealment, you drop a cluster of Stun Grenades around your location that explode, dealing # total Physical damage and Stunning enemies for 0.25 segundos.",
 				"region": "Kehjistan",
 				"id": 85
 			},
@@ -515,7 +515,7 @@ let codexData = {
 				"id": 87
 			},
 			"Trickster's Aspect": {
-				"power": "Caltrops also throw a cluster of Stun Grenades that explode and deal # total Physical damage and Stunning enemies for 0.25 seconds.",
+				"power": "Caltrops also throw a cluster of Stun Grenades that explode and deal # total Physical damage and Stunning enemies for 0.25 segundos.",
 				"region": "Dry Steppes",
 				"id": 88
 			},
@@ -525,7 +525,7 @@ let codexData = {
 				"id": 89
 			},
 			"Vengeful Aspect": {
-				"power": "Lucky Hit: Making an enemy Vulnerable has up to a 30% chance to grant +3% increased Critical Strike Chance for 3 seconds, up to +9%.",
+				"power": "Lucky Hit: Making an enemy Vulnerable has up to a 30% chance to grant +3% increased Critical Strike Chance for 3 segundos, up to +9%.",
 				"region": "Kehjistan",
 				"id": 90
 			},
@@ -543,12 +543,12 @@ let codexData = {
 		"Resource": {
 			"Energizing Aspect": {
 				"dungeon": "Sanguine Chapel",
-				"power": "Damaging an Injured enemy with a Basic Skill generates 5 Energy.",
+				"power": "Damaging an Injured enemy with a Basico Skill generates 5 Energy.",
 				"region": "Fractured Peaks",
 				"id": 93
 			},
 			"Ravenous Aspect": {
-				"power": "Killing a Vulnerable enemy grants you x50% increased Energy Regeneration for 4 seconds.",
+				"power": "Killing a Vulnerable enemy grants you x50% increased Energy Regeneration for 4 segundos.",
 				"region": "Dry Steppes",
 				"id": 94
 			}
@@ -556,7 +556,7 @@ let codexData = {
 		"Utility": {
 			"Aspect of Explosive Verve": {
 				"dungeon": "Derelict Lodge",
-				"power": "Your Grenades Skills count as Trap Skills. Whenever you arm a Trap or drop Grenades, you gain +10% increased Movement Speed for 3 seconds.",
+				"power": "Your Grenades Skills count as Trap Skills. Whenever you arm a Trap or drop Grenades, you gain +10% increased Movement Speed for 3 segundos.",
 				"region": "Fractured Peaks",
 				"id": 95
 			}
@@ -564,26 +564,26 @@ let codexData = {
 		"Mobility": {}
 	},
 	"Sorcerer": {
-		"Defensive": {
+		"Defensiva": {
 			"Snowguard's Aspect": {
 				"power": "While within your own Blizzard, you take 10% less damage.",
 				"region": "Hawezar",
 				"id": 96
 			},
 			"Snowveiled Aspect": {
-				"power": "Casting Ice Armor makes you Unstoppable for 2.0 seconds.",
+				"power": "Casting Ice Armor makes you Unstoppable for 2.0 segundos.",
 				"region": "Scosglen",
 				"id": 97
 			},
 			"Aspect of the Unwavering": {
-				"power": "Taking direct damage has a 5% chance to reset the Cooldown of one of your Defensive Skills.",
+				"power": "Taking direct damage has a 5% chance to reset the Cooldown of one of your Defensiva Skills.",
 				"region": "Kehjistan",
 				"id": 98
 			}
 		},
 		"Offensive": {
 			"Aspect of Biting Cold": {
-				"power": "When you Freeze an enemy there is a 25% chance they become Vulnerable for 3 seconds.",
+				"power": "When you Freeze an enemy there is a 25% chance they become Vulnerable for 3 segundos.",
 				"region": "Dry Steppes",
 				"id": 99
 			},
@@ -638,12 +638,12 @@ let codexData = {
 		},
 		"Resource": {
 			"Aspect of Efficiency": {
-				"power": "Casting a Basic Skill reduces the Mana cost of your next Core Skill by 10%.",
+				"power": "Casting a Basico Skill reduces the Mana cost of your next Core Skill by 10%.",
 				"region": "Scosglen",
 				"id": 109
 			},
 			"Incendiary Aspect": {
-				"power": "Killing a Burning enemy grants x5% Mana Cost reduction for 4 seconds, up to x15%.",
+				"power": "Killing a Burning enemy grants x5% Mana Cost reduction for 4 segundos, up to x15%.",
 				"region": "Kehjistan",
 				"id": 110
 			},
@@ -662,25 +662,25 @@ let codexData = {
 		},
 		"Utility": {
 			"Aspect of Seared Flesh": {
-				"power": "Every 5 times you deal Direct Fire Damage to an enemy, they are Immobilized for 2 seconds.",
+				"power": "Every 5 times you deal Direct Fire Damage to an enemy, they are Immobilized for 2 segundos.",
 				"region": "Hawezar",
 				"id": 113
 			}
 		},
 		"Mobility": {
 			"Aspect of the Bounding Conduit": {
-				"power": "Gain 20% Movement Speed for 3 seconds after Teleporting.",
+				"power": "Gain 20% Movement Speed for 3 segundos after Teleporting.",
 				"region": "Dry Steppes",
 				"id": 114
 			},
 			"Charged Aspect": {
-				"power": "Collecting Crackling Energy increases your Movement Speed by 10% for 4 seconds.",
+				"power": "Collecting Crackling Energy increases your Movement Speed by 10% for 4 segundos.",
 				"region": "Scosglen",
 				"id": 115
 			},
 			"Flamewalker's Aspect": {
 				"dungeon": "Cultist Refuge",
-				"power": "Coming in contact with your Firewall grants you +15% Movement Speed for 4 seconds.",
+				"power": "Coming in contact with your Firewall grants you +15% Movement Speed for 4 segundos.",
 				"region": "Fractured Peaks",
 				"id": 116
 			}

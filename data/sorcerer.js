@@ -1,18 +1,18 @@
 let sorcererData = {};
 
 sorcererData["Trunk Data"] = {
-	"Basic": {
+	"Basico": {
 		connections: [ "Core" ],
 		x: 0,
 		y: 0
 	},
 	"Core": {
-		connections: [ "Defensive" ],
+		connections: [ "Defensiva" ],
 		requiredPoints: 2,
 		x: -1195.229,
 		y: 609.355
 	},
-	"Defensive": {
+	"Defensiva": {
 		connections: [ "Conjuration" ],
 		requiredPoints: 6,
 		x: 513.726,
@@ -43,10 +43,10 @@ sorcererData["Trunk Data"] = {
 	},
 };
 
-sorcererData["Basic"] = {
+sorcererData["Basico"] = {
 	"Frost Bolt": {
-		connections: [ "Basic", "Enhanced Frost Bolt" ],
-		description: `Lucky Hit Chance: {#}%
+		connections: [ "Basico", "Enhanced Frost Bolt" ],
+		description: `Chande de Golpe de Sorte: {#}%
 Throw a bolt of frost at an enemy, dealing {#}% damage and Chilling them for {#}%.
 
 — Enchantment Effect —
@@ -71,7 +71,7 @@ Direct damage from Skills applies up to {#}% Chill.`,
 	"Flickering Frost Bolt": {
 		baseSkill: "Frost Bolt",
 		connections: [ "Enhanced Frost Bolt" ],
-		description: `Frost Bolt makes Frozen enemies Vulnerable for {#} seconds.`,
+		description: `Frost Bolt makes Frozen enemies Vulnerable for {#} segundos.`,
 		id: 2,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -89,8 +89,8 @@ Direct damage from Skills applies up to {#}% Chill.`,
 		y: -545.8
 	},
 	"Spark": {
-		connections: [ "Basic", "Enhanced Spark" ],
-		description: `Lucky Hit Chance: {#}%
+		connections: [ "Basico", "Enhanced Spark" ],
+		description: `Chande de Golpe de Sorte: {#}%
 Launch a bolt of lightning that shocks an enemy {#} times, dealing {#}% damage each hit.
 
 — Enchantment Effect —
@@ -125,7 +125,7 @@ Killing an enemy has a {#}% chance to form a Crackling Energy.`,
 	"Glinting Spark": {
 		baseSkill: "Spark",
 		connections: [ "Enhanced Spark" ],
-		description: `Spark grants +{#}% increased Critical Strike Chance per cast for {#} seconds, up to +{#}%.`,
+		description: `Spark grants +{#}% increased Critical Strike Chance per cast for {#} segundos, up to +{#}%.`,
 		id: 7,
 		maxPoints: 1,
 		values: [ "2", "3", "10" ],
@@ -133,12 +133,12 @@ Killing an enemy has a {#}% chance to form a Crackling Energy.`,
 		y: -207.505
 	},
 	"Arc Lash": {
-		connections: [ "Basic", "Enhanced Arc Lash" ],
-		description: `Lucky Hit Chance: {#}%
-Unleash arcing lightning that deals {#}% damage to enemies in front of you. Every {#} times Arc Lash swipes, it Stuns all enemies hit for {#} seconds.
+		connections: [ "Basico", "Enhanced Arc Lash" ],
+		description: `Chande de Golpe de Sorte: {#}%
+Unleash arcing lightning that deals {#}% damage to enemies in front of you. Every {#} times Arc Lash swipes, it Stuns all enemies hit for {#} segundos.
 
 — Enchantment Effect —
-When you use a Cooldown, enemies around you are Stunned for {#} seconds.`,
+When you use a Cooldown, enemies around you are Stunned for {#} segundos.`,
 		id: 8,
 		maxPoints: 5,
 		values: [ "30", "42", "10", "2" ],
@@ -158,7 +158,7 @@ When you use a Cooldown, enemies around you are Stunned for {#} seconds.`,
 	"Glinting Arc Lash": {
 		baseSkill: "Arc Lash",
 		connections: [ "Enhanced Arc Lash" ],
-		description: `Hitting a Stunned enemy with Arc Lash reduces your Cooldowns by {#} seconds.`,
+		description: `Hitting a Stunned enemy with Arc Lash reduces your Cooldowns by {#} segundos.`,
 		id: 10,
 		maxPoints: 1,
 		values: [ "0.25" ],
@@ -168,7 +168,7 @@ When you use a Cooldown, enemies around you are Stunned for {#} seconds.`,
 	"Flickering Arc Lash": {
 		baseSkill: "Arc Lash",
 		connections: [ "Enhanced Arc Lash" ],
-		description: `Gain +{#}% Movement Speed for {#} seconds per enemy hit with Arc Lash, up to +{#}%.`,
+		description: `Gain +{#}% Movement Speed for {#} segundos per enemy hit with Arc Lash, up to +{#}%.`,
 		id: 11,
 		maxPoints: 1,
 		values: [ "6", "5", "18" ],
@@ -176,12 +176,12 @@ When you use a Cooldown, enemies around you are Stunned for {#} seconds.`,
 		y: -351.28
 	},
 	"Fire Bolt": {
-		connections: [ "Basic", "Enhanced Fire Bolt" ],
-		description: `Lucky Hit Chance: {#}%
-Hurl a flaming bolt, dealing {#}% damage and Burning for {#}% damage over {#} seconds.
+		connections: [ "Basico", "Enhanced Fire Bolt" ],
+		description: `Chande de Golpe de Sorte: {#}%
+Hurl a flaming bolt, dealing {#}% damage and Burning for {#}% damage over {#} segundos.
 
 — Enchantment Effect —
-Direct damage from Skills applies up to an additional {#}% Burning damage over {#} seconds.`,
+Direct damage from Skills applies up to an additional {#}% Burning damage over {#} segundos.`,
 		id: 12,
 		maxPoints: 5,
 		values: [ "20", "10", "40", "8" ],
@@ -201,7 +201,7 @@ Direct damage from Skills applies up to an additional {#}% Burning damage over {
 	"Glinting Fire Bolt": {
 		baseSkill: "Fire Bolt",
 		connections: [ "Enhanced Fire Bolt" ],
-		description: `Critical Strikes with Fire Bolt increase the Burning damage you deal to the enemy by x{#}% for {#} seconds.`,
+		description: `Critical Strikes with Fire Bolt increase the Burning damage you deal to the enemy by x{#}% for {#} segundos.`,
 		id: 14,
 		maxPoints: 1,
 		values: [ "20", "4" ],
@@ -224,7 +224,7 @@ sorcererData["Core"] = {
 	"Charged Bolts": {
 		connections: [ "Core", "Enhanced Charged Bolts" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Release {#} bolts of lightning that course along the ground in an erratic pattern, dealing {#}% damage each.
 
 — Enchantment Effect —
@@ -259,7 +259,7 @@ When you Stun an enemy, there's a {#}% chance to release {#} Charged Bolts from 
 	"Destructive Charged Bolts": {
 		baseSkill: "Charged Bolts",
 		connections: [ "Enhanced Charged Bolts" ],
-		description: `Hitting an enemy with Charged Bolts reduces their damage dealt by {#}% for {#} seconds.`,
+		description: `Hitting an enemy with Charged Bolts reduces their damage dealt by {#}% for {#} segundos.`,
 		id: 19,
 		maxPoints: 1,
 		values: [ "20", "3" ],
@@ -269,11 +269,11 @@ When you Stun an enemy, there's a {#}% chance to release {#} Charged Bolts from 
 	"Frozen Orb": {
 		connections: [ "Core", "Enhanced Frozen Orb" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Unleash an orb that Chills for {#}% and expels piercing shards, dealing a total of {#}% damage. Upon expiration, Frozen Orb explodes, dealing {#}% damage and Chilling enemies for {#}%.
 
 — Enchantment Effect —
-Whenever you cast a Non-Basic Skill, you have a {#}% chance to launch a Frozen Orb at a Nearby enemy.`,
+Whenever you cast a Non-Basico Skill, you have a {#}% chance to launch a Frozen Orb at a Nearby enemy.`,
 		id: 20,
 		maxPoints: 5,
 		values: [ "40", "20", "34", "32", "29", "9" ],
@@ -304,7 +304,7 @@ Whenever you cast a Non-Basic Skill, you have a {#}% chance to launch a Frozen O
 	"Greater Frozen Orb": {
 		baseSkill: "Frozen Orb",
 		connections: [ "Enhanced Frozen Orb" ],
-		description: `Frozen Orb's explosion has a {#}% chance to make all enemies hit Vulnerable for {#} seconds. Frozen Orb always makes Frozen enemies Vulnerable.`,
+		description: `Frozen Orb's explosion has a {#}% chance to make all enemies hit Vulnerable for {#} segundos. Frozen Orb always makes Frozen enemies Vulnerable.`,
 		id: 23,
 		maxPoints: 1,
 		values: [ "25", "2" ],
@@ -314,11 +314,11 @@ Whenever you cast a Non-Basic Skill, you have a {#}% chance to launch a Frozen O
 	"Incinerate": {
 		connections: [ "Core", "Enhanced Incinerate" ],
 		description: `Mana Cost: {#} per second
-Lucky Hit Chance: {#}%
-Channel a beam of fire, Burning enemies for {#}% damage per second. Damage per second increases over {#} seconds, up to {#}.
+Chande de Golpe de Sorte: {#}%
+Channel a beam of fire, Burning enemies for {#}% damage per second. Damage per second increases over {#} segundos, up to {#}.
 
 — Enchantment Effect —
-Every {#} seconds, a serpent spawns and Incinerates enemies for {#} seconds.`,
+Every {#} segundos, a serpent spawns and Incinerates enemies for {#} segundos.`,
 		id: 24,
 		maxPoints: 5,
 		values: [ "20", "40", "36", "4", "49%" ],
@@ -349,7 +349,7 @@ Every {#} seconds, a serpent spawns and Incinerates enemies for {#} seconds.`,
 	"Greater Incinerate": {
 		baseSkill: "Incinerate",
 		connections: [ "Enhanced Incinerate" ],
-		description: `Every {#} seconds an enemy has been hit by Incinerate, they are Immobilized for {#} seconds.`,
+		description: `Every {#} segundos an enemy has been hit by Incinerate, they are Immobilized for {#} segundos.`,
 		id: 27,
 		maxPoints: 1,
 		values: [ "4", "1" ],
@@ -359,7 +359,7 @@ Every {#} seconds, a serpent spawns and Incinerates enemies for {#} seconds.`,
 	"Fireball": {
 		connections: [ "Core", "Enhanced Fireball" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Hurl an exploding ball of fire, dealing {#}% damage to surrounding enemies.
 
 — Enchantment Effect —
@@ -404,7 +404,7 @@ When you kill an enemy, they explode in a Fireball for {#}% of its damage.`,
 	"Chain Lightning": {
 		connections: [ "Core", "Enhanced Chain Lightning" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Unleash a stream of lightning that deals {#}% damage and chains between Nearby enemies and you up to {#} times, prioritizing enemies.
 
 — Enchantment Effect —
@@ -449,7 +449,7 @@ Chain Lightning forms automatically after spending {#} Mana.`,
 	"Ice Shards": {
 		connections: [ "Core", "Enhanced Ice Shards" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Launch {#} shards that deal {#}% damage each. Deals x{#}% increased damage to Frozen enemies.
 
 — Enchantment Effect —
@@ -482,7 +482,7 @@ Ice Shards automatically conjure and fly towards Frozen enemies.`,
 	"Destructive Ice Shards": {
 		baseSkill: "Ice Shards",
 		connections: [ "Enhanced Ice Shards" ],
-		description: `Hitting an enemy with {#} Ice Shards in a single cast makes them Vulnerable for {#} seconds.`,
+		description: `Hitting an enemy with {#} Ice Shards in a single cast makes them Vulnerable for {#} segundos.`,
 		id: 39,
 		maxPoints: 1,
 		values: [ "5", "2" ],
@@ -509,7 +509,7 @@ Ice Shards automatically conjure and fly towards Frozen enemies.`,
 	},
 	"Potent Warding": {
 		connections: [ "Core" ],
-		description: `After casting a Non-Basic Skill, you gain {#}% Resistance to all elements and {#}% additional Resistance to that Skill's element for {#} seconds.`,
+		description: `After casting a Non-Basico Skill, you gain {#}% Resistance to all elements and {#}% additional Resistance to that Skill's element for {#} segundos.`,
 		id: 42,
 		maxPoints: 3,
 		values: [ "{2/4/6}", "{1/2/3}", "3" ],
@@ -518,17 +518,17 @@ Ice Shards automatically conjure and fly towards Frozen enemies.`,
 	},
 };
 
-sorcererData["Defensive"] = {
+sorcererData["Defensiva"] = {
 	"Flame Shield": {
-		connections: [ "Defensive", "Enhanced Flame Shield" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Engulf yourself in flames for {#} seconds, Burning surrounding enemies for {#}% damage per second.
+		connections: [ "Defensiva", "Enhanced Flame Shield" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Engulf yourself in flames for {#} segundos, Burning surrounding enemies for {#}% damage per second.
 
 While Flame Shield is active, you are Immune.
 
 — Enchantment Effect —
-Flame Shield automatically activates when you take fatal damage. Can only happen once every {#} seconds.`,
+Flame Shield automatically activates when you take fatal damage. Can only happen once every {#} segundos.`,
 		id: 43,
 		maxPoints: 5,
 		values: [ "20", "50", "2", "23" ],
@@ -567,11 +567,11 @@ Flame Shield automatically activates when you take fatal damage. Can only happen
 		y: -608.105
 	},
 	"Frost Nova": {
-		connections: [ "Defensive", "Enhanced Frost Nova" ],
-		description: `Cooldown: {#} seconds
+		connections: [ "Defensiva", "Enhanced Frost Nova" ],
+		description: `Cooldown: {#} segundos
 Charges: {#}
-Charge Cooldown: {#} seconds
-Unleash a torrent of frost, Freezing enemies around you for {#} seconds.
+Charge Cooldown: {#} segundos
+Unleash a torrent of frost, Freezing enemies around you for {#} segundos.
 
 — Enchantment Effect —
 Lucky Hit: Your Conjuration Skills have a {#}% chance to unleash a Frost Nova when hitting enemies.`,
@@ -585,7 +585,7 @@ Lucky Hit: Your Conjuration Skills have a {#}% chance to unleash a Frost Nova wh
 	"Enhanced Frost Nova": {
 		baseSkill: "Frost Nova",
 		connections: [ "Frost Nova", "Mystical Frost Nova", "Shimmering Frost Nova" ],
-		description: `Killing enemies Frozen by Frost Nova reduces its Cooldown by {#} seconds, up to {#} seconds per cast.`,
+		description: `Killing enemies Frozen by Frost Nova reduces its Cooldown by {#} segundos, up to {#} segundos per cast.`,
 		id: 48,
 		maxPoints: 1,
 		values: [ "2", "6" ],
@@ -595,7 +595,7 @@ Lucky Hit: Your Conjuration Skills have a {#}% chance to unleash a Frost Nova wh
 	"Mystical Frost Nova": {
 		baseSkill: "Frost Nova",
 		connections: [ "Enhanced Frost Nova" ],
-		description: `Frost Nova makes enemies Vulnerable for {#} seconds, increased to {#} seconds against Bosses.`,
+		description: `Frost Nova makes enemies Vulnerable for {#} segundos, increased to {#} segundos against Bosses.`,
 		id: 49,
 		maxPoints: 1,
 		values: [ "4", "8" ],
@@ -613,9 +613,9 @@ Lucky Hit: Your Conjuration Skills have a {#}% chance to unleash a Frost Nova wh
 		y: 624.487
 	},
 	"Ice Armor": {
-		connections: [ "Defensive", "Enhanced Ice Armor" ],
-		description: `Cooldown: {#} seconds
-A Barrier of ice forms around you for {#} seconds, absorbing {#}% of your Base Life ({#}) in damage. While Ice Armor is active, {#}% of your damage dealt is added to its Barrier.
+		connections: [ "Defensiva", "Enhanced Ice Armor" ],
+		description: `Cooldown: {#} segundos
+A Barrier of ice forms around you for {#} segundos, absorbing {#}% of your Base Life ({#}) in damage. While Ice Armor is active, {#}% of your damage dealt is added to its Barrier.
 
 — Enchantment Effect —
 Upon getting hit, you have a {#}% chance to apply Ice Armor.`,
@@ -639,7 +639,7 @@ Upon getting hit, you have a {#}% chance to apply Ice Armor.`,
 	"Shimmering Ice Armor": {
 		baseSkill: "Ice Armor",
 		connections: [ "Enhanced Ice Armor" ],
-		description: `Enemies that hit you while Ice Armor is active have a {#}% chance to become Frozen for {#} seconds.`,
+		description: `Enemies that hit you while Ice Armor is active have a {#}% chance to become Frozen for {#} segundos.`,
 		id: 53,
 		maxPoints: 1,
 		values: [ "15", "3" ],
@@ -657,9 +657,9 @@ Upon getting hit, you have a {#}% chance to apply Ice Armor.`,
 		y: 318.55
 	},
 	"Teleport": {
-		connections: [ "Defensive", "Enhanced Teleport" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
+		connections: [ "Defensiva", "Enhanced Teleport" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
 Transform into lightning, becoming Unstoppable and surging to the target location, dealing {#}% damage around you upon arrival.
 
 — Enchantment Effect —
@@ -674,7 +674,7 @@ Evade is replaced with a short range Teleport on a {#} second Cooldown.`,
 	"Enhanced Teleport": {
 		baseSkill: "Teleport",
 		connections: [ "Teleport", "Mystical Teleport", "Shimmering Teleport" ],
-		description: `Teleport's Cooldown is decreased by {#} seconds per enemy hit, up to {#} seconds.`,
+		description: `Teleport's Cooldown is decreased by {#} segundos per enemy hit, up to {#} segundos.`,
 		id: 56,
 		maxPoints: 1,
 		values: [ "0.5", "3" ],
@@ -684,7 +684,7 @@ Evade is replaced with a short range Teleport on a {#} second Cooldown.`,
 	"Mystical Teleport": {
 		baseSkill: "Teleport",
 		connections: [ "Enhanced Teleport" ],
-		description: `For {#} seconds after Teleporting, Crackling Energy hits {#} additional enemies.`,
+		description: `For {#} segundos after Teleporting, Crackling Energy hits {#} additional enemies.`,
 		id: 57,
 		maxPoints: 1,
 		values: [ "4", "2" ],
@@ -694,7 +694,7 @@ Evade is replaced with a short range Teleport on a {#} second Cooldown.`,
 	"Shimmering Teleport": {
 		baseSkill: "Teleport",
 		connections: [ "Enhanced Teleport" ],
-		description: `After Teleporting, you gain {#}% Damage Reduction for {#} seconds.`,
+		description: `After Teleporting, you gain {#}% Damage Reduction for {#} segundos.`,
 		id: 58,
 		maxPoints: 1,
 		values: [ "30", "5" ],
@@ -702,8 +702,8 @@ Evade is replaced with a short range Teleport on a {#} second Cooldown.`,
 		y: -351.155
 	},
 	"Elemental Attunement": {
-		connections: [ "Defensive" ],
-		description: `Lucky Hit: Critical Strikes have a {#}% chance to reset the Cooldown of one of your Defensive Skills. Can only happen once every {#} seconds.`,
+		connections: [ "Defensiva" ],
+		description: `Lucky Hit: Critical Strikes have a {#}% chance to reset the Cooldown of one of your Defensiva Skills. Can only happen once every {#} segundos.`,
 		id: 59,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "10" ],
@@ -711,7 +711,7 @@ Evade is replaced with a short range Teleport on a {#} second Cooldown.`,
 		y: 1.335
 	},
 	"Glass Cannon": {
-		connections: [ "Defensive" ],
+		connections: [ "Defensiva" ],
 		description: `You deal x{#}% increased damage, but take x{#}% more damage.`,
 		id: 60,
 		maxPoints: 3,
@@ -725,13 +725,13 @@ sorcererData["Conjuration"] = {
 	"Hydra": {
 		connections: [ "Conjuration", "Enhanced Hydra" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
-Summon a {#}-headed hydra for {#} seconds. Each head spits fire at enemies, dealing {#}% damage.
+Chande de Golpe de Sorte: {#}%
+Summon a {#}-headed hydra for {#} segundos. Each head spits fire at enemies, dealing {#}% damage.
 
 Maximum {#} active Hydras at a time.
 
 — Enchantment Effect —
-After spending {#} Mana, a {#}-headed Hydra spawns for {#} seconds.`,
+After spending {#} Mana, a {#}-headed Hydra spawns for {#} segundos.`,
 		id: 61,
 		maxPoints: 5,
 		values: [ "20", "77", "3", "12.0", "30", "1" ],
@@ -752,7 +752,7 @@ After spending {#} Mana, a {#}-headed Hydra spawns for {#} seconds.`,
 	"Invoked Hydra": {
 		baseSkill: "Hydra",
 		connections: [ "Enhanced Hydra" ],
-		description: `After you Critically Strike, your Hydras gain +{#}% Critical Strike Chance for {#} seconds.`,
+		description: `After you Critically Strike, your Hydras gain +{#}% Critical Strike Chance for {#} segundos.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "30", "3" ],
@@ -762,7 +762,7 @@ After spending {#} Mana, a {#}-headed Hydra spawns for {#} seconds.`,
 	"Summoned Hydra": {
 		baseSkill: "Hydra",
 		connections: [ "Enhanced Hydra" ],
-		description: `Hydra also Burns enemies for an additional {#}% of its Base damage dealt over {#} seconds.`,
+		description: `Hydra also Burns enemies for an additional {#}% of its Base damage dealt over {#} segundos.`,
 		id: 64,
 		maxPoints: 1,
 		values: [ "12", "6" ],
@@ -771,12 +771,12 @@ After spending {#} Mana, a {#}-headed Hydra spawns for {#} seconds.`,
 	},
 	"Ice Blades": {
 		connections: [ "Conjuration", "Enhanced Ice Blades" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Conjure a pair of ice blades for {#} seconds that rapidly slash enemies for {#}% damage and have a {#}% chance to make them Vulnerable for {#} seconds.
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Conjure a pair of ice blades for {#} segundos that rapidly slash enemies for {#}% damage and have a {#}% chance to make them Vulnerable for {#} segundos.
 
 — Enchantment Effect —
-For every {#} seconds in Cooldowns you spend, you spawn an Ice Blades on a random enemy.`,
+For every {#} segundos in Cooldowns you spend, you spawn an Ice Blades on a random enemy.`,
 		id: 65,
 		maxPoints: 5,
 		values: [ "12", "71", "6.0", "31", "30", "2" ],
@@ -816,9 +816,9 @@ For every {#} seconds in Cooldowns you spend, you spawn an Ice Blades on a rando
 	},
 	"Lightning Spear": {
 		connections: [ "Conjuration", "Enhanced Lightning Spear" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Conjure a spear of lightning that seeks out enemies for {#} seconds, dealing {#}% damage per hit.
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Conjure a spear of lightning that seeks out enemies for {#} segundos, dealing {#}% damage per hit.
 
 — Enchantment Effect —
 Absorbing Crackling Energy has a {#}% chance to conjure a Lightning Spear.`,
@@ -852,7 +852,7 @@ Absorbing Crackling Energy has a {#}% chance to conjure a Lightning Spear.`,
 	"Invoked Lightning Spear": {
 		baseSkill: "Lightning Spear",
 		connections: [ "Enhanced Lightning Spear" ],
-		description: `Lightning Spear Stuns enemies for {#} seconds when Critically Striking.`,
+		description: `Lightning Spear Stuns enemies for {#} segundos when Critically Striking.`,
 		id: 72,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -870,7 +870,7 @@ Absorbing Crackling Energy has a {#}% chance to conjure a Lightning Spear.`,
 	},
 	"Precision Magic": {
 		connections: [ "Conjuration" ],
-		description: `Your Lucky Hit Chance is increased by +{#}%.`,
+		description: `Your Chande de Golpe de Sorte is increased by +{#}%.`,
 		id: 74,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
@@ -888,7 +888,7 @@ Absorbing Crackling Energy has a {#}% chance to conjure a Lightning Spear.`,
 	},
 	"Mana Shield": {
 		connections: [ "Align the Elements" ],
-		description: `Every time you spend {#} Mana, you gain {#}% Damage Reduction for {#} seconds.`,
+		description: `Every time you spend {#} Mana, you gain {#}% Damage Reduction for {#} segundos.`,
 		id: 76,
 		maxPoints: 3,
 		values: [ "100", "{5/10/15}", "5" ],
@@ -897,7 +897,7 @@ Absorbing Crackling Energy has a {#}% chance to conjure a Lightning Spear.`,
 	},
 	"Protection": {
 		connections: [ "Align the Elements" ],
-		description: `Using a Cooldown grants {#}% of your Maximum Life ({#}) as a Barrier for {#} seconds.`,
+		description: `Using a Cooldown grants {#}% of your Maximum Life ({#}) as a Barrier for {#} segundos.`,
 		id: 77,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "", "5" ],
@@ -910,8 +910,8 @@ sorcererData["Mastery"] = {
 	"Meteor": {
 		connections: [ "Mastery", "Enhanced Meteor" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
-Summon a meteor that strikes the target location, dealing {#}% damage and Burning the ground for {#}% damage over {#} seconds.
+Chande de Golpe de Sorte: {#}%
+Summon a meteor that strikes the target location, dealing {#}% damage and Burning the ground for {#}% damage over {#} segundos.
 
 — Enchantment Effect —
 Lucky Hit: {#}% chance for a Meteor to fall on enemies.`,
@@ -945,7 +945,7 @@ Lucky Hit: {#}% chance for a Meteor to fall on enemies.`,
 	"Wizard's Meteor": {
 		baseSkill: "Meteor",
 		connections: [ "Enhanced Meteor" ],
-		description: `Meteor's impact Immobilizes enemies for {#} seconds.`,
+		description: `Meteor's impact Immobilizes enemies for {#} segundos.`,
 		id: 81,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -955,11 +955,11 @@ Lucky Hit: {#}% chance for a Meteor to fall on enemies.`,
 	"Blizzard": {
 		connections: [ "Mastery", "Enhanced Blizzard" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
-Summon a frigid blizzard that deals {#}% damage and continually Chills enemies for {#}% over {#} seconds.
+Chande de Golpe de Sorte: {#}%
+Summon a frigid blizzard that deals {#}% damage and continually Chills enemies for {#}% over {#} segundos.
 
 — Enchantment Effect —
-Every {#} seconds, a Blizzard forms over you and follows you for {#} seconds.`,
+Every {#} segundos, a Blizzard forms over you and follows you for {#} segundos.`,
 		id: 82,
 		maxPoints: 5,
 		values: [ "40", "33", "120", "18", "8" ],
@@ -980,7 +980,7 @@ Every {#} seconds, a Blizzard forms over you and follows you for {#} seconds.`,
 	"Mage's Blizzard": {
 		baseSkill: "Blizzard",
 		connections: [ "Enhanced Blizzard" ],
-		description: `When cast above {#} Mana, Blizzard's duration is increased by {#} seconds.`,
+		description: `When cast above {#} Mana, Blizzard's duration is increased by {#} segundos.`,
 		id: 84,
 		maxPoints: 1,
 		values: [ "50", "4" ],
@@ -1000,7 +1000,7 @@ Every {#} seconds, a Blizzard forms over you and follows you for {#} seconds.`,
 	"Ball Lightning": {
 		connections: [ "Mastery", "Enhanced Ball Lightning" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Discharge a ball of lightning that slowly moves forward, continually zapping enemies for {#}% damage.
 
 — Enchantment Effect —
@@ -1035,7 +1035,7 @@ Lucky Hit: Critical Strikes have a {#}% chance to spawn a static Ball Lightning.
 	"Mage's Ball Lightning": {
 		baseSkill: "Ball Lightning",
 		connections: [ "Enhanced Ball Lightning" ],
-		description: `After hitting Close enemies {#} times with Ball Lightning, your next cast of it Stuns enemies hit for {#} seconds.`,
+		description: `After hitting Close enemies {#} times with Ball Lightning, your next cast of it Stuns enemies hit for {#} segundos.`,
 		id: 89,
 		maxPoints: 1,
 		values: [ "50", "1" ],
@@ -1053,7 +1053,7 @@ Lucky Hit: Critical Strikes have a {#}% chance to spawn a static Ball Lightning.
 	},
 	"Crippling Flames": {
 		connections: [ "Inner Flames" ],
-		description: `Lucky Hit: Your Pyromancy Skills have a {#}% chance to Immobilize enemies for {#} seconds. This chance is doubled while you are Healthy.`,
+		description: `Lucky Hit: Your Pyromancy Skills have a {#}% chance to Immobilize enemies for {#} segundos. This chance is doubled while you are Healthy.`,
 		id: 132,
 		maxPoints: 3,
 		values: [ "5", "2" ],
@@ -1126,11 +1126,11 @@ Lucky Hit: Critical Strikes have a {#}% chance to spawn a static Ball Lightning.
 	"Firewall": {
 		connections: [ "Mastery", "Enhanced Firewall" ],
 		description: `Mana Cost: {#}
-Lucky Hit Chance: {#}%
-Create a wall of flames that Burns enemies for {#}% damage over {#} seconds.
+Chande de Golpe de Sorte: {#}%
+Create a wall of flames that Burns enemies for {#}% damage over {#} segundos.
 
 — Enchantment Effect —
-Each time an enemy takes Burning damage, there's a {#}% chance to spawn 2 Firewalls underneath them for {#} seconds.`,
+Each time an enemy takes Burning damage, there's a {#}% chance to spawn 2 Firewalls underneath them for {#} segundos.`,
 		id: 99,
 		maxPoints: 5,
 		values: [ "30", "40", "160", "8" ],
@@ -1161,7 +1161,7 @@ Each time an enemy takes Burning damage, there's a {#}% chance to spawn 2 Firewa
 	"Mage's Firewall": {
 		baseSkill: "Firewall",
 		connections: [ "Enhanced Firewall" ],
-		description: `Enemies continue Burning for {#} seconds after leaving Firewall.`,
+		description: `Enemies continue Burning for {#} segundos after leaving Firewall.`,
 		id: 102,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -1173,9 +1173,9 @@ Each time an enemy takes Burning damage, there's a {#}% chance to spawn 2 Firewa
 sorcererData["Ultimate"] = {
 	"Inferno": {
 		connections: [ "Ultimate", "Prime Inferno" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Summon a fiery serpent that continually constricts the target area, Burning enemies for {#}% damage over {#} seconds.`,
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Summon a fiery serpent that continually constricts the target area, Burning enemies for {#}% damage over {#} segundos.`,
 		id: 103,
 		maxPoints: 1,
 		values: [ "45", "38", "295", "8" ],
@@ -1202,8 +1202,8 @@ Summon a fiery serpent that continually constricts the target area, Burning enem
 	},
 	"Unstable Currents": {
 		connections: [ "Prime Unstable Currents", "Ultimate" ],
-		description: `Cooldown: {#} seconds
-Lightning surges within you for {#} seconds. Whenever you cast a Shock Skill, a random Core, Conjuration, or Mastery Shock Skill is also cast.`,
+		description: `Cooldown: {#} segundos
+Lightning surges within you for {#} segundos. Whenever you cast a Shock Skill, a random Core, Conjuration, or Mastery Shock Skill is also cast.`,
 		id: 106,
 		maxPoints: 1,
 		values: [ "70.0", "10" ],
@@ -1231,9 +1231,9 @@ Lightning surges within you for {#} seconds. Whenever you cast a Shock Skill, a 
 	},
 	"Deep Freeze": {
 		connections: [ "Prime Deep Freeze", "Ultimate" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Encase yourself in ice, becoming Immune for {#} seconds, continually dealing {#}% damage, and Chilling enemies for {#}%. When Deep Freeze expires, it deals an additional {#}% damage.
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Encase yourself in ice, becoming Immune for {#} segundos, continually dealing {#}% damage, and Chilling enemies for {#}%. When Deep Freeze expires, it deals an additional {#}% damage.
 
 Casting Deep Freeze again ends the effect early.`,
 		id: 109,
@@ -1245,7 +1245,7 @@ Casting Deep Freeze again ends the effect early.`,
 	"Prime Deep Freeze": {
 		baseSkill: "Deep Freeze",
 		connections: [ "Deep Freeze", "Supreme Deep Freeze" ],
-		description: `When Deep Freeze ends, gain {#}% of your Base Life ({#}) as a Barrier for {#} seconds for each enemy you Froze while it was active.`,
+		description: `When Deep Freeze ends, gain {#}% of your Base Life ({#}) as a Barrier for {#} segundos for each enemy you Froze while it was active.`,
 		id: 110,
 		maxPoints: 1,
 		values: [ "10", "", "6" ],
@@ -1309,7 +1309,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Electrocution": {
 		connections: [ "Coursing Currents", "Convulsions" ],
-		description: `Enemies deal {#}% less damage for {#} seconds after being Critically Struck by your Shock Skills.`,
+		description: `Enemies deal {#}% less damage for {#} segundos after being Critically Struck by your Shock Skills.`,
 		id: 117,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "5" ],
@@ -1318,7 +1318,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Convulsions": {
 		connections: [ "Conduction", "Electrocution" ],
-		description: `Lucky Hit: Shock Skills have a {#}% chance to Stun enemies for {#} seconds.`,
+		description: `Lucky Hit: Shock Skills have a {#}% chance to Stun enemies for {#} segundos.`,
 		id: 118,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "3" ],
@@ -1327,7 +1327,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Conduction": {
 		connections: [ "Coursing Currents", "Convulsions" ],
-		description: `Critical Strikes with Shock Skills increase your Movement Speed by +{#}% for {#} seconds.`,
+		description: `Critical Strikes with Shock Skills increase your Movement Speed by +{#}% for {#} segundos.`,
 		id: 119,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "3" ],
@@ -1336,7 +1336,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Fiery Surge": {
 		connections: [ "Endless Pyre", "Soulfire", "Ultimate" ],
-		description: `Killing a Burning enemy increases your Mana Regeneration by +{#}% for {#} seconds.`,
+		description: `Killing a Burning enemy increases your Mana Regeneration by +{#}% for {#} segundos.`,
 		id: 123,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "3" ],
@@ -1345,7 +1345,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Endless Pyre": {
 		connections: [ "Warmth", "Fiery Surge" ],
-		description: `You deal increased Burning damage to enemies for each second they remain Burning, up to x{#}% after {#} seconds.`,
+		description: `You deal increased Burning damage to enemies for each second they remain Burning, up to x{#}% after {#} segundos.`,
 		id: 121,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "5" ],
@@ -1363,7 +1363,7 @@ Casting Deep Freeze again ends the effect early.`,
 	},
 	"Soulfire": {
 		connections: [ "Warmth", "Fiery Surge" ],
-		description: `After standing still for {#} seconds, your Pyromancy Skills cost {#}% less Mana.`,
+		description: `After standing still for {#} segundos, your Pyromancy Skills cost {#}% less Mana.`,
 		id: 139,
 		maxPoints: 3,
 		values: [ "1.5", "{5/10/15}" ],
@@ -1404,7 +1404,7 @@ sorcererData["Capstone"] = {
 		connections: [ "Capstone" ],
 		description: `Your Fire Critical Strike Damage is increased by x{#}% against enemies above 50% Life. Your Fire Critical Strike Chance is increased by +{#}% against enemies below 50% Life.
 
-Killing an enemy with a Critical Strike grants both bonuses against all enemies for {#} seconds.`,
+Killing an enemy with a Critical Strike grants both bonuses against all enemies for {#} segundos.`,
 		id: 127,
 		maxPoints: 1,
 		values: [ "25", "5", "3" ],
@@ -1413,7 +1413,7 @@ Killing an enemy with a Critical Strike grants both bonuses against all enemies 
 	},
 	"Overflowing Energy": {
 		connections: [ "Capstone" ],
-		description: `Crackling Energy hits {#} additional enemy. Each time Crackling Energy hits an enemy, your Shock Skill Cooldowns are reduced by {#} seconds, increased to {#} seconds against Elites.`,
+		description: `Crackling Energy hits {#} additional enemy. Each time Crackling Energy hits an enemy, your Shock Skill Cooldowns are reduced by {#} segundos, increased to {#} segundos against Elites.`,
 		id: 128,
 		maxPoints: 1,
 		values: [ "1", "0.1", "0.25" ],
@@ -1422,7 +1422,7 @@ Killing an enemy with a Critical Strike grants both bonuses against all enemies 
 	},
 	"Vyr's Mastery": {
 		connections: [ "Capstone" ],
-		description: `Close enemies take x{#}% increased damage from your Shock Skills and deal {#}% less damage to you. Critical Strikes increase these bonuses by {#}% for {#} seconds.`,
+		description: `Close enemies take x{#}% increased damage from your Shock Skills and deal {#}% less damage to you. Critical Strikes increase these bonuses by {#}% for {#} segundos.`,
 		id: 129,
 		maxPoints: 1,
 		values: [ "10", "20", "25", "3" ],

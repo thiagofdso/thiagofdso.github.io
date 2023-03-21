@@ -1,7 +1,7 @@
 let rogueData = {};
 
 rogueData["Trunk Data"] = {
-	"Basic": {
+	"Basico": {
 		connections: [ "Core" ],
 		x: 0,
 		y: 0
@@ -43,12 +43,12 @@ rogueData["Trunk Data"] = {
 	},
 };
 
-rogueData["Basic"] = {
+rogueData["Basico"] = {
 	"Blade Shift": {
-		connections: [ "Enhanced Blade Shift", "Basic" ],
+		connections: [ "Enhanced Blade Shift", "Basico" ],
 		description: `Generate Combo Point: {#}
-Lucky Hit Chance: {#}%
-Quickly stab your victim for {#}% damage and shift, allowing you to move freely through enemies for {#} seconds.`,
+Chande de Golpe de Sorte: {#}%
+Quickly stab your victim for {#}% damage and shift, allowing you to move freely through enemies for {#} segundos.`,
 		id: 0,
 		maxPoints: 5,
 		values: [ "1", "35", "15", "3" ],
@@ -68,7 +68,7 @@ Quickly stab your victim for {#}% damage and shift, allowing you to move freely 
 	"Fundamental Blade Shift": {
 		baseSkill: "Blade Shift",
 		connections: [ "Enhanced Blade Shift" ],
-		description: `Moving through enemies while Blade Shift is active refreshes its duration. After moving through enemies {#} times, your next Blade Shift will Daze enemies for {#} seconds.`,
+		description: `Moving through enemies while Blade Shift is active refreshes its duration. After moving through enemies {#} times, your next Blade Shift will Daze enemies for {#} segundos.`,
 		id: 2,
 		maxPoints: 1,
 		values: [ "5", "2" ],
@@ -86,10 +86,10 @@ Quickly stab your victim for {#}% damage and shift, allowing you to move freely 
 		y: -634.25
 	},
 	"Invigorating Strike": {
-		connections: [ "Enhanced Invigorating Strike", "Basic" ],
+		connections: [ "Enhanced Invigorating Strike", "Basico" ],
 		description: `Generate Combo Point: {#}
-Lucky Hit Chance: {#}%
-Melee attack an enemy, dealing {#}% damage and increasing Energy Regeneration by x{#}% for {#} seconds.`,
+Chande de Golpe de Sorte: {#}%
+Melee attack an enemy, dealing {#}% damage and increasing Energy Regeneration by x{#}% for {#} segundos.`,
 		id: 4,
 		maxPoints: 5,
 		values: [ "1", "50", "23", "20", "3" ],
@@ -109,7 +109,7 @@ Melee attack an enemy, dealing {#}% damage and increasing Energy Regeneration by
 	"Primary Invigorating Strike": {
 		baseSkill: "Invigorating Strike",
 		connections: [ "Enhanced Invigorating Strike" ],
-		description: `Invigorating Strike additionally grants +{#}% Lucky Hit Chance. Hitting a Crowd Controlled or Injured enemy increases this bonus to +{#}% Lucky Hit Chance.`,
+		description: `Invigorating Strike additionally grants +{#}% Chande de Golpe de Sorte. Hitting a Crowd Controlled or Injured enemy increases this bonus to +{#}% Chande de Golpe de Sorte.`,
 		id: 7,
 		maxPoints: 1,
 		values: [ "8", "16" ],
@@ -119,7 +119,7 @@ Melee attack an enemy, dealing {#}% damage and increasing Energy Regeneration by
 	"Fundamental Invigorating Strike": {
 		baseSkill: "Invigorating Strike",
 		connections: [ "Enhanced Invigorating Strike" ],
-		description: `Hitting an enemy with Invigorating Strike while you are below {#}% Energy makes them Vulnerable for {#} seconds.`,
+		description: `Hitting an enemy with Invigorating Strike while you are below {#}% Energy makes them Vulnerable for {#} segundos.`,
 		id: 6,
 		maxPoints: 1,
 		values: [ "50", "3" ],
@@ -127,10 +127,10 @@ Melee attack an enemy, dealing {#}% damage and increasing Energy Regeneration by
 		y: -375.21
 	},
 	"Puncture": {
-		connections: [ "Enhanced Puncture", "Basic" ],
+		connections: [ "Enhanced Puncture", "Basico" ],
 		description: `Generate Combo Point: 1
-Lucky Hit Chance: {#}%
-Throw blades a short distance, dealing {#}% damage. Every {#}rd cast Slows enemies by {#}% for {#} seconds. Critical Strikes will always Slow.`,
+Chande de Golpe de Sorte: {#}%
+Throw blades a short distance, dealing {#}% damage. Every {#}rd cast Slows enemies by {#}% for {#} segundos. Critical Strikes will always Slow.`,
 		id: 8,
 		maxPoints: 5,
 		values: [ "50", "21", "3", "20", "2" ],
@@ -150,7 +150,7 @@ Throw blades a short distance, dealing {#}% damage. Every {#}rd cast Slows enemi
 	"Fundamental Puncture": {
 		baseSkill: "Puncture",
 		connections: [ "Enhanced Puncture" ],
-		description: `Puncture now throws 3 blades in a spread, each dealing {#}% of its Base damage. Hitting an enemy with at least 2 blades at once makes them Vulnerable for {#} seconds.`,
+		description: `Puncture now throws 3 blades in a spread, each dealing {#}% of its Base damage. Hitting an enemy with at least 2 blades at once makes them Vulnerable for {#} segundos.`,
 		id: 10,
 		maxPoints: 1,
 		values: [ "35", "2" ],
@@ -168,10 +168,10 @@ Throw blades a short distance, dealing {#}% damage. Every {#}rd cast Slows enemi
 		y: -483.34
 	},
 	"Heartseeker": {
-		connections: [ "Enhanced Heartseeker", "Basic" ],
+		connections: [ "Enhanced Heartseeker", "Basico" ],
 		description: `Generate Combo Point: {#}
-Lucky Hit Chance: {#}%
-Fire an arrow that seeks an enemy, dealing {#}% damage and increasing your Critical Strike Chance against them by +{#}% for {#} seconds, up to +{#}%.`,
+Chande de Golpe de Sorte: {#}%
+Fire an arrow that seeks an enemy, dealing {#}% damage and increasing your Critical Strike Chance against them by +{#}% for {#} segundos, up to +{#}%.`,
 		id: 12,
 		maxPoints: 5,
 		values: [ "1", "50", "22", "3", "4", "15" ],
@@ -181,7 +181,7 @@ Fire an arrow that seeks an enemy, dealing {#}% damage and increasing your Criti
 	"Enhanced Heartseeker": {
 		baseSkill: "Heartseeker",
 		connections: [ "Heartseeker", "Fundamental Heartseeker", "Primary Heartseeker" ],
-		description: `When Heartseeker Critically Strikes, gain +{#}% Attack Speed for {#} seconds. Double this amount if the enemy is Vulnerable.`,
+		description: `When Heartseeker Critically Strikes, gain +{#}% Attack Speed for {#} segundos. Double this amount if the enemy is Vulnerable.`,
 		id: 13,
 		maxPoints: 1,
 		values: [ "8", "4" ],
@@ -191,7 +191,7 @@ Fire an arrow that seeks an enemy, dealing {#}% damage and increasing your Criti
 	"Fundamental Heartseeker": {
 		baseSkill: "Heartseeker",
 		connections: [ "Enhanced Heartseeker" ],
-		description: `Heartseeker also increases the Critical Strike Damage the enemy takes from you by +{#}% for {#} seconds, up to +{#}%.`,
+		description: `Heartseeker also increases the Critical Strike Damage the enemy takes from you by +{#}% for {#} segundos, up to +{#}%.`,
 		id: 14,
 		maxPoints: 1,
 		values: [ "5", "4", "25" ],
@@ -209,10 +209,10 @@ Fire an arrow that seeks an enemy, dealing {#}% damage and increasing your Criti
 		y: 80.68
 	},
 	"Forceful Arrow": {
-		connections: [ "Enhanced Forceful Arrow", "Basic" ],
+		connections: [ "Enhanced Forceful Arrow", "Basico" ],
 		description: `Generate Combo Point: {#}
-Lucky Hit Chance: {#}%
-Fire a powerful arrow at an enemy, dealing {#}% damage. Every 3rd cast makes the enemy Vulnerable for {#} seconds.`,
+Chande de Golpe de Sorte: {#}%
+Fire a powerful arrow at an enemy, dealing {#}% damage. Every 3rd cast makes the enemy Vulnerable for {#} segundos.`,
 		id: 16,
 		maxPoints: 5,
 		values: [ "1", "50", "20", "2" ],
@@ -232,7 +232,7 @@ Fire a powerful arrow at an enemy, dealing {#}% damage. Every 3rd cast makes the
 	"Fundamental Forceful Arrow": {
 		baseSkill: "Forceful Arrow",
 		connections: [ "Enhanced Forceful Arrow" ],
-		description: `Forceful Arrow Knocks Back Non-Elite enemies if they are Close. If they collide with another enemy, both are Knocked Down for {#} seconds.`,
+		description: `Forceful Arrow Knocks Back Non-Elite enemies if they are Close. If they collide with another enemy, both are Knocked Down for {#} segundos.`,
 		id: 18,
 		maxPoints: 1,
 		values: [ "1.5" ],
@@ -254,8 +254,8 @@ rogueData["Core"] = {
 	"Twisting Blades": {
 		connections: [ "Enhanced Twisting Blades", "Core" ],
 		description: `Energy Cost: {#}
-Lucky Hit Chance: {#}%
-Impale an enemy with your blades, dealing {#}% damage and making them take x{#}% increased damage from you while impaled. After {#} seconds the blades return to you, piercing enemies for {#}% damage.
+Chande de Golpe de Sorte: {#}%
+Impale an enemy with your blades, dealing {#}% damage and making them take x{#}% increased damage from you while impaled. After {#} segundos the blades return to you, piercing enemies for {#}% damage.
 
 Combo Points increase damage and grant a Movement Speed bonus:
  1 Point: {#}% damage, +{#}% bonus
@@ -280,7 +280,7 @@ Combo Points increase damage and grant a Movement Speed bonus:
 	"Advanced Twisting Blades": {
 		baseSkill: "Twisting Blades",
 		connections: [ "Enhanced Twisting Blades" ],
-		description: `When your Twisting Blades return, your active Cooldowns are reduced by {#} second per enemy they passed through, up to {#} seconds.`,
+		description: `When your Twisting Blades return, your active Cooldowns are reduced by {#} second per enemy they passed through, up to {#} segundos.`,
 		id: 22,
 		maxPoints: 1,
 		values: [ "1", "3" ],
@@ -299,7 +299,7 @@ Combo Points increase damage and grant a Movement Speed bonus:
 	"Flurry": {
 		connections: [ "Enhanced Flurry", "Core" ],
 		description: `Energy Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Unleash a flurry of stabs and slashes, striking enemies in front of you {#} times and dealing a total of {#}% damage to each.
 
 Combo Points increase damage and grant an Attack Speed bonus:
@@ -325,7 +325,7 @@ Combo Points increase damage and grant an Attack Speed bonus:
 	"Improved Flurry": {
 		baseSkill: "Flurry",
 		connections: [ "Enhanced Flurry" ],
-		description: `If Flurry hits any Vulnerable enemy it will make all enemies hit by that cast Vulnerable for {#} seconds.`,
+		description: `If Flurry hits any Vulnerable enemy it will make all enemies hit by that cast Vulnerable for {#} segundos.`,
 		id: 26,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -335,7 +335,7 @@ Combo Points increase damage and grant an Attack Speed bonus:
 	"Advanced Flurry": {
 		baseSkill: "Flurry",
 		connections: [ "Enhanced Flurry" ],
-		description: `Evading through an enemy will cause your next Flurry to Stun enemies for {#} seconds.`,
+		description: `Evading through an enemy will cause your next Flurry to Stun enemies for {#} segundos.`,
 		id: 27,
 		maxPoints: 1,
 		values: [ "2.5" ],
@@ -345,10 +345,10 @@ Combo Points increase damage and grant an Attack Speed bonus:
 	"Penetrating Shot": {
 		connections: [ "Enhanced Penetrating Shot", "Core" ],
 		description: `Energy Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Fire an arrow that pierces through all enemies in a line, dealing {#}% damage.
 
-Combo Points increase damage and improve Lucky Hit Chance:
+Combo Points increase damage and improve Chande de Golpe de Sorte:
  1 Point: {#}% damage, +{#}% chance
  2 Points: {#}% damage, +{#}% chance
  3 Points: {#}% damage, +{#}% chance`,
@@ -371,7 +371,7 @@ Combo Points increase damage and improve Lucky Hit Chance:
 	"Advanced Penetrating Shot": {
 		baseSkill: "Penetrating Shot",
 		connections: [ "Enhanced Penetrating Shot" ],
-		description: `When cast with full Energy, Penetrating Shot will Slow all enemies it hits by {#}% for {#} seconds. Elite enemies will also be Knocked Down for {#} seconds.`,
+		description: `When cast with full Energy, Penetrating Shot will Slow all enemies it hits by {#}% for {#} segundos. Elite enemies will also be Knocked Down for {#} segundos.`,
 		id: 30,
 		maxPoints: 1,
 		values: [ "50", "3", "1.5" ],
@@ -391,7 +391,7 @@ Combo Points increase damage and improve Lucky Hit Chance:
 	"Rapid Fire": {
 		connections: [ "Enhanced Rapid Fire", "Core" ],
 		description: `Energy Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Rapidly fire {#} arrows, each dealing {#}% damage.
 
 Combo Points increase damage and arrows fired:
@@ -417,7 +417,7 @@ Combo Points increase damage and arrows fired:
 	"Advanced Rapid Fire": {
 		baseSkill: "Rapid Fire",
 		connections: [ "Enhanced Rapid Fire" ],
-		description: `Rapid Fire deals x{#}% increased Critical Strike Damage for {#} seconds after you Evade.`,
+		description: `Rapid Fire deals x{#}% increased Critical Strike Damage for {#} segundos after you Evade.`,
 		id: 34,
 		maxPoints: 1,
 		values: [ "30", "3" ],
@@ -437,7 +437,7 @@ Combo Points increase damage and arrows fired:
 	"Barrage": {
 		connections: [ "Enhanced Barrage", "Core" ],
 		description: `Energy Cost: {#}
-Lucky Hit Chance: {#}%
+Chande de Golpe de Sorte: {#}%
 Unleash a barrage of {#} arrows that expands outwards, each dealing {#}% damage. Each arrow has a {#}% chance to ricochet off an enemy up to {#} time. Ricochets deal {#}% of the arrow's Base damage.
 
 Combo Points increase damage and arrows fired:
@@ -472,7 +472,7 @@ Combo Points increase damage and arrows fired:
 	"Improved Barrage": {
 		baseSkill: "Barrage",
 		connections: [ "Enhanced Barrage" ],
-		description: `Every 3rd cast of Barrage makes enemies Vulnerable for {#} seconds.`,
+		description: `Every 3rd cast of Barrage makes enemies Vulnerable for {#} segundos.`,
 		id: 39,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -499,7 +499,7 @@ Combo Points increase damage and arrows fired:
 	},
 	"Stutter Step": {
 		connections: [ "Core" ],
-		description: `Critically Striking an enemy grants +{#}% Movement Speed for {#} seconds.`,
+		description: `Critically Striking an enemy grants +{#}% Movement Speed for {#} segundos.`,
 		id: 42,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "4" ],
@@ -512,10 +512,10 @@ rogueData["Agility"] = {
 	"Shadow Step": {
 		connections: [ "Enhanced Shadow Step", "Agility" ],
 		description: `Charges: {#}
-Charge Cooldown: {#} seconds
-Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Become Unstoppable and quickly move through the shadows to stab your victim from behind for {#}% damage. Gain {#}% increased Movement Speed for {#} seconds afterwards.`,
+Charge Cooldown: {#} segundos
+Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Become Unstoppable and quickly move through the shadows to stab your victim from behind for {#}% damage. Gain {#}% increased Movement Speed for {#} segundos afterwards.`,
 		id: 43,
 		maxPoints: 5,
 		values: [ "9", "", "", "100", "72", "50", "2" ],
@@ -525,7 +525,7 @@ Become Unstoppable and quickly move through the shadows to stab your victim from
 	"Enhanced Shadow Step": {
 		baseSkill: "Shadow Step",
 		connections: [ "Shadow Step", "Methodical Shadow Step", "Disciplined Shadow Step" ],
-		description: `Damaging an enemy with Shadow Step increases your Critical Strike Chance against them by +{#}% for {#} seconds.`,
+		description: `Damaging an enemy with Shadow Step increases your Critical Strike Chance against them by +{#}% for {#} segundos.`,
 		id: 44,
 		maxPoints: 1,
 		values: [ "8", "3" ],
@@ -535,7 +535,7 @@ Become Unstoppable and quickly move through the shadows to stab your victim from
 	"Methodical Shadow Step": {
 		baseSkill: "Shadow Step",
 		connections: [ "Enhanced Shadow Step" ],
-		description: `Enemies damaged by Shadow Step are Stunned for {#} seconds.`,
+		description: `Enemies damaged by Shadow Step are Stunned for {#} segundos.`,
 		id: 45,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -545,7 +545,7 @@ Become Unstoppable and quickly move through the shadows to stab your victim from
 	"Disciplined Shadow Step": {
 		baseSkill: "Shadow Step",
 		connections: [ "Enhanced Shadow Step" ],
-		description: `Shadow Step's Cooldown is reduced by {#} seconds when it damages an enemy you haven't hit with Shadow Step in the last {#} seconds.`,
+		description: `Shadow Step's Cooldown is reduced by {#} segundos when it damages an enemy you haven't hit with Shadow Step in the last {#} segundos.`,
 		id: 46,
 		maxPoints: 1,
 		values: [ "3", "4" ],
@@ -555,8 +555,8 @@ Become Unstoppable and quickly move through the shadows to stab your victim from
 	"Dash": {
 		connections: [ "Enhanced Dash", "Agility" ],
 		description: `Charges: {#}
-Charge Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
+Charge Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
 Dash forward and slash enemies for {#}% damage.`,
 		id: 47,
 		maxPoints: 5,
@@ -567,7 +567,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	"Enhanced Dash": {
 		baseSkill: "Dash",
 		connections: [ "Dash", "Methodical Dash", "Disciplined Dash" ],
-		description: `Enemies damaged by Dash take x{#}% increased Critical Strike Damage from you for {#} seconds.`,
+		description: `Enemies damaged by Dash take x{#}% increased Critical Strike Damage from you for {#} segundos.`,
 		id: 48,
 		maxPoints: 1,
 		values: [ "20", "5" ],
@@ -577,7 +577,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	"Methodical Dash": {
 		baseSkill: "Dash",
 		connections: [ "Enhanced Dash" ],
-		description: `Dealing damage to Crowd Controlled enemies with Dash reduces its Charge Cooldown by {#} seconds, up to {#} seconds per cast.`,
+		description: `Dealing damage to Crowd Controlled enemies with Dash reduces its Charge Cooldown by {#} segundos, up to {#} segundos per cast.`,
 		id: 49,
 		maxPoints: 1,
 		values: [ "0.5", "3" ],
@@ -587,7 +587,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	"Disciplined Dash": {
 		baseSkill: "Dash",
 		connections: [ "Enhanced Dash" ],
-		description: `Dash Slows enemies it hits by {#}% for {#} seconds. Any enemy already Slowed will be Dazed for {#} seconds instead.`,
+		description: `Dash Slows enemies it hits by {#}% for {#} segundos. Any enemy already Slowed will be Dazed for {#} segundos instead.`,
 		id: 50,
 		maxPoints: 1,
 		values: [ "30", "3", "2" ],
@@ -609,7 +609,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	},
 	"Concussive": {
 		connections: [ "Agility", "Trick Attacks" ],
-		description: `After Knocking Back or Knocking Down an enemy, you gain +{#}% increased Critical Strike Chance against them for {#} seconds.`,
+		description: `After Knocking Back or Knocking Down an enemy, you gain +{#}% increased Critical Strike Chance against them for {#} segundos.`,
 		id: 52,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "3" ],
@@ -618,7 +618,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	},
 	"Trick Attacks": {
 		connections: [ "Rapid Gambits", "Concussive" ],
-		description: `When you Critically Strike a Dazed enemy they are Knocked Down for {#} seconds.`,
+		description: `When you Critically Strike a Dazed enemy they are Knocked Down for {#} segundos.`,
 		id: 143,
 		maxPoints: 3,
 		values: [ "{0.5/1/1.5}" ],
@@ -627,7 +627,7 @@ Dash forward and slash enemies for {#}% damage.`,
 	},
 	"Rapid Gambits": {
 		connections: [ "Agility", "Trick Attacks" ],
-		description: `Your Evade Cooldown is reduced by {#} seconds when you Daze an enemy.`,
+		description: `Your Evade Cooldown is reduced by {#} segundos when you Daze an enemy.`,
 		id: 144,
 		maxPoints: 3,
 		values: [ "{0.5/1/1.5}" ],
@@ -637,9 +637,9 @@ Dash forward and slash enemies for {#}% damage.`,
 	"Caltrops": {
 		connections: [ "Enhanced Caltrops", "Agility" ],
 		description: `Charges: {#}
-Charge Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Leap backwards and throw caltrops on the ground, dealing {#}% damage and Slowing enemies by {#}%. Lasts {#} seconds.`,
+Charge Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Leap backwards and throw caltrops on the ground, dealing {#}% damage and Slowing enemies by {#}%. Lasts {#} segundos.`,
 		id: 53,
 		maxPoints: 5,
 		values: [ "2", "12", "25", "30", "50", "6" ],
@@ -699,8 +699,8 @@ Leap backwards and throw caltrops on the ground, dealing {#}% damage and Slowing
 rogueData["Subterfuge"] = {
 	"Smoke Grenade": {
 		connections: [ "Enhanced Smoke Grenade", "Subterfuge" ],
-		description: `Cooldown: {#} seconds
-Throw a smoky concoction at enemies that Dazes them for {#} seconds.`,
+		description: `Cooldown: {#} segundos
+Throw a smoky concoction at enemies that Dazes them for {#} segundos.`,
 		id: 123,
 		maxPoints: 5,
 		values: [ "15", "4" ],
@@ -730,7 +730,7 @@ Throw a smoky concoction at enemies that Dazes them for {#} seconds.`,
 	"Countering Smoke Grenade": {
 		baseSkill: "Smoke Grenade",
 		connections: [ "Enhanced Smoke Grenade" ],
-		description: `Lucky Hit: Dealing direct damage to enemies affected by Smoke Grenade has up to a {#}% chance to reduce its Cooldown by {#} second, or by {#} seconds instead if the enemy is Vulnerable.`,
+		description: `Lucky Hit: Dealing direct damage to enemies affected by Smoke Grenade has up to a {#}% chance to reduce its Cooldown by {#} second, or by {#} segundos instead if the enemy is Vulnerable.`,
 		id: 126,
 		maxPoints: 1,
 		values: [ "25", "1", "2" ],
@@ -739,8 +739,8 @@ Throw a smoky concoction at enemies that Dazes them for {#} seconds.`,
 	},
 	"Concealment": {
 		connections: [ "Subterfuge", "Enhanced Concealment" ],
-		description: `Cooldown: {#} seconds
-Vanish from sight, gaining an advanced form of Stealth for {#} seconds that will not be removed by taking damage.
+		description: `Cooldown: {#} segundos
+Vanish from sight, gaining an advanced form of Stealth for {#} segundos that will not be removed by taking damage.
 
 Concealment also makes you Unstoppable, grants +{#}% Movement Speed, and allows you to move freely through enemies for its duration.
 
@@ -764,7 +764,7 @@ Using an attack Skill during Concealment will break Concealment.`,
 	"Subverting Concealment": {
 		baseSkill: "Concealment",
 		connections: [ "Enhanced Concealment" ],
-		description: `The Skill that breaks Concealment makes enemies Vulnerable for {#} seconds.`,
+		description: `The Skill that breaks Concealment makes enemies Vulnerable for {#} segundos.`,
 		id: 142,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -782,9 +782,9 @@ Using an attack Skill during Concealment will break Concealment.`,
 	},
 	"Poison Trap": {
 		connections: [ "Subterfuge", "Enhanced Poison Trap" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Place a trap that arms after {#} seconds. It activates when an enemy moves within range, applying {#}% Poisoning damage over {#} seconds to enemies in the area.
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Place a trap that arms after {#} segundos. It activates when an enemy moves within range, applying {#}% Poisoning damage over {#} segundos to enemies in the area.
 
 You can have {#} armed traps out at once.`,
 		id: 70,
@@ -796,7 +796,7 @@ You can have {#} armed traps out at once.`,
 	"Enhanced Poison Trap": {
 		baseSkill: "Poison Trap",
 		connections: [ "Poison Trap", "Countering Poison Trap", "Subverting Poison Trap" ],
-		description: `Poison Trap Knocks Down enemies for {#} seconds when it activates.`,
+		description: `Poison Trap Knocks Down enemies for {#} segundos when it activates.`,
 		id: 71,
 		maxPoints: 1,
 		values: [ "1.5" ],
@@ -825,7 +825,7 @@ You can have {#} armed traps out at once.`,
 	},
 	"Dark Shroud": {
 		connections: [ "Enhanced Dark Shroud", "Subterfuge" ],
-		description: `Cooldown: {#} seconds
+		description: `Cooldown: {#} segundos
 Surround yourself with up to {#} protective shadows. Gain {#}% Damage Reduction per active shadow. Each time you take direct damage, that damage is reduced and a shadow is consumed.`,
 		id: 59,
 		maxPoints: 5,
@@ -883,7 +883,7 @@ Surround yourself with up to {#} protective shadows. Gain {#}% Damage Reduction 
 	},
 	"Agile": {
 		connections: [ "Subterfuge", "Mending Obscurity" ],
-		description: `Using a Cooldown increases your Dodge Chance by {#}% for {#} seconds.`,
+		description: `Using a Cooldown increases your Dodge Chance by {#}% for {#} segundos.`,
 		id: 67,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "2" ],
@@ -931,9 +931,9 @@ rogueData["Imbuements"] = {
 	},
 	"Poison Imbuement": {
 		connections: [ "Enhanced Poison Imbuement", "Imbuements" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Imbue your weapons with lethal poison. Your next {#} Imbueable Skills deal Poison damage and apply {#}% of their Base damage as additional Poisoning damage over {#} seconds.`,
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Imbue your weapons with lethal poison. Your next {#} Imbueable Skills deal Poison damage and apply {#}% of their Base damage as additional Poisoning damage over {#} segundos.`,
 		id: 128,
 		maxPoints: 5,
 		values: [ "9", "33", "2", "70", "5" ],
@@ -972,7 +972,7 @@ Imbue your weapons with lethal poison. Your next {#} Imbueable Skills deal Poiso
 	},
 	"Shadow Crash": {
 		connections: [ "Consuming Shadows", "Imbuements" ],
-		description: `Lucky Hit: Shadow damage has up to a {#}% chance to Stun for {#} seconds.`,
+		description: `Lucky Hit: Shadow damage has up to a {#}% chance to Stun for {#} segundos.`,
 		id: 85,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "0.5" ],
@@ -990,9 +990,9 @@ Imbue your weapons with lethal poison. Your next {#} Imbueable Skills deal Poiso
 	},
 	"Shadow Imbuement": {
 		connections: [ "Enhanced Shadow Imbuement", "Imbuements" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Imbue your weapons with festering shadows. Your next {#} Imbueable Skills deal Shadow damage and infect enemies for {#} seconds. Infected enemies explode on death, dealing {#}% damage to all surrounding enemies.
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Imbue your weapons with festering shadows. Your next {#} Imbueable Skills deal Shadow damage and infect enemies for {#} segundos. Infected enemies explode on death, dealing {#}% damage to all surrounding enemies.
 
 If the infection expires before the enemy dies, it will deal {#}% damage to only that enemy.`,
 		id: 132,
@@ -1014,7 +1014,7 @@ If the infection expires before the enemy dies, it will deal {#}% damage to only
 	"Mixed Shadow Imbuement": {
 		baseSkill: "Shadow Imbuement",
 		connections: [ "Enhanced Shadow Imbuement" ],
-		description: `Enemies damaged by Shadow Imbued Skills take x{#}% increased Non-Physical damage from you for {#} seconds.`,
+		description: `Enemies damaged by Shadow Imbued Skills take x{#}% increased Non-Physical damage from you for {#} segundos.`,
 		id: 134,
 		maxPoints: 1,
 		values: [ "12", "8" ],
@@ -1024,7 +1024,7 @@ If the infection expires before the enemy dies, it will deal {#}% damage to only
 	"Blended Shadow Imbuement": {
 		baseSkill: "Shadow Imbuement",
 		connections: [ "Enhanced Shadow Imbuement" ],
-		description: `Shadow Imbuement's primary explosion makes enemies Vulnerable for {#} seconds.`,
+		description: `Shadow Imbuement's primary explosion makes enemies Vulnerable for {#} segundos.`,
 		id: 135,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -1033,7 +1033,7 @@ If the infection expires before the enemy dies, it will deal {#}% damage to only
 	},
 	"Cold Imbuement": {
 		connections: [ "Enhanced Cold Imbuement", "Imbuements" ],
-		description: `Cooldown: {#} seconds
+		description: `Cooldown: {#} segundos
 Imbue your weapons with frigid energies. Your next {#} Imbueable Skills deal Cold damage and Chill enemies for {#}% per hit.`,
 		id: 136,
 		maxPoints: 5,
@@ -1044,7 +1044,7 @@ Imbue your weapons with frigid energies. Your next {#} Imbueable Skills deal Col
 	"Enhanced Cold Imbuement": {
 		baseSkill: "Cold Imbuement",
 		connections: [ "Cold Imbuement", "Mixed Cold Imbuement", "Blended Cold Imbuement" ],
-		description: `Lucky Hit: Cold Imbued Skills have up to a {#}% chance to make enemies Vulnerable for {#} seconds.`,
+		description: `Lucky Hit: Cold Imbued Skills have up to a {#}% chance to make enemies Vulnerable for {#} segundos.`,
 		id: 137,
 		maxPoints: 1,
 		values: [ "30", "3" ],
@@ -1064,7 +1064,7 @@ Imbue your weapons with frigid energies. Your next {#} Imbueable Skills deal Col
 	"Blended Cold Imbuement": {
 		baseSkill: "Cold Imbuement",
 		connections: [ "Enhanced Cold Imbuement" ],
-		description: `Lucky Hit: Critical Strikes with Cold Imbued Skills have up to a {#}% chance to instantly Freeze enemies for {#} seconds.`,
+		description: `Lucky Hit: Critical Strikes with Cold Imbued Skills have up to a {#}% chance to instantly Freeze enemies for {#} segundos.`,
 		id: 139,
 		maxPoints: 1,
 		values: [ "20", "3" ],
@@ -1112,7 +1112,7 @@ rogueData["Ultimate"] = {
 	},
 	"Alchemist's Fortune": {
 		connections: [ "Innervation" ],
-		description: `Non-Physical damage you deal has a +{#}% increased Lucky Hit Chance.`,
+		description: `Non-Physical damage you deal has a +{#}% increased Chande de Golpe de Sorte.`,
 		id: 103,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
@@ -1121,7 +1121,7 @@ rogueData["Ultimate"] = {
 	},
 	"Second Wind": {
 		connections: [ "Innervation" ],
-		description: `Every {#} Energy you spend grants you +{#}% increased Lucky Hit Chance for {#} seconds.`,
+		description: `Every {#} Energy you spend grants you +{#}% increased Chande de Golpe de Sorte for {#} segundos.`,
 		id: 102,
 		maxPoints: 3,
 		values: [ "100", "{5/10/15}", "5" ],
@@ -1130,8 +1130,8 @@ rogueData["Ultimate"] = {
 	},
 	"Shadow Clone": {
 		connections: [ "Prime Shadow Clone", "Ultimate" ],
-		description: `Cooldown: {#} seconds
-Your shadow mimicks your actions for {#} seconds.
+		description: `Cooldown: {#} segundos
+Your shadow mimicks your actions for {#} segundos.
 The shadow deals {#}% of your damage.`,
 		id: 104,
 		maxPoints: 1,
@@ -1142,7 +1142,7 @@ The shadow deals {#}% of your damage.`,
 	"Prime Shadow Clone": {
 		baseSkill: "Shadow Clone",
 		connections: [ "Shadow Clone", "Supreme Shadow Clone" ],
-		description: `You are Unstoppable for {#} seconds after casting Shadow Clone.`,
+		description: `You are Unstoppable for {#} segundos after casting Shadow Clone.`,
 		id: 105,
 		maxPoints: 1,
 		values: [ "5" ],
@@ -1169,9 +1169,9 @@ The shadow deals {#}% of your damage.`,
 	},
 	"Death Trap": {
 		connections: [ "Prime Death Trap", "Ultimate" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Place a trap that arms after {#} seconds. It activates when an enemy moves within range, dealing a total of {#}% damage to each enemy in the area.`,
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Place a trap that arms after {#} segundos. It activates when an enemy moves within range, dealing a total of {#}% damage to each enemy in the area.`,
 		id: 108,
 		maxPoints: 1,
 		values: [ "45", "40", "1.25", "250" ],
@@ -1190,7 +1190,7 @@ Place a trap that arms after {#} seconds. It activates when an enemy moves withi
 	"Supreme Death Trap": {
 		baseSkill: "Death Trap",
 		connections: [ "Prime Death Trap" ],
-		description: `If Death Trap kills an enemy, its Cooldown is reduced by {#} seconds.`,
+		description: `If Death Trap kills an enemy, its Cooldown is reduced by {#} segundos.`,
 		id: 110,
 		maxPoints: 1,
 		values: [ "10" ],
@@ -1199,7 +1199,7 @@ Place a trap that arms after {#} seconds. It activates when an enemy moves withi
 	},
 	"Trap Mastery": {
 		connections: [ "Ultimate" ],
-		description: `When Poison Trap or Death Trap activates, you gain +{#}% increased Critical Strike Chance against Vulnerable and Crowd Controlled enemies for {#} seconds.`,
+		description: `When Poison Trap or Death Trap activates, you gain +{#}% increased Critical Strike Chance against Vulnerable and Crowd Controlled enemies for {#} segundos.`,
 		id: 111,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "4" ],
@@ -1208,8 +1208,8 @@ Place a trap that arms after {#} seconds. It activates when an enemy moves withi
 	},
 	"Rain of Arrows": {
 		connections: [ "Prime Rain of Arrows", "Ultimate" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
 Arrows rain down over a large area {#} times, each wave dealing {#}% damage.`,
 		id: 112,
 		maxPoints: 1,
@@ -1230,7 +1230,7 @@ Arrows rain down over a large area {#} times, each wave dealing {#}% damage.`,
 	"Supreme Rain of Arrows": {
 		baseSkill: "Rain of Arrows",
 		connections: [ "Prime Rain of Arrows" ],
-		description: `Rain of Arrows' second wave Knocks Down enemies for {#} seconds.`,
+		description: `Rain of Arrows' second wave Knocks Down enemies for {#} segundos.`,
 		id: 114,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -1269,7 +1269,7 @@ Arrows rain down over a large area {#} times, each wave dealing {#}% damage.`,
 rogueData["Capstone"] = {
 	"Momentum": {
 		connections: [ "Capstone" ],
-		description: `Cutthroat Skills grant a stack of Momentum for {#} seconds if they either:
+		description: `Cutthroat Skills grant a stack of Momentum for {#} segundos if they either:
  Hit a Stunned, Dazed, or Frozen enemy
  Hit any enemy from behind
 
@@ -1285,7 +1285,7 @@ While at {#} stacks of Momentum you gain:
 	},
 	"Close Quarters Combat": {
 		connections: [ "Capstone" ],
-		description: `Damaging a Close enemy with Marksman or Cutthroat Skills each grant a +{#}% Attack Speed bonus for {#} seconds.
+		description: `Damaging a Close enemy with Marksman or Cutthroat Skills each grant a +{#}% Attack Speed bonus for {#} segundos.
 
 While both Attack Speed bonuses are active, you deal x{#}% increased damage against Crowd Controlled enemies.`,
 		id: 119,
@@ -1307,7 +1307,7 @@ While both Attack Speed bonuses are active, you deal x{#}% increased damage agai
 		connections: [ "Capstone" ],
 		description: `Lucky Hit: Dealing direct damage to an enemy affected by a Trap Skill has up to a {#}% chance to:
  Reduce the active Cooldowns of your Trap Skills by {#}%
- Drop a cluster of exploding Stun Grenades that deal {#}% total Physical damage and Stun enemies for {#} seconds.`,
+ Drop a cluster of exploding Stun Grenades that deal {#}% total Physical damage and Stun enemies for {#} segundos.`,
 		id: 121,
 		maxPoints: 1,
 		values: [ "25", "20", "40", "0.50" ],

@@ -4232,11 +4232,11 @@ let paragonData = {
 		"Node": {
 			"Barbarian_Legendary_002": {
 				"name": "Hemorrhage",
-				"description": "Enemies that have been affected by your Bleeding for {#} or more seconds take x{#}% increased damage from you."
+				"description": "Enemies that have been affected by your Bleeding for {#} or more segundos take x{#}% increased damage from you."
 			},
 			"Barbarian_Legendary_004": {
 				"name": "Blood Rage",
-				"description": "Killing a Bleeding enemy has {#}% chance to grant Berserking for {#} seconds."
+				"description": "Killing a Bleeding enemy has {#}% chance to grant Berserking for {#} segundos."
 			},
 			"Barbarian_Legendary_005": {
 				"name": "Natural Leader",
@@ -4244,7 +4244,7 @@ let paragonData = {
 			},
 			"Barbarian_Legendary_009": {
 				"name": "Carnage",
-				"description": "While Berserking, Critical Strikes increase your Attack Speed by +{#}%, up to +{#}%, for {#} seconds."
+				"description": "While Berserking, Critical Strikes increase your Attack Speed by +{#}%, up to +{#}%, for {#} segundos."
 			},
 			"Barbarian_Legendary_011": {
 				"name": "Warbinger",
@@ -4252,15 +4252,15 @@ let paragonData = {
 			},
 			"Barbarian_Legendary_014": {
 				"name": "Decimator",
-				"description": "Lucky Hit: Two-Handed Slashing Weapon attacks have up to a {#}% chance to make enemies Vulnerable for {#} seconds."
+				"description": "Lucky Hit: Two-Handed Slashing Weapon attacks have up to a {#}% chance to make enemies Vulnerable for {#} segundos."
 			},
 			"Barbarian_Legendary_015": {
 				"name": "Bone Breaker",
-				"description": "Overpowers with your Two-Handed Bludgeoning Weapon Stun enemies for {#} seconds and grant you {#}% of your Maximum Life ({#}) as Fortify."
+				"description": "Overpowers with your Two-Handed Bludgeoning Weapon Stun enemies for {#} segundos and grant you {#}% of your Maximum Life ({#}) as Fortify."
 			},
 			"Barbarian_Legendary_016": {
 				"name": "Flawless Technique",
-				"description": "Damaging enemies with One-Handed Weapons increases your Critical Strike chance by x{#}% for {#} seconds, up to x{#}%. This can only happen once per Skill cast, or twice per second while channeling Whirlwind."
+				"description": "Damaging enemies with One-Handed Weapons increases your Critical Strike chance by x{#}% for {#} segundos, up to x{#}%. This can only happen once per Skill cast, or twice per second while channeling Whirlwind."
 			},
 			"Barbarian_Legendary_017": {
 				"name": "Weapons Master",
@@ -6456,7 +6456,7 @@ let paragonData = {
 					"Generic_Normal_Will",
 					"Generic_Normal_Will",
 					"Generic_Magic_AttackSpeed",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_Espirito",
 					"",
 					"",
 					""
@@ -6480,7 +6480,7 @@ let paragonData = {
 					"",
 					"Generic_Magic_AttackSpeed",
 					"Druid_Rare_024",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_Espirito",
 					"",
 					""
 				],
@@ -8230,7 +8230,7 @@ let paragonData = {
 					"Generic_Normal_Str",
 					"",
 					"",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_Espirito",
 					"",
 					"",
 					"",
@@ -8275,8 +8275,8 @@ let paragonData = {
 					"",
 					"Generic_Normal_Will",
 					"",
-					"Druid_Magic_Spirit",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_Espirito",
+					"Druid_Magic_Espirito",
 					"Generic_Magic_HPPercent",
 					"Generic_Normal_Will",
 					"Generic_Normal_Will",
@@ -8326,7 +8326,7 @@ let paragonData = {
 					"",
 					"",
 					"",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_Espirito",
 					"",
 					"Generic_Normal_Will",
 					"Generic_Normal_Will",
@@ -8349,7 +8349,7 @@ let paragonData = {
 					"",
 					"",
 					"Druid_Rare_017",
-					"Druid_Magic_SpiritOnKill",
+					"Druid_Magic_EspiritonKill",
 					"",
 					"Generic_Normal_Int",
 					"Generic_Normal_Will",
@@ -8363,16 +8363,16 @@ let paragonData = {
 					"",
 					"Generic_Normal_Will",
 					"Druid_Magic_DamageCore",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"Druid_Magic_DamageCore",
 					"",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Will",
 					"Generic_Normal_Str",
-					"Druid_Magic_SpiritOnKill",
-					"Druid_Magic_Spirit",
-					"Druid_Magic_Spirit",
+					"Druid_Magic_EspiritonKill",
+					"Druid_Magic_Espirito",
+					"Druid_Magic_Espirito",
 					"Generic_Normal_Int",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Dex",
@@ -8387,7 +8387,7 @@ let paragonData = {
 					"",
 					"",
 					"",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"",
 					"",
 					"",
@@ -8579,7 +8579,7 @@ let paragonData = {
 			},
 			"Druid_Legendary_010": {
 				"name": "Lust for Carnage",
-				"description": "Critical Strikes with Werewolf Skills restore {#} Spirit."
+				"description": "Critical Strikes with Werewolf Skills restore {#} Espirito."
 			},
 			"Druid_Legendary_012": {
 				"name": "Heightened Malice",
@@ -8587,15 +8587,15 @@ let paragonData = {
 			},
 			"Druid_Legendary_013": {
 				"name": "Inner Beast",
-				"description": "After shapeshifting, your Spirit costs are reduced by {#}% for {#} seconds, up to {#}%."
+				"description": "After shapeshifting, your Espirito costs are reduced by {#}% for {#} segundos, up to {#}%."
 			},
 			"Druid_Legendary_017": {
 				"name": "Constricting Tendrils",
-				"description": "Lucky Hit: Nature Magic Skills have up to a {#}% chance to entangle the enemy with vines, Immobilizing them for {#} seconds and Poisoning them for {#}% of the Base damage dealt over {#} seconds."
+				"description": "Lucky Hit: Nature Magic Skills have up to a {#}% chance to entangle the enemy with vines, Immobilizing them for {#} segundos and Poisoning them for {#}% of the Base damage dealt over {#} segundos."
 			},
 			"Druid_Legendary_018": {
 				"name": "Ancestral Guidance",
-				"description": "After spending {#} Spirit, you deal x{#}% increased damage for {#} seconds."
+				"description": "After spending {#} Espirito, you deal x{#}% increased damage for {#} segundos."
 			},
 			"Druid_Rare_003": {
 				"name": "Stormcaller"
@@ -8622,7 +8622,7 @@ let paragonData = {
 				"name": "Devastation"
 			},
 			"Druid_Rare_013": {
-				"name": "Spiritual Power"
+				"name": "Espiritoual Power"
 			},
 			"Druid_Rare_014": {
 				"name": "Grizzly"
@@ -13172,7 +13172,7 @@ let paragonData = {
 			},
 			"Necromancer_Legendary_008": {
 				"name": "Flesh-eater",
-				"description": "Consuming {#} Corpses grants x{#}% increased damage for {#} seconds."
+				"description": "Consuming {#} Corpses grants x{#}% increased damage for {#} segundos."
 			},
 			"Necromancer_Legendary_010": {
 				"name": "Bloodbath",
@@ -13180,7 +13180,7 @@ let paragonData = {
 			},
 			"Necromancer_Legendary_011": {
 				"name": "Blood Begets Blood",
-				"description": "Blood Orbs grant x{#}% increased damage, up to x{#}%, for {#} seconds."
+				"description": "Blood Orbs grant x{#}% increased damage, up to x{#}%, for {#} segundos."
 			},
 			"Necromancer_Legendary_016": {
 				"name": "Wither",
@@ -13188,7 +13188,7 @@ let paragonData = {
 			},
 			"Necromancer_Legendary_017": {
 				"name": "Bone Graft",
-				"description": "Hitting enemies with Bone Skills increases your damage by x{#}% and your Maximum Essence by {#} for {#} seconds, stacks up to x{#}% increased damage and {#} Maximum Essence."
+				"description": "Hitting enemies with Bone Skills increases your damage by x{#}% and your Maximum Essence by {#} for {#} segundos, stacks up to x{#}% increased damage and {#} Maximum Essence."
 			},
 			"Necromancer_Rare_001": {
 				"name": "Shaper of Bone"
@@ -17183,7 +17183,7 @@ let paragonData = {
 					"Generic_Normal_Dex",
 					"",
 					"Rogue_Rare_011",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"",
 					"",
 					"",
@@ -17207,7 +17207,7 @@ let paragonData = {
 					"",
 					"Druid_Magic_DamageCore",
 					"Druid_Magic_DamageCore",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Str",
@@ -17271,7 +17271,7 @@ let paragonData = {
 					"Generic_Normal_Str",
 					"",
 					"Rogue_Rare_014",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"Generic_Normal_Dex",
 					"Generic_Normal_Str",
 					"",
@@ -17292,9 +17292,9 @@ let paragonData = {
 					"",
 					"",
 					"Generic_Normal_Dex",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"Generic_Magic_Damage",
-					"Druid_Magic_DamageBasic",
+					"Druid_Magic_DamageBasico",
 					"",
 					"Generic_Normal_Int",
 					"Generic_Normal_Int",
@@ -17497,7 +17497,7 @@ let paragonData = {
 		"Node": {
 			"Rogue_Legendary_002": {
 				"name": "Eldritch Bounty",
-				"description": "When you attack with an Imbued Skill you gain {#}% Resistance and x{#}% increased damage for that Imbuement's element for {#} seconds."
+				"description": "When you attack with an Imbued Skill you gain {#}% Resistance and x{#}% increased damage for that Imbuement's element for {#} segundos."
 			},
 			"Rogue_Legendary_006": {
 				"name": "Tricks of the Trade",
@@ -17513,15 +17513,15 @@ let paragonData = {
 			},
 			"Rogue_Legendary_009": {
 				"name": "Leyrana's Instinct",
-				"description": "When Inner Sight's gauge becomes full, you gain +{#}% Dodge Chance for {#} seconds."
+				"description": "When Inner Sight's gauge becomes full, you gain +{#}% Dodge Chance for {#} segundos."
 			},
 			"Rogue_Legendary_010": {
 				"name": "Exploit Weakness",
-				"description": "Whenever you deal damage to a Vulnerable enemy, they take x{#}% increased damage from you for {#} seconds, up to x{#}%."
+				"description": "Whenever you deal damage to a Vulnerable enemy, they take x{#}% increased damage from you for {#} segundos, up to x{#}%."
 			},
 			"Rogue_Legendary_011": {
 				"name": "No Witnesses",
-				"description": "Your Ultimate Skills deal x{#}% increased damage and grant you x{#}% increased damage for {#} seconds when cast."
+				"description": "Your Ultimate Skills deal x{#}% increased damage and grant you x{#}% increased damage for {#} segundos when cast."
 			},
 			"Rogue_Legendary_012": {
 				"name": "Cunning Stratagem",
@@ -21805,15 +21805,15 @@ let paragonData = {
 			},
 			"Sorcerer_Legendary_002": {
 				"name": "Searing Heat",
-				"description": "Casting Fireball or Meteor increases the Critical Strike Chance of further casts of that Skill by +{#}% for {#} seconds, up to +{#}%. Additional stacks do not refresh this timer."
+				"description": "Casting Fireball or Meteor increases the Critical Strike Chance of further casts of that Skill by +{#}% for {#} segundos, up to +{#}%. Additional stacks do not refresh this timer."
 			},
 			"Sorcerer_Legendary_005": {
 				"name": "Frigid Fate",
-				"description": "Dealing Cold Damage to Vulnerable enemies increases your Lucky Hit Chance by +{#}% for {#} seconds, up to +{#}%."
+				"description": "Dealing Cold Damage to Vulnerable enemies increases your Chande de Golpe de Sorte by +{#}% for {#} segundos, up to +{#}%."
 			},
 			"Sorcerer_Legendary_006": {
 				"name": "Icefall",
-				"description": "Killing a Frozen enemy grants you {#}% of your Maximum Life as a Barrier ({#}) for {#} seconds."
+				"description": "Killing a Frozen enemy grants you {#}% of your Maximum Life as a Barrier ({#}) for {#} segundos."
 			},
 			"Sorcerer_Legendary_007": {
 				"name": "Static Surge",
