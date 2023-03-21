@@ -1,30 +1,30 @@
 let druidData = {};
 
 druidData["Trunk Data"] = {
-	"Basic": {
-		connections: [ "Spirit" ],
+	"Basico": {
+		connections: [ "Espírito" ],
 		x: 0,
 		y: 0
 	},
-	"Spirit": {
-		connections: [ "Defensive" ],
+	"Espírito": {
+		connections: [ "Defensiva" ],
 		requiredPoints: 2,
 		x: -1196.614,
 		y: 616.14
 	},
-	"Defensive": {
-		connections: [ "Companion" ],
+	"Defensiva": {
+		connections: [ "Pet" ],
 		requiredPoints: 6,
 		x: 506.001,
 		y: 1514.89
 	},
-	"Companion": {
-		connections: [ "Wrath" ],
+	"Pet": {
+		connections: [ "Furia" ],
 		requiredPoints: 11,
 		x: -1199.644,
 		y: 2443.636
 	},
-	"Wrath": {
+	"Furia": {
 		connections: [ "Ultimate" ],
 		requiredPoints: 16,
 		x: 505.396,
@@ -41,214 +41,214 @@ druidData["Trunk Data"] = {
 		x: -12.662,
 		y: 4864.15
 	},
-	"Spirit Boons": {
+	"Dadivas Espirituais": {
 		x: 2500,
 		y: 0
 	},
 };
 
-druidData["Basic"] = {
-	"Earth Spike": {
-		connections: [ "Basic", "Enhanced Earth Spike" ],
-		description: `Cooldown: {#} seconds
-Generate Spirit: {#}
-Lucky Hit Chance: {#}%
-Sunder the earth, impaling the first enemy hit for {#}% damage.`,
+druidData["Basico"] = {
+	"Pico da Terra": {
+		connections: [ "Basico", "Pico da Terra Melhorado" ],
+		description: `Cooldown: {#} segundos
+Espírito Gerado: {#}
+Chande de Golpe de Sorte: {#}%
+Divida a terra, empalando o primeiro inimigo atingido por {#}% de dano.`,
 		id: 162,
 		maxPoints: 5,
 		values: [ "", "", "", "" ],
 		x: -409.637,
 		y: -122.635
 	},
-	"Enhanced Earth Spike": {
-		baseSkill: "Earth Spike",
-		connections: [ "Earth Spike", "Wild Earth Spike", "Fierce Earth Spike" ],
-		description: `Earth Spike has a {#}% chance to Stun for {#} seconds.`,
+	"Pico da Terra Melhorado": {
+		baseSkill: "Pico da Terra",
+		connections: [ "Pico da Terra", "Pico da Terra Selvagem", "Pico da Terra Feroz" ],
+		description: `Pico da Terra tem {#}% de chance para Paralizar por {#} segundos.`,
 		id: 163,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -718.25,
 		y: -217.87
 	},
-	"Wild Earth Spike": {
-		baseSkill: "Earth Spike",
-		connections: [ "Enhanced Earth Spike" ],
-		description: `Summon a second Earth Spike when hitting an Immobilized or Stunned enemy.`,
+	"Pico da Terra Selvagem": {
+		baseSkill: "Pico da Terra",
+		connections: [ "Pico da Terra Melhorado" ],
+		description: `Usa um segundo Pico da Terra quando acertar um inimigo Imobilizado ou Paralizado.`,
 		id: 164,
 		maxPoints: 1,
 		x: -741.72,
 		y: -341.93
 	},
-	"Fierce Earth Spike": {
-		baseSkill: "Earth Spike",
-		connections: [ "Enhanced Earth Spike" ],
-		description: `Fortify for {#}% of your Base Life ({#}) whenever Earth Spike damages enemies who are Stunned, Immobilized, or Knocked Back.`,
+	"Pico da Terra Feroz": {
+		baseSkill: "Pico da Terra",
+		connections: [ "Pico da Terra Melhorado" ],
+		description: `Fortifica por {#}% da sua Vida Base ({#}) sempre que o Pico da Terra acertar inimigos Paralizados, Imobilizados ou Derrubados.`,
 		id: 165,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -948.965,
 		y: -208.475
 	},
-	"Maul": {
-		connections: [ "Basic", "Enhanced Maul" ],
-		description: `Generate Spirit: {#}
-Lucky Hit Chance: {#}%
-Shapeshift into a Werebear and maul enemies in front of you, dealing {#}% damage.`,
+	"Espancar": {
+		connections: [ "Basico", "Espancar Melhorado" ],
+		description: `Espírito Gerado: {#}
+Chande de Golpe de Sorte: {#}%
+Se transforma em um Urso e ataca os inimos a sua frente, infligindo {#}% de dano.`,
 		id: 4,
 		maxPoints: 5,
 		values: [ "11", "33", "21" ],
 		x: 376.573,
 		y: 153.87
 	},
-	"Enhanced Maul": {
-		baseSkill: "Maul",
-		connections: [ "Maul", "Wild Maul", "Fierce Maul" ],
-		description: `If an enemy is hit by Maul, then Fortify for {#}% of your Base Life ({#}).`,
+	"Espancar Melhorado": {
+		baseSkill: "Espancar",
+		connections: [ "Espancar", "Espancar Selvagem", "Espancar Feroz" ],
+		description: `Se um inimigo for atingido por Espancar, Fortifica em {#}% da sua Vida Base({#}).`,
 		id: 5,
 		maxPoints: 1,
 		values: [ "0.64", "" ],
 		x: 662.861,
 		y: 275.905
 	},
-	"Wild Maul": {
-		baseSkill: "Maul",
-		connections: [ "Enhanced Maul" ],
-		description: `Maul has a {#}% chance to Knock Down enemies for {#} seconds.`,
+	"Espancar Selvagem": {
+		baseSkill: "Espancar",
+		connections: [ "Espancar Melhorado" ],
+		description: `Espancar tem {#}% de chance para Derrubar inimigos por {#} segundos.`,
 		id: 6,
 		maxPoints: 1,
 		values: [ "15", "2" ],
 		x: 693.195,
 		y: 399.79
 	},
-	"Fierce Maul": {
-		baseSkill: "Maul",
-		connections: [ "Enhanced Maul" ],
-		description: `Increases the range and radius of Maul by {#}%.`,
+	"Espancar Feroz": {
+		baseSkill: "Espancar",
+		connections: [ "Espancar Melhorado" ],
+		description: `Aumenta o alcance de Espancar por {#}%.`,
 		id: 7,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 902.52,
 		y: 279.665
 	},
-	"Wind Shear": {
-		connections: [ "Basic", "Enhanced Wind Shear" ],
-		description: `Generate Spirit: {#}
-Lucky Hit Chance: {#}%
-Conjure a piercing blade of wind, dealing {#}% damage.`,
+	"Corte de Vento": {
+		connections: [ "Basico", "Corte de Vento Melhorado" ],
+		description: `Espírito Gerado: {#}
+Chande de Golpe de Sorte: {#}%
+Conjura uma espada de vento, infligindo {#}% de dano.`,
 		id: 8,
 		maxPoints: 5,
 		values: [ "12", "33", "17.85" ],
 		x: -114.365,
 		y: -239.92
 	},
-	"Enhanced Wind Shear": {
-		baseSkill: "Wind Shear",
-		connections: [ "Wind Shear", "Fierce Wind Shear", "Wild Wind Shear" ],
-		description: `Wind Shear has a {#}% chance to make enemies Vulnerable for {#} seconds.`,
+	"Corte de Vento Melhorado": {
+		baseSkill: "Corte de Vento",
+		connections: [ "Corte de Vento", "Corte de Vento Feroz", "Corte de Vento Selvagem" ],
+		description: `Corte de VEnto tem {#}% de chance para tornar inimigos Vulneráveis por {#} segundos.`,
 		id: 9,
 		maxPoints: 1,
 		values: [ "35", "4" ],
 		x: -198.861,
 		y: -426.135
 	},
-	"Fierce Wind Shear": {
-		baseSkill: "Wind Shear",
-		connections: [ "Enhanced Wind Shear" ],
-		description: `Each enemy hit by Wind Shear increases your Movement Speed by +{#}% for {#} seconds, up to +{#}%.`,
+	"Corte de Vento Feroz": {
+		baseSkill: "Corte de Vento",
+		connections: [ "Corte de Vento Melhorado " ],
+		description: `Cada inimigo atingido por Corte de Vento aumenta sua Velocidade de Movimento em +{#}% por {#} segundos, até +{#}%.`,
 		id: 10,
 		maxPoints: 1,
 		values: [ "5", "3", "20" ],
 		x: -396.793,
 		y: -516.16
 	},
-	"Wild Wind Shear": {
-		baseSkill: "Wind Shear",
-		connections: [ "Enhanced Wind Shear" ],
-		description: `Wind Shear grants {#} additional Spirit for each enemy hit beyond the first.`,
+	"Corte de Vento Selvagem": {
+		baseSkill: "Corte de Vento",
+		connections: [ "Melhorado Corte de Vento" ],
+		description: `Corte de Vento arante {#} de Espírito adicional para cada inimigo atingido além do primeiro.`,
 		id: 11,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -107.221,
 		y: -552.75
 	},
-	"Storm Strike": {
-		connections: [ "Basic", "Enhanced Storm Strike" ],
-		description: `Generate Spirit: {#}
-Lucky Hit Chance: {#}%
-Electricity gathers around your weapon, dealing {#}% damage to your target and chaining to up to {#} surrounding enemies, dealing {#}% less damage each time it chains.
+	"Ataque de Tempestade": {
+		connections: [ "Basico", "Ataque de Tempestade Melhorado" ],
+		description: `Espírito Gerado: {#}
+Chande de Golpe de Sorte: {#}%
+Reune eletricinadae na sua arma, infligindo {#}% de dano no seu alvo e encadeando para {#} inimigos ao redor, infligindo {#}% menos dano cada vez que encadeia.
 
-You gain {#}% Damage Reduction for {#} seconds after dealing damage with Storm Strike.`,
+Você ganha {#}% de Reducao de Dano por {#} segundos depois que infligir dano com Ataque de Tempestade.`,
 		id: 12,
 		maxPoints: 5,
 		values: [ "15", "25", "28.35", "", "", "25", "3" ],
 		x: 276.665,
 		y: -215.355
 	},
-	"Enhanced Storm Strike": {
-		baseSkill: "Storm Strike",
-		connections: [ "Storm Strike", "Fierce Storm Strike", "Wild Storm Strike" ],
-		description: `Storm Strike has a {#}% chance to Immobilize all enemies hit for {#} seconds.`,
+	"Ataque de Tempestade Melhorado": {
+		baseSkill: "Ataque de Tempestade",
+		connections: [ "Ataque de Tempestade", "Ataque de Tempestade Feroz", "Ataque de Tempestade Selvagem" ],
+		description: `Ataque de Tempestade pussui {#}% de chance para Immobilizar todos inimigos acertados por {#} segundos.`,
 		id: 13,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: 481.829,
 		y: -372.805
 	},
-	"Fierce Storm Strike": {
-		baseSkill: "Storm Strike",
-		connections: [ "Enhanced Storm Strike" ],
-		description: `Storm Strike has a {#}% chance to make enemies Vulnerable for {#} seconds.`,
+	"Ataque de Tempestade Feroz": {
+		baseSkill: "Ataque de Tempestade",
+		connections: [ "Ataque de Tempestade Melhorado" ],
+		description: `Ataque de Tempestade possui {#}% de chance para tornar inimigos Vulneráveis por {#} segundos.`,
 		id: 14,
 		maxPoints: 1,
 		values: [ "50", "3" ],
 		x: 471.808,
 		y: -509.25
 	},
-	"Wild Storm Strike": {
-		baseSkill: "Storm Strike",
-		connections: [ "Enhanced Storm Strike" ],
-		description: `Storm Strike chains to {#} additional targets.`,
+	"Ataque de Tempestade Selvagem": {
+		baseSkill: "Ataque de Tempestade",
+		connections: [ "Melhorado Ataque de Tempestade" ],
+		description: `Ataque de Tempestade encadeira para {#} alvos adicionais.`,
 		id: 15,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 738.505,
 		y: -381.855
 	},
-	"Claw": {
-		connections: [ "Basic", "Enhanced Claw" ],
-		description: `Generate Spirit: {#}
-Lucky Hit Chance: {#}%
-Shapeshift into a Werewolf and claw at an enemy for {#}% damage.`,
+	"Garra": {
+		connections: [ "Basico", "Garra Melhorada" ],
+		description: `Espírito Gerado: {#}
+Chande de Golpe de Sorte: {#}%
+Se transforma em um lobo e ataca um inimigo com {#}% de dano.`,
 		id: 16,
 		maxPoints: 5,
 		values: [ "9", "50", "21" ],
 		x: 499.625,
 		y: -41.135
 	},
-	"Enhanced Claw": {
-		baseSkill: "Claw",
-		connections: [ "Claw", "Fierce Claw", "Wild Claw" ],
-		description: `Claw's Attack Speed is increased by +{#}%.`,
+	"Garra Melhorada": {
+		baseSkill: "Garra",
+		connections: [ "Garra", "Garra Feroz", "Garra Selvagem" ],
+		description: `A velocidade de ataque da Garra é aumentada em +{#}%.`,
 		id: 17,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: 865.42,
 		y: -70.405
 	},
-	"Fierce Claw": {
-		baseSkill: "Claw",
-		connections: [ "Enhanced Claw" ],
-		description: `Claw applies {#}% Poisoning damage over {#} seconds.`,
+	"Garra Feroz": {
+		baseSkill: "Garra",
+		connections: [ "Garra Melhorada" ],
+		description: `Garra aplica {#}% dano de Veneno por {#} segundos.`,
 		id: 18,
 		maxPoints: 1,
 		values: [ "", "3" ],
 		x: 1070.101,
 		y: -2.05
 	},
-	"Wild Claw": {
-		baseSkill: "Claw",
-		connections: [ "Enhanced Claw" ],
-		description: `Claw has a {#}% chance to attack twice.`,
+	"Garra Selvagem": {
+		baseSkill: "Garra",
+		connections: [ "Garra Melhorada" ],
+		description: `Garra tem {#}% de chance para acertar duas vezes.`,
 		id: 19,
 		maxPoints: 1,
 		values: [ "10" ],
@@ -257,82 +257,82 @@ Shapeshift into a Werewolf and claw at an enemy for {#}% damage.`,
 	},
 };
 
-druidData["Spirit"] = {
-	"Landslide": {
-		connections: [ "Spirit", "Enhanced Landslide" ],
-		description: `Spirit Cost: {#}
-Lucky Hit Chance: {#}%
-Crush enemies between 2 pillars of earth, dealing up to {#}% damage.`,
+druidData["Espírito"] = {
+	"Desmoronamento": {
+		connections: [ "Espírito", "Desmoronamento Melhorado" ],
+		description: `Custo de Espírito: {#}
+Chande de Golpe de Sorte: {#}%
+Esmaga inimigos entre 2 pilares de terra, infligindo até {#}% de dano.`,
 		id: 20,
 		maxPoints: 5,
 		values: [ "30", "20", "78.75" ],
 		x: 527.495,
 		y: -1.355
 	},
-	"Enhanced Landslide": {
-		baseSkill: "Landslide",
-		connections: [ "Landslide", "Raging Landslide", "Primal Landslide" ],
-		description: `After Landslide damages enemies {#} times, the next hit will Immobilize enemies for {#} seconds.`,
+	"Desmoronamento Melhorado": {
+		baseSkill: "Desmoronamento",
+		connections: [ "Desmoronamento", "Desmoronamento Furioso", "Desmoronamento Primitivo" ],
+		description: `Depois que Desmoronamento acertar inimigos {#} vezes, o próximo acerto vai Imobilizar os inimigos por {#} segundos.`,
 		id: 21,
 		maxPoints: 1,
 		values: [ "", "3" ],
 		x: 925.578,
 		y: -2.315
 	},
-	"Raging Landslide": {
-		baseSkill: "Landslide",
-		connections: [ "Enhanced Landslide" ],
-		description: `When you strike an Immobilized or Stunned enemy with Landslide, an additional pillar of earth is formed.`,
+	"Desmoronamento Furioso": {
+		baseSkill: "Desmoronamento",
+		connections: [ "Desmoronamento Melhorado" ],
+		description: `Quando acertar um inimigo Imobilizado ou Paralizado com Desmoronamento, um pilar de terra adicional é formado.`,
 		id: 22,
 		maxPoints: 1,
 		x: 1121.353,
 		y: 85.54
 	},
-	"Primal Landslide": {
-		baseSkill: "Landslide",
-		connections: [ "Enhanced Landslide" ],
-		description: `When you Immobilize or Stun an enemy, you gain a Terramote. Each enemy hit by Landslide consumes a Terramote causing a guaranteed Critical Strike with x{#}% Critical Strike Damage. Bosses always have up to a {#}% chance to grant a Terramote when hit.`,
+	"Desmoronamento Primitivo": {
+		baseSkill: "Desmoronamento",
+		connections: [ "Desmoronamento Melhorado" ],
+		description: `Quando Imobilizar ou Paralizar um inimigo, voce ganha um Terramote. Cada inimigo atingido pelo Desmoronamento consome um Terramote causando um Ataque Crítico garantido com x{#}% de Dano Crítico. Chefes sempre teram até a {#}% de chance para gerar um Terramote quando acertados.`,
 		id: 23,
 		maxPoints: 1,
 		values: [ "10", "30" ],
 		x: 1123.278,
 		y: -78.075
 	},
-	"Pulverize": {
-		connections: [ "Spirit", "Enhanced Pulverize" ],
-		description: `Spirit Cost: {#}
-Lucky Hit Chance: {#}%
-Shapeshift into a Werebear and slam the ground, dealing {#}% damage to surrounding enemies.`,
+	"Pulverizar": {
+		connections: [ "Espírito", "Pulverizar Melhorado" ],
+		description: `Custo de Espírito: {#}
+Chande de Golpe de Sorte: {#}%
+Se transforma em um Urso e bate no chao, infligindo {#}% de dano para os inimigos ao redor.`,
 		id: 24,
 		maxPoints: 5,
 		values: [ "35", "33", "52.5" ],
 		x: -662.09,
 		y: 108.51
 	},
-	"Enhanced Pulverize": {
-		baseSkill: "Pulverize",
-		connections: [ "Pulverize", "Primal Pulverize", "Raging Pulverize" ],
-		description: `Your next Pulverize will Overpower every {#} seconds while you remain Healthy.`,
+	"Pulverizar Melhorado": {
+		baseSkill: "Pulverizar",
+		connections: [ "Pulverizar", "Pulverizar Primitivo", "Pulverizar Furioso" ],
+		description: `Seu próximo Pulverizar vai Sobrecarregar por {#} segundos enquanto você estiver Saudável.`,
 		id: 25,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -1030.275,
 		y: 169.15
 	},
-	"Primal Pulverize": {
-		baseSkill: "Pulverize",
-		connections: [ "Enhanced Pulverize" ],
-		description: `Enemies hit with Pulverize deal {#}% reduced damage for {#} seconds.`,
+	"Pulverizar Primitivo": {
+		baseSkill: "Pulverizar",
+		connections: [ "Pulverizar Melhorado" ],
+		description: `Inimigos atingidos por Pulverizar infligem {#}% de dano reduzido por {#} segundos.`,
 		id: 26,
 		maxPoints: 1,
 		values: [ "15", "4" ],
 		x: -1158.38,
 		y: 294.075
 	},
-	"Raging Pulverize": {
-		baseSkill: "Pulverize",
-		connections: [ "Enhanced Pulverize" ],
-		description: `Enemies are Stunned for {#} seconds when they are Overpowered with Pulverize.`,
+	"Pulverizar Furioso": {
+		baseSkill: "Pulverizar",
+		connections: [ "Pulverizar Melhorado" ],
+		description: `Inimigos são Paralizados por {#} segundos quando eles sao Sobrecarregados com Pulverizar.`,
 		id: 27,
 		maxPoints: 1,
 		values: [ "" ],
@@ -340,84 +340,84 @@ Shapeshift into a Werebear and slam the ground, dealing {#}% damage to surroundi
 		y: 125.535
 	},
 	"Tornado": {
-		connections: [ "Spirit", "Enhanced Tornado" ],
-		description: `Spirit Cost: {#}
-Lucky Hit Chance: {#}%
-Conjure a swirling tornado that deals {#}% damage.`,
+		connections: [ "Espírito", "Tornado Melhorado" ],
+		description: `Custo de Espírito: {#}
+Chande de Golpe de Sorte: {#}%
+Conjura um tornado rodopiante que inflige {#}% de dano.`,
 		id: 28,
 		maxPoints: 5,
 		values: [ "40", "33", "105" ],
 		x: -658.16,
 		y: -95.45
 	},
-	"Enhanced Tornado": {
+	"Tornado Melhorado": {
 		baseSkill: "Tornado",
-		connections: [ "Tornado", "Raging Tornado", "Primal Tornado" ],
-		description: `Each time you cast Tornado, you have a {#}% chance to spawn an additional Tornado.`,
+		connections: [ "Tornado", "Tornado Furioso", "Tornado Primitivo" ],
+		description: `Cada vez que voce usar Tornado, voce tem {#}% de chance para gerar um Tornado adicional.`,
 		id: 29,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: -1022.51,
 		y: -146.015
 	},
-	"Raging Tornado": {
+	"Tornado Furioso": {
 		baseSkill: "Tornado",
-		connections: [ "Enhanced Tornado" ],
-		description: `Enemies hit with Tornado have a {#}% chance to become Vulnerable for {#} seconds.`,
+		connections: [ "Tornado Melhorado" ],
+		description: `Inimigos atingidos por Tornado possuem {#}% de chance de se tornar Vulneráveis por {#} segundos.`,
 		id: 30,
 		maxPoints: 1,
 		values: [ "5", "3" ],
 		x: -1245.89,
 		y: -85.1
 	},
-	"Primal Tornado": {
+	"Tornado Primitivo": {
 		baseSkill: "Tornado",
-		connections: [ "Enhanced Tornado" ],
-		description: `Enemies damaged by Tornado are Slowed by {#}% for {#} seconds, stacking up to {#}%.`,
+		connections: [ "Tornado Melhorado" ],
+		description: `Inimigos atingidos por Tornado ficam lentos em {#}% por {#} segundos, estacando até {#}%.`,
 		id: 31,
 		maxPoints: 1,
 		values: [ "8", "3", "" ],
 		x: -1165.365,
 		y: -263.91
 	},
-	"Shred": {
-		connections: [ "Spirit", "Enhanced Shred" ],
-		description: `Spirit Cost: {#}
-Lucky Hit Chance: {#}%
-Shapeshift into a Werewolf and perform a trio of combo attacks:
-1st Attack: Deal {#}% damage.
-2nd Attack: Deal {#}% damage.
-3rd Attack: Perform a larger finishing move dealing {#}% damage.`,
+	"Retalhar": {
+		connections: [ "Espírito", "Retalhar Melhorado" ],
+		description: `Custo de Espírito: {#}
+Chande de Golpe de Sorte: {#}%
+Se transforma em um Lobisomem e executa um combo de ataque triplo:
+1st Ataque: Inflige {#}% de dano.
+2nd Ataque: Inflige {#}% de dano.
+3rd Ataque: Èxecuta um ataque finalizador infligindo {#}% de dano.`,
 		id: 33,
 		maxPoints: 5,
 		values: [ "35", "20", "", "", "" ],
 		x: -446.83,
 		y: 275.82
 	},
-	"Enhanced Shred": {
-		baseSkill: "Shred",
-		connections: [ "Shred", "Raging Shred", "Primal Shred" ],
-		description: `Shred gains +{#}% Attack Speed and Heals for {#}% of your Maximum Life ({#}) if an enemy is struck.`,
+	"Retalhar Melhorado": {
+		baseSkill: "Retalhar",
+		connections: [ "Retalhar", "Retalhar Furioso", "Retalhar Primitivo" ],
+		description: `Retalhar ganha +{#}% de Velocidade de Ataque e Cura em {#}% da sua Vida Maxima ({#}) se um inimigo for atingido.`,
 		id: 34,
 		maxPoints: 1,
 		values: [ "", "2", "" ],
 		x: -710.395,
 		y: 428.735
 	},
-	"Raging Shred": {
-		baseSkill: "Shred",
-		connections: [ "Enhanced Shred" ],
-		description: `Shred's third combo attack is larger and applies an additional {#}% Poisoning damage over {#} seconds.`,
+	"Retalhar Furioso": {
+		baseSkill: "Retalhar",
+		connections: [ "Retalhar Melhorado" ],
+		description: `O terceiro ataque do Retalhar é mais longo e aplica {#}% de dano de Veneno durante {#} segundos.`,
 		id: 36,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -968.945,
 		y: 450.595
 	},
-	"Primal Shred": {
-		baseSkill: "Shred",
-		connections: [ "Enhanced Shred" ],
-		description: `Shred's second and third attacks also perform a dash. In addition, Shred's Critical Strike Damage is increased by x{#}%.`,
+	"Retalhar Primitivo": {
+		baseSkill: "Retalhar",
+		connections: [ "Retalhar Melhorado" ],
+		description: `O segundo e terceiro ataque do Retalhar também executam uma corrida. Em adição, o Dano de Ataque Crítico do Retalhar é aumentado por x{#}%.`,
 		id: 35,
 		maxPoints: 1,
 		values: [ "" ],
@@ -425,57 +425,57 @@ Shapeshift into a Werewolf and perform a trio of combo attacks:
 		y: 566.865
 	},
 	"Lightning Storm": {
-		connections: [ "Spirit", "Enhanced Lightning Storm" ],
-		description: `Spirit Cost: {#} per strike
-Lucky Hit Chance: {#}%
-Conjure a growing lightning storm that deals {#}% damage per strike and increases the number of strikes the longer it is channeled up to a maximum of {#}.`,
+		connections: [ "Espírito", "Melhorado Lightning Storm" ],
+		description: `Custo de Espírito: {#} per strike
+Chande de Golpe de Sorte: {#}%
+Conjure a growing lightning storm that inflige {#}% de dano per strike and increases the number of strikes the longer it is channeled up to a maximum of {#}.`,
 		id: 37,
 		maxPoints: 5,
 		values: [ "15", "15", "26.25", "5" ],
 		x: -452.28,
 		y: -268.415
 	},
-	"Enhanced Lightning Storm": {
+	"Melhorado Lightning Storm": {
 		baseSkill: "Lightning Storm",
-		connections: [ "Lightning Storm", "Primal Lightning Storm", "Raging Lightning Storm" ],
-		description: `The size of your Lightning Storm is preserved for {#} seconds after channeling.`,
+		connections: [ "Lightning Storm", "Primitivo Lightning Storm", "Furioso Lightning Storm" ],
+		description: `The size of your Lightning Storm is preserved for {#} segundos after channeling.`,
 		id: 38,
 		maxPoints: 1,
 		values: [ "4" ],
 		x: -684.545,
 		y: -435.935
 	},
-	"Primal Lightning Storm": {
+	"Primitivo Lightning Storm": {
 		baseSkill: "Lightning Storm",
-		connections: [ "Enhanced Lightning Storm" ],
-		description: `Lightning Storm has a {#}% chance to Immobilize enemies hit for {#} seconds.`,
+		connections: [ "Melhorado Lightning Storm" ],
+		description: `Lightning Storm has a {#}% chance to Immobilize enemies hit for {#} segundos.`,
 		id: 39,
 		maxPoints: 1,
 		values: [ "8", "3" ],
 		x: -956.755,
 		y: -443.375
 	},
-	"Raging Lightning Storm": {
+	"Furioso Lightning Storm": {
 		baseSkill: "Lightning Storm",
-		connections: [ "Enhanced Lightning Storm" ],
+		connections: [ "Melhorado Lightning Storm" ],
 		description: `Lightning Storm gains 1 additional lightning strike.`,
 		id: 40,
 		maxPoints: 1,
 		x: -700.415,
 		y: -572.245
 	},
-	"Heart of the Wild": {
-		connections: [ "Spirit", "Wild Impulses", "Abundance" ],
-		description: `Maximum Spirit is increased by {#}.`,
+	"Heart of the Selvagem": {
+		connections: [ "Espírito", "Selvagem Impulses", "Abundance" ],
+		description: `Maximum Espírito is increased by {#}.`,
 		id: 42,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -2.48,
 		y: -269.805
 	},
-	"Wild Impulses": {
-		connections: [ "Heart of the Wild" ],
-		description: `Your Core Skills cost x{#}% more Spirit but deal x{#}% increased damage.`,
+	"Selvagem Impulses": {
+		connections: [ "Heart of the Selvagem" ],
+		description: `Your Core Skills cost x{#}% more Espírito but deal x{#}% increased damage.`,
 		id: 32,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "{10/20/30}" ],
@@ -483,8 +483,8 @@ Conjure a growing lightning storm that deals {#}% damage per strike and increase
 		y: -403.84
 	},
 	"Abundance": {
-		connections: [ "Heart of the Wild" ],
-		description: `Basic Skills generate x{#}% more Spirit.`,
+		connections: [ "Heart of the Selvagem" ],
+		description: `Basico Skills generate x{#}% more Espírito.`,
 		id: 41,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
@@ -492,7 +492,7 @@ Conjure a growing lightning storm that deals {#}% damage per strike and increase
 		y: -404.925
 	},
 	"Predatory Instinct": {
-		connections: [ "Spirit", "Iron Fur", "Digitigrade Gait" ],
+		connections: [ "Espírito", "Iron Fur", "Digitigrade Gait" ],
 		description: `Critical Strike Chance against Close enemies is increased by +{#}%.`,
 		id: 136,
 		maxPoints: 3,
@@ -502,9 +502,9 @@ Conjure a growing lightning storm that deals {#}% damage per strike and increase
 	},
 	"Iron Fur": {
 		connections: [ "Predatory Instinct" ],
-		description: `You gain {#}% Damage Reduction while in Werebear form.
+		description: `You gain {#}% de dano Reduction while in Werebear form.
 
-This bonus persists for {#} seconds after leaving Werebear form.`,
+This bonus persists for {#} segundos after leaving Werebear form.`,
 		id: 137,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "3" ],
@@ -515,7 +515,7 @@ This bonus persists for {#} seconds after leaving Werebear form.`,
 		connections: [ "Predatory Instinct" ],
 		description: `You gain +{#}% Movement Speed while in Werewolf form.
 
-This bonus persists for {#} seconds after leaving Werewolf form.`,
+This bonus persists for {#} segundos after leaving Werewolf form.`,
 		id: 138,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "3" ],
@@ -524,19 +524,19 @@ This bonus persists for {#} seconds after leaving Werewolf form.`,
 	},
 };
 
-druidData["Defensive"] = {
+druidData["Defensiva"] = {
 	"Earthen Bulwark": {
-		connections: [ "Defensive", "Enhanced Earthen Bulwark" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Rocks surround you for {#} seconds, granting a Barrier that absorbs {#}% of your Base Life ({#}) in damage.`,
+		connections: [ "Defensiva", "Melhorado Earthen Bulwark" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Rocks surround you for {#} segundos, granting a Barrier that absorbs {#}% of your Base Life ({#}) in damage.`,
 		id: 43,
 		maxPoints: 5,
 		values: [ "16.0", "50", "3", "10", "" ],
 		x: -2.035,
 		y: -310.27
 	},
-	"Enhanced Earthen Bulwark": {
+	"Melhorado Earthen Bulwark": {
 		baseSkill: "Earthen Bulwark",
 		connections: [ "Earthen Bulwark", "Innate Earthen Bulwark", "Preserving Earthen Bulwark" ],
 		description: `Earthen Bulwark makes you Unstoppable while active.`,
@@ -547,8 +547,8 @@ Rocks surround you for {#} seconds, granting a Barrier that absorbs {#}% of your
 	},
 	"Innate Earthen Bulwark": {
 		baseSkill: "Earthen Bulwark",
-		connections: [ "Enhanced Earthen Bulwark" ],
-		description: `Rock shrapnel flies outward when Earthen Bulwark is destroyed or expires, dealing {#}% to surrounding enemies. This damage is increased by Barrier bonuses.`,
+		connections: [ "Melhorado Earthen Bulwark" ],
+		description: `Rock shrapnel flies outward when Earthen Bulwark is destroyed or expires, dealing {#}% para os inimigos ao redor. This damage is increased by Barrier bonuses.`,
 		id: 45,
 		maxPoints: 1,
 		values: [ "300" ],
@@ -557,7 +557,7 @@ Rocks surround you for {#} seconds, granting a Barrier that absorbs {#}% of your
 	},
 	"Preserving Earthen Bulwark": {
 		baseSkill: "Earthen Bulwark",
-		connections: [ "Enhanced Earthen Bulwark" ],
+		connections: [ "Melhorado Earthen Bulwark" ],
 		description: `Casting Earthen Bulwark grants {#}% Base Life ({#}) as Fortify.`,
 		id: 46,
 		maxPoints: 1,
@@ -566,16 +566,16 @@ Rocks surround you for {#} seconds, granting a Barrier that absorbs {#}% of your
 		y: -637.145
 	},
 	"Debilitating Roar": {
-		connections: [ "Defensive", "Enhanced Debilitating Roar" ],
-		description: `Cooldown: {#} seconds
-Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' damage dealt by {#}% for {#} seconds.`,
+		connections: [ "Defensiva", "Melhorado Debilitating Roar" ],
+		description: `Cooldown: {#} segundos
+Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' damage dealt by {#}% for {#} segundos.`,
 		id: 47,
 		maxPoints: 5,
 		values: [ "22.0", "50", "4" ],
 		x: 4.69,
 		y: 314.825
 	},
-	"Enhanced Debilitating Roar": {
+	"Melhorado Debilitating Roar": {
 		baseSkill: "Debilitating Roar",
 		connections: [ "Debilitating Roar", "Preserving Debilitating Roar", "Innate Debilitating Roar" ],
 		description: `Debilitating Roar also Fortifies you for {#}% Base Life ({#}).`,
@@ -587,7 +587,7 @@ Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' da
 	},
 	"Preserving Debilitating Roar": {
 		baseSkill: "Debilitating Roar",
-		connections: [ "Enhanced Debilitating Roar" ],
+		connections: [ "Melhorado Debilitating Roar" ],
 		description: `Debilitating Roar also Heals you for {#}% of your Maximum Life ({#}) each second for its duration.`,
 		id: 49,
 		maxPoints: 1,
@@ -597,7 +597,7 @@ Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' da
 	},
 	"Innate Debilitating Roar": {
 		baseSkill: "Debilitating Roar",
-		connections: [ "Enhanced Debilitating Roar" ],
+		connections: [ "Melhorado Debilitating Roar" ],
 		description: `Debilitating Roar also Slows enemies by {#}% for its duration.`,
 		id: 50,
 		maxPoints: 1,
@@ -606,7 +606,7 @@ Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' da
 		y: 633.023
 	},
 	"Ancestral Fortitude": {
-		connections: [ "Defensive", "Vigilance" ],
+		connections: [ "Defensiva", "Vigilance" ],
 		description: `Increase your Non-Physical Resistances by {#}%.`,
 		id: 51,
 		maxPoints: 3,
@@ -616,7 +616,7 @@ Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' da
 	},
 	"Vigilance": {
 		connections: [ "Ancestral Fortitude" ],
-		description: `You gain {#}% Damage Reduction for {#} seconds after using a Defensive Skill.`,
+		description: `You gain {#}% de dano Reduction for {#} segundos after using a Defensiva Skill.`,
 		id: 52,
 		maxPoints: 3,
 		values: [ "", "" ],
@@ -624,8 +624,8 @@ Shapeshift into a Werebear and bellow a mighty roar, reducing Nearby enemies' da
 		y: 0.39
 	},
 	"Blood Howl": {
-		connections: [ "Defensive", "Enhanced Blood Howl" ],
-		description: `Cooldown: {#} seconds
+		connections: [ "Defensiva", "Melhorado Blood Howl" ],
+		description: `Cooldown: {#} segundos
 Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maximum Life ({#}).`,
 		id: 53,
 		maxPoints: 5,
@@ -633,7 +633,7 @@ Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maxi
 		x: 445.755,
 		y: 169.805
 	},
-	"Enhanced Blood Howl": {
+	"Melhorado Blood Howl": {
 		baseSkill: "Blood Howl",
 		connections: [ "Blood Howl", "Innate Blood Howl", "Preserving Blood Howl" ],
 		description: `Kills reduce the Cooldown of Blood Howl by {#} second.`,
@@ -645,8 +645,8 @@ Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maxi
 	},
 	"Innate Blood Howl": {
 		baseSkill: "Blood Howl",
-		connections: [ "Enhanced Blood Howl" ],
-		description: `Blood Howl also generates {#} Spirit.`,
+		connections: [ "Melhorado Blood Howl" ],
+		description: `Blood Howl also generates {#} Espírito.`,
 		id: 55,
 		maxPoints: 1,
 		values: [ "20" ],
@@ -655,8 +655,8 @@ Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maxi
 	},
 	"Preserving Blood Howl": {
 		baseSkill: "Blood Howl",
-		connections: [ "Enhanced Blood Howl" ],
-		description: `Blood Howl also increases your Attack Speed by +{#}% for {#} seconds.`,
+		connections: [ "Melhorado Blood Howl" ],
+		description: `Blood Howl also increases your Attack Speed by +{#}% for {#} segundos.`,
 		id: 56,
 		maxPoints: 1,
 		values: [ "15", "4" ],
@@ -664,22 +664,22 @@ Shapeshift into a Werewolf and howl furiously, Healing you for {#}% of your Maxi
 		y: 280.42
 	},
 	"Cyclone Armor": {
-		connections: [ "Defensive", "Enhanced Cyclone Armor" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
+		connections: [ "Defensiva", "Melhorado Cyclone Armor" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
 Passive: Powerful winds surround you, granting {#}% Non-Physical Damage Reduction.
 
-Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% damage.`,
+Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% de dano.`,
 		id: 57,
 		maxPoints: 5,
 		values: [ "15.0", "25", "20", "15.75" ],
 		x: 415.99,
 		y: -192.375
 	},
-	"Enhanced Cyclone Armor": {
+	"Melhorado Cyclone Armor": {
 		baseSkill: "Cyclone Armor",
 		connections: [ "Cyclone Armor", "Preserving Cyclone Armor", "Innate Cyclone Armor" ],
-		description: `Enemies who are Knocked Back by Cyclone Armor are also Slowed by {#}% for {#} seconds.`,
+		description: `Enemies who are Knocked Back by Cyclone Armor are also Slowed by {#}% for {#} segundos.`,
 		id: 58,
 		maxPoints: 1,
 		values: [ "40", "3" ],
@@ -688,8 +688,8 @@ Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% damage.
 	},
 	"Preserving Cyclone Armor": {
 		baseSkill: "Cyclone Armor",
-		connections: [ "Enhanced Cyclone Armor" ],
-		description: `Every {#} seconds, Cyclone Armor intensifies, causing incoming damage to grant you {#}% Damage Reduction for {#} seconds.`,
+		connections: [ "Melhorado Cyclone Armor" ],
+		description: `Every {#} segundos, Cyclone Armor intensifies, causing incoming damage to grant you {#}% de dano Reduction for {#} segundos.`,
 		id: 59,
 		maxPoints: 1,
 		values: [ "10", "40", "" ],
@@ -698,8 +698,8 @@ Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% damage.
 	},
 	"Innate Cyclone Armor": {
 		baseSkill: "Cyclone Armor",
-		connections: [ "Enhanced Cyclone Armor" ],
-		description: `Enemies Knocked Back by Cyclone Armor become Vulnerable for {#} seconds.`,
+		connections: [ "Melhorado Cyclone Armor" ],
+		description: `Enemies Knocked Back by Cyclone Armor become Vulnerable for {#} segundos.`,
 		id: 60,
 		maxPoints: 1,
 		values: [ "" ],
@@ -708,24 +708,24 @@ Active: The winds rapidly expand, Knocking Back enemies and dealing {#}% damage.
 	},
 };
 
-druidData["Companion"] = {
+druidData["Pet"] = {
 	"Ravens": {
-		connections: [ "Companion", "Enhanced Ravens" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Passive: {#} Ravens fly above you and periodically attack your enemies for {#}% damage every {#} seconds.
+		connections: [ "Pet", "Melhorado Ravens" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Passive: {#} Ravens fly above you and periodically attack your enemies for {#}% de dano every {#} segundos.
 
-Active: The target area is swarmed with ravens, dealing {#}% damage over {#} seconds.`,
+Active: The target area is swarmed with ravens, infligindo {#}% de dano over {#} segundos.`,
 		id: 62,
 		maxPoints: 5,
 		values: [ "25.0", "33", "", "89.25", "6", "", "" ],
 		x: 0.92,
 		y: 293.68
 	},
-	"Enhanced Ravens": {
+	"Melhorado Ravens": {
 		baseSkill: "Ravens",
 		connections: [ "Ravens", "Brutal Ravens", "Ferocious Ravens" ],
-		description: `You have +{#}% increased Critical Strike Chance for {#} seconds against Enemies hit by Ravens.`,
+		description: `You have +{#}% increased Critical Strike Chance for {#} segundos against Enemies hit by Ravens.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "13.85", "5" ],
@@ -734,7 +734,7 @@ Active: The target area is swarmed with ravens, dealing {#}% damage over {#} sec
 	},
 	"Brutal Ravens": {
 		baseSkill: "Ravens",
-		connections: [ "Enhanced Ravens" ],
+		connections: [ "Melhorado Ravens" ],
 		description: `{#} additional Ravens periodically attack enemies.`,
 		id: 64,
 		maxPoints: 1,
@@ -744,17 +744,17 @@ Active: The target area is swarmed with ravens, dealing {#}% damage over {#} sec
 	},
 	"Ferocious Ravens": {
 		baseSkill: "Ravens",
-		connections: [ "Enhanced Ravens" ],
-		description: `Enemies inside the swarm of Ravens when it is activated become Vulnerable for {#} seconds.`,
+		connections: [ "Melhorado Ravens" ],
+		description: `Enemies inside the swarm of Ravens when it is activated become Vulnerable for {#} segundos.`,
 		id: 65,
 		maxPoints: 1,
 		values: [ "3" ],
 		x: 134.94,
 		y: 611.014
 	},
-	"Call of the Wild": {
-		connections: [ "Companion" ],
-		description: `Your companions deal x{#}% bonus damage.`,
+	"Call of the Selvagem": {
+		connections: [ "Pet" ],
+		description: `Your Pets deal x{#}% bonus damage.`,
 		id: 66,
 		maxPoints: 3,
 		values: [ "{8/16/24}" ],
@@ -762,19 +762,19 @@ Active: The target area is swarmed with ravens, dealing {#}% damage over {#} sec
 		y: 0.364
 	},
 	"Vine Creeper": {
-		connections: [ "Companion", "Enhanced Vine Creeper" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Passive: A vine creeper periodically emerges from the ground every {#} seconds and applies {#}% Poisoning damage over {#} seconds to an enemy in the area.
+		connections: [ "Pet", "Melhorado Vine Creeper" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Passive: A vine creeper periodically emerges from the ground every {#} segundos and applies {#}% Poisoning damage over {#} segundos to an enemy in the area.
 
-Active: Vines strangle all surrounding enemies, Immobilizing them for {#} seconds and poisoning them for {#}% damage over {#} seconds.`,
+Active: Vines strangle all surrounding enemies, Immobilizing them for {#} segundos and poisoning them for {#}% de dano over {#} segundos.`,
 		id: 67,
 		maxPoints: 5,
 		values: [ "20.0", "40", "7", "37.8", "6", "2", "31.5", "2" ],
 		x: -535.155,
 		y: -0.594
 	},
-	"Enhanced Vine Creeper": {
+	"Melhorado Vine Creeper": {
 		baseSkill: "Vine Creeper",
 		connections: [ "Vine Creeper", "Ferocious Vine Creeper", "Brutal Vine Creeper" ],
 		description: `Vine Creeper's Immobilize duration is increased by {#} second.`,
@@ -786,8 +786,8 @@ Active: Vines strangle all surrounding enemies, Immobilizing them for {#} second
 	},
 	"Ferocious Vine Creeper": {
 		baseSkill: "Vine Creeper",
-		connections: [ "Enhanced Vine Creeper" ],
-		description: `Vine Creeper's active Poisoning duration is increased by {#} seconds.`,
+		connections: [ "Melhorado Vine Creeper" ],
+		description: `Vine Creeper's active Poisoning duration is increased by {#} segundos.`,
 		id: 69,
 		maxPoints: 1,
 		values: [ "3" ],
@@ -796,7 +796,7 @@ Active: Vines strangle all surrounding enemies, Immobilizing them for {#} second
 	},
 	"Brutal Vine Creeper": {
 		baseSkill: "Vine Creeper",
-		connections: [ "Enhanced Vine Creeper" ],
+		connections: [ "Melhorado Vine Creeper" ],
 		description: `Your Critical Strike Chance is increased by +{#}% against enemies strangled by Vine Creeper.`,
 		id: 70,
 		maxPoints: 1,
@@ -805,19 +805,19 @@ Active: Vines strangle all surrounding enemies, Immobilizing them for {#} second
 		y: -94.798
 	},
 	"Wolves": {
-		connections: [ "Companion", "Enhanced Wolves" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Passive: Summon {#} wolf companions that bite enemies for {#}% damage.
+		connections: [ "Pet", "Melhorado Wolves" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Passive: Summon {#} wolf Pets that bite enemies for {#}% de dano.
 
-Active: Direct your wolves to focus an enemy, leaping to them and striking for {#}% damage.`,
+Active: Direct your wolves to focus an enemy, leaping to them and striking for {#}% de dano.`,
 		id: 71,
 		maxPoints: 5,
 		values: [ "14.0", "50", "2", "8.19", "36.75" ],
 		x: 7.69,
 		y: -289.968
 	},
-	"Enhanced Wolves": {
+	"Melhorado Wolves": {
 		baseSkill: "Wolves",
 		connections: [ "Wolves", "Brutal Wolf Pack", "Ferocious Wolf Pack" ],
 		description: `Wolves deal x{#}% increased damage to Immobilized, Stunned, Slowed, or Poisoned enemies.`,
@@ -829,8 +829,8 @@ Active: Direct your wolves to focus an enemy, leaping to them and striking for {
 	},
 	"Brutal Wolf Pack": {
 		baseSkill: "Wolves",
-		connections: [ "Enhanced Wolves" ],
-		description: `When you Critically Strike, your Wolves gain +{#}% Attack Speed for {#} seconds.`,
+		connections: [ "Melhorado Wolves" ],
+		description: `When you Critically Strike, your Wolves gain +{#}% Attack Speed for {#} segundos.`,
 		id: 74,
 		maxPoints: 1,
 		values: [ "", "" ],
@@ -839,7 +839,7 @@ Active: Direct your wolves to focus an enemy, leaping to them and striking for {
 	},
 	"Ferocious Wolf Pack": {
 		baseSkill: "Wolves",
-		connections: [ "Enhanced Wolves" ],
+		connections: [ "Melhorado Wolves" ],
 		description: `Lucky Hit: Your Wolves' attacks have up to a {#}% chance to Fortify you for {#}% Base Life ({#}).`,
 		id: 73,
 		maxPoints: 1,
@@ -848,7 +848,7 @@ Active: Direct your wolves to focus an enemy, leaping to them and striking for {
 		y: -604.816
 	},
 	"Nature's Reach": {
-		connections: [ "Companion" ],
+		connections: [ "Pet" ],
 		description: `Deal x{#}% increased damage to Distant enemies. Double this bonus if they are also Slowed, Stunned, Immobilized, or Knocked Back.`,
 		id: 75,
 		maxPoints: 3,
@@ -857,8 +857,8 @@ Active: Direct your wolves to focus an enemy, leaping to them and striking for {
 		y: -196.762
 	},
 	"Clarity": {
-		connections: [ "Companion" ],
-		description: `Gain {#} Spirit when transforming into Human form.`,
+		connections: [ "Pet" ],
+		description: `Gain {#} Espírito when transforming into Human form.`,
 		id: 76,
 		maxPoints: 3,
 		values: [ "{2/4/6}" ],
@@ -867,10 +867,10 @@ Active: Direct your wolves to focus an enemy, leaping to them and striking for {
 	},
 };
 
-druidData["Wrath"] = {
+druidData["Furia"] = {
 	"Elemental Exposure": {
-		connections: [ "Charged Atmosphere", "Wrath", "Endless Tempest" ],
-		description: `Lucky Hit: Your Storm Skills have up to a {#}% chance to make enemies Vulnerable for {#} seconds.`,
+		connections: [ "Charged Atmosphere", "Furia", "Endless Tempest" ],
+		description: `Lucky Hit: Your Storm Skills have up to a {#}% chance to make enemies Vulnerable for {#} segundos.`,
 		id: 80,
 		maxPoints: 3,
 		values: [ "{20/40/60}", "1" ],
@@ -879,7 +879,7 @@ druidData["Wrath"] = {
 	},
 	"Charged Atmosphere": {
 		connections: [ "Elemental Exposure", "Electric Shock", "Bad Omen" ],
-		description: `Every {#} seconds, a lightning strike hits a Nearby enemy dealing {#}% damage.`,
+		description: `Every {#} segundos, a lightning strike hits a Nearby enemy dealing {#}% de dano.`,
 		id: 81,
 		maxPoints: 3,
 		values: [ "{18/13.5/10}", "47.25" ],
@@ -888,7 +888,7 @@ druidData["Wrath"] = {
 	},
 	"Electric Shock": {
 		connections: [ "Charged Atmosphere", "Bad Omen" ],
-		description: `Lucky Hit: Dealing Lightning damage to enemies has a {#}% chance to Immobilize them for {#} seconds.
+		description: `Lucky Hit: Dealing Lightning damage to enemies has a {#}% chance to Immobilize them for {#} segundos.
 
 If the target is already Immobilized, the Lightning damage dealt to them is increased by x{#}% instead.`,
 		id: 82,
@@ -899,7 +899,7 @@ If the target is already Immobilized, the Lightning damage dealt to them is incr
 	},
 	"Bad Omen": {
 		connections: [ "Charged Atmosphere", "Electric Shock", "Endless Tempest" ],
-		description: `Lucky Hit: Up to a {#}% chance when dealing damage to a Vulnerable, Immobilized or Stunned enemy that a lightning strike also hits dealing {#}% damage.`,
+		description: `Lucky Hit: Up to a {#}% chance when dealing damage to a Vulnerable, Immobilized or Stunned enemy that a lightning strike also hits dealing {#}% de dano.`,
 		id: 83,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "57.25" ],
@@ -916,21 +916,21 @@ If the target is already Immobilized, the Lightning damage dealt to them is incr
 		y: -446.745
 	},
 	"Boulder": {
-		connections: [ "Wrath", "Enhanced Boulder" ],
-		description: `Spirit Cost: {#}
-Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Unearth a large rolling boulder that Knocks Back and crushes enemies, dealing {#}% damage with each hit.`,
+		connections: [ "Furia", "Melhorado Boulder" ],
+		description: `Custo de Espírito: {#}
+Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Unearth a large rolling boulder that Knocks Back and crushes enemies, infligindo {#}% de dano with each hit.`,
 		id: 85,
 		maxPoints: 5,
 		values: [ "10.0", "20", "34.65", "" ],
 		x: 528.095,
 		y: -212.19
 	},
-	"Enhanced Boulder": {
+	"Melhorado Boulder": {
 		baseSkill: "Boulder",
 		connections: [ "Boulder", "Natural Boulder", "Savage Boulder" ],
-		description: `When Boulder reaches the end of its path, enemies hit are Slowed by {#}% for {#} seconds. If Boulder Overpowered, enemies are Stunned for {#} seconds instead.`,
+		description: `When Boulder reaches the end of its path, enemies hit are Slowed by {#}% for {#} segundos. If Boulder Sobrecarregared, enemies are Stunned for {#} segundos instead.`,
 		id: 86,
 		maxPoints: 1,
 		values: [ "30", "2", "" ],
@@ -939,7 +939,7 @@ Unearth a large rolling boulder that Knocks Back and crushes enemies, dealing {#
 	},
 	"Natural Boulder": {
 		baseSkill: "Boulder",
-		connections: [ "Enhanced Boulder" ],
+		connections: [ "Melhorado Boulder" ],
 		description: `While you have any Fortify, Boulder has +{#}% increased Critical Strike Chance.`,
 		id: 87,
 		maxPoints: 1,
@@ -949,7 +949,7 @@ Unearth a large rolling boulder that Knocks Back and crushes enemies, dealing {#
 	},
 	"Savage Boulder": {
 		baseSkill: "Boulder",
-		connections: [ "Enhanced Boulder" ],
+		connections: [ "Melhorado Boulder" ],
 		description: `Boulder's Critical Strike Chance is increased by +{#}% each time it deals damage.`,
 		id: 88,
 		maxPoints: 1,
@@ -958,19 +958,19 @@ Unearth a large rolling boulder that Knocks Back and crushes enemies, dealing {#
 		y: -321.359
 	},
 	"Trample": {
-		connections: [ "Wrath", "Enhanced Trample" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Shapeshift into a Werebear, become Unstoppable, and charge forward, dealing {#}% damage and Knocking Back enemies.
+		connections: [ "Furia", "Melhorado Trample" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Shapeshift into a Werebear, become Unstoppable, and charge forward, infligindo {#}% de dano and Knocking Back enemies.
 
-Enemies who are Knocked Back into terrain take an additional {#}% damage and are Stunned for {#} seconds.`,
+Enemies who are Knocked Back into terrain take an additional {#}% de dano and are Stunned for {#} segundos.`,
 		id: 89,
 		maxPoints: 5,
 		values: [ "14.0", "33", "26.25", "47.25", "3" ],
 		x: -538.268,
 		y: 76.5
 	},
-	"Enhanced Trample": {
+	"Melhorado Trample": {
 		baseSkill: "Trample",
 		connections: [ "Trample", "Natural Trample", "Savage Trample" ],
 		description: `Trample deals x{#}% bonus damage. This bonus is reduced by x{#}% for each enemy hit after the first.`,
@@ -982,7 +982,7 @@ Enemies who are Knocked Back into terrain take an additional {#}% damage and are
 	},
 	"Natural Trample": {
 		baseSkill: "Trample",
-		connections: [ "Enhanced Trample" ],
+		connections: [ "Melhorado Trample" ],
 		description: `Casting Trample grants {#}% Base Life ({#}) as Fortify.`,
 		id: 91,
 		maxPoints: 1,
@@ -992,8 +992,8 @@ Enemies who are Knocked Back into terrain take an additional {#}% damage and are
 	},
 	"Savage Trample": {
 		baseSkill: "Trample",
-		connections: [ "Enhanced Trample" ],
-		description: `Casting Trample grants {#} Spirit.`,
+		connections: [ "Melhorado Trample" ],
+		description: `Casting Trample grants {#} Espírito.`,
 		id: 92,
 		maxPoints: 1,
 		values: [ "20" ],
@@ -1001,7 +1001,7 @@ Enemies who are Knocked Back into terrain take an additional {#}% damage and are
 		y: 154.84
 	},
 	"Crushing Earth": {
-		connections: [ "Wrath", "Safeguard", "Stone Guard" ],
+		connections: [ "Furia", "Safeguard", "Stone Guard" ],
 		description: `Earth Skills deal x{#}% increased damage to Slowed, Stunned, Immobilized or Knocked Back enemies.`,
 		id: 93,
 		maxPoints: 3,
@@ -1028,20 +1028,20 @@ Enemies who are Knocked Back into terrain take an additional {#}% damage and are
 		y: 86.045
 	},
 	"Hurricane": {
-		connections: [ "Wrath", "Enhanced Hurricane" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Form a hurricane around you that deals {#}% damage to surrounding enemies over {#} seconds.`,
+		connections: [ "Furia", "Melhorado Hurricane" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Form a hurricane around you that inflige {#}% de dano para os inimigos ao redor over {#} segundos.`,
 		id: 99,
 		maxPoints: 5,
 		values: [ "20.0", "33", "102.37", "8" ],
 		x: 255.145,
 		y: -347.168
 	},
-	"Enhanced Hurricane": {
+	"Melhorado Hurricane": {
 		baseSkill: "Hurricane",
 		connections: [ "Hurricane", "Natural Hurricane", "Savage Hurricane" ],
-		description: `Enemies who are damaged by Hurricane are Slowed by {#}% for {#} seconds.`,
+		description: `Enemies who are damaged by Hurricane are Slowed by {#}% for {#} segundos.`,
 		id: 100,
 		maxPoints: 1,
 		values: [ "25", "2" ],
@@ -1050,8 +1050,8 @@ Form a hurricane around you that deals {#}% damage to surrounding enemies over {
 	},
 	"Natural Hurricane": {
 		baseSkill: "Hurricane",
-		connections: [ "Enhanced Hurricane" ],
-		description: `Hurricane has a {#}% chance to make enemies Vulnerable for {#} seconds.`,
+		connections: [ "Melhorado Hurricane" ],
+		description: `Hurricane has a {#}% chance to make enemies Vulnerable for {#} segundos.`,
 		id: 101,
 		maxPoints: 1,
 		values: [ "15", "3" ],
@@ -1060,7 +1060,7 @@ Form a hurricane around you that deals {#}% damage to surrounding enemies over {
 	},
 	"Savage Hurricane": {
 		baseSkill: "Hurricane",
-		connections: [ "Enhanced Hurricane" ],
+		connections: [ "Melhorado Hurricane" ],
 		description: `Enemies affected by Hurricane deal {#}% less damage.`,
 		id: 102,
 		maxPoints: 1,
@@ -1069,10 +1069,10 @@ Form a hurricane around you that deals {#}% damage to surrounding enemies over {
 		y: -591.031
 	},
 	"Rabies": {
-		connections: [ "Wrath", "Enhanced Rabies" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Shapeshift into a Werewolf and perform an infectious bite on the target dealing {#}% damage, and applying an additional {#}% Poisoning damage over {#} seconds.
+		connections: [ "Furia", "Melhorado Rabies" ],
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Shapeshift into a Werewolf and perform an infectious bite on the target dealing {#}% de dano, and applying an additional {#}% Poisoning damage over {#} segundos.
 
 Infected enemies spread Rabies to other surrounding targets.`,
 		id: 103,
@@ -1081,7 +1081,7 @@ Infected enemies spread Rabies to other surrounding targets.`,
 		x: 522.33,
 		y: 283.86
 	},
-	"Enhanced Rabies": {
+	"Melhorado Rabies": {
 		baseSkill: "Rabies",
 		connections: [ "Rabies", "Natural Rabies", "Savage Rabies" ],
 		description: `Rabies' Poisoning damage also increases over the lifetime of the disease, dealing x{#}% bonus damage at max duration.`,
@@ -1093,7 +1093,7 @@ Infected enemies spread Rabies to other surrounding targets.`,
 	},
 	"Natural Rabies": {
 		baseSkill: "Rabies",
-		connections: [ "Enhanced Rabies" ],
+		connections: [ "Melhorado Rabies" ],
 		description: `Rabies spreads {#}% faster.`,
 		id: 105,
 		maxPoints: 1,
@@ -1103,8 +1103,8 @@ Infected enemies spread Rabies to other surrounding targets.`,
 	},
 	"Savage Rabies": {
 		baseSkill: "Rabies",
-		connections: [ "Enhanced Rabies" ],
-		description: `Rabies deals its total Poisoning damage in {#} seconds instead of {#}.`,
+		connections: [ "Melhorado Rabies" ],
+		description: `Rabies deals its total Poisoning damage in {#} segundos instead of {#}.`,
 		id: 106,
 		maxPoints: 1,
 		values: [ "", "" ],
@@ -1112,7 +1112,7 @@ Infected enemies spread Rabies to other surrounding targets.`,
 		y: 443.83
 	},
 	"Mending": {
-		connections: [ "Wrath", "Provocation" ],
+		connections: [ "Furia", "Provocation" ],
 		description: `While in Werebear form, you receive +{#}% additional Healing from all sources.`,
 		id: 97,
 		maxPoints: 3,
@@ -1122,7 +1122,7 @@ Infected enemies spread Rabies to other surrounding targets.`,
 	},
 	"Provocation": {
 		connections: [ "Mending" ],
-		description: `When you remain in Werebear form for at least {#} seconds, your next Skill will Overpower.`,
+		description: `When you remain in Werebear form for at least {#} segundos, your next Skill will Sobrecarregar.`,
 		id: 98,
 		maxPoints: 3,
 		values: [ "30" ],
@@ -1130,7 +1130,7 @@ Infected enemies spread Rabies to other surrounding targets.`,
 		y: -78.28
 	},
 	"Neurotoxin": {
-		connections: [ "Wrath", "Toxic Claws", "Envenom" ],
+		connections: [ "Furia", "Toxic Garras", "Envenom" ],
 		description: `Poisoned enemies are slowed by {#}%.`,
 		id: 79,
 		maxPoints: 3,
@@ -1138,9 +1138,9 @@ Infected enemies spread Rabies to other surrounding targets.`,
 		x: 0.3,
 		y: 283.825
 	},
-	"Toxic Claws": {
+	"Toxic Garras": {
 		connections: [ "Neurotoxin" ],
-		description: `Critical Strikes with Werewolf Skills deal {#}% of their Base damage as Poisoning damage over {#} seconds.`,
+		description: `Critical Strikes with Werewolf Skills deal {#}% of their Base damage as Poisoning damage over {#} segundos.`,
 		id: 78,
 		maxPoints: 3,
 		values: [ "{8/16/24}", "4" ],
@@ -1161,10 +1161,10 @@ Infected enemies spread Rabies to other surrounding targets.`,
 druidData["Ultimate"] = {
 	"Grizzly Rage": {
 		connections: [ "Ultimate", "Prime Grizzly Rage" ],
-		description: `Cooldown: {#} seconds
-Shapeshift into  Dire Werebear for {#} seconds gaining x{#}% bonus damage and {#}% Damage Reduction. Damage bonus is increased by {#}% each second while in this form.
+		description: `Cooldown: {#} segundos
+Shapeshift into  Dire Werebear for {#} segundos gaining x{#}% bonus damage and {#}% de dano Reduction. Damage bonus is increased by {#}% each second while in this form.
 
-Kills extend the duration by {#} second up to {#} additional seconds.`,
+Kills extend the duration by {#} second up to {#} additional segundos.`,
 		id: 107,
 		maxPoints: 1,
 		values: [ "60.0", "10", "20", "20", "3", "1", "10" ],
@@ -1192,10 +1192,10 @@ Kills extend the duration by {#} second up to {#} additional seconds.`,
 	},
 	"Petrify": {
 		connections: [ "Ultimate", "Prime Petrify" ],
-		description: `Cooldown: {#} seconds
-Encase all Nearby enemies in stone, Stunning them for {#} seconds. You deal x{#}% increased Critical Strike Damage to enemies affected by Petrify.
+		description: `Cooldown: {#} segundos
+Encase all Nearby enemies in stone, Stunning them for {#} segundos. You deal x{#}% increased Critical Strike Damage to enemies affected by Petrify.
 
-Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its duration is increased to {#} seconds.`,
+Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its duration is increased to {#} segundos.`,
 		id: 110,
 		maxPoints: 1,
 		values: [ "60.0", "3", "25", "", "" ],
@@ -1215,14 +1215,14 @@ Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its d
 	"Supreme Petrify": {
 		baseSkill: "Petrify",
 		connections: [ "Prime Petrify" ],
-		description: `Killing an enemy affected by Petrify grants {#} Spirit.`,
+		description: `Killing an enemy affected by Petrify grants {#} Espírito.`,
 		id: 112,
 		maxPoints: 1,
 		values: [ "25" ],
 		x: -0.87,
 		y: -605.175
 	},
-	"Defensive Posture": {
+	"Defensiva Posture": {
 		connections: [ "Ultimate", "Thick Hide", "Nature's Resolve" ],
 		description: `Increases the amount of Fortify you gain from all sources by +{#}%.`,
 		id: 113,
@@ -1232,7 +1232,7 @@ Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its d
 		y: 1.205
 	},
 	"Thick Hide": {
-		connections: [ "Unrestrained", "Defensive Posture" ],
+		connections: [ "Unrestrained", "Defensiva Posture" ],
 		description: `Whenever you are Stunned, Immobilized, or Knocked Down, Fortify for {#}% Base Life ({#}).`,
 		id: 114,
 		maxPoints: 3,
@@ -1250,7 +1250,7 @@ Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its d
 		y: -0.59
 	},
 	"Nature's Resolve": {
-		connections: [ "Unrestrained", "Defensive Posture" ],
+		connections: [ "Unrestrained", "Defensiva Posture" ],
 		description: `{#}% chance when struck to Fortify you for {#}% Base Life ({#}).`,
 		id: 116,
 		maxPoints: 3,
@@ -1278,7 +1278,7 @@ Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its d
 	},
 	"Heightened Senses": {
 		connections: [ "Quickshift" ],
-		description: `Upon shapeshifting into a Werewolf or Werebear, gain {#}% Damage Reduction against Elites for {#} seconds.`,
+		description: `Upon shapeshifting into a Werewolf or Werebear, gain {#}% de dano Reduction against Elites for {#} segundos.`,
 		id: 119,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "3" ],
@@ -1287,9 +1287,9 @@ Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its d
 	},
 	"Lacerate": {
 		connections: [ "Ultimate", "Prime Lacerate" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-Shapeshift into a Werewolf, become Immune and quickly dash {#} times between enemies in the area dealing up to {#}% damage.`,
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+Shapeshift into a Werewolf, become Immune and quickly dash {#} times between enemies in the area dealing up to {#}% de dano.`,
 		id: 120,
 		maxPoints: 1,
 		values: [ "50.0", "15", "10", "420" ],
@@ -1318,9 +1318,9 @@ Shapeshift into a Werewolf, become Immune and quickly dash {#} times between ene
 	},
 	"Cataclysm": {
 		connections: [ "Ultimate", "Prime Cataclysm" ],
-		description: `Cooldown: {#} seconds
-Lucky Hit Chance: {#}%
-A massive storm follows you for {#} seconds. Tornadoes Knock Back enemies, and lightning strikes wildly dealing {#}% damage.`,
+		description: `Cooldown: {#} segundos
+Chande de Golpe de Sorte: {#}%
+A massive storm follows you for {#} segundos. Tornadoes Knock Back enemies, and lightning strikes Selvagemly dealing {#}% de dano.`,
 		id: 123,
 		maxPoints: 1,
 		values: [ "80.0", "82", "8", "54.6" ],
@@ -1330,7 +1330,7 @@ A massive storm follows you for {#} seconds. Tornadoes Knock Back enemies, and l
 	"Prime Cataclysm": {
 		baseSkill: "Cataclysm",
 		connections: [ "Supreme Cataclysm", "Cataclysm" ],
-		description: `Cataclysm's duration is increased by {#} seconds.`,
+		description: `Cataclysm's duration is increased by {#} segundos.`,
 		id: 124,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -1340,7 +1340,7 @@ A massive storm follows you for {#} seconds. Tornadoes Knock Back enemies, and l
 	"Supreme Cataclysm": {
 		baseSkill: "Cataclysm",
 		connections: [ "Prime Cataclysm" ],
-		description: `Lightning strikes from Cataclysm make enemies Vulnerable for 2 seconds.`,
+		description: `Lightning strikes from Cataclysm make enemies Vulnerable for 2 segundos.`,
 		id: 125,
 		maxPoints: 1,
 		x: -1152.59,
@@ -1357,7 +1357,7 @@ A massive storm follows you for {#} seconds. Tornadoes Knock Back enemies, and l
 	},
 	"Circle of Life": {
 		connections: [ "Defiance", "Resonance" ],
-		description: `Nature Magic Skills that consume Spirit Heal you for {#}% of your Maximum Life ({#}).`,
+		description: `Nature Magic Skills that consume Espírito Heal you for {#}% of your Maximum Life ({#}).`,
 		id: 127,
 		maxPoints: 3,
 		values: [ "{1/2/3}", "" ],
@@ -1401,8 +1401,8 @@ In addition, casting a Storm Skill has a {#}% chance to trigger a free Earth Ski
 	"Earthen Might": {
 		connections: [ "Capstone" ],
 		description: `Lucky Hit: Damaging enemies with Earth Skills has up to a {#}% chance to:
- Restore all of your Spirit
- Cause your attacks to be guaranteed Critical Strikes for {#} seconds
+ Restore all of your Espírito
+ Cause your attacks to be guaranteed Critical Strikes for {#} segundos
 
 This chance is increased by:
  {#}% for Critical Strikes
@@ -1424,9 +1424,9 @@ This chance is increased by:
 	},
 	"Bestial Rampage": {
 		connections: [ "Capstone" ],
-		description: `After being a Werewolf for {#} seconds, gain +{#}% Attack Speed for {#} seconds.
+		description: `After being a Werewolf for {#} segundos, gain +{#}% Attack Speed for {#} segundos.
 
-After being a Werebear for {#} seconds, deal x{#}% increased damage for {#} seconds.`,
+After being a Werebear for {#} segundos, deal x{#}% increased damage for {#} segundos.`,
 		id: 133,
 		maxPoints: 1,
 		values: [ "2.5", "20", "15", "2.5", "20", "15" ],
@@ -1435,7 +1435,7 @@ After being a Werebear for {#} seconds, deal x{#}% increased damage for {#} seco
 	},
 	"Perfect Storm": {
 		connections: [ "Capstone" ],
-		description: `Your Storm Skills grant {#} Spirit and deal x{#}% increased damage when damaging a Vulnerable, Immobilized or Slowed enemy.`,
+		description: `Your Storm Skills grant {#} Espírito and deal x{#}% increased damage when damaging a Vulnerable, Immobilized or Slowed enemy.`,
 		id: 134,
 		maxPoints: 1,
 		values: [ "2", "20" ],
@@ -1444,7 +1444,7 @@ After being a Werebear for {#} seconds, deal x{#}% increased damage for {#} seco
 	},
 	"Ursine Strength": {
 		connections: [ "Capstone" ],
-		description: `Gain x{#}% additional Maximum Life while in Werebear form and for {#} seconds after leaving Werebear form.
+		description: `Gain x{#}% additional Maximum Life while in Werebear form and for {#} segundos after leaving Werebear form.
 
 While Healthy, deal x{#}% increased damage.`,
 		id: 135,
@@ -1455,7 +1455,7 @@ While Healthy, deal x{#}% increased damage.`,
 	},
 };
 
-druidData["Spirit Boons"] = {
+druidData["Dadivas Espirituais"] = {
 	"Deer": {
 		id: 158,
 		"Prickleskin": {
@@ -1465,7 +1465,7 @@ druidData["Spirit Boons"] = {
 		},
 		"Gift of the Stag": {
 			values: [ "10" ],
-			description: `Gain +{#} Maximum Spirit.`,
+			description: `Gain +{#} Maximum Espírito.`,
 			id: 143
 		},
 		"Wariness": {
@@ -1496,7 +1496,7 @@ druidData["Spirit Boons"] = {
 			description: `Gain +{#}% Attack Speed.`,
 			id: 148
 		},
-		"Avian Wrath": {
+		"Avian Furia": {
 			values: [ "30" ],
 			description: `Gain x{#}% Critical Strike Damage.`,
 			id: 149
@@ -1506,12 +1506,12 @@ druidData["Spirit Boons"] = {
 		id: 161,
 		"Obsidian Slam": {
 			values: [ "" ],
-			description: `Every {#}th kill will cause your next Earth Skill to Overpower.`,
+			description: `Every {#}th kill will cause your next Earth Skill to Sobrecarregar.`,
 			id: 154
 		},
 		"Overload": {
 			values: [ "20", "60" ],
-			description: `Lucky Hit: Dealing Lightning damage has up to a {#}% chance to cause the target to emit a static discharge, dealing {#}% Lightning damage to surrounding enemies.`,
+			description: `Lucky Hit: Dealing Lightning damage has up to a {#}% chance to cause the target to emit a static discharge, dealing {#}% Lightning damage para os inimigos ao redor.`,
 			id: 155
 		},
 		"Masochistic": {
@@ -1521,7 +1521,7 @@ druidData["Spirit Boons"] = {
 		},
 		"Calm Before the Storm": {
 			values: [ "15", "2" ],
-			description: `Lucky Hit: Nature Magic Skills have up to a {#}% chance to reduce the Cooldown of your Ultimate Skill by {#} seconds.`,
+			description: `Lucky Hit: Nature Magic Skills have up to a {#}% chance to reduce the Cooldown of your Ultimate Skill by {#} segundos.`,
 			id: 157
 		}
 	},
@@ -1529,17 +1529,17 @@ druidData["Spirit Boons"] = {
 		id: 160,
 		"Packleader": {
 			values: [ "20" ],
-			description: `Lucky Hit: Critical Strikes have up to a {#}% chance to reset the Cooldowns of your Companion Skills.`,
+			description: `Lucky Hit: Critical Strikes have up to a {#}% chance to reset the Cooldowns of your Pet Skills.`,
 			id: 150
 		},
 		"Energize": {
 			values: [ "15", "10" ],
-			description: `Lucky Hit: Dealing damage has up to a {#}% chance to restore {#} Spirit.`,
+			description: `Lucky Hit: Dealing damage has up to a {#}% chance to restore {#} Espírito.`,
 			id: 151
 		},
 		"Bolster": {
 			values: [ "10" ],
-			description: `Fortify for {#}% of your Maximum Life when you use a Defensive Skill.`,
+			description: `Fortify for {#}% of your Maximum Life when you use a Defensiva Skill.`,
 			id: 152
 		},
 		"Calamity": {
