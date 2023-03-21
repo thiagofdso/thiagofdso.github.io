@@ -115,35 +115,36 @@ const nodeHeight = 100;
 const tooltipWidth = 540;
 const tooltipHeight = 200;
 
+
 // evil magic variables that probably need to be replaced later to support multiple languages
-const COLOR_HOVER_HTML = "Click to customize connector and node colors.<br>Custom color choices will persist across sessions.";
-const COLOR_LINE_TEXT = "Choose your preferred active line color.";
-const COLOR_NODE_TEXT = "Choose your preferred active node color.";
-const DATABASE_LINK_HTML = `<a href="./database/" target="_blank">[Click here if you're looking for datamined information.]</a>`;
-const ENABLE_CLAMP_TEXT = "Enable Clamping";
-const DISABLE_CLAMP_TEXT = "Disable Clamping";
-const SMALL_CLAMP_TEXT = "Clamp";
-const MATCH_FOUND_TEXT = " match found for query: ";
-const MATCHES_FOUND_TEXT = " matches found for query: ";
-const REQUIRED_POINTS_DESC = "Spend {requiredPoints} additional skill points to unlock.";
-const ENCHANTMENT_EFFECT_DESC = "— Enchantment Effect —";
-const PHYSICAL = "Physical";
-const FIRE = "Fire";
-const LIGHTNING = "Lightning";
-const COLD = "Cold";
-const POISON = "Poison";
-const SHADOW = "Shadow";
-const UNKNOWN = "Unknown";
+const COLOR_HOVER_HTML = "Clique para alterar as cores do conector e dos nós.";
+const COLOR_LINE_TEXT = "Escolha sua cor de linha ativa preferida.";
+const COLOR_NODE_TEXT = "Escolha sua cor de nó ativo preferida.";
+const DATABASE_LINK_HTML = `<a href="./database/" target="_blank">[Clique aqui se estiver procurando por informação do datamine.]</a>`;
+const ENABLE_CLAMP_TEXT = "Ativar Fixação";
+const DISABLE_CLAMP_TEXT = "Desativar Fixação";
+const SMALL_CLAMP_TEXT = "Fixar";
+const MATCH_FOUND_TEXT = " valor encontrado: ";
+const MATCHES_FOUND_TEXT = " valores encontrados: ";
+const REQUIRED_POINTS_DESC = "Use {requiredPoints} pontos de skil adicionais para habilitar.";
+const ENCHANTMENT_EFFECT_DESC = "— Efeito de Encantamento —";
+const PHYSICAL = "Físico";
+const FIRE = "Fogo";
+const LIGHTNING = "Raio";
+const COLD = "Frio";
+const POISON = "Veneno";
+const SHADOW = "Sombra";
+const UNKNOWN = "Desconhecido";
 const ANY_DAMAGE_TYPE = [PHYSICAL, FIRE, LIGHTNING, COLD, POISON, SHADOW];
 const COOLDOWN = "Cooldown";
 const ULTIMATE = "Ultimate";
 const CAPSTONE = "Capstone";
-const PARAGON_BOARD = "Paragon Board";
-const CODEX_OF_POWER = "Codex of Power";
-const CODEX_OF_POWER_DESC = "This aspect type can be applied to: ";
-const SPIRIT_BOONS = "Spirit Boons";
-const SPIRIT_BOON_DESC = "Specializing in this spirit type will allow you to allocate two boons instead of only one.";
-const BOOK_OF_THE_DEAD = "Book of the Dead";
+const PARAGON_BOARD = "Quadro de Paragon";
+const CODEX_OF_POWER = "Codex de Poder";
+const CODEX_OF_POWER_DESC = "Este tipo de aspecto pode ser aplicado a: ";
+const SPIRIT_BOONS = "Bençãos Espirituais";
+const SPIRIT_BOON_DESC = "A especialização neste tipo de espírito permitirá que você aloque dois benefícios em vez de apenas um.";
+const BOOK_OF_THE_DEAD = "Livro dos Mortos";
 
 const COLOR_OVERRIDE = {
 	"Magic": 0x0077FF,
@@ -483,7 +484,7 @@ function handleClassSelection(event) {
 	const classText = $(classString).text();
 	if (classText != $("#className").text()) {
 		$("#className").text(classText);
-		if (classText == "None") {
+		if (classText == "Nenhuma") {
 			$("#header h2, #versionLabel, #colorButton, #extraButtons1, #extraButtons2, #groupSelector, #searchInput").addClass("disabled");
 			$("#classSelectBox").removeClass("disabled");
 			$("#extraInfo").html(DATABASE_LINK_HTML).css("width", "auto").removeClass("hidden");

@@ -1,5 +1,5 @@
 let paragonData = {
-	"Barbarian": {
+	"Barbáro": {
 		"Board": {
 			"Start": [
 				[
@@ -4334,7 +4334,7 @@ let paragonData = {
 			}
 		}
 	},
-	"Druid": {
+	"Druida": {
 		"Board": {
 			"Start": [
 				[
@@ -8927,7 +8927,7 @@ let paragonData = {
 			}
 		}
 	},
-	"Necromancer": {
+	"Necromante": {
 		"Board": {
 			"Start": [
 				[
@@ -13264,7 +13264,7 @@ let paragonData = {
 			}
 		}
 	},
-	"Rogue": {
+	"Renegado": {
 		"Board": {
 			"Start": [
 				[
@@ -17568,7 +17568,7 @@ let paragonData = {
 			}
 		}
 	},
-	"Sorcerer": {
+	"Mago": {
 		"Board": {
 			"Start": [
 				[
