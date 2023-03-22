@@ -41,7 +41,7 @@ druidData["Trunk Data"] = {
 		x: -12.662,
 		y: 4864.15
 	},
-	"Dádivas Espirituais": {
+	"Spirit Boons": {
 		x: 2500,
 		y: 0
 	},
@@ -1455,7 +1455,7 @@ While Healthy, deal x{#}% increased damage.`,
 	},
 };
 
-druidData["Dádivas Espirituais"] = {
+druidData["Spirit Boons"] = {
 	"Deer": {
 		id: 158,
 		"Prickleskin": {
