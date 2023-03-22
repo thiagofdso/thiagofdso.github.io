@@ -1091,7 +1091,7 @@ let nodeValues = {
 				"20"
 			]
 		},
-		"Spirit Boons": {
+		"Dádivas Espirituais": {
 			"Prickleskin": [
 				""
 			],

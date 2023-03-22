@@ -471,7 +471,7 @@ function runParser(downloadMode) {
 				formattedData += "\t\ty: 0\n";
 				formattedData += "\t},\n";
 			} else if (className == "Druid") {
-				formattedData += '\t"Spirit Boons": {\n';
+				formattedData += '\t"Dádivas Espirituais": {\n';
 				formattedData += "\t\tx: 2500,\n";
 				formattedData += "\t\ty: 0\n";
 				formattedData += "\t},\n";
@@ -521,8 +521,8 @@ function runParser(downloadMode) {
 				}
 				formattedData += "};\n\n";
 			} else if (className == "Druid") {
-				const druidBoons = classData["Spirit Boons"];
-				formattedData += classObjectName + '["Spirit Boons"] = {\n';
+				const druidBoons = classData["Dádivas Espirituais"];
+				formattedData += classObjectName + '["Dádivas Espirituais"] = {\n';
 				let boonTypeFormatted = [];
 				for (const [boonFullName, boonData] of Object.entries(druidBoons)) {
 					const boonFullNameArray = boonFullName.split("_");
@@ -530,12 +530,12 @@ function runParser(downloadMode) {
 					const boonModifierId = Number(boonFullNameArray.at(-1));
 					if (!boonTypeFormatted[boonTypeName]) {
 						formattedData += '	"' + boonTypeName + '": {\n';
-						const nodeHistoricalId = nodeHistory[className]["Spirit Boons: " + boonTypeName];
+						const nodeHistoricalId = nodeHistory[className]["Dádivas Espirituais: " + boonTypeName];
 						if (nodeHistoricalId != undefined) {
 							formattedData += "\t\tid: " + nodeHistoricalId + ",\n";
 						} else {
 							const nodeHistoryLength = Object.keys(nodeHistory[className]).length;
-							nodeHistory[className]["Spirit Boons: " + boonTypeName] = nodeHistoryLength;
+							nodeHistory[className]["Dádivas Espirituais: " + boonTypeName] = nodeHistoryLength;
 							formattedData += "\t\tid: " + nodeHistoryLength + ",\n";
 						}
 						boonTypeFormatted[boonTypeName] = true;
@@ -543,14 +543,14 @@ function runParser(downloadMode) {
 
 					formattedData += '\t\t"' + boonData["name"] + '": {\n';
 					const sanitizedDescription = sanitizeNodeDescription(boonData["desc"]);
-					formattedData += `\t${updateSavedValues(className, "Spirit Boons", boonData["name"], sanitizedDescription)}`;
+					formattedData += `\t${updateSavedValues(className, "Dádivas Espirituais", boonData["name"], sanitizedDescription)}`;
 					formattedData += "\t\t\tdescription: `" + sanitizedDescription + "`,\n";
-					const nodeHistoricalId = nodeHistory[className]["Spirit Boons: " + boonData["name"]];
+					const nodeHistoricalId = nodeHistory[className]["Dádivas Espirituais: " + boonData["name"]];
 					if (nodeHistoricalId != undefined) {
 						formattedData += "\t\t\tid: " + nodeHistoricalId + "\n";
 					} else {
 						const nodeHistoryLength = Object.keys(nodeHistory[className]).length;
-						nodeHistory[className]["Spirit Boons: " + boonData["name"]] = nodeHistoryLength;
+						nodeHistory[className]["Dádivas Espirituais: " + boonData["name"]] = nodeHistoryLength;
 						formattedData += "\t\t\tid: " + nodeHistoryLength + "\n";
 					}
 
