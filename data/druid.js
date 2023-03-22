@@ -73,7 +73,7 @@ Divida a terra, empalando o primeiro inimigo atingido por {#}% de dano.`,
 	"Pico da Terra Selvagem": {
 		baseSkill: "Pico da Terra",
 		connections: [ "Pico da Terra Melhorado" ],
-		description: `Usa um segundo Pico da Terra quando acertar um inimigo Imobilizado ou Paralizado.`,
+		description: `Usa um segundo Pico da Terra quando acertar um inimigo Imobilizado ou Atordoado.`,
 		id: 164,
 		maxPoints: 1,
 		x: -741.72,
@@ -82,7 +82,7 @@ Divida a terra, empalando o primeiro inimigo atingido por {#}% de dano.`,
 	"Pico da Terra Feroz": {
 		baseSkill: "Pico da Terra",
 		connections: [ "Pico da Terra Melhorado" ],
-		description: `Fortifica por {#}% da sua Vida Base ({#}) sempre que o Pico da Terra acertar inimigos Paralizados, Imobilizados ou Derrubados.`,
+		description: `Fortifica por {#}% da sua Vida Base ({#}) sempre que o Pico da Terra acertar inimigos Atordoados, Imobilizados ou Derrubados.`,
 		id: 165,
 		maxPoints: 1,
 		values: [ "", "" ],
@@ -282,7 +282,7 @@ Esmaga inimigos entre 2 pilares de terra, infligindo até {#}% de dano.`,
 	"Desmoronamento Furioso": {
 		baseSkill: "Desmoronamento",
 		connections: [ "Desmoronamento Melhorado" ],
-		description: `Quando acertar um inimigo Imobilizado ou Paralizado com Desmoronamento, um pilar de terra adicional é formado.`,
+		description: `Quando acertar um inimigo Imobilizado ou Atordoado com Desmoronamento, um pilar de terra adicional é formado.`,
 		id: 22,
 		maxPoints: 1,
 		x: 1121.353,
@@ -332,7 +332,7 @@ Se transforma em um Urso e bate no chao, infligindo {#}% de dano para os inimigo
 	"Pulverizar Furioso": {
 		baseSkill: "Pulverizar",
 		connections: [ "Pulverizar Melhorado" ],
-		description: `Inimigos são Paralizados por {#} segundos quando eles sao Sobrecarregados com Pulverizar.`,
+		description: `Inimigos são Atordoados por {#} segundos quando eles sao Sobrecarregados com Pulverizar.`,
 		id: 27,
 		maxPoints: 1,
 		values: [ "" ],
@@ -820,7 +820,7 @@ Ativa: Direciona seus lobos para focar um inimigo, saltando para eles e golpeand
 	"Lobos Melhorados": {
 		baseSkill: "Lobos",
 		connections: [ "Lobos", "Alcatéia Brutal", "Alcatéia Feroz" ],
-		description: `Lobos infligem x{#}% de dano aumentado para inimigos Imobilizados, Paralizados, com Lentidao ou Envenenados.`,
+		description: `Lobos infligem x{#}% de dano aumentado para inimigos Imobilizados, Atordoados, com Lentidao ou Envenenados.`,
 		id: 139,
 		maxPoints: 1,
 		values: [ "20" ],
@@ -849,7 +849,7 @@ Ativa: Direciona seus lobos para focar um inimigo, saltando para eles e golpeand
 	},
 	"Alcance da Natureza": {
 		connections: [ "Pet" ],
-		description: `Inflinge x{#}% de dano amentado em inimigos Distantes. Dobra esse bônus se eles estiverem também con Lentidão, Paralizados, Imobilizado, ou Derrubados.`,
+		description: `Inflinge x{#}% de dano amentado em inimigos Distantes. Dobra esse bônus se eles estiverem também con Lentidão, Atordoados, Imobilizado, ou Derrubados.`,
 		id: 75,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
@@ -899,7 +899,7 @@ Se o alvo já estiver Imobilizado, o dano Elétrico é aumentado em x{#}%.`,
 	},
 	"Mau Presságio": {
 		connections: [ "Atmosfera carregada", "Choque Elétrico", "Tempestade sem Fim" ],
-		description: `Golpe de Sorte: Até {#}% de chance quando infligir dano para um inimigo Vulnerável, Imobilizado ou Paralizado que um relâmpago acertar, infligindo {#}% de dano.`,
+		description: `Golpe de Sorte: Até {#}% de chance quando infligir dano para um inimigo Vulnerável, Imobilizado ou Atordoado que um relâmpago acertar, infligindo {#}% de dano.`,
 		id: 83,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "57.25" ],
@@ -963,7 +963,7 @@ Desenterre uma grande pedra rolante que empurrou e esmaga os inimigos, infligind
 Chande de Golpe de Sorte: {#}%
 Se transformar em um Urso, se torna Imparável, e empurra para frente, infligindo {#}% de dano e Derruba Inimigos.
 
-Inimigos que são Derrubados no terreno levam um adicional de {#}% de dano e são Paralizados por {#} segundos.`,
+Inimigos que são Derrubados no terreno levam um adicional de {#}% de dano e são Atordoados por {#} segundos.`,
 		id: 89,
 		maxPoints: 5,
 		values: [ "14.0", "33", "26.25", "47.25", "3" ],
@@ -1002,7 +1002,7 @@ Inimigos que são Derrubados no terreno levam um adicional de {#}% de dano e sã
 	},
 	"Terra Esmagadora": {
 		connections: [ "Furia", "Salvaguarda", "Guarda de pedra" ],
-		description: `Habilidades de terra infligem x{#}% de dano aumentado para inimigos Lentos, Paralizados, Imobilizados ou Derrubados.`,
+		description: `Habilidades de terra infligem x{#}% de dano aumentado para inimigos Lentos, Atordoados, Imobilizados ou Derrubados.`,
 		id: 93,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
@@ -1233,7 +1233,7 @@ Contra Chefes, o bônus de Dano Crítico é aumentado em x{#}% e sua duração �
 	},
 	"Couro Grosso": {
 		connections: [ "Desenfrado", "Postura Defensiva" ],
-		description: `Sempre que for Paralizado, Imobilizado ou Derrubado, Fortificam em {#}% da sua Vida Base ({#}).`,
+		description: `Sempre que for Atordoado, Imobilizado ou Derrubado, Fortificam em {#}% da sua Vida Base ({#}).`,
 		id: 114,
 		maxPoints: 3,
 		values: [ "2.56", "" ],
@@ -1377,7 +1377,7 @@ Uma tempestade massiva segue você por {#} segundos. Tornados Derrubam inimigos,
 		connections: [ "Desafio", "Ressonância" ],
 		description: `Suas Habilidades Terrestres infligem x{#}% de dano aumentado em inimigos Vulneráveis.
 
-Suas Habilidades de Raio infligem x{#}% de dano aumentado em inimigos que estiverem Paralizados, Imobilizados ou Derrubados.`,
+Suas Habilidades de Raio infligem x{#}% de dano aumentado em inimigos que estiverem Atordoados, Imobilizados ou Derrubados.`,
 		id: 129,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "{4/8/12}" ],
@@ -1387,11 +1387,11 @@ Suas Habilidades de Raio infligem x{#}% de dano aumentado em inimigos que estive
 };
 
 druidData["Capstone"] = {
-	"Nature's Fury": {
+	"Fúria da natureza": {
 		connections: [ "Capstone" ],
-		description: `Casting an Earth Skill has a {#}% chance to trigger a free Storm Skill of the same category.
+		description: `Conjurar uma Habilidade de Terra tem {#}% de chance de ativar uma Habilidade de Tempestade gratuita da mesma categoria.
 
-In addition, casting a Storm Skill has a {#}% chance to trigger a free Earth Skill of the same category.`,
+Além disso, lançar uma Habilidade de Tempestade tem {#}% de chance de ativar uma Habilidade de Terra gratuita da mesma categoria.`,
 		id: 130,
 		maxPoints: 1,
 		values: [ "20", "20" ],
@@ -1400,53 +1400,53 @@ In addition, casting a Storm Skill has a {#}% chance to trigger a free Earth Ski
 	},
 	"Earthen Might": {
 		connections: [ "Capstone" ],
-		description: `Golpe de Sorte: Damaging enemies with Earth Skills has up to a {#}% chance to:
- Restore all of your Espírito
- Cause your attacks to be guaranteed Critical Strikes for {#} segundos
+		description: `Golpe de Sorte: Causar dano a inimigos com Habilidades da Terra tem até {#}% de chance de:
+  Restaurar todo o seu Espírito
+  Fazer com que seus ataques sejam Acertos Críticos garantidos por {#} segundos
 
-This chance is increased by:
- {#}% for Critical Strikes
- {#}% if the target is Stunned, Immobilized, or Knocked Back.`,
+Esta chance é aumentada por:
+  {#}% para acertos críticos
+  {#}% se o alvo estiver Atordoado, Imobilizado ou Derrubado.`,
 		id: 131,
 		maxPoints: 1,
 		values: [ "5", "10", "10", "100" ],
 		x: 551.997,
 		y: -60.41
 	},
-	"Lupine Ferocity": {
+	"Ferocidade Lupina": {
 		connections: [ "Capstone" ],
-		description: `Every 6th Werewolf Skill hit Critically Strikes and deals x{#}% increased damage.`,
+		description: `Cada 6ª Habilidade de Lobisomem atinge Acertos Críticos e causa x{#}% de dano a mais.`,
 		id: 132,
 		maxPoints: 1,
 		values: [ "60" ],
 		x: -87.174,
 		y: 309.645
 	},
-	"Bestial Rampage": {
+	"Violência Bestial": {
 		connections: [ "Capstone" ],
-		description: `After being a Werewolf for {#} segundos, gain +{#}% Attack Speed for {#} segundos.
+		description: `Depois de se transformar em um Lobisomem por {#} segundos, ganhe +{#}% de Velocidade de Ataque por {#} segundos.
 
-After being a Werebear for {#} segundos, deal x{#}% increased damage for {#} segundos.`,
+Após se transformar em um Urso por {#} segundos, cause x{#}% de aumento de dano por {#} segundos.`,
 		id: 133,
 		maxPoints: 1,
 		values: [ "2.5", "20", "15", "2.5", "20", "15" ],
 		x: -579.178,
 		y: 308.825
 	},
-	"Perfect Storm": {
+	"Tempestade Perfeita": {
 		connections: [ "Capstone" ],
-		description: `Your Storm Skills grant {#} Espírito and deal x{#}% increased damage when damaging a Vulnerable, Immobilized or Slowed enemy.`,
+		description: `Suas Habilidades de Tempestade concedem {#} Espírito e causam x{#}% de aumento de dano ao causar dano a um inimigo Vulnerável, Imobilizado ou Lento.`,
 		id: 134,
 		maxPoints: 1,
 		values: [ "2", "20" ],
 		x: 128.936,
 		y: -296.355
 	},
-	"Ursine Strength": {
+	"Força Ursina": {
 		connections: [ "Capstone" ],
-		description: `Gain x{#}% additional Maximum Life while in Werebear form and for {#} segundos after leaving Werebear form.
+		description: `Ganhe x{#}% de Vida Máxima adicional enquanto estiver na forma de Urso e por {#} segundos depois de sair da forma de Urso.
 
-While Healthy, deal x{#}% increased damage.`,
+Enquanto estiver Saudável, inflige x{#}% de dano aumentado.`,
 		id: 135,
 		maxPoints: 1,
 		values: [ "20", "3", "20" ],
