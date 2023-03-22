@@ -142,7 +142,7 @@ const CAPSTONE = "Capstone";
 const PARAGON_BOARD = "Quadro de Paragon";
 const CODEX_OF_POWER = "Codex de Poder";
 const CODEX_OF_POWER_DESC = "Este tipo de aspecto pode ser aplicado a: ";
-const SPIRIT_BOONS = "Bençãos Espirituais";
+const SPIRIT_BOONS = "Dádivas Espirituais";
 const SPIRIT_BOON_DESC = "A especialização neste tipo de espírito permitirá que você aloque dois benefícios em vez de apenas um.";
 const BOOK_OF_THE_DEAD = "Livro dos Mortos";
 
