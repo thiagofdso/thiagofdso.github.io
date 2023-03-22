@@ -713,9 +713,9 @@ druidData["Pet"] = {
 		connections: [ "Pet", "Corvos Melhorado" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Passive: {#} Corvos fly above you and periodically attack your enemies for {#}% de dano every {#} segundos.
+Passiva: {#} Corvos voam sobre você e periodicamente atacam seus inimigos em {#}% de dano a cada {#} segundos.
 
-Active: The target area is swarmed with ravens, infligindo {#}% de dano over {#} segundos.`,
+Ativa: A área alvo é cercada por corvos, infligindo {#}% de dano por {#} segundos.`,
 		id: 62,
 		maxPoints: 5,
 		values: [ "25.0", "33", "", "89.25", "6", "", "" ],
@@ -724,141 +724,141 @@ Active: The target area is swarmed with ravens, infligindo {#}% de dano over {#}
 	},
 	"Corvos Melhorado": {
 		baseSkill: "Corvos",
-		connections: [ "Corvos", "Brutal Corvos", "Ferocious Corvos" ],
-		description: `You have +{#}% increased Critical Strike Chance for {#} segundos against Enemies hit by Corvos.`,
+		connections: [ "Corvos", "Corvos Brutais", "Corvos Ferozes" ],
+		description: `Você tem +{#}% de aumento de Chance de Acerto Crítico por {#} segundos contra inimigos acertados por Corvos.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "13.85", "5" ],
 		x: 1.905,
 		y: 492.536
 	},
-	"Brutal Corvos": {
+	"Corvos Brutais": {
 		baseSkill: "Corvos",
 		connections: [ "Corvos Melhorado" ],
-		description: `{#} additional Corvos periodically attack enemies.`,
+		description: `{#} Corvos adicionais atacam periodicamente inimigos.`,
 		id: 64,
 		maxPoints: 1,
 		values: [ "2" ],
 		x: -148.35,
 		y: 612.144
 	},
-	"Ferocious Corvos": {
+	"Corvos Ferozes": {
 		baseSkill: "Corvos",
 		connections: [ "Corvos Melhorado" ],
-		description: `Enemies inside the swarm of Corvos when it is activated become Vulnerable for {#} segundos.`,
+		description: `Inimigos dentro do área de Corvos quando é ativado se tornam Vulneráveis por {#} segundos.`,
 		id: 65,
 		maxPoints: 1,
 		values: [ "3" ],
 		x: 134.94,
 		y: 611.014
 	},
-	"Call of the Selvagem": {
+	"Chamado Selvagem": {
 		connections: [ "Pet" ],
-		description: `Your Pets deal x{#}% bonus damage.`,
+		description: `Seus Pets infligem x{#}% de bonus de dano.`,
 		id: 66,
 		maxPoints: 3,
 		values: [ "{8/16/24}" ],
 		x: 550.22,
 		y: 0.364
 	},
-	"Vine Creeper": {
-		connections: [ "Pet", "Melhorado Vine Creeper" ],
+	"Trepadeira de Videira": {
+		connections: [ "Pet", "Trepadeira de Videira Melhorada" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Passive: A vine creeper periodically emerges from the ground every {#} segundos and applies {#}% Poisoning damage over {#} segundos to an enemy in the area.
+Passiva: Uma trepadeira de videira periodicamente emerge da terra a cada {#} segundos e aplica {#}% de dano em Veneno por {#} segundos para inimigos na área.
 
-Active: Vines strangle all surrounding enemies, Immobilizing them for {#} segundos and poisoning them for {#}% de dano over {#} segundos.`,
+Ativa: Trepadeira estrangula todos inimigos ao redor, Imobilizando eles por {#} segundos e envenenando eles em {#}% de dano por segundos.`,
 		id: 67,
 		maxPoints: 5,
 		values: [ "20.0", "40", "7", "37.8", "6", "2", "31.5", "2" ],
 		x: -535.155,
 		y: -0.594
 	},
-	"Melhorado Vine Creeper": {
-		baseSkill: "Vine Creeper",
-		connections: [ "Vine Creeper", "Ferocious Vine Creeper", "Brutal Vine Creeper" ],
-		description: `Vine Creeper's Immobilize duration is increased by {#} second.`,
+	"Trepadeira de Videira Melhorada": {
+		baseSkill: "Trepadeira de Videira",
+		connections: [ "Trepadeira de Videira", "Trepadeira de Videira Feroz", "Trepadeira de Videira Brutal" ],
+		description: `A duração da Imobilização da Trepadeira de Videira é aumentada em {#} second.`,
 		id: 68,
 		maxPoints: 1,
 		values: [ "1" ],
 		x: -918.845,
 		y: 0.299
 	},
-	"Ferocious Vine Creeper": {
-		baseSkill: "Vine Creeper",
-		connections: [ "Melhorado Vine Creeper" ],
-		description: `Vine Creeper's active Poisoning duration is increased by {#} segundos.`,
+	"Trepadeira de Videira Feroz": {
+		baseSkill: "Trepadeira de Videira",
+		connections: [ "Trepadeira de Videira Melhorada" ],
+		description: `A duração do Envenenamento da Trepadeira de Videira é aumentada em {#} segundos.`,
 		id: 69,
 		maxPoints: 1,
 		values: [ "3" ],
 		x: -1107.645,
 		y: 88.49
 	},
-	"Brutal Vine Creeper": {
-		baseSkill: "Vine Creeper",
-		connections: [ "Melhorado Vine Creeper" ],
-		description: `Your Critical Strike Chance is increased by +{#}% against enemies strangled by Vine Creeper.`,
+	"Trepadeira de Videira Brutal": {
+		baseSkill: "Trepadeira de Videira",
+		connections: [ "Trepadeira de Videira Melhorada" ],
+		description: `Sua Chance de Acerto Crítico é aumentada em +{#}% contra inimigos estrangulados pela Trepadeira de Videira.`,
 		id: 70,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: -1097.525,
 		y: -94.798
 	},
-	"Wolves": {
-		connections: [ "Pet", "Melhorado Wolves" ],
+	"Lobos": {
+		connections: [ "Pet", "Lobos Melhorados" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Passive: Summon {#} wolf Pets that bite enemies for {#}% de dano.
+Passiva: Sumona {#} lobos que mordem os inimigos em {#}% de dano.
 
-Active: Direct your wolves to focus an enemy, leaping to them and striking for {#}% de dano.`,
+Ativa: Direciona seus lobos para focar um inimigo, saltando para eles e golpeando em {#}% de dano.`,
 		id: 71,
 		maxPoints: 5,
 		values: [ "14.0", "50", "2", "8.19", "36.75" ],
 		x: 7.69,
 		y: -289.968
 	},
-	"Melhorado Wolves": {
-		baseSkill: "Wolves",
-		connections: [ "Wolves", "Brutal Wolf Pack", "Ferocious Wolf Pack" ],
-		description: `Wolves deal x{#}% increased damage to Immobilized, Stunned, Slowed, or Poisoned enemies.`,
+	"Lobos Melhorados": {
+		baseSkill: "Lobos",
+		connections: [ "Lobos", "Alcatéia Brutal", "Alcatéia Feroz" ],
+		description: `Lobos infligem x{#}% de dano aumentado para inimigos Imobilizados, Paralizados, com Lentidao ou Envenenados.`,
 		id: 139,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: 7.025,
 		y: -503.006
 	},
-	"Brutal Wolf Pack": {
-		baseSkill: "Wolves",
-		connections: [ "Melhorado Wolves" ],
-		description: `When you Critically Strike, your Wolves gain +{#}% Attack Speed for {#} segundos.`,
+	"Alcatéia Brutal": {
+		baseSkill: "Lobos",
+		connections: [ "Lobos Melhorados" ],
+		description: `Quando acerta um Golpe Crítico, seus Lobos ganham +{#}% de Velocidade de Ataque por {#} segundos.`,
 		id: 74,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -161.61,
 		y: -605.781
 	},
-	"Ferocious Wolf Pack": {
-		baseSkill: "Wolves",
-		connections: [ "Melhorado Wolves" ],
-		description: `Lucky Hit: Your Wolves' attacks have up to a {#}% chance to Fortify you for {#}% Base Life ({#}).`,
+	"Alcatéia Feroz": {
+		baseSkill: "Lobos",
+		connections: [ "Lobos Melhorados" ],
+		description: `Golpe de Sorte: O ataque dos seus Lobos possuem até {#}% de chance para Fortificar você em {#}%  da sua Vida Base ({#}).`,
 		id: 73,
 		maxPoints: 1,
 		values: [ "", "", "" ],
 		x: 170.175,
 		y: -604.816
 	},
-	"Nature's Reach": {
+	"Alcance da Natureza": {
 		connections: [ "Pet" ],
-		description: `Deal x{#}% increased damage to Distant enemies. Double this bonus if they are also Slowed, Stunned, Immobilized, or Knocked Back.`,
+		description: `Inflinge x{#}% de dano amentado em inimigos Distantes. Dobra esse bônus se eles estiverem também con Lentidão, Paralizados, Imobilizado, ou Derrubados.`,
 		id: 75,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -372.585,
 		y: -196.762
 	},
-	"Clarity": {
+	"Clareza": {
 		connections: [ "Pet" ],
-		description: `Gain {#} Espírito when transforming into Human form.`,
+		description: `Ganha {#} Espírito quando transformando na forma Humana.`,
 		id: 76,
 		maxPoints: 3,
 		values: [ "{2/4/6}" ],
