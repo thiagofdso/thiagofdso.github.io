@@ -908,7 +908,7 @@ Se o alvo já estiver Imobilizado, o dano Elétrico é aumentado em x{#}%.`,
 	},
 	"Tempestade sem Fim": {
 		connections: [ "Exposição Elementar", "Mau Presságio" ],
-		description: `Aumenta a duração do Furacão e Cataclismo em x{#}%.`,
+		description: `Aumenta a duração do Furacão e Cataclisma em x{#}%.`,
 		id: 84,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
@@ -1159,225 +1159,225 @@ Inimigos infectados espalham Raiva para os alvos ao redor.`,
 };
 
 druidData["Ultimate"] = {
-	"Grizzly Rage": {
-		connections: [ "Ultimate", "Prime Grizzly Rage" ],
+	"Fúria de Urso": {
+		connections: [ "Ultimate", "Fúria de Urso Primal" ],
 		description: `Cooldown: {#} segundos
-Shapeshift into  Dire Werebear for {#} segundos gaining x{#}% bonus damage and {#}% de dano Reduction. Damage bonus is increased by {#}% each second while in this form.
+Se transforma em um Urso Medonho por {#} segundos ganhando x{#}% de bônus de dano e {#}% de Redução de Dano. Bônus de dano é aumentado em {#}% para cada segundo nessa forma.
 
-Kills extend the duration by {#} second up to {#} additional segundos.`,
+Mortes extendem a duração em {#} segundo até {#} segundos.`,
 		id: 107,
 		maxPoints: 1,
 		values: [ "60.0", "10", "20", "20", "3", "1", "10" ],
 		x: 4.395,
 		y: 301.055
 	},
-	"Prime Grizzly Rage": {
-		baseSkill: "Grizzly Rage",
-		connections: [ "Supreme Grizzly Rage", "Grizzly Rage" ],
-		description: `You are Unstoppable while Grizzly Rage is active.`,
+	"Fúria de Urso Primal": {
+		baseSkill: "Fúria de Urso",
+		connections: [ "Fúria de Urso Suprema", "Fúria de Urso" ],
+		description: `Você se torna Imparável enquanto Fúria de Urso está ativa.`,
 		id: 108,
 		maxPoints: 1,
 		x: 148.47,
 		y: 497.15
 	},
-	"Supreme Grizzly Rage": {
-		baseSkill: "Grizzly Rage",
-		connections: [ "Prime Grizzly Rage" ],
-		description: `Gain {#}% Base Life ({#}) as Fortify per second while Grizzly Rage is active.`,
+	"Fúria de Urso Suprema": {
+		baseSkill: "Fúria de Urso",
+		connections: [ "Fúria de Urso Primal" ],
+		description: `Ganha {#}% da sua Vida Base ({#}) como Fortificação por segundo enquanto Fúria de Urso estiver ativa.`,
 		id: 109,
 		maxPoints: 1,
 		values: [ "3.2", "" ],
 		x: -1.065,
 		y: 641.92
 	},
-	"Petrify": {
-		connections: [ "Ultimate", "Prime Petrify" ],
+	"Petrificar": {
+		connections: [ "Ultimate", "Petrificar Primal" ],
 		description: `Cooldown: {#} segundos
-Encase all Nearby enemies in stone, Stunning them for {#} segundos. You deal x{#}% increased Critical Strike Damage to enemies affected by Petrify.
+Encaixa todos inimigos próximos em pedra, Paralizando eles por {#} segundos. Você inflige x{#}% de Dano Crítico aumentado para inimigos afetados por Petrificar.
 
-Against Bosses, the Critical Strike Damage bonus is increased to x{#}% and its duration is increased to {#} segundos.`,
+Contra Chefes, o bônus de Dano Crítico é aumentado em x{#}% e sua duração é aumentada em {#} segundos.`,
 		id: 110,
 		maxPoints: 1,
 		values: [ "60.0", "3", "25", "", "" ],
 		x: 3.895,
 		y: -279.14
 	},
-	"Prime Petrify": {
-		baseSkill: "Petrify",
-		connections: [ "Supreme Petrify", "Petrify" ],
-		description: `Petrify's effect durations are increased by {#} second.`,
+	"Petrificar Primal": {
+		baseSkill: "Petrificar",
+		connections: [ "Petrificar Suprema", "Petrificar" ],
+		description: `A duração dos efeitos de Petrificar é aumentada em {#} segundo.`,
 		id: 111,
 		maxPoints: 1,
 		values: [ "1" ],
 		x: 193.785,
 		y: -466.65
 	},
-	"Supreme Petrify": {
-		baseSkill: "Petrify",
-		connections: [ "Prime Petrify" ],
-		description: `Killing an enemy affected by Petrify grants {#} Espírito.`,
+	"Petrificar Suprema": {
+		baseSkill: "Petrificar",
+		connections: [ "Petrificar Primal" ],
+		description: `Matar um inimigo afetado por Petrificar garante {#} Espírito.`,
 		id: 112,
 		maxPoints: 1,
 		values: [ "25" ],
 		x: -0.87,
 		y: -605.175
 	},
-	"Defensiva Posture": {
-		connections: [ "Ultimate", "Thick Hide", "Nature's Resolve" ],
-		description: `Increases the amount of Fortify you gain from all sources by +{#}%.`,
+	"Postura Defensiva": {
+		connections: [ "Ultimate", "Couro Grosso", "Resolução da Natureza" ],
+		description: `Aumenta a quantidade de Fortificação que você ganha de todas as origens em +{#}%.`,
 		id: 113,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: 509.67,
 		y: 1.205
 	},
-	"Thick Hide": {
-		connections: [ "Unrestrained", "Defensiva Posture" ],
-		description: `Whenever you are Stunned, Immobilized, or Knocked Down, Fortify for {#}% Base Life ({#}).`,
+	"Couro Grosso": {
+		connections: [ "Desenfrado", "Postura Defensiva" ],
+		description: `Sempre que for Paralizado, Imobilizado ou Derrubado, Fortificam em {#}% da sua Vida Base ({#}).`,
 		id: 114,
 		maxPoints: 3,
 		values: [ "2.56", "" ],
 		x: 781.551,
 		y: -84.42
 	},
-	"Unrestrained": {
-		connections: [ "Thick Hide", "Nature's Resolve" ],
-		description: `Reduce the duration of Control Impairing Effects by {#}%. Triple this effect while you have Fortify for over {#}% of your Maximum Life.`,
+	"Desenfrado": {
+		connections: [ "Couro Grosso", "Resolução da Natureza" ],
+		description: `Reduz a duração dos Efeitos de Controle Prejudiciais em {#}%. Triplica esse efeito enquanto tiver Fortificação acima de {#}% da sua Vida Máxima.`,
 		id: 115,
 		maxPoints: 3,
 		values: [ "{3/6/9}", "20" ],
 		x: 1046.071,
 		y: -0.59
 	},
-	"Nature's Resolve": {
-		connections: [ "Unrestrained", "Defensiva Posture" ],
-		description: `{#}% chance when struck to Fortify you for {#}% Base Life ({#}).`,
+	"Resolução da Natureza": {
+		connections: [ "Desenfrado", "Postura Defensiva" ],
+		description: `{#}% de chance ao ser atingido de fortalecê-lo em {#}% da vida base ({#})`,
 		id: 116,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "1.76", "" ],
 		x: 782.325,
 		y: 91.16
 	},
-	"Quickshift": {
-		connections: [ "Ultimate", "Natural Fortitude", "Heightened Senses" ],
-		description: `When a Shapeshifting Skill transforms you into a different form, it deals x{#}% increased damage.`,
+	"Transformação Rápida": {
+		connections: [ "Ultimate", "Fortaleza Natural", "Sentidos Aguçados" ],
+		description: `Quando uma Habilidade de Transformação muda sua forma, ela inflige x{#}% de dano aumentado.`,
 		id: 117,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: -406.14,
 		y: 294.95
 	},
-	"Natural Fortitude": {
-		connections: [ "Quickshift" ],
-		description: `Shapeshifting Fortifies you for {#}% Base Life ({#}).`,
+	"Fortaleza Natural": {
+		connections: [ "Transformação Rápida" ],
+		description: `Transformações Fortifica você com {#}% de vida base ({#}).`,
 		id: 118,
 		maxPoints: 3,
 		values: [ "{0.56/1.12/1.68}", "" ],
 		x: -565.17,
 		y: 421.475
 	},
-	"Heightened Senses": {
-		connections: [ "Quickshift" ],
-		description: `Upon shapeshifting into a Werewolf or Werebear, gain {#}% de dano Reduction against Elites for {#} segundos.`,
+	"Sentidos Aguçados": {
+		connections: [ "Transformação Rápida" ],
+		description: `Após se transformar em Lobisomem ou Urso, ganha {#}% de Redução de dano contra Elites por {#} segundos.`,
 		id: 119,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "3" ],
 		x: -254.14,
 		y: 423.295
 	},
-	"Lacerate": {
-		connections: [ "Ultimate", "Prime Lacerate" ],
+	"Dilacerar": {
+		connections: [ "Ultimate", "Dilacerar Primal" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Shapeshift into a Werewolf, become Immune and quickly dash {#} times between enemies in the area dealing up to {#}% de dano.`,
+Se transforma em um Lobisomem, se torna Imune e rapidamente avança {#} vezes entre os inimigos da área infligindo até {#}% de dano.`,
 		id: 120,
 		maxPoints: 1,
 		values: [ "50.0", "15", "10", "420" ],
 		x: -581.85,
 		y: 142.205
 	},
-	"Prime Lacerate": {
-		baseSkill: "Lacerate",
-		connections: [ "Supreme Lacerate", "Lacerate" ],
-		description: `Each time Lacerate deals a Critical Strike, Heal for {#}% Maximum Life ({#}).`,
+	"Dilacerar Primal": {
+		baseSkill: "Dilacerar",
+		connections: [ "Dilacerar Supremo", "Dilacerar" ],
+		description: `Cada vez que Dilacerar infligem um Acerto Crítico, Cura em {#}% da sua Vida Máxima ({#}).`,
 		id: 121,
 		maxPoints: 1,
 		values: [ "3", "" ],
 		x: -953.225,
 		y: 146.245
 	},
-	"Supreme Lacerate": {
-		baseSkill: "Lacerate",
-		connections: [ "Prime Lacerate" ],
-		description: `Lacerate's initial strike is guaranteed to Critically Strike and deals x{#}% increased damage.`,
+	"Dilacerar Supremo": {
+		baseSkill: "Dilacerar",
+		connections: [ "Dilacerar Primal" ],
+		description: `O acerto inicial do Dilacerar é um Acerto Crítico garantido e inflige x{#}% de dano aumentado.`,
 		id: 122,
 		maxPoints: 1,
 		values: [ "200" ],
 		x: -1155.4,
 		y: 290.655
 	},
-	"Cataclysm": {
-		connections: [ "Ultimate", "Prime Cataclysm" ],
+	"Cataclisma": {
+		connections: [ "Ultimate", "Cataclisma Primal" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-A massive storm follows you for {#} segundos. Tornadoes Knock Back enemies, and lightning strikes Selvagemly dealing {#}% de dano.`,
+Uma tempestade massiva segue você por {#} segundos. Tornados Derrubam inimigos, relâmpagos acertam de forma Selvagem infligindo {#}% de dano.`,
 		id: 123,
 		maxPoints: 1,
 		values: [ "80.0", "82", "8", "54.6" ],
 		x: -581.665,
 		y: -104.025
 	},
-	"Prime Cataclysm": {
-		baseSkill: "Cataclysm",
-		connections: [ "Supreme Cataclysm", "Cataclysm" ],
-		description: `Cataclysm's duration is increased by {#} segundos.`,
+	"Cataclisma Primal": {
+		baseSkill: "Cataclisma",
+		connections: [ "Cataclisma Supremo", "Cataclisma" ],
+		description: `A duração de Cataclisma é aumentada em {#} segundos.`,
 		id: 124,
 		maxPoints: 1,
 		values: [ "2" ],
 		x: -951.14,
 		y: -111.45
 	},
-	"Supreme Cataclysm": {
-		baseSkill: "Cataclysm",
-		connections: [ "Prime Cataclysm" ],
-		description: `Lightning strikes from Cataclysm make enemies Vulnerable for 2 segundos.`,
+	"Cataclisma Supremo": {
+		baseSkill: "Cataclisma",
+		connections: [ "Cataclisma Primal" ],
+		description: `Os relâmpagos do Cataclisma tornam os inimigos Vulneráveis por 2 segundos.`,
 		id: 125,
 		maxPoints: 1,
 		x: -1152.59,
 		y: -253.34
 	},
-	"Defiance": {
-		connections: [ "Ultimate", "Circle of Life", "Natural Disaster" ],
-		description: `Nature Magic Skills deal x{#}% increased damage to Elites.`,
+	"Desafio": {
+		connections: [ "Ultimate", "Círculo da vida", "Desastre natural" ],
+		description: `Habilidades de Magia da Natureza infligem x{#}% de dano aumentado em Elites.`,
 		id: 126,
 		maxPoints: 3,
 		values: [ "{4/8/12}" ],
 		x: -433.135,
 		y: -261.99
 	},
-	"Circle of Life": {
-		connections: [ "Defiance", "Resonance" ],
-		description: `Nature Magic Skills that consume Espírito Heal you for {#}% of your Maximum Life ({#}).`,
+	"Círculo da vida": {
+		connections: [ "Desafio", "Ressonância" ],
+		description: `Habilidades de Magia da Natureza que consomem Espírito Curam você em {#}% da sua Vida Máxima ({#}).`,
 		id: 127,
 		maxPoints: 3,
 		values: [ "{1/2/3}", "" ],
 		x: -603.125,
 		y: -405.69
 	},
-	"Resonance": {
-		connections: [ "Natural Disaster", "Circle of Life" ],
-		description: `Nature Magic Skills deal x{#}% increased damage. Triple this bonus if an Earth Skill is the next Skill cast after a Storm Skill, or a  Storm Skill is the next Skill cast after an Earth Skill.`,
+	"Ressonância": {
+		connections: [ "Desastre natural", "Círculo da vida" ],
+		description: `Habilidades de Magia da Natureza causam x{#}% de dano aumentado. Triplique este bônus se uma Habilidade de Terra for a próxima Habilidade lançada após uma Habilidade de Tempestade, ou uma Habilidade de Tempestade for a próxima Habilidade lançada após uma Habilidade de Terra.`,
 		id: 128,
 		maxPoints: 3,
 		values: [ "{2/4/6}" ],
 		x: -425.3,
 		y: -549.32
 	},
-	"Natural Disaster": {
-		connections: [ "Defiance", "Resonance" ],
-		description: `Your Earth Skills deal x{#}% increased damage to Vulnerable enemies.
+	"Desastre natural": {
+		connections: [ "Desafio", "Ressonância" ],
+		description: `Suas Habilidades Terrestres infligem x{#}% de dano aumentado em inimigos Vulneráveis.
 
-Your Storm Skills deal x{#}% increased damage to enemies that are Stunned, Immobilized, or Knocked Back.`,
+Suas Habilidades de Raio infligem x{#}% de dano aumentado em inimigos que estiverem Paralizados, Imobilizados ou Derrubados.`,
 		id: 129,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "{4/8/12}" ],
