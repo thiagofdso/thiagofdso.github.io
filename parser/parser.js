@@ -25,11 +25,11 @@ const rootNodeNames = {
 		6: "Capstone"
 	},
 	"Druid": {
-		0: "Basic",
-		1: "Spirit",
-		2: "Defensive",
-		3: "Companion",
-		4: "Wrath",
+		0: "Básico",
+		1: "Espírito",
+		2: "Defensiva",
+		3: "Pet",
+		4: "Furia",
 		5: "Ultimate",
 		6: "Capstone"
 	},

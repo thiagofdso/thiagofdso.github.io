@@ -868,288 +868,288 @@ Ativa: Direciona seus lobos para focar um inimigo, saltando para eles e golpeand
 };
 
 druidData["Furia"] = {
-	"Elemental Exposure": {
-		connections: [ "Charged Atmosphere", "Furia", "Endless Tempest" ],
-		description: `Lucky Hit: Your Storm Skills have up to a {#}% chance to make enemies Vulnerable for {#} segundos.`,
+	"Exposição Elementar": {
+		connections: [ "Atmosfera carregada", "Furia", "Tempestade sem Fim" ],
+		description: `Golpe de Sorte: Suas Habilidades de Tempestade possuem até {#}% de chance para tornar inimigos Vulneráveis por  {#} segundos.`,
 		id: 80,
 		maxPoints: 3,
 		values: [ "{20/40/60}", "1" ],
 		x: -180.95,
 		y: -344.481
 	},
-	"Charged Atmosphere": {
-		connections: [ "Elemental Exposure", "Electric Shock", "Bad Omen" ],
-		description: `Every {#} segundos, a lightning strike hits a Nearby enemy dealing {#}% de dano.`,
+	"Atmosfera carregada": {
+		connections: [ "Exposição Elementar", "Choque Elétrico", "Mau Presságio" ],
+		description: `A cada {#} segundos, uma relâmpago atinge os inimigos Próximos infligindo {#}% de dano.`,
 		id: 81,
 		maxPoints: 3,
 		values: [ "{18/13.5/10}", "47.25" ],
 		x: -373.152,
 		y: -445.477
 	},
-	"Electric Shock": {
-		connections: [ "Charged Atmosphere", "Bad Omen" ],
-		description: `Lucky Hit: Dealing Lightning damage to enemies has a {#}% chance to Immobilize them for {#} segundos.
+	"Choque Elétrico": {
+		connections: [ "Atmosfera carregada", "Mau Presságio" ],
+		description: `Golpe de Sorte: Infligir dano Elétrico em inimigos possui {#}% de chance para Imobilizar eles por {#} segundos.
 
-If the target is already Immobilized, the Lightning damage dealt to them is increased by x{#}% instead.`,
+Se o alvo já estiver Imobilizado, o dano Elétrico é aumentado em x{#}%.`,
 		id: 82,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "3", "" ],
 		x: -373.93,
 		y: -598.557
 	},
-	"Bad Omen": {
-		connections: [ "Charged Atmosphere", "Electric Shock", "Endless Tempest" ],
-		description: `Lucky Hit: Up to a {#}% chance when dealing damage to a Vulnerable, Immobilized or Stunned enemy that a lightning strike also hits dealing {#}% de dano.`,
+	"Mau Presságio": {
+		connections: [ "Atmosfera carregada", "Choque Elétrico", "Tempestade sem Fim" ],
+		description: `Golpe de Sorte: Até {#}% de chance quando infligir dano para um inimigo Vulnerável, Imobilizado ou Paralizado que um relâmpago acertar, infligindo {#}% de dano.`,
 		id: 83,
 		maxPoints: 3,
 		values: [ "{10/20/30}", "57.25" ],
 		x: 3.305,
 		y: -597.918
 	},
-	"Endless Tempest": {
-		connections: [ "Elemental Exposure", "Bad Omen" ],
-		description: `Increase the duration of Hurricane and Cataclysm by x{#}%.`,
+	"Tempestade sem Fim": {
+		connections: [ "Exposição Elementar", "Mau Presságio" ],
+		description: `Aumenta a duração do Furacão e Cataclismo em x{#}%.`,
 		id: 84,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: 2.355,
 		y: -446.745
 	},
-	"Boulder": {
-		connections: [ "Furia", "Melhorado Boulder" ],
+	"Pedregulho": {
+		connections: [ "Furia", "Pedregulho Melhorado" ],
 		description: `Custo de Espírito: {#}
 Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Unearth a large rolling boulder that Knocks Back and crushes enemies, infligindo {#}% de dano with each hit.`,
+Desenterre uma grande pedra rolante que empurrou e esmaga os inimigos, infligindo {#}% de dano a cada golpe.`,
 		id: 85,
 		maxPoints: 5,
 		values: [ "10.0", "20", "34.65", "" ],
 		x: 528.095,
 		y: -212.19
 	},
-	"Melhorado Boulder": {
-		baseSkill: "Boulder",
-		connections: [ "Boulder", "Natural Boulder", "Savage Boulder" ],
-		description: `When Boulder reaches the end of its path, enemies hit are Slowed by {#}% for {#} segundos. If Boulder Sobrecarregared, enemies are Stunned for {#} segundos instead.`,
+	"Pedregulho Melhorado": {
+		baseSkill: "Pedregulho",
+		connections: [ "Pedregulho", "Pedregulho Natural ", "Pedregulho Selvagem" ],
+		description: `Quando Pedregulho chega ao fim de seu caminho, os inimigos atingidos são desacelerados em {#}% por {#} segundos. Se Pedregulho Sobrecarregar, os inimigos ficam Atordoados por {#} segundos.`,
 		id: 86,
 		maxPoints: 1,
 		values: [ "30", "2", "" ],
 		x: 826.57,
 		y: -328.209
 	},
-	"Natural Boulder": {
-		baseSkill: "Boulder",
-		connections: [ "Melhorado Boulder" ],
-		description: `While you have any Fortify, Boulder has +{#}% increased Critical Strike Chance.`,
+	"Pedregulho Natural ": {
+		baseSkill: "Pedregulho",
+		connections: [ "Pedregulho Melhorado" ],
+		description: `Enquanto você tiver qualquer tipo de Fortificação, Pedregulho tem +{#}% de chance de Acerto Crítico Aumentado.`,
 		id: 87,
 		maxPoints: 1,
 		values: [ "75" ],
 		x: 892.545,
 		y: -454.143
 	},
-	"Savage Boulder": {
-		baseSkill: "Boulder",
-		connections: [ "Melhorado Boulder" ],
-		description: `Boulder's Critical Strike Chance is increased by +{#}% each time it deals damage.`,
+	"Pedregulho Selvagem": {
+		baseSkill: "Pedregulho",
+		connections: [ "Pedregulho Melhorado" ],
+		description: `A Chance de Acerto Crítico do Pedregulho é aumentada em +{#}% cada vez que inflige dano.`,
 		id: 88,
 		maxPoints: 1,
 		values: [ "3" ],
 		x: 1067.875,
 		y: -321.359
 	},
-	"Trample": {
-		connections: [ "Furia", "Melhorado Trample" ],
+	"Atropelar": {
+		connections: [ "Furia", "Atropelar Melhorado" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Shapeshift into a Werebear, become Unstoppable, and charge forward, infligindo {#}% de dano and Knocking Back enemies.
+Se transformar em um Urso, se torna Imparável, e empurra para frente, infligindo {#}% de dano e Derruba Inimigos.
 
-Enemies who are Knocked Back into terrain take an additional {#}% de dano and are Stunned for {#} segundos.`,
+Inimigos que são Derrubados no terreno levam um adicional de {#}% de dano e são Paralizados por {#} segundos.`,
 		id: 89,
 		maxPoints: 5,
 		values: [ "14.0", "33", "26.25", "47.25", "3" ],
 		x: -538.268,
 		y: 76.5
 	},
-	"Melhorado Trample": {
-		baseSkill: "Trample",
-		connections: [ "Trample", "Natural Trample", "Savage Trample" ],
-		description: `Trample deals x{#}% bonus damage. This bonus is reduced by x{#}% for each enemy hit after the first.`,
+	"Atropelar Melhorado": {
+		baseSkill: "Atropelar",
+		connections: [ "Atropelar", "Atropelar Natural", "Atropelar Selvagem" ],
+		description: `Atropelar inflinge x{#}% de bônus de dano. Essebônus é reduzido em x{#}% para cada inimigo acertado depois do primeiro.`,
 		id: 90,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -913.338,
 		y: 77.55
 	},
-	"Natural Trample": {
-		baseSkill: "Trample",
-		connections: [ "Melhorado Trample" ],
-		description: `Casting Trample grants {#}% Base Life ({#}) as Fortify.`,
+	"Atropelar Natural": {
+		baseSkill: "Atropelar",
+		connections: [ "Atropelar Melhorado" ],
+		description: `Lançar Atropelar garante {#}% da sua Vida Base ({#}) como Fortificação.`,
 		id: 91,
 		maxPoints: 1,
 		values: [ "6", "" ],
 		x: -1104.485,
 		y: 4.955
 	},
-	"Savage Trample": {
-		baseSkill: "Trample",
-		connections: [ "Melhorado Trample" ],
-		description: `Casting Trample grants {#} Espírito.`,
+	"Atropelar Selvagem": {
+		baseSkill: "Atropelar",
+		connections: [ "Atropelar Melhorado" ],
+		description: `Lançar Atropelar garante {#} Espírito.`,
 		id: 92,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: -1110.255,
 		y: 154.84
 	},
-	"Crushing Earth": {
-		connections: [ "Furia", "Safeguard", "Stone Guard" ],
-		description: `Earth Skills deal x{#}% increased damage to Slowed, Stunned, Immobilized or Knocked Back enemies.`,
+	"Terra Esmagadora": {
+		connections: [ "Furia", "Salvaguarda", "Guarda de pedra" ],
+		description: `Habilidades de terra infligem x{#}% de dano aumentado para inimigos Lentos, Paralizados, Imobilizados ou Derrubados.`,
 		id: 93,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: 527.13,
 		y: 1.665
 	},
-	"Safeguard": {
-		connections: [ "Crushing Earth" ],
-		description: `Critical Strikes with Earth Skills Fortify you for {#}% Base Life ({#}).`,
+	"Salvaguarda": {
+		connections: [ "Terra Esmagadora" ],
+		description: `Acertos Críticos com Habilidades de Terra Fortificam você em {#}% da sua Vida Base ({#}).`,
 		id: 94,
 		maxPoints: 3,
 		values: [ "", "" ],
 		x: 827.855,
 		y: -81.72
 	},
-	"Stone Guard": {
-		connections: [ "Crushing Earth" ],
-		description: `While you have Fortify for over {#}% of your Maximum Life, your Earth Skills deal x{#}% increased damage.`,
+	"Guarda de pedra": {
+		connections: [ "Terra Esmagadora" ],
+		description: `Enquanto tiver Fortivicar pro mais que {#}% da sua Vida Máxima, suas Habilidades de Terra infligem x{#}% de dano aumentado.`,
 		id: 95,
 		maxPoints: 3,
 		values: [ "50", "{4/8/12}" ],
 		x: 824.875,
 		y: 86.045
 	},
-	"Hurricane": {
-		connections: [ "Furia", "Melhorado Hurricane" ],
+	"Furacão": {
+		connections: [ "Furia", "Furacão Melhorado" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Form a hurricane around you that inflige {#}% de dano para os inimigos ao redor over {#} segundos.`,
+Forma um furacão ao redor que inflige {#}% de dano para os inimigos ao redor por {#} segundos.`,
 		id: 99,
 		maxPoints: 5,
 		values: [ "20.0", "33", "102.37", "8" ],
 		x: 255.145,
 		y: -347.168
 	},
-	"Melhorado Hurricane": {
-		baseSkill: "Hurricane",
-		connections: [ "Hurricane", "Natural Hurricane", "Savage Hurricane" ],
-		description: `Enemies who are damaged by Hurricane are Slowed by {#}% for {#} segundos.`,
+	"Furacão Melhorado": {
+		baseSkill: "Furacão",
+		connections: [ "Furacão", "Furacão Natural", "Furacão Selvagem" ],
+		description: `Inimigos acertados pelo Furacão sofrem Lentidão em {#}% por {#} segundos.`,
 		id: 100,
 		maxPoints: 1,
 		values: [ "25", "2" ],
 		x: 394.545,
 		y: -539.728
 	},
-	"Natural Hurricane": {
-		baseSkill: "Hurricane",
-		connections: [ "Melhorado Hurricane" ],
-		description: `Hurricane has a {#}% chance to make enemies Vulnerable for {#} segundos.`,
+	"Furacão Natural": {
+		baseSkill: "Furacão",
+		connections: [ "Furacão Melhorado" ],
+		description: `Furacão tem {#}% de chance para tornar inimigos Vulneráveis por {#} segundos.`,
 		id: 101,
 		maxPoints: 1,
 		values: [ "15", "3" ],
 		x: 317.175,
 		y: -657.602
 	},
-	"Savage Hurricane": {
-		baseSkill: "Hurricane",
-		connections: [ "Melhorado Hurricane" ],
-		description: `Enemies affected by Hurricane deal {#}% less damage.`,
+	"Furacão Selvagem": {
+		baseSkill: "Furacão",
+		connections: [ "Furacão Melhorado" ],
+		description: `Inimigos afetados pelo Furacão infligem {#}% menos dano.`,
 		id: 102,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: 615.43,
 		y: -591.031
 	},
-	"Rabies": {
-		connections: [ "Furia", "Melhorado Rabies" ],
+	"Raiva": {
+		connections: [ "Furia", "Raiva Melhorada" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Shapeshift into a Werewolf and perform an infectious bite on the target dealing {#}% de dano, and applying an additional {#}% Poisoning damage over {#} segundos.
+Se transforma em um Lobisomem e executa uma mordida infectada no alvo infligindo {#}% de dano, e aplicando {#}% de dano de Envenenamento por {#} segundos.
 
-Infected enemies spread Rabies to other surrounding targets.`,
+Inimigos infectados espalham Raiva para os alvos ao redor.`,
 		id: 103,
 		maxPoints: 5,
 		values: [ "12.0", "50", "29.4", "55.65", "6" ],
 		x: 522.33,
 		y: 283.86
 	},
-	"Melhorado Rabies": {
-		baseSkill: "Rabies",
-		connections: [ "Rabies", "Natural Rabies", "Savage Rabies" ],
-		description: `Rabies' Poisoning damage also increases over the lifetime of the disease, dealing x{#}% bonus damage at max duration.`,
+	"Raiva Melhorada": {
+		baseSkill: "Raiva",
+		connections: [ "Raiva", "Raiva Natural", "Raiva Selvagem" ],
+		description: `O dano de Envenenamento da Raiva também aumenta durante a duração da doença, infligindo x{#}%  de bônus de dano na duração máxima.`,
 		id: 104,
 		maxPoints: 1,
 		values: [ "4" ],
 		x: 774.63,
 		y: 431.475
 	},
-	"Natural Rabies": {
-		baseSkill: "Rabies",
-		connections: [ "Melhorado Rabies" ],
-		description: `Rabies spreads {#}% faster.`,
+	"Raiva Natural": {
+		baseSkill: "Raiva",
+		connections: [ "Raiva Melhorada" ],
+		description: `Raiva espalha {#}% mais rápido.`,
 		id: 105,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: 791.44,
 		y: 566.785
 	},
-	"Savage Rabies": {
-		baseSkill: "Rabies",
-		connections: [ "Melhorado Rabies" ],
-		description: `Rabies deals its total Poisoning damage in {#} segundos instead of {#}.`,
+	"Raiva Selvagem": {
+		baseSkill: "Raiva",
+		connections: [ "Raiva Melhorada" ],
+		description: `Raiva inflige seu dano de Envenamaneto total em {#} segundos ao invés de {#}.`,
 		id: 106,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: 1026.475,
 		y: 443.83
 	},
-	"Mending": {
-		connections: [ "Furia", "Provocation" ],
-		description: `While in Werebear form, you receive +{#}% additional Healing from all sources.`,
+	"Reparação": {
+		connections: [ "Furia", "Provocação" ],
+		description: `Enquanto estiver na forma de Urso, você recebe +{#}% de Cura adicional de todas as fontes.`,
 		id: 97,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: -545.966,
 		y: -78.47
 	},
-	"Provocation": {
-		connections: [ "Mending" ],
-		description: `When you remain in Werebear form for at least {#} segundos, your next Skill will Sobrecarregar.`,
+	"Provocação": {
+		connections: [ "Reparação" ],
+		description: `Enquanto permanecer na forma de Urso por pelo menos {#} segundos, sua próxima Habilidade vai Sobrecarregar.`,
 		id: 98,
 		maxPoints: 3,
 		values: [ "30" ],
 		x: -906.653,
 		y: -78.28
 	},
-	"Neurotoxin": {
-		connections: [ "Furia", "Toxic Garras", "Envenom" ],
-		description: `Poisoned enemies are slowed by {#}%.`,
+	"Neurotoxina": {
+		connections: [ "Furia", "Garras Tóxicas", "Veneno" ],
+		description: `Inimigos Envenenados sofrem lentidão em {#}%.`,
 		id: 79,
 		maxPoints: 3,
 		values: [ "{8/16/24}" ],
 		x: 0.3,
 		y: 283.825
 	},
-	"Toxic Garras": {
-		connections: [ "Neurotoxin" ],
-		description: `Critical Strikes with Werewolf Skills deal {#}% of their Base damage as Poisoning damage over {#} segundos.`,
+	"Garras Tóxicas": {
+		connections: [ "Neurotoxina" ],
+		description: `Acertos Críticos na forma de Habilidades de Lobisomen infligem {#}% do seu dano Base como Envenenamento por {#} segundos.`,
 		id: 78,
 		maxPoints: 3,
 		values: [ "{8/16/24}", "4" ],
 		x: 142.805,
 		y: 424.725
 	},
-	"Envenom": {
-		connections: [ "Neurotoxin" ],
-		description: `Poisoned enemies take x{#}% additional Critical Strike Damage.`,
+	"Veneno": {
+		connections: [ "Neurotoxina" ],
+		description: `Inimigos Envenenados recebem x{#}% de Dano Crítico adicional.`,
 		id: 166,
 		maxPoints: 3,
 		values: [ "" ],
@@ -1400,7 +1400,7 @@ In addition, casting a Storm Skill has a {#}% chance to trigger a free Earth Ski
 	},
 	"Earthen Might": {
 		connections: [ "Capstone" ],
-		description: `Lucky Hit: Damaging enemies with Earth Skills has up to a {#}% chance to:
+		description: `Golpe de Sorte: Damaging enemies with Earth Skills has up to a {#}% chance to:
  Restore all of your Espírito
  Cause your attacks to be guaranteed Critical Strikes for {#} segundos
 
@@ -1511,7 +1511,7 @@ druidData["Dádivas Espirituais"] = {
 		},
 		"Overload": {
 			values: [ "20", "60" ],
-			description: `Lucky Hit: Dealing Lightning damage has up to a {#}% chance to cause the target to emit a static discharge, dealing {#}% Lightning damage para os inimigos ao redor.`,
+			description: `Golpe de Sorte: Dealing Lightning damage has up to a {#}% chance to cause the target to emit a static discharge, dealing {#}% Lightning damage para os inimigos ao redor.`,
 			id: 155
 		},
 		"Masochistic": {
@@ -1521,7 +1521,7 @@ druidData["Dádivas Espirituais"] = {
 		},
 		"Calm Before the Storm": {
 			values: [ "15", "2" ],
-			description: `Lucky Hit: Nature Magic Skills have up to a {#}% chance to reduce the Cooldown of your Ultimate Skill by {#} segundos.`,
+			description: `Golpe de Sorte: Nature Magic Skills have up to a {#}% chance to reduce the Cooldown of your Ultimate Skill by {#} segundos.`,
 			id: 157
 		}
 	},
@@ -1529,12 +1529,12 @@ druidData["Dádivas Espirituais"] = {
 		id: 160,
 		"Packleader": {
 			values: [ "20" ],
-			description: `Lucky Hit: Critical Strikes have up to a {#}% chance to reset the Cooldowns of your Pet Skills.`,
+			description: `Golpe de Sorte: Critical Strikes have up to a {#}% chance to reset the Cooldowns of your Pet Skills.`,
 			id: 150
 		},
 		"Energize": {
 			values: [ "15", "10" ],
-			description: `Lucky Hit: Dealing damage has up to a {#}% chance to restore {#} Espírito.`,
+			description: `Golpe de Sorte: Dealing damage has up to a {#}% chance to restore {#} Espírito.`,
 			id: 151
 		},
 		"Bolster": {
