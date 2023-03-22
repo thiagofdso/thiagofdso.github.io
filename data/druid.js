@@ -1456,95 +1456,95 @@ Enquanto estiver Saudável, inflige x{#}% de dano aumentado.`,
 };
 
 druidData["Dádivas Espirituais"] = {
-	"Deer": {
+	"Veado": {
 		id: 158,
 		"Prickleskin": {
 			values: [ "" ],
-			description: `Gain {#} Thorns.`,
+			description: `Ganha {#} Espinhos.`,
 			id: 142
 		},
-		"Gift of the Stag": {
+		"Presente do Veado": {
 			values: [ "10" ],
-			description: `Gain +{#} Maximum Espírito.`,
+			description: `Ganha +{#} de Espírito Máximo.`,
 			id: 143
 		},
-		"Wariness": {
+		"Cautela": {
 			values: [ "10" ],
-			description: `Take {#}% reduced damage from Elites.`,
+			description: `Recebe {#}% de dano reduzido de Elites.`,
 			id: 144
 		},
-		"Advantageous Beast": {
+		"Besta Vantajosa": {
 			values: [ "15" ],
-			description: `Reduce the duration of Control Impairing Effects by {#}%.`,
+			description: `Reduz a duraçao de Efeitos de Controle Prejudiciais em {#}%.`,
 			id: 145
 		}
 	},
-	"Eagle": {
+	"Águia": {
 		id: 159,
-		"Scythe Talons": {
+		"Garras de Foice": {
 			values: [ "5" ],
-			description: `Gain +{#}% increased Critical Strike Chance.`,
+			description: `Ganha +{#}% de aumento na Chance de Acerto Crítico.`,
 			id: 146
 		},
-		"Iron Feather": {
+		"Pena de Ferro": {
 			values: [ "10" ],
-			description: `Gain x{#}% Maximum Life.`,
+			description: `Ganha x{#}% de Vida Máxima.`,
 			id: 147
 		},
-		"Swooping Attacks": {
+		"Ataques Arrebatadores": {
 			values: [ "10" ],
-			description: `Gain +{#}% Attack Speed.`,
+			description: `Ganha +{#}% de Velocidade de Ataque.`,
 			id: 148
 		},
-		"Avian Furia": {
+		"Fúria Aviária": {
 			values: [ "30" ],
-			description: `Gain x{#}% Critical Strike Damage.`,
+			description: `Ganha x{#}% de Dano Crítico.`,
 			id: 149
 		}
 	},
-	"Snake": {
+	"Cobra": {
 		id: 161,
-		"Obsidian Slam": {
+		"Batida Obisidiana": {
 			values: [ "" ],
-			description: `Every {#}th kill will cause your next Earth Skill to Sobrecarregar.`,
+			description: `A cada {#} mortes vai fazer sua próxima Habilidade Terrestre Sobrecarregar.`,
 			id: 154
 		},
-		"Overload": {
+		"Sobrecarga": {
 			values: [ "20", "60" ],
-			description: `Golpe de Sorte: Dealing Lightning damage has up to a {#}% chance to cause the target to emit a static discharge, dealing {#}% Lightning damage para os inimigos ao redor.`,
+			description: `Golpe de Sorte: Causar dano de Raio tem até {#}% de chance de fazer o alvo emitir uma descarga estática, causando {#}% de dano de Raio para os inimigos ao redor.`,
 			id: 155
 		},
-		"Masochistic": {
+		"Masoquísta": {
 			values: [ "3", "" ],
-			description: `Critical Strikes with Shapeshifting Skills Heal you for {#}% Maximum Life ({#}).`,
+			description: `Acertos Críticos com Habilidades de Transformação Curam você em {#}% da sua Vida Máxima ({#}).`,
 			id: 156
 		},
-		"Calm Before the Storm": {
+		"Calmaria Antes da Tempestade": {
 			values: [ "15", "2" ],
-			description: `Golpe de Sorte: Nature Magic Skills have up to a {#}% chance to reduce the Cooldown of your Ultimate Skill by {#} segundos.`,
+			description: `Golpe de Sorte: As Habilidades de Magia da Natureza têm até {#}% de chance de reduzir o Tempo de Recarga da sua Habilidade Suprema em {#} segundos.`,
 			id: 157
 		}
 	},
-	"Wolf": {
+	"Lobo": {
 		id: 160,
-		"Packleader": {
+		"Alfa": {
 			values: [ "20" ],
-			description: `Golpe de Sorte: Critical Strikes have up to a {#}% chance to reset the Cooldowns of your Pet Skills.`,
+			description: `Golpes Críticos têm até {#}% de chance de resetar os Tempos de Recarga de suas Habilidades de Mascote.`,
 			id: 150
 		},
-		"Energize": {
+		"Energizar": {
 			values: [ "15", "10" ],
-			description: `Golpe de Sorte: Dealing damage has up to a {#}% chance to restore {#} Espírito.`,
+			description: `Golpe de Sorte: Causar dano tem até {#}% de chance de restaurar {#} Espírito.`,
 			id: 151
 		},
-		"Bolster": {
+		"Reforçar": {
 			values: [ "10" ],
-			description: `Fortify for {#}% of your Maximum Life when you use a Defensiva Skill.`,
+			description: `Fortifica em {#}% de sua Vida Máxima ao usar uma Habilidade Defensiva.`,
 			id: 152
 		},
-		"Calamity": {
+		"Calamidade": {
 			values: [ "25" ],
-			description: `Extend the duration of Ultimate Skills by {#}%.`,
+			description: `Estenda a duração das suas Habilidades Ultimate em {#}%.`,
 			id: 153
 		}
 	}
