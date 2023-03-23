@@ -282,7 +282,7 @@ Your base Storm Skills are now also Werewolf Skills.`,
 		"Mobility": {
 		}
 	},
-	"Necromancer": {
+	"Necromante": {
 		"Defensive": {
 			"Aspect of Grasping Veins": {
 				power: `Enemies who are Stunned by Corpse Tendrils are also made Vulnerable for its duration. If they die while Stunned, they have a 15% chance to spawn a Blood Orb.`,
