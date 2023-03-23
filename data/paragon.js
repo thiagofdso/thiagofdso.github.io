@@ -1,5 +1,5 @@
 let paragonData = {
-	"Barbáro": {
+	"Bárbaro": {
 		"Board": {
 			"Start": [
 				[
