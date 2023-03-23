@@ -182,7 +182,7 @@ let codexData = {
 			}
 		}
 	},
-	"Druid": {
+	"Druida": {
 		"Defensive": {
 			"Aspect of Cyclonic Force": {
 				power: `Cyclone Armor also provides Physical Damage Reduction. In addition, Cyclone Armor will also be applied to all Nearby Allies.`,

@@ -103,7 +103,7 @@ let codexData = {
 			}
 		}
 	},
-	"Barbarian": {
+	"Bárbaro": {
 		"Defensiva": {
 			"Aspect of Bul-Kathos": {
 				"power": "Leap creates an Earthquake that deals # Physical damage over 4 segundos. While standing in Earthquakes, you gain 5% increased Damage Reduction.",
@@ -218,7 +218,7 @@ let codexData = {
 			}
 		}
 	},
-	"Druid": {
+	"Druida": {
 		"Defensiva": {
 			"Aspect of Cyclonic Force": {
 				"power": "Cyclone Armor also provides Physical Damage Reduction. In addition, Cyclone Armor will also be applied to all Nearby Allies.",
@@ -335,7 +335,7 @@ let codexData = {
 		},
 		"Mobility": {}
 	},
-	"Necromancer": {
+	"Necromante": {
 		"Defensiva": {
 			"Aspect of Grasping Veins": {
 				"power": "Enemies who are Stunned by Corpse Tendrils are also made Vulnerable for its duration. If they die while Stunned, they have a 15% chance to spawn a Blood Orb.",
@@ -449,7 +449,7 @@ let codexData = {
 		},
 		"Mobility": {}
 	},
-	"Rogue": {
+	"Renegado": {
 		"Defensiva": {
 			"Cheat's Aspect": {
 				"power": "You take 15.0% less damage from Crowd Controlled enemies. Whenever a Crowd Controlled enemy deals direct damage to you, gain +15% Movement Speed for 2 segundos.",
@@ -563,7 +563,7 @@ let codexData = {
 		},
 		"Mobility": {}
 	},
-	"Sorcerer": {
+	"Mago": {
 		"Defensiva": {
 			"Snowguard's Aspect": {
 				"power": "While within your own Blizzard, you take 10% less damage.",
