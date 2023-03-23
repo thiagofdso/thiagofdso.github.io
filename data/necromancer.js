@@ -72,7 +72,7 @@ Rasgar a carne de um inimigo, causando {#}% de dano por segundo e formando um Ca
 	"Decompor do Acólito": {
 		baseSkill: "Decompor",
 		connections: [ "Decompor Melhorado" ],
-		description: `Você e seus Minions infligem x{#}% de dano aumentado em inimigos que sofrerem Decompor.`,
+		description: `Você e seus Lacaios infligem x{#}% de dano aumentado em inimigos que sofrerem Decompor.`,
 		id: 2,
 		maxPoints: 1,
 		values: [ "10" ],
@@ -217,233 +217,233 @@ Dispare 3 lascas de osso, causando {#}% de dano cada. Cada vez que um inimigo fo
 };
 
 necromancerData["Principais"] = {
-	"Blight": {
-		connections: [ "Melhorado Blight", "Principais" ],
+	"Praga": {
+		connections: [ "Praga Melhorada", "Principais" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-Unleash concentrated blight that deals {#}% damage and leaves behind a defiled area, dealing {#}% damage over {#} segundos.`,
+Libere uma praga concentrada que causa {#}% de dano e deixa para trás uma área contaminada, causando {#}% de dano em {#} segundos.`,
 		id: 16,
 		maxPoints: 5,
 		values: [ "25", "40", "30", "80", "6" ],
 		x: -543.69,
 		y: 87.56
 	},
-	"Melhorado Blight": {
-		baseSkill: "Blight",
-		connections: [ "Blight", "Paranormal Blight", "Supernatural Blight" ],
-		description: `Blight Slows enemies by {#}%.`,
+	"Praga Melhorada": {
+		baseSkill: "Praga",
+		connections: [ "Praga", "Praga Paranormal", "Praga Supernatural " ],
+		description: `Praga causa Lentidão nos inimigos em {#}%.`,
 		id: 17,
 		maxPoints: 1,
 		values: [ "25" ],
 		x: -922.335,
 		y: 147.785
 	},
-	"Paranormal Blight": {
-		baseSkill: "Blight",
-		connections: [ "Melhorado Blight" ],
-		description: `Blight has a {#}% chance to Immobilize enemies for {#} segundos on impact.`,
+	"Praga Paranormal": {
+		baseSkill: "Praga",
+		connections: [ "Praga Melhorada" ],
+		description: `Praga tem {#}% de chance de Imobilizar os inimigos por {#} segundos no impacto.`,
 		id: 18,
 		maxPoints: 1,
 		values: [ "10", "2" ],
 		x: -1096.55,
 		y: 268.61
 	},
-	"Supernatural Blight": {
-		baseSkill: "Blight",
-		connections: [ "Melhorado Blight" ],
-		description: `You and your Minions deal x{#}% increased damage to enemies within Blight.`,
+	"Praga Supernatural ": {
+		baseSkill: "Praga",
+		connections: [ "Praga Melhorada" ],
+		description: `Você e seus Lacaios causam x{#}% de dano a mais aos inimigos dentro de Praga.`,
 		id: 19,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: -1190.43,
 		y: 103.745
 	},
-	"Sever": {
-		connections: [ "Melhorado Sever", "Principais" ],
+	"Cortar": {
+		connections: [ "Cortar Melhorado", "Principais" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-A specter of you charges forward and attacks with its scythe for {#}% damage then returns to you and attacks again for {#}% damage.`,
+Um espectro seu avança e ataca com sua foice causando {#}% de dano, então retorna para você e ataca novamente causando {#}% de dano.`,
 		id: 20,
 		maxPoints: 5,
 		values: [ "20", "20", "42", "" ],
 		x: -281.15,
 		y: 258.115
 	},
-	"Melhorado Sever": {
-		baseSkill: "Sever",
-		connections: [ "Sever", "Paranormal Sever", "Supernatural Sever" ],
-		description: `Sever damages enemies along its path for {#}% of its initial damage.`,
+	"Cortar Melhorado": {
+		baseSkill: "Cortar",
+		connections: [ "Cortar", "Cortar Paranormal", "Cortar Supernatural" ],
+		description: `Cortar causa dano aos inimigos ao longo de seu caminho em {#}% de seu dano inicial.`,
 		id: 21,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -574.38,
 		y: 439.87
 	},
-	"Paranormal Sever": {
-		baseSkill: "Sever",
-		connections: [ "Melhorado Sever" ],
-		description: `Every 4th cast of Sever makes enemies Vulnerable for {#} segundos.`,
+	"Cortar Paranormal": {
+		baseSkill: "Cortar",
+		connections: [ "Cortar Melhorado" ],
+		description: `A cada 4 lançamentos de Cortar, os inimigos ficam Vulneráveis por {#} segundos.`,
 		id: 22,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -840.68,
 		y: 482.04
 	},
-	"Supernatural Sever": {
-		baseSkill: "Sever",
-		connections: [ "Melhorado Sever" ],
-		description: `Sever deals x{#}% increased damage for each Minion you have upon cast.`,
+	"Cortar Supernatural": {
+		baseSkill: "Cortar",
+		connections: [ "Cortar Melhorado" ],
+		description: `Cortar causa x{#}% de dano a mais para cada Lacaio que você possui ao ser lançado.`,
 		id: 23,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -597.79,
 		y: 590.745
 	},
-	"Blood Surge": {
-		connections: [ "Melhorado Blood Surge", "Principais" ],
+	"Surto de Sangue": {
+		connections: [ "Surto de Sangue Melhorado", "Principais" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#}% damage. Blood Surge's nova damage is increased by x{#}% per enemy drained, up to x{#}%.`,
+Extraia sangue dos inimigos, causando {#}% de dano, e expulse uma nova de sangue, causando {#}% de dano. O dano da nova de Surto de Sangue é aumentado em x{#}% por inimigo drenado, até x{#}`,
 		id: 24,
 		maxPoints: 5,
 		values: [ "30", "20", "20", "50", "10", "50" ],
 		x: -542.58,
 		y: -124.71
 	},
-	"Melhorado Blood Surge": {
-		baseSkill: "Blood Surge",
-		connections: [ "Blood Surge", "Supernatural Blood Surge", "Paranormal Blood Surge" ],
-		description: `Blood Surge Heals you for {#}% of your Maximum Life ({#}) when drawing blood from enemies. If {#} or more enemies are drawn from, then Heal for an additional {#}% of your Maximum Life ({#}).`,
+	"Surto de Sangue Melhorado": {
+		baseSkill: "Surto de Sangue",
+		connections: [ "Surto de Sangue", "Surto de Sangue Supernatural", "Surto de Sangue Paranormal" ],
+		description: `Surto de Sangue Cura você em {#}% de sua Vida Máxima ({#}) ao tirar sangue de inimigos. Se {#} ou mais inimigos forem retirados, então Cure por mais {#}% de sua Vida Máxima ({#}).`,
 		id: 25,
 		maxPoints: 1,
 		values: [ "1", "", "", "", "" ],
 		x: -912.83,
 		y: -200.94
 	},
-	"Supernatural Blood Surge": {
-		baseSkill: "Blood Surge",
-		connections: [ "Melhorado Blood Surge" ],
-		description: `Each time an enemy is hit by Blood Surge's nova, you are Fortified for {#}% Base Life ({#}). While you have Fortify for over {#}% of your Maximum Life, Blood Surge deals x{#}% increased damage.`,
+	"Surto de Sangue Supernatural": {
+		baseSkill: "Surto de Sangue",
+		connections: [ "Surto de Sangue Melhorado" ],
+		description: `Cada vez que um inimigo é atingido pela nova de Surto de Sangue, você é fortificado com {#}% de vida base ({#}). Enquanto você tem Fortificar por mais de {#}% de sua Vida Máxima, Surto de Sangue causa x{#}% de dano a mais.`,
 		id: 26,
 		maxPoints: 1,
 		values: [ "", "", "", "" ],
 		x: -1048.315,
 		y: -328.79
 	},
-	"Paranormal Blood Surge": {
-		baseSkill: "Blood Surge",
-		connections: [ "Melhorado Blood Surge" ],
-		description: `If an enemy is damaged by Blood Surge's nova while you are Healthy, then gain 1 stack of Overwhelming Blood. When you have 5 stacks of Overwhelming Blood, your next Blood Surge Overpowers.`,
+	"Surto de Sangue Paranormal": {
+		baseSkill: "Surto de Sangue",
+		connections: [ "Surto de Sangue Melhorado" ],
+		description: `Se um inimigo for danificado pela nova de Surto de Sangue enquanto você estiver Saudável, ganhe 1 acúmulo de Sangue Esmagador. Quando você tiver 5 acúmulos de Sangue Esmagador, seu próximo Surto de Sangue Sobrecarrega.`,
 		id: 27,
 		maxPoints: 1,
 		x: -1170.475,
 		y: -160.385
 	},
-	"Blood Lance": {
-		connections: [ "Melhorado Blood Lance", "Principais" ],
+	"Lança de Sangue": {
+		connections: [ "Lança de Sangue Melhorada", "Principais" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% damage to the enemy and all other lanced enemies.`,
+Lança uma lança de sangue que permanece em um inimigo por {#} segundos, causando {#}% de dano ao inimigo e a todos os outros inimigos lancetados.`,
 		id: 28,
 		maxPoints: 5,
 		values: [ "10", "40", "3", "45" ],
 		x: -278.15,
 		y: -274.3
 	},
-	"Melhorado Blood Lance": {
-		baseSkill: "Blood Lance",
-		connections: [ "Blood Lance", "Supernatural Blood Lance", "Paranormal Blood Lance" ],
-		description: `Blood Lance pierces through enemies who are currently lanced, dealing {#}% reduced damage to subsequent enemies after the first.`,
+	"Lança de Sangue Melhorada": {
+		baseSkill: "Lança de Sangue",
+		connections: [ "Lança de Sangue", "Lança de Sangue Supernatural", "Lança de Sangue Paranormal " ],
+		description: `Lança de Sangue perfura os inimigos que estão atualmente afetados, causando {#}% de dano reduzido aos inimigos subsequentes após o primeiro.`,
 		id: 29,
 		maxPoints: 1,
 		values: [ "15" ],
 		x: -470.775,
 		y: -466.65
 	},
-	"Supernatural Blood Lance": {
-		baseSkill: "Blood Lance",
-		connections: [ "Melhorado Blood Lance" ],
-		description: `After casting Blood Lance {#} times, your next cast of Blood Lance is guaranteed to Overpower and spawns a Blood Orb under the first enemy hit.`,
+	"Lança de Sangue Supernatural": {
+		baseSkill: "Lança de Sangue",
+		connections: [ "Lança de Sangue Melhorada" ],
+		description: `Depois de lançar Lança de Sangue {#} vezes, seu próximo  Lança de Sangue é garantido para Sobrecarregar e gera uma Orbe de Sangue sob o primeiro inimigo atingido.`,
 		id: 30,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -445.5,
 		y: -604.16
 	},
-	"Paranormal Blood Lance": {
-		baseSkill: "Blood Lance",
-		connections: [ "Melhorado Blood Lance" ],
-		description: `While at least {#} enemies or a Boss are affected by Blood Lance, you gain +{#}% Attack Speed and Blood Lance's Essência cost is reduced by {#}.`,
+	"Lança de Sangue Paranormal ": {
+		baseSkill: "Lança de Sangue",
+		connections: [ "Lança de Sangue Melhorada" ],
+		description: `Enquanto pelo menos {#} inimigos ou um Chefe estiverem afetados por Lança de Sangue, você ganha +{#}% de Velocidade de Ataque e o custo de Essência de Lança de Sangue é reduzido em {#}.`,
 		id: 31,
 		maxPoints: 1,
 		values: [ "2", "10", "1" ],
 		x: -727.57,
 		y: -520.325
 	},
-	"Bone Spear": {
-		connections: [ "Melhorado Bone Spear", "Principais" ],
+	"Lança de Osso": {
+		connections: [ "Lança de Osso Melhorado", "Principais" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-Conjure a bone spear from the ground, dealing {#}% damage and piercing through enemies.`,
+Conjure uma lança de osso do chão, causando {#}% de dano e perfurando os inimigos.`,
 		id: 32,
 		maxPoints: 5,
 		values: [ "25", "50", "85" ],
 		x: 551.14,
 		y: -0.17
 	},
-	"Melhorado Bone Spear": {
-		baseSkill: "Bone Spear",
-		connections: [ "Bone Spear", "Paranormal Bone Spear", "Supernatural Bone Spear" ],
-		description: `Bone Spear breaks into {#} shards when it is destroyed, dealing {#}% damage each.`,
+	"Lança de Osso Melhorado": {
+		baseSkill: "Lança de Osso",
+		connections: [ "Lança de Osso", "Lança de Osso Paranormal", "Lança de Osso Supernatural" ],
+		description: `Lança de Osso quebra em {#} fragmentos quando é destruído, causando {#}% de dano cada.`,
 		id: 33,
 		maxPoints: 1,
 		values: [ "", "10" ],
 		x: 968.272,
 		y: 0.325
 	},
-	"Paranormal Bone Spear": {
-		baseSkill: "Bone Spear",
-		connections: [ "Melhorado Bone Spear" ],
-		description: `Bone Spear has a +{#}% increased Critical Strike Chance. If Bone Spear's primary projectile Critically Strikes, it fires {#} additional bone shards upon being destroyed.`,
+	"Lança de Osso Paranormal": {
+		baseSkill: "Lança de Osso",
+		connections: [ "Lança de Osso Melhorado" ],
+		description: `Lança de Osso tem +{#}% de aumento na Chance de Acerto Crítico. Se o projétil primário de Lança de Osso Acertar Criticamente, ele dispara {#} estilhaços de ossos adicionais ao ser destruído.`,
 		id: 34,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: 1180.912,
 		y: 94.56
 	},
-	"Supernatural Bone Spear": {
-		baseSkill: "Bone Spear",
-		connections: [ "Melhorado Bone Spear" ],
-		description: `Bone Spear makes the first enemy hit Vulnerable for {#} segundos.`,
+	"Lança de Osso Supernatural": {
+		baseSkill: "Lança de Osso",
+		connections: [ "Lança de Osso Melhorado" ],
+		description: `Lança de Osso torna o primeiro inimigo atingido Vulnerável por {#} segundos.`,
 		id: 35,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 1183.487,
 		y: -89.765
 	},
-	"Unliving Energy": {
-		connections: [ "Principais", "Imperfectly Balanced" ],
-		description: `Your maximum Essência is increased by {#}.`,
+	"Energia sem Vida": {
+		connections: [ "Principais", "Imperfeitamente Equilibrado" ],
+		description: `Sua Essência máxima é aumentada em {#}.`,
 		id: 36,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: 149.05,
 		y: -273.915
 	},
-	"Imperfectly Balanced": {
-		connections: [ "Unliving Energy" ],
-		description: `Your Principais Skills cost x{#}% more Essência, but deal x{#}% increased damage.`,
+	"Imperfeitamente Equilibrado": {
+		connections: [ "Energia sem Vida" ],
+		description: `Suas Habilidades Principais custam x{#}% a mais de Essência, mas causam x{#}% de aumento de dano.`,
 		id: 37,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "{10/20/30}" ],
 		x: 150.19,
 		y: -449.76
 	},
-	"Hewed Flesh": {
+	"Carne Cortada": {
 		connections: [ "Principais" ],
-		description: `Lucky Hit: Your damage has up to a {#}% chance to create a Corpse at the target's location.
+		description: `Golpe de Sorte: Seu dano tem até {#}% de chance de criar um Cadáver no local do alvo.
 
-This chance is doubled against Bosses.`,
+Esta chance é dobrada contra chefes.`,
 		id: 121,
 		maxPoints: 3,
 		values: [ "" ],
@@ -466,7 +466,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 	},
 	"Melhorado Corpse Explosion": {
 		baseSkill: "Corpse Explosion",
-		connections: [ "Corpse Explosion", "Blighted Corpse Explosion", "Plagued Corpse Explosion" ],
+		connections: [ "Corpse Explosion", "Pragaed Corpse Explosion", "Plagued Corpse Explosion" ],
 		description: `Corpse Explosion's radius is increased by {#}%.`,
 		id: 40,
 		maxPoints: 1,
@@ -474,7 +474,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		x: -964.178,
 		y: -2.155
 	},
-	"Blighted Corpse Explosion": {
+	"Pragaed Corpse Explosion": {
 		baseSkill: "Corpse Explosion",
 		connections: [ "Melhorado Corpse Explosion" ],
 		description: `Corpse Explosion becomes a Darkness Skill and, instead of exploding, releases a vile miasma dealing {#}% Shadow Damage over {#} segundos.`,
@@ -684,7 +684,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	"Melhorado Decrepify": {
 		baseSkill: "Decrepify",
 		connections: [ "Decrepify", "Abhorrent Decrepify", "Horrid Decrepify" ],
-		description: `Lucky Hit: Enemies hit while afflicted with Decrepify have up to a {#}% chance to Stun them for {#} segundos.`,
+		description: `Golpe de Sorte: Enemies hit while afflicted with Decrepify have up to a {#}% chance to Stun them for {#} segundos.`,
 		id: 62,
 		maxPoints: 1,
 		values: [ "10", "2" ],
@@ -694,7 +694,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	"Abhorrent Decrepify": {
 		baseSkill: "Decrepify",
 		connections: [ "Melhorado Decrepify" ],
-		description: `Lucky Hit: Enemies hit while afflicted with Decrepify have up to a {#}% chance to reduce your active Cooldowns by {#} second.`,
+		description: `Golpe de Sorte: Enemies hit while afflicted with Decrepify have up to a {#}% chance to reduce your active Cooldowns by {#} second.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "15", "1.5" ],
@@ -704,7 +704,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	"Horrid Decrepify": {
 		baseSkill: "Decrepify",
 		connections: [ "Melhorado Decrepify" ],
-		description: `When you or your Minions hit an enemy afflicted with Decrepify below {#}% Life, they are instantly killed. Does not work on Bosses.`,
+		description: `When you or your Lacaios hit an enemy afflicted with Decrepify below {#}% Life, they are instantly killed. Does not work on Bosses.`,
 		id: 64,
 		maxPoints: 1,
 		values: [ "10" ],
@@ -745,7 +745,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Melhorado Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
-		connections: [ "Corpse Tendrils", "Plagued Corpse Tendrils", "Blighted Corpse Tendrils" ],
+		connections: [ "Corpse Tendrils", "Plagued Corpse Tendrils", "Pragaed Corpse Tendrils" ],
 		description: `Enemies who are in range of Corpse Tendrils are Slowed by {#}% before being Pulled.`,
 		id: 68,
 		maxPoints: 1,
@@ -763,7 +763,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		x: 999.47,
 		y: -388.527
 	},
-	"Blighted Corpse Tendrils": {
+	"Pragaed Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
 		connections: [ "Melhorado Corpse Tendrils" ],
 		description: `Corpse Tendrils has a {#}% chance when damaging enemies to drop a Blood Orb.`,
@@ -784,7 +784,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Gloom": {
 		connections: [ "Foiceer's Pursuit", "Terror" ],
-		description: `When you damage enemies with Darkness Skills, they take x{#}% increased Shadow Damage from you and your Minions for {#} segundos, stacking up to {#} times.`,
+		description: `When you damage enemies with Darkness Skills, they take x{#}% increased Shadow Damage from you and your Lacaios for {#} segundos, stacking up to {#} times.`,
 		id: 72,
 		maxPoints: 3,
 		values: [ "{2/4/6}", "2", "3" ],
@@ -793,7 +793,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Terror": {
 		connections: [ "Gloom", "Crippling Darkness" ],
-		description: `Darkness Skills deal x{#}% bonus damage to enemies who are Slowed, and x{#}% bonus damage to enemies who are Stunned or Immobilized. These bonuses stack and apply to Shadow Damage dealt by your Minions.`,
+		description: `Darkness Skills deal x{#}% bonus damage to enemies who are Slowed, and x{#}% bonus damage to enemies who are Stunned or Immobilized. These bonuses stack and apply to Shadow Damage dealt by your Lacaios.`,
 		id: 73,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "" ],
@@ -802,7 +802,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Crippling Darkness": {
 		connections: [ "Foiceer's Pursuit", "Terror" ],
-		description: `Lucky Hit: Darkness Skills have up to a {#}% chance to Stun for {#} segundos.`,
+		description: `Golpe de Sorte: Darkness Skills have up to a {#}% chance to Stun for {#} segundos.`,
 		id: 74,
 		maxPoints: 3,
 		values: [ "15", "{1/2/3}" ],
@@ -820,7 +820,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Transfusion": {
 		connections: [ "Tides of Blood", "Gruesome Mending" ],
-		description: `Blood Orbs also Heal your Minions for {#}% of the amount.`,
+		description: `Blood Orbs also Heal your Lacaios for {#}% of the amount.`,
 		id: 77,
 		maxPoints: 3,
 		values: [ "{15/30/45}" ],
@@ -847,7 +847,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Drain Vitality": {
 		connections: [ "Coalesced Blood" ],
-		description: `Lucky Hit: Hitting enemies with Blood Skills has up to a {#}% chance to Fortify you for {#}% Base Life ({#}).`,
+		description: `Golpe de Sorte: Hitting enemies with Blood Skills has up to a {#}% chance to Fortify you for {#}% Base Life ({#}).`,
 		id: 79,
 		maxPoints: 3,
 		values: [ "{25/50/75}", "1", "" ],
@@ -934,7 +934,7 @@ Consume all of your Essência to conjure a Espirito of bone that seeks enemies. 
 	},
 	"Necrotic Carapace": {
 		connections: [ "Convocação" ],
-		description: `When a Corpse is formed from your Skills or your Minions, Fortify for {#}% Base Life ({#}).`,
+		description: `When a Corpse is formed from your Skills or your Lacaios, Fortify for {#}% Base Life ({#}).`,
 		id: 128,
 		maxPoints: 3,
 		values: [ "", "" ],
@@ -955,7 +955,7 @@ necromancerData["Ultimate"] = {
 	},
 	"Death's Defense": {
 		connections: [ "Bonded in Essência", "Inspiring Leader" ],
-		description: `Your Minions cannot lose more than {#}% of their Maximum Life from a single damage instance.`,
+		description: `Your Lacaios cannot lose more than {#}% of their Maximum Life from a single damage instance.`,
 		id: 90,
 		maxPoints: 3,
 		values: [ "{50/35/20}" ],
@@ -964,7 +964,7 @@ necromancerData["Ultimate"] = {
 	},
 	"Inspiring Leader": {
 		connections: [ "Hellbent Commander", "Ultimate", "Death's Defense" ],
-		description: `After you have been Healthy for at least {#} segundos, you and your Minions gain +{#}% Attack Speed.`,
+		description: `After you have been Healthy for at least {#} segundos, you and your Lacaios gain +{#}% Attack Speed.`,
 		id: 129,
 		maxPoints: 3,
 		values: [ "", "" ],
@@ -973,7 +973,7 @@ necromancerData["Ultimate"] = {
 	},
 	"Hellbent Commander": {
 		connections: [ "Inspiring Leader" ],
-		description: `Your Minions deal x{#}% increased damage while you are Close to them.`,
+		description: `Your Lacaios deal x{#}% increased damage while you are Close to them.`,
 		id: 91,
 		maxPoints: 3,
 		values: [ "{10/20/30}" ],
@@ -1042,7 +1042,7 @@ Conjure a tidal wave of blood that deals {#}% damage and Knocks Back enemies.`,
 	},
 	"Stand Alone": {
 		connections: [ "Memento Mori", "Ultimate" ],
-		description: `Increases Damage Reduction by {#}%, reduced by {#}% for each active Minion.`,
+		description: `Increases Damage Reduction by {#}%, reduced by {#}% for each active Lacaio.`,
 		id: 99,
 		maxPoints: 3,
 		values: [ "{6/12/18}", "{2/4/6}" ],
@@ -1114,7 +1114,7 @@ necromancerData["Capstone"] = {
 		connections: [ "Capstone" ],
 		description: `Shadow Damage infects enemies with Shadowblight for {#} segundos. You and your minions deal x{#}% bonus damage to enemies with Shadowblight.
 
-Every {#}th time an enemy receives Shadow Damage from you or your Minions while they are affected by Shadowblight, they take additional {#}% Shadow Damage.`,
+Every {#}th time an enemy receives Shadow Damage from you or your Lacaios while they are affected by Shadowblight, they take additional {#}% Shadow Damage.`,
 		id: 106,
 		maxPoints: 1,
 		values: [ "2", "10", "20", "" ],
@@ -1132,7 +1132,7 @@ Every {#}th time an enemy receives Shadow Damage from you or your Minions while 
 	},
 	"Kalan's Edict": {
 		connections: [ "Capstone" ],
-		description: `After you have not taken damage in the last {#} segundos, your Minions gain +{#}% Attack Speed. While you have at least {#} Minions, this bonus is doubled.`,
+		description: `After you have not taken damage in the last {#} segundos, your Lacaios gain +{#}% Attack Speed. While you have at least {#} Lacaios, this bonus is doubled.`,
 		id: 130,
 		maxPoints: 1,
 		values: [ "", "", "" ],
