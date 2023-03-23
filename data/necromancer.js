@@ -944,105 +944,105 @@ Consuma toda a sua Essência para conjurar um Espírito de Osso que busca inimig
 };
 
 necromancerData["Ultimate"] = {
-	"Bonded in Essência": {
-		connections: [ "Death's Defense", "Ultimate" ],
-		description: `Every {#} segundos, your Skeletal Priest's Healing will Heal your skeletons for {#}% of their Maximum Life.`,
+	"Aderido na Essência": {
+		connections: [ "Defesa da Morte", "Ultimate" ],
+		description: `A cada {#} segundos, a Cura do seu Sacerdote Esqueleto curará seus esqueletos em {#}% de sua Vida Máxima.`,
 		id: 89,
 		maxPoints: 3,
 		values: [ "{15/30/45}", "" ],
 		x: -293.765,
 		y: 208.59
 	},
-	"Death's Defense": {
-		connections: [ "Bonded in Essência", "Inspiring Leader" ],
-		description: `Your Lacaios cannot lose more than {#}% of their Maximum Life from a single damage instance.`,
+	"Defesa da Morte": {
+		connections: [ "Aderido na Essência", "Líder Inspirador" ],
+		description: `Seu Lacaios não pode perder mais de {#}% de sua Vida Máxima em uma única ocorrência de dano.`,
 		id: 90,
 		maxPoints: 3,
 		values: [ "{50/35/20}" ],
 		x: -451.67,
 		y: 328.78
 	},
-	"Inspiring Leader": {
-		connections: [ "Hellbent Commander", "Ultimate", "Death's Defense" ],
-		description: `After you have been Healthy for at least {#} segundos, you and your Lacaios gain +{#}% Attack Speed.`,
+	"Líder Inspirador": {
+		connections: [ "Comandante Infernal", "Ultimate", "Defesa da Morte" ],
+		description: `Depois de estar Saudável por pelo menos {#} segundos, você e seu Lacaios ganham +{#}% de Velocidade de Ataque.`,
 		id: 129,
 		maxPoints: 3,
 		values: [ "", "" ],
 		x: -606.325,
 		y: 83.67
 	},
-	"Hellbent Commander": {
-		connections: [ "Inspiring Leader" ],
-		description: `Your Lacaios deal x{#}% increased damage while you are Close to them.`,
+	"Comandante Infernal": {
+		connections: [ "Líder Inspirador" ],
+		description: `Seus Lacaios causam x{#}% de dano a mais enquanto você está Perto deles.`,
 		id: 91,
 		maxPoints: 3,
 		values: [ "{10/20/30}" ],
 		x: -805.99,
 		y: 208.305
 	},
-	"Army of the Dead": {
-		connections: [ "Prime Army of the Dead", "Ultimate" ],
+	"Exército dos Mortos": {
+		connections: [ "Exército dos Mortos Primal", "Ultimate" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Call forth the deep buried dead. Volatile Skeletons emerge over the next {#} segundos that explode when around enemies, dealing {#}% damage.`,
+Chame os mortos profundamente enterrados. Esqueletos Voláteis surgem nos próximos {#} segundos que explodem ao redor dos inimigos, causando {#}% de dano.`,
 		id: 93,
 		maxPoints: 1,
 		values: [ "90.0", "54", "7", "30" ],
 		x: -591.12,
 		y: -96.445
 	},
-	"Prime Army of the Dead": {
-		baseSkill: "Army of the Dead",
-		connections: [ "Army of the Dead", "Supreme Army of the Dead" ],
-		description: `When Army of the Dead's Volatile Skeletons explode, they have a {#}% chance to leave behind a Corpse.`,
+	"Exército dos Mortos Primal": {
+		baseSkill: "Exército dos Mortos",
+		connections: [ "Exército dos Mortos", "Exército dos Mortos Supremo" ],
+		description: `Quando os Esqueletos Voláteis do Exército dos Mortos explodem, eles têm {#}% de chance de deixar um Cadáver para trás.`,
 		id: 94,
 		maxPoints: 1,
 		values: [ "15" ],
 		x: -832.855,
 		y: -247.695
 	},
-	"Supreme Army of the Dead": {
-		baseSkill: "Army of the Dead",
-		connections: [ "Prime Army of the Dead" ],
-		description: `Army of the Dead also raises your Skeletal Warriors and Skeletal Mages.`,
+	"Exército dos Mortos Supremo": {
+		baseSkill: "Exército dos Mortos",
+		connections: [ "Exército dos Mortos Primal" ],
+		description: `O Exército dos Mortos também aumenta seus Esqueletos Guerreiros e Magos.`,
 		id: 95,
 		maxPoints: 1,
 		x: -1169.725,
 		y: -246.42
 	},
-	"Blood Wave": {
-		connections: [ "Prime Blood Wave", "Ultimate" ],
+	"Onda de Sangue": {
+		connections: [ "Onda de Sangue Primal", "Ultimate" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Conjure a tidal wave of blood that deals {#}% damage and Knocks Back enemies.`,
+Conjure uma onda de sangue que causa {#}% de dano e Derruba os inimigos.`,
 		id: 96,
 		maxPoints: 1,
 		values: [ "50.0", "30", "90" ],
 		x: 0.355,
 		y: -282.205
 	},
-	"Prime Blood Wave": {
-		baseSkill: "Blood Wave",
-		connections: [ "Blood Wave", "Supreme Blood Wave" ],
-		description: `Blood Wave Slows enemies by {#}% for {#} segundos.`,
+	"Onda de Sangue Primal": {
+		baseSkill: "Onda de Sangue",
+		connections: [ "Onda de Sangue", "Onda de Sangue Suprema" ],
+		description: `Onda de Sangue Desacelera os inimigos em {#}% por {#} segundos.`,
 		id: 97,
 		maxPoints: 1,
 		values: [ "50", "4" ],
 		x: -3.18,
 		y: -507.345
 	},
-	"Supreme Blood Wave": {
-		baseSkill: "Blood Wave",
-		connections: [ "Prime Blood Wave" ],
-		description: `Blood Wave leaves behind 3 Blood Orbs as it travels.`,
+	"Onda de Sangue Suprema": {
+		baseSkill: "Onda de Sangue",
+		connections: [ "Onda de Sangue Primal" ],
+		description: `A Onda de Sangue deixa para trás 3 Orbes de Sangue enquanto viaja.`,
 		id: 98,
 		maxPoints: 1,
 		x: -377.265,
 		y: -506.98
 	},
-	"Stand Alone": {
+	"Permanecer Sózinho": {
 		connections: [ "Memento Mori", "Ultimate" ],
-		description: `Increases Damage Reduction by {#}%, reduced by {#}% for each active Lacaio.`,
+		description: `Aumenta a Redução de Dano em {#}%, reduzida em {#}% para cada Lacaio ativo.`,
 		id: 99,
 		maxPoints: 3,
 		values: [ "{6/12/18}", "{2/4/6}" ],
@@ -1050,39 +1050,39 @@ Conjure a tidal wave of blood that deals {#}% damage and Knocks Back enemies.`,
 		y: 0.78
 	},
 	"Memento Mori": {
-		connections: [ "Stand Alone" ],
-		description: `Sacrificing both Skeletal Warriors and Skeletal Mages increases their Sacrifice bonuses by {#}%.`,
+		connections: [ "Permanecer Sózinho" ],
+		description: `Sacrificar Guerreirose e Magos Esqueletos aumenta seus bônus de Sacrifício em {#}%.`,
 		id: 100,
 		maxPoints: 3,
 		values: [ "{20/40/60}" ],
 		x: 929.458,
 		y: 1.63
 	},
-	"Bone Storm": {
-		connections: [ "Prime Bone Storm", "Ultimate" ],
+	"Tempestade de Ossos": {
+		connections: [ "Tempestade de Ossos Primal", "Ultimate" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-A swirling storm of bones appears around you and your Golem, dealing {#}% to surrounding enemies over {#} segundos.`,
+Uma tempestade rodopiante de ossos aparece ao seu redor e seu Golem, causando {#}% aos inimigos ao redor por {#} segundos.`,
 		id: 101,
 		maxPoints: 1,
 		values: [ "60.0", "40", "180", "10" ],
 		x: 3.41,
 		y: 307.975
 	},
-	"Prime Bone Storm": {
-		baseSkill: "Bone Storm",
-		connections: [ "Bone Storm", "Supreme Bone Storm" ],
-		description: `Your Damage Reduction is increased by {#}% while Bone Storm is active.`,
+	"Tempestade de Ossos Primal": {
+		baseSkill: "Tempestade de Ossos",
+		connections: [ "Tempestade de Ossos", "Tempestade de Ossos Suprema" ],
+		description: `Sua Redução de Dano é aumentada em {#}% enquanto a Tempestade de Ossos está ativa.`,
 		id: 102,
 		maxPoints: 1,
 		values: [ "15" ],
 		x: -4.345,
 		y: 506.955
 	},
-	"Supreme Bone Storm": {
-		baseSkill: "Bone Storm",
-		connections: [ "Prime Bone Storm" ],
-		description: `Your Critical Strike Chance is increased by +{#}% while Bone Storm is active.`,
+	"Tempestade de Ossos Suprema": {
+		baseSkill: "Tempestade de Ossos",
+		connections: [ "Tempestade de Ossos Primal" ],
+		description: `Sua chance de acerto crítico aumenta em +{#}% enquanto a Tempestade de Ossos estiver ativa.`,
 		id: 103,
 		maxPoints: 1,
 		values: [ "2" ],
@@ -1091,7 +1091,7 @@ A swirling storm of bones appears around you and your Golem, dealing {#}% to sur
 	},
 	"Golem Mastery": {
 		connections: [ "Ultimate" ],
-		description: `Increase the damage and Life of your Golem by x{#}%.`,
+		description: `Aumente o dano e a Vida do seu Golem em x{#}%.`,
 		id: 104,
 		maxPoints: 3,
 		values: [ "{15/30/45}" ],
@@ -1101,38 +1101,38 @@ A swirling storm of bones appears around you and your Golem, dealing {#}% to sur
 };
 
 necromancerData["Capstone"] = {
-	"Ossified Essência": {
+	"Essência Ossificada": {
 		connections: [ "Capstone" ],
-		description: `Your Bone Skills deal x{#}% increased damage for each point of Essência you have above {#} upon cast.`,
+		description: `Suas habilidades ósseas causam x{#}% de dano aumentado para cada ponto de Essência que você tem acima de {#} ao ser lançado.`,
 		id: 105,
 		maxPoints: 1,
 		values: [ "1", "50" ],
 		x: -4.466,
 		y: -320.48
 	},
-	"Shadowblight": {
+	"Praga das Sombras": {
 		connections: [ "Capstone" ],
-		description: `Shadow Damage infects enemies with Shadowblight for {#} segundos. You and your minions deal x{#}% bonus damage to enemies with Shadowblight.
+		description: `Dano de Sombra infecta inimigos com Praga das Sombras por {#} segundos. Você e seus lacaios causam x{#}% de dano bônus aos inimigos com a Praga das Sombras.
 
-Every {#}th time an enemy receives Shadow Damage from you or your Lacaios while they are affected by Shadowblight, they take additional {#}% Shadow Damage.`,
+Toda {#} vez que um inimigo recebe Dano de Sombra de você ou de seus Lacaios enquanto ele é afetado pela Praga das Sombras, ele recebe {#}% de Dano de Sombra adicional.`,
 		id: 106,
 		maxPoints: 1,
 		values: [ "2", "10", "20", "" ],
 		x: -2.974,
 		y: 344.505
 	},
-	"Rathma's Vigor": {
+	"Vigor de Rathma": {
 		connections: [ "Capstone" ],
-		description: `Increase your Maximum Life by x{#}%. After being Healthy for {#} segundos, your next Blood Skill Overpowers.`,
+		description: `Aumente sua Vida Máxima em x{#}%. Depois de ficar Saudável por {#} segundos, sua próxima Habilidade de Sangue Sobrecarrega.`,
 		id: 107,
 		maxPoints: 1,
 		values: [ "10", "25" ],
 		x: 659.499,
 		y: -0.755
 	},
-	"Kalan's Edict": {
+	"Édito de Kalan": {
 		connections: [ "Capstone" ],
-		description: `After you have not taken damage in the last {#} segundos, your Lacaios gain +{#}% Attack Speed. While you have at least {#} Lacaios, this bonus is doubled.`,
+		description: `Depois de não ter sofrido dano nos últimos {#} segundos, seus Lacaios ganham +{#}% de Velocidade de Ataque. Enquanto você tiver pelo menos {#} Lacaios, esse bônus será dobrado.`,
 		id: 130,
 		maxPoints: 1,
 		values: [ "", "", "" ],
@@ -1142,90 +1142,90 @@ Every {#}th time an enemy receives Shadow Damage from you or your Lacaios while 
 };
 
 necromancerData["Livro dos Mortos"] = {
-	"Skeletal Warriors": {
-		"Skeletal Skirmishers": {
-			description: `Sword-wielding damage dealers that deal 30% increased damage but have 15% reduced Life.`,
+	"Guerreiros Esqueletos": {
+		"Escaramuçadores Esqueletos": {
+			description: `Agentes de dano empunhando espadas que causam dano aumentado em 30%, mas têm Vida reduzida em 15%.`,
 			id: 110,
-			sacrifice: `Your critical strike chance is increase by 5%, but you can no longer raise Skeletal Warriors.`,
+			sacrifice: `Sua chance de acerto crítico aumenta em 5%, mas você não pode mais criar Guerreiros Esqueletos.`,
 			upgrades: [
-				`You can raise an additional Skirmisher.`,
-				`Each time you critically strike, your Skirmishers next attack critically strikes as well. Can only happen every 3 segundos.`
+				`Você pode levantar um Escaramuçador adicional.`,
+				`Cada vez que você ataca criticamente, o próximo ataque do seu Escaramuçador também acerta criticamente. Só pode acontecer a cada 3 segundos.`
 			]
 		},
-		"Skeletal Defenders": {
-			description: `Durable shield-bearers with 15% increased Life.`,
+		"Defensores Esqueléticos": {
+			description: `Portadores de escudo duráveis com Vida aumentada em 15%.`,
 			id: 111,
-			sacrifice: `You gain 15% non-physical resistance, but you can no longer raise Skeletal Warriors.`,
+			sacrifice: `Você ganha 15% de resistência não física, mas não pode mais criar Guerreiros Esqueletos.`,
 			upgrades: [
-				`Every 8 segundos your Defenders negate the next instance of direct damage they would take.`,
-				`Increase the amount of thorns that Defenders inherit from you from 30% to 50%.`
+				`A cada 8 segundos, seus Defensores negam a próxima instância de dano direto que receberiam.`,
+				`Aumente a quantidade de espinhos que os Defensores herdam de você de 30% para 50%.`
 			]
 		},
-		"Skeletal Foiceers": {
-			description: `Deals area damage with a slow and powerful scythe, and has a special wind-up attack, dealing heavy damage every 10 segundos.`,
+		"Esqueletos de Foice": {
+			description: `Causa dano em área com uma foice lenta e poderosa, e tem um ataque especial de corda, causando dano pesado a cada 10 segundos.`,
 			id: 112,
-			sacrifice: `You deal x10% increased Shadow Damage but you can no longer raise Skeletal Warriors.`,
+			sacrifice: `Você causa x10% de dano de sombra aumentado, mas não pode mais criar Guerreiros Esqueletos.`,
 			upgrades: [
-				`Foiceer attacks against enemies who are Immobilized, Slowed, Stunned or Vulnerable reduce the cooldown of their powerful wind-up attack by 2 segundos.`,
-				`Foiceers have a 10% chance to carve the flesh off enemies, forming a corpse. This cannot happen on the same enemy more than once every 5 segundos.`
+				`Ataques violentos contra inimigos Imobilizados, Desacelerados, Atordoados ou Vulneráveis reduzem o cooldown de seu poderoso ataque de corda em 2 segundos.`,
+				`Os Esqueletos de Foice têm 10% de chance de cortar a carne dos inimigos, formando um Cadáver. Isso não pode acontecer no mesmo inimigo mais de uma vez a cada 5 segundos.`
 			]
 		},
 	},
-	"Skeletal Mages": {
-		"Shadow Mages": {
-			description: `Deals moderate Shadow Damage.`,
+	"Magos Esqueletos": {
+		"Magos das Sombras": {
+			description: `Causa Dano de Sombra moderado.`,
 			id: 113,
-			sacrifice: `Your maximum essence is increased by 15, but you can no longer raise Skeletal Mages.`,
+			sacrifice: `Sua essência máxima é aumentada em 15, mas você não pode mais criar Magos Esqueletos.`,
 			upgrades: [
-				`Shadow Mage attacks have a 10% chance to Stun for 2.13 segundos. This cannot happen on the same enemy more than once every 5 segundos.`,
-				`Shadow Mages fire an additional shadow bolt every 6th attack.`
+				`Os ataques do Mago das Sombras têm 10% de chance de Atordoar por 2,13 segundos. Isso não pode acontecer no mesmo inimigo mais de uma vez a cada 5 segundos.`,
+				`Magos das Sombras dispara um raio de sombra adicional a cada 6º ataque.`
 			]
 		},
-		"Cold Mages": {
-			description: `Chills and Freezes enemies.`,
+		"Magos de Gelo": {
+			description: `Resfria e Congela os inimigos.`,
 			id: 114,
-			sacrifice: `You deal x15% increased damage to Vulnerable enemies, but you can no longer raise Skeletal Mages.`,
+			sacrifice: `Você causa x15% de dano aumentado a inimigos Vulneráveis, mas não pode mais criar Magos Esqueletos.`,
 			upgrades: [
-				`Each time your Cold Mages damage enemies with their primary attack, you gain 2 essence.`,
-				`Enemies who are Frozen by or damaged while Frozen by your Cold Mages primary attack are made Vulnerable for 3 segundos.`
+				`Cada vez que seus Magos de Gelo danificam os inimigos com seu ataque primário, você ganha 2 essências.`,
+				`Inimigos que são Congelados ou danificados enquanto Congelados pelo seu ataque primário Magos de Gelo ficam Vulneráveis por 3 segundos.`
 			]
 		},
-		"Bone Mages": {
-			description: `Uses its own bones as projectiles, dealing heavy damage for a Life cost.`,
+		"Magos de Osso": {
+			description: `Usa seus próprios ossos como projéteis, causando dano pesado por um custo de Vida.`,
 			id: 115,
-			sacrifice: `Your Overpower damage is increased by 30%, but you can no longer raise Skeletal Mages.`,
+			sacrifice: `Seu dano de Sobrecarga é aumentado em 30%, mas você não pode mais criar Magos Esqueletos.`,
 			upgrades: [
-				`Reduce the life cost of your Bone Mages attacks from 15% to 10%. After being alive for 5 segundos, Bone Mages deal 40% increased damage.`,
-				`Each time a Bone Mage dies from its own attack, they leave behind a corpse and Fortify you for #.`
+				`Reduza o custo de vida dos seus ataques Magos de Osso de 15% para 10%. Depois de estar vivo por 5 segundos, Magos de Osso causa 40% a mais de dano.`,
+				`Cada vez que um Mago de Osso morre de seu próprio ataque, eles deixam para trás um cadáver e o Fortificam em #.`
 			]
 		},
 	},
 	"Golem": {
-		"Bone Golem": {
-			description: `Taunts enemies in a wide area.`,
+		"Golem de Osso": {
+			description: `Provoca inimigos em uma área ampla.`,
 			id: 116,
-			sacrifice: `You gain 10% increased attack speed, but you lose the ability to summon a Golem.`,
+			sacrifice: `Você ganha 10% de aumento na velocidade de ataque, mas perde a habilidade de invocar um Golem.`,
 			upgrades: [
-				`Each time your Golem takes up to 20% of its maximum Life as damage, it sheds a corpse.`,
-				`Your Golem gains 10% maximum Life and the amount of thorns they inherit from you is increased from 30% to 50%.`
+				`Cada vez que seu Golem leva até 20% de sua Vida máxima como dano, ele lança um cadáver.`,
+				`Seu Golem ganha 10% de Vida máxima e a quantidade de espinhos que eles herdam de você aumenta de 30% para 50%.`
 			]
 		},
-		"Blood Golem": {
-			description: `Drains Life from nearby enemies.`,
+		"Golem de Sangue": {
+			description: `Drena vida de inimigos próximos.`,
 			id: 117,
-			sacrifice: `Your maximum Life is increased by 10%, but you lose the ability to summon a Golem.`,
+			sacrifice: `Sua Vida máxima aumenta em 10%, mas você perde a habilidade de convocar um Golem.`,
 			upgrades: [
-				`Your Golem absorbs 15% of the damage you would take.`,
-				`While healthy, your Golem gains 25% damage reduction and x25% increased damage.`
+				`Seu Golem absorve 15% do dano que você receberia.`,
+				`Enquanto estiver saudável, seu Golem ganha 25% de redução de dano e x25% de aumento de dano.`
 			]
 		},
 		"Iron Golem": {
-			description: `Slams the ground and Stuns enemies.`,
+			description: `Bate no chão e Atordoa os inimigos.`,
 			id: 118,
-			sacrifice: `You deal x30% increased critical strike damage, but you lose the ability to summon a Golem.`,
+			sacrifice: `Você causa x30% de dano de acerto crítico aumentado, mas perde a habilidade de invocar um Golem.`,
 			upgrades: [
-				`Every 5th Golem attack causes a shockwave, dealing 16% damage to the primary enemy and to enemies behind them.`,
-				`Your Golem slam attack also makes enemies Vulnerable for 3 segundos.`
+				`Cada 5º ataque do Golem causa uma onda de choque, causando 16% de dano ao inimigo principal e aos inimigos atrás dele.`,
+				`O ataque de pancada do Golem também torna os inimigos Vulneráveis por 3 segundos.`
 			]
 		},
 	},
