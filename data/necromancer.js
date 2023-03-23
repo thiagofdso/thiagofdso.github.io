@@ -1,30 +1,30 @@
 let necromancerData = {};
 
 necromancerData["Trunk Data"] = {
-	"Basico": {
-		connections: [ "Core" ],
+	"Básico": {
+		connections: [ "Principais" ],
 		x: 0,
 		y: 0
 	},
-	"Core": {
-		connections: [ "Macabre" ],
+	"Principais": {
+		connections: [ "Macabras" ],
 		requiredPoints: 2,
 		x: -1193.775,
 		y: 612.52
 	},
-	"Macabre": {
-		connections: [ "Corruption" ],
+	"Macabras": {
+		connections: [ "Corrupção" ],
 		requiredPoints: 6,
 		x: 507.47,
 		y: 1513.16
 	},
-	"Corruption": {
-		connections: [ "Summoning" ],
+	"Corrupção": {
+		connections: [ "Convocação" ],
 		requiredPoints: 11,
 		x: -1200.65,
 		y: 2438.479
 	},
-	"Summoning": {
+	"Convocação": {
 		connections: [ "Ultimate" ],
 		requiredPoints: 16,
 		x: 507.125,
@@ -41,173 +41,173 @@ necromancerData["Trunk Data"] = {
 		x: -10.884,
 		y: 4865.98
 	},
-	"Book of the Dead": {
+	"Livro dos Mortos": {
 		x: 2500,
 		y: 0
 	},
 };
 
-necromancerData["Basico"] = {
-	"Decompose": {
-		connections: [ "Enhanced Decompose", "Basico" ],
-		description: `Generate Essence: {#} per second
+necromancerData["Básico"] = {
+	"Decompor": {
+		connections: [ "Decompor Melhorado", "Básico" ],
+		description: `Gera Essência: {#} por segundo
 Chande de Golpe de Sorte: {#}%
-Tear the flesh from an enemy, dealing {#}% damage per second and forming a usable Corpse with the flesh every {#} segundos.`,
+Rasgar a carne de um inimigo, causando {#}% de dano por segundo e formando um Cadáver utilizável com a carne a cada {#} segundos.`,
 		id: 0,
 		maxPoints: 5,
 		values: [ "7", "40", "30", "2.5" ],
 		x: -217.817,
 		y: -258.02
 	},
-	"Enhanced Decompose": {
-		baseSkill: "Decompose",
-		connections: [ "Decompose", "Acolyte's Decompose", "Initiate's Decompose" ],
-		description: `If an enemy dies while being Decomposed, you gain {#} Essence.`,
+	"Decompor Melhorado": {
+		baseSkill: "Decompor",
+		connections: [ "Decompor", "Decompor do Acólito", "Decompor do Iniciado" ],
+		description: `Se um inimigo morre enquanto sofre Decompor, você ganha {#} Essência.`,
 		id: 1,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: -392.051,
 		y: -430.79
 	},
-	"Acolyte's Decompose": {
-		baseSkill: "Decompose",
-		connections: [ "Enhanced Decompose" ],
-		description: `You and your Minions deal x{#}% increased damage to enemies who are being Decomposed.`,
+	"Decompor do Acólito": {
+		baseSkill: "Decompor",
+		connections: [ "Decompor Melhorado" ],
+		description: `Você e seus Minions infligem x{#}% de dano aumentado em inimigos que sofrerem Decompor.`,
 		id: 2,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: -632.476,
 		y: -478.095
 	},
-	"Initiate's Decompose": {
-		baseSkill: "Decompose",
-		connections: [ "Enhanced Decompose" ],
-		description: `Decompose Slows enemies by {#}%.`,
+	"Decompor do Iniciado": {
+		baseSkill: "Decompor",
+		connections: [ "Decompor Melhorado" ],
+		description: `Decompor causa Lentidão nos Inimigos em {#}%.`,
 		id: 3,
 		maxPoints: 1,
 		values: [ "30" ],
 		x: -371.68,
 		y: -569.72
 	},
-	"Reap": {
-		connections: [ "Necro_Mod_Reap_03", "Basico" ],
-		description: `Generate Essence: {#} per enemy hit
+	"Foice": {
+		connections: [ "Foice Melhorada", "Básico" ],
+		description: `Gera Essência: {#} por inimigo acertado
 Chande de Golpe de Sorte: {#}%
-Sweep an ethereal scythe in front of you, dealing {#}% damage. Hitting an enemy with Reap increases your Damage Reduction by {#}% for {#} segundos.`,
+Varra uma foice etérea à sua frente, causando {#}% de dano. Atingir um inimigo com Foice aumenta sua Redução de Dano em {#}% por {#} segundos.`,
 		id: 4,
 		maxPoints: 5,
 		values: [ "4", "17", "12", "15", "2" ],
 		x: -498.75,
 		y: -99.975
 	},
-	"Necro_Mod_Reap_03": {
-		baseSkill: "Reap",
-		connections: [ "Reap", "Initiate's Reap", "Acolyte's Reap" ],
-		description: `If an enemy hit by Reap dies within {#} segundos, you gain +{#}% Attack Speed for {#} segundos.`,
+	"Foice Melhorada": {
+		baseSkill: "Foice",
+		connections: [ "Foice", "Foice do Iniciado", "Foice do Acólito" ],
+		description: `Se um inimigo acertado pela Foice morre em {#} segundos, você ganha +{#}% de Velocidade de Ataque por {#} segundos.`,
 		id: 119,
 		maxPoints: 1,
 		values: [ "", "", "" ],
 		x: -830.87,
 		y: -161.91
 	},
-	"Initiate's Reap": {
-		baseSkill: "Reap",
-		connections: [ "Necro_Mod_Reap_03" ],
-		description: `Reap instantly kills targets below {#}% Life.
+	"Foice do Iniciado": {
+		baseSkill: "Foice",
+		connections: [ "Foice Melhorada" ],
+		description: `Foice mata instantaneamente inimigos abaixo de {#}% de Vida.
 
-This does not work on bosses or players.`,
+Isso não afeta chefes ou jogadores.`,
 		id: 6,
 		maxPoints: 1,
 		values: [ "5" ],
 		x: -921.775,
 		y: -287.89
 	},
-	"Acolyte's Reap": {
-		baseSkill: "Reap",
-		connections: [ "Necro_Mod_Reap_03" ],
-		description: `Reap forms a Corpse under the first enemy hit. Can only occur every {#} segundos.`,
+	"Foice do Acólito": {
+		baseSkill: "Foice",
+		connections: [ "Foice Melhorada" ],
+		description: `Foice forma um Cadáver sobre o primeiro inimigo acertado. Pode ocorrer somente a cada {#} segundos.`,
 		id: 7,
 		maxPoints: 1,
 		values: [ "5" ],
 		x: -1072.505,
 		y: -107.4
 	},
-	"Hemorrhage": {
-		connections: [ "Enhanced Hemorrhage", "Basico" ],
-		description: `Generate Essence: {#}
+	"Hemorragia": {
+		connections: [ "Hemorragia Melhorada", "Básico" ],
+		description: `Gera Essência: {#}
 Chande de Golpe de Sorte: {#}%
-Burst an enemy's blood, dealing {#}% damage. Hemorrhage has a {#}% chance to form a Blood Orb.`,
+Estoura o sangue de um inimigo, causando {#}% de dano. Hemorragia tem {#}% de chance de formar um Orbe de Sangue.`,
 		id: 8,
 		maxPoints: 5,
 		values: [ "7", "40", "25", "20" ],
 		x: 214.396,
 		y: -265.9
 	},
-	"Enhanced Hemorrhage": {
-		baseSkill: "Hemorrhage",
-		connections: [ "Hemorrhage", "Acolyte's Hemorrhage", "Initiate's Hemorrhage" ],
-		description: `After picking up a Blood Orb, your next Hemorrhage also deals damage to enemies around your target and grants {#} additional Essence per enemy hit.`,
+	"Hemorragia Melhorada": {
+		baseSkill: "Hemorragia",
+		connections: [ "Hemorragia", "Hemorragia do Acólito", "Hemorragia do Iniciado" ],
+		description: `Depois de pegar um Orbe de Sangue, sua próxima Hemorragia também causa dano aos inimigos ao redor de seu alvo e concede {#} Essência adicional por inimigo acertado.`,
 		id: 9,
 		maxPoints: 1,
 		values: [ "2" ],
 		x: 356.625,
 		y: -432.41
 	},
-	"Acolyte's Hemorrhage": {
-		baseSkill: "Hemorrhage",
-		connections: [ "Enhanced Hemorrhage" ],
-		description: `Hemorrhage gains an additional +{#}% Attack Speed while Healthy.`,
+	"Hemorragia do Acólito": {
+		baseSkill: "Hemorragia",
+		connections: [ "Hemorragia Melhorada" ],
+		description: `Hemorragia ganha um adicional de +{#}% de Velocidade de Ataque enquanto estiver Saudável.`,
 		id: 10,
 		maxPoints: 1,
 		values: [ "20" ],
 		x: 607.455,
 		y: -493.645
 	},
-	"Initiate's Hemorrhage": {
-		baseSkill: "Hemorrhage",
-		connections: [ "Enhanced Hemorrhage" ],
-		description: `Hemorrhage grants {#}% Base Life ({#}) as Fortify each time it hits an enemy, and has a {#}% chance per enemy hit to Fortify you for {#}% Base Life ({#}).`,
+	"Hemorragia do Iniciado": {
+		baseSkill: "Hemorragia",
+		connections: [ "Hemorragia Melhorada" ],
+		description: `Hemorragia concede {#}% de Vida Base ({#}) como Fortificação cada vez que atinge um inimigo, e tem {#}% de chance por inimigo acertado de Fortificar você por {#}% de Vida Base ({#}).`,
 		id: 11,
 		maxPoints: 1,
 		values: [ "0.64", "", "1.5", "100", "" ],
 		x: 328.303,
 		y: -569.91
 	},
-	"Bone Splinters": {
-		connections: [ "Enhanced Bone Splinters", "Basico" ],
-		description: `Generate Essence: {#}
+	"Lascas de Osso": {
+		connections: [ "Lascas de Osso Melhorado", "Básico" ],
+		description: `Gera Essência: {#}
 Chande de Golpe de Sorte: {#}%
-Fire 3 bone splinters, dealing {#}% damage each. Each subsequent time an enemy is hit by the same cast of Bone Splinters, you gain {#} Essence.`,
+Dispare 3 lascas de osso, causando {#}% de dano cada. Cada vez que um inimigo for atingido pelo mesmo golpe de Lascas de Osso, você ganha {#} Essência.`,
 		id: 12,
 		maxPoints: 5,
 		values: [ "5", "17", "22.5", "1" ],
 		x: 488.405,
 		y: -91.8
 	},
-	"Enhanced Bone Splinters": {
-		baseSkill: "Bone Splinters",
-		connections: [ "Bone Splinters", "Necro_Mod_BoneSplinters_01", "Initiate's Bone Splinters" ],
-		description: `Bone Splinters has a {#}% chance to fire {#} additional projectiles if cast while you have {#} or more Essence.`,
+	"Lascas de Osso Melhorado": {
+		baseSkill: "Lascas de Osso",
+		connections: [ "Lascas de Osso", "Lascas de Osso do Acólito", "Lascas de Osso do Iniciado" ],
+		description: `Lascas de Osso tem {#}% de chance de disparar {#} projéteis adicionais se lançado enquanto você tiver {#} ou mais Essência.`,
 		id: 13,
 		maxPoints: 1,
 		values: [ "30", "2", "50" ],
 		x: 877.154,
 		y: -161.18
 	},
-	"Necro_Mod_BoneSplinters_01": {
-		baseSkill: "Bone Splinters",
-		connections: [ "Enhanced Bone Splinters" ],
-		description: `Hitting the same enemy at least {#} times with the same cast of Bone Splinters grants +{#}% Critical Strike Chance for {#} segundos.`,
+	"Lascas de Osso do Acólito": {
+		baseSkill: "Lascas de Osso",
+		connections: [ "Lascas de Osso Melhorado" ],
+		description: `Atingir o mesmo inimigo pelo menos {#} vezes com o mesmo elenco de Lascas de Osso concede +{#}% de Chance de Acerto Crítico por {#} segundos.`,
 		id: 120,
 		maxPoints: 1,
 		values: [ "", "", "" ],
 		x: 1137.875,
 		y: -122.755
 	},
-	"Initiate's Bone Splinters": {
-		baseSkill: "Bone Splinters",
-		connections: [ "Enhanced Bone Splinters" ],
-		description: `Bone Splinters has a {#}% chance per hit to make enemies Vulnerable for {#} segundos.`,
+	"Lascas de Osso do Iniciado": {
+		baseSkill: "Lascas de Osso",
+		connections: [ "Lascas de Osso Melhorado" ],
+		description: `Lascas de Osso tem {#}% de chance por acerto de tornar os inimigos Vulneráveis por {#} segundos.`,
 		id: 15,
 		maxPoints: 1,
 		values: [ "20", "2" ],
@@ -216,10 +216,10 @@ Fire 3 bone splinters, dealing {#}% damage each. Each subsequent time an enemy i
 	},
 };
 
-necromancerData["Core"] = {
+necromancerData["Principais"] = {
 	"Blight": {
-		connections: [ "Enhanced Blight", "Core" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Blight", "Principais" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 Unleash concentrated blight that deals {#}% damage and leaves behind a defiled area, dealing {#}% damage over {#} segundos.`,
 		id: 16,
@@ -228,7 +228,7 @@ Unleash concentrated blight that deals {#}% damage and leaves behind a defiled a
 		x: -543.69,
 		y: 87.56
 	},
-	"Enhanced Blight": {
+	"Melhorado Blight": {
 		baseSkill: "Blight",
 		connections: [ "Blight", "Paranormal Blight", "Supernatural Blight" ],
 		description: `Blight Slows enemies by {#}%.`,
@@ -240,7 +240,7 @@ Unleash concentrated blight that deals {#}% damage and leaves behind a defiled a
 	},
 	"Paranormal Blight": {
 		baseSkill: "Blight",
-		connections: [ "Enhanced Blight" ],
+		connections: [ "Melhorado Blight" ],
 		description: `Blight has a {#}% chance to Immobilize enemies for {#} segundos on impact.`,
 		id: 18,
 		maxPoints: 1,
@@ -250,7 +250,7 @@ Unleash concentrated blight that deals {#}% damage and leaves behind a defiled a
 	},
 	"Supernatural Blight": {
 		baseSkill: "Blight",
-		connections: [ "Enhanced Blight" ],
+		connections: [ "Melhorado Blight" ],
 		description: `You and your Minions deal x{#}% increased damage to enemies within Blight.`,
 		id: 19,
 		maxPoints: 1,
@@ -259,8 +259,8 @@ Unleash concentrated blight that deals {#}% damage and leaves behind a defiled a
 		y: 103.745
 	},
 	"Sever": {
-		connections: [ "Enhanced Sever", "Core" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Sever", "Principais" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 A specter of you charges forward and attacks with its scythe for {#}% damage then returns to you and attacks again for {#}% damage.`,
 		id: 20,
@@ -269,7 +269,7 @@ A specter of you charges forward and attacks with its scythe for {#}% damage the
 		x: -281.15,
 		y: 258.115
 	},
-	"Enhanced Sever": {
+	"Melhorado Sever": {
 		baseSkill: "Sever",
 		connections: [ "Sever", "Paranormal Sever", "Supernatural Sever" ],
 		description: `Sever damages enemies along its path for {#}% of its initial damage.`,
@@ -281,7 +281,7 @@ A specter of you charges forward and attacks with its scythe for {#}% damage the
 	},
 	"Paranormal Sever": {
 		baseSkill: "Sever",
-		connections: [ "Enhanced Sever" ],
+		connections: [ "Melhorado Sever" ],
 		description: `Every 4th cast of Sever makes enemies Vulnerable for {#} segundos.`,
 		id: 22,
 		maxPoints: 1,
@@ -291,7 +291,7 @@ A specter of you charges forward and attacks with its scythe for {#}% damage the
 	},
 	"Supernatural Sever": {
 		baseSkill: "Sever",
-		connections: [ "Enhanced Sever" ],
+		connections: [ "Melhorado Sever" ],
 		description: `Sever deals x{#}% increased damage for each Minion you have upon cast.`,
 		id: 23,
 		maxPoints: 1,
@@ -300,8 +300,8 @@ A specter of you charges forward and attacks with its scythe for {#}% damage the
 		y: 590.745
 	},
 	"Blood Surge": {
-		connections: [ "Enhanced Blood Surge", "Core" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Blood Surge", "Principais" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#}% damage. Blood Surge's nova damage is increased by x{#}% per enemy drained, up to x{#}%.`,
 		id: 24,
@@ -310,7 +310,7 @@ Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#
 		x: -542.58,
 		y: -124.71
 	},
-	"Enhanced Blood Surge": {
+	"Melhorado Blood Surge": {
 		baseSkill: "Blood Surge",
 		connections: [ "Blood Surge", "Supernatural Blood Surge", "Paranormal Blood Surge" ],
 		description: `Blood Surge Heals you for {#}% of your Maximum Life ({#}) when drawing blood from enemies. If {#} or more enemies are drawn from, then Heal for an additional {#}% of your Maximum Life ({#}).`,
@@ -322,7 +322,7 @@ Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#
 	},
 	"Supernatural Blood Surge": {
 		baseSkill: "Blood Surge",
-		connections: [ "Enhanced Blood Surge" ],
+		connections: [ "Melhorado Blood Surge" ],
 		description: `Each time an enemy is hit by Blood Surge's nova, you are Fortified for {#}% Base Life ({#}). While you have Fortify for over {#}% of your Maximum Life, Blood Surge deals x{#}% increased damage.`,
 		id: 26,
 		maxPoints: 1,
@@ -332,7 +332,7 @@ Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#
 	},
 	"Paranormal Blood Surge": {
 		baseSkill: "Blood Surge",
-		connections: [ "Enhanced Blood Surge" ],
+		connections: [ "Melhorado Blood Surge" ],
 		description: `If an enemy is damaged by Blood Surge's nova while you are Healthy, then gain 1 stack of Overwhelming Blood. When you have 5 stacks of Overwhelming Blood, your next Blood Surge Overpowers.`,
 		id: 27,
 		maxPoints: 1,
@@ -340,8 +340,8 @@ Draw blood from enemies, dealing {#}% damage, and expel a blood nova, dealing {#
 		y: -160.385
 	},
 	"Blood Lance": {
-		connections: [ "Enhanced Blood Lance", "Core" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Blood Lance", "Principais" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% damage to the enemy and all other lanced enemies.`,
 		id: 28,
@@ -350,7 +350,7 @@ Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% dama
 		x: -278.15,
 		y: -274.3
 	},
-	"Enhanced Blood Lance": {
+	"Melhorado Blood Lance": {
 		baseSkill: "Blood Lance",
 		connections: [ "Blood Lance", "Supernatural Blood Lance", "Paranormal Blood Lance" ],
 		description: `Blood Lance pierces through enemies who are currently lanced, dealing {#}% reduced damage to subsequent enemies after the first.`,
@@ -362,7 +362,7 @@ Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% dama
 	},
 	"Supernatural Blood Lance": {
 		baseSkill: "Blood Lance",
-		connections: [ "Enhanced Blood Lance" ],
+		connections: [ "Melhorado Blood Lance" ],
 		description: `After casting Blood Lance {#} times, your next cast of Blood Lance is guaranteed to Overpower and spawns a Blood Orb under the first enemy hit.`,
 		id: 30,
 		maxPoints: 1,
@@ -372,8 +372,8 @@ Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% dama
 	},
 	"Paranormal Blood Lance": {
 		baseSkill: "Blood Lance",
-		connections: [ "Enhanced Blood Lance" ],
-		description: `While at least {#} enemies or a Boss are affected by Blood Lance, you gain +{#}% Attack Speed and Blood Lance's Essence cost is reduced by {#}.`,
+		connections: [ "Melhorado Blood Lance" ],
+		description: `While at least {#} enemies or a Boss are affected by Blood Lance, you gain +{#}% Attack Speed and Blood Lance's Essência cost is reduced by {#}.`,
 		id: 31,
 		maxPoints: 1,
 		values: [ "2", "10", "1" ],
@@ -381,8 +381,8 @@ Throw a blood lance that lingers in an enemy for {#} segundos, dealing {#}% dama
 		y: -520.325
 	},
 	"Bone Spear": {
-		connections: [ "Enhanced Bone Spear", "Core" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Bone Spear", "Principais" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 Conjure a bone spear from the ground, dealing {#}% damage and piercing through enemies.`,
 		id: 32,
@@ -391,7 +391,7 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 		x: 551.14,
 		y: -0.17
 	},
-	"Enhanced Bone Spear": {
+	"Melhorado Bone Spear": {
 		baseSkill: "Bone Spear",
 		connections: [ "Bone Spear", "Paranormal Bone Spear", "Supernatural Bone Spear" ],
 		description: `Bone Spear breaks into {#} shards when it is destroyed, dealing {#}% damage each.`,
@@ -403,7 +403,7 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 	},
 	"Paranormal Bone Spear": {
 		baseSkill: "Bone Spear",
-		connections: [ "Enhanced Bone Spear" ],
+		connections: [ "Melhorado Bone Spear" ],
 		description: `Bone Spear has a +{#}% increased Critical Strike Chance. If Bone Spear's primary projectile Critically Strikes, it fires {#} additional bone shards upon being destroyed.`,
 		id: 34,
 		maxPoints: 1,
@@ -413,7 +413,7 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 	},
 	"Supernatural Bone Spear": {
 		baseSkill: "Bone Spear",
-		connections: [ "Enhanced Bone Spear" ],
+		connections: [ "Melhorado Bone Spear" ],
 		description: `Bone Spear makes the first enemy hit Vulnerable for {#} segundos.`,
 		id: 35,
 		maxPoints: 1,
@@ -422,8 +422,8 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 		y: -89.765
 	},
 	"Unliving Energy": {
-		connections: [ "Core", "Imperfectly Balanced" ],
-		description: `Your maximum Essence is increased by {#}.`,
+		connections: [ "Principais", "Imperfectly Balanced" ],
+		description: `Your maximum Essência is increased by {#}.`,
 		id: 36,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
@@ -432,7 +432,7 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 	},
 	"Imperfectly Balanced": {
 		connections: [ "Unliving Energy" ],
-		description: `Your Core Skills cost x{#}% more Essence, but deal x{#}% increased damage.`,
+		description: `Your Principais Skills cost x{#}% more Essência, but deal x{#}% increased damage.`,
 		id: 37,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "{10/20/30}" ],
@@ -440,7 +440,7 @@ Conjure a bone spear from the ground, dealing {#}% damage and piercing through e
 		y: -449.76
 	},
 	"Hewed Flesh": {
-		connections: [ "Core" ],
+		connections: [ "Principais" ],
 		description: `Lucky Hit: Your damage has up to a {#}% chance to create a Corpse at the target's location.
 
 This chance is doubled against Bosses.`,
@@ -452,10 +452,10 @@ This chance is doubled against Bosses.`,
 	},
 };
 
-necromancerData["Macabre"] = {
+necromancerData["Macabras"] = {
 	"Corpse Explosion": {
-		connections: [ "Enhanced Corpse Explosion", "Macabre" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Corpse Explosion", "Macabras" ],
+		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
 Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		id: 39,
@@ -464,7 +464,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		x: -570.055,
 		y: -2.03
 	},
-	"Enhanced Corpse Explosion": {
+	"Melhorado Corpse Explosion": {
 		baseSkill: "Corpse Explosion",
 		connections: [ "Corpse Explosion", "Blighted Corpse Explosion", "Plagued Corpse Explosion" ],
 		description: `Corpse Explosion's radius is increased by {#}%.`,
@@ -476,7 +476,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 	},
 	"Blighted Corpse Explosion": {
 		baseSkill: "Corpse Explosion",
-		connections: [ "Enhanced Corpse Explosion" ],
+		connections: [ "Melhorado Corpse Explosion" ],
 		description: `Corpse Explosion becomes a Darkness Skill and, instead of exploding, releases a vile miasma dealing {#}% Shadow Damage over {#} segundos.`,
 		id: 122,
 		maxPoints: 1,
@@ -486,7 +486,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 	},
 	"Plagued Corpse Explosion": {
 		baseSkill: "Corpse Explosion",
-		connections: [ "Enhanced Corpse Explosion" ],
+		connections: [ "Melhorado Corpse Explosion" ],
 		description: `Corpse Explosion deals x{#}% increased damage to enemies that are Slowed, Stunned or Vulnerable. These damage bonuses can stack.`,
 		id: 123,
 		maxPoints: 1,
@@ -495,8 +495,8 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		y: 98.81
 	},
 	"Grim Harvest": {
-		connections: [ "Fueled by Death", "Macabre" ],
-		description: `Consuming a Corpse generates {#} Essence.`,
+		connections: [ "Fueled by Death", "Macabras" ],
+		description: `Consuming a Corpse generates {#} Essência.`,
 		id: 43,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
@@ -513,7 +513,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		y: 530.055
 	},
 	"Spiked Armor": {
-		connections: [ "Macabre" ],
+		connections: [ "Macabras" ],
 		description: `Gain {#} Thorns.`,
 		id: 124,
 		maxPoints: 3,
@@ -522,7 +522,7 @@ Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
 		y: -216.235
 	},
 	"Blood Mist": {
-		connections: [ "Enhanced Blood Mist", "Macabre" ],
+		connections: [ "Melhorado Blood Mist", "Macabras" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
 Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Speed is reduced by {#}% and you periodically deal {#}% damage to enemies and Healing for {#}% of your Maximum Life ({#}).`,
@@ -532,7 +532,7 @@ Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Spe
 		x: 6.515,
 		y: -278.795
 	},
-	"Enhanced Blood Mist": {
+	"Melhorado Blood Mist": {
 		baseSkill: "Blood Mist",
 		connections: [ "Blood Mist", "Ghastly Blood Mist", "Dreadful Blood Mist" ],
 		description: `Casting a Skill that Overpowers reduces the cooldown of Blood Mist by {#} segundos.`,
@@ -544,7 +544,7 @@ Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Spe
 	},
 	"Ghastly Blood Mist": {
 		baseSkill: "Blood Mist",
-		connections: [ "Enhanced Blood Mist" ],
+		connections: [ "Melhorado Blood Mist" ],
 		description: `Blood Mist leaves behind a Corpse every {#} second.`,
 		id: 48,
 		maxPoints: 1,
@@ -554,7 +554,7 @@ Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Spe
 	},
 	"Dreadful Blood Mist": {
 		baseSkill: "Blood Mist",
-		connections: [ "Enhanced Blood Mist" ],
+		connections: [ "Melhorado Blood Mist" ],
 		description: `Blood Mist Fortifies you for {#}% Base Life ({#}) each time it hits an enemy.`,
 		id: 49,
 		maxPoints: 1,
@@ -563,7 +563,7 @@ Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Spe
 		y: -624.15
 	},
 	"Bone Prison": {
-		connections: [ "Enhanced Bone Prison", "Macabre" ],
+		connections: [ "Melhorado Bone Prison", "Macabras" ],
 		description: `Cooldown: {#} segundos
 Unearth a prison of bone with {#} Life that surrounds the target area for {#} segundos.`,
 		id: 50,
@@ -572,10 +572,10 @@ Unearth a prison of bone with {#} Life that surrounds the target area for {#} se
 		x: 411.49,
 		y: 218.61
 	},
-	"Enhanced Bone Prison": {
+	"Melhorado Bone Prison": {
 		baseSkill: "Bone Prison",
 		connections: [ "Bone Prison", "Ghastly Bone Prison", "Dreadful Bone Prison" ],
-		description: `If an enemy is trapped by Bone Prison, gain {#} Essence, plus an additional {#} per enemy trapped.`,
+		description: `If an enemy is trapped by Bone Prison, gain {#} Essência, plus an additional {#} per enemy trapped.`,
 		id: 51,
 		maxPoints: 1,
 		values: [ "3", "" ],
@@ -584,7 +584,7 @@ Unearth a prison of bone with {#} Life that surrounds the target area for {#} se
 	},
 	"Ghastly Bone Prison": {
 		baseSkill: "Bone Prison",
-		connections: [ "Enhanced Bone Prison" ],
+		connections: [ "Melhorado Bone Prison" ],
 		description: `Enemies inside of Bone Prison are Vulnerable.`,
 		id: 52,
 		maxPoints: 1,
@@ -593,7 +593,7 @@ Unearth a prison of bone with {#} Life that surrounds the target area for {#} se
 	},
 	"Dreadful Bone Prison": {
 		baseSkill: "Bone Prison",
-		connections: [ "Enhanced Bone Prison" ],
+		connections: [ "Melhorado Bone Prison" ],
 		description: `Fortify for {#}% Base Life ({#}) for each enemy trapped by Bone Prison.`,
 		id: 53,
 		maxPoints: 1,
@@ -602,7 +602,7 @@ Unearth a prison of bone with {#} Life that surrounds the target area for {#} se
 		y: 367.725
 	},
 	"Skeletal Warrior Mastery": {
-		connections: [ "Macabre" ],
+		connections: [ "Macabras" ],
 		description: `Increase the damage and Life of your Skeletal Warriors by x{#}%.`,
 		id: 54,
 		maxPoints: 3,
@@ -612,10 +612,10 @@ Unearth a prison of bone with {#} Life that surrounds the target area for {#} se
 	},
 };
 
-necromancerData["Corruption"] = {
+necromancerData["Corrupção"] = {
 	"Iron Maiden": {
-		connections: [ "Enhanced Iron Maiden", "Corruption" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Iron Maiden", "Corrupção" ],
+		description: `Essência Cost: {#}
 Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each time they deal direct damage. Lasts {#} segundos.`,
 		id: 55,
 		maxPoints: 5,
@@ -623,10 +623,10 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 		x: -452.675,
 		y: -233.982
 	},
-	"Enhanced Iron Maiden": {
+	"Melhorado Iron Maiden": {
 		baseSkill: "Iron Maiden",
 		connections: [ "Iron Maiden", "Horrid Iron Maiden", "Abhorrent Iron Maiden" ],
-		description: `Iron Maiden no longer costs Essence. Instead, gain {#} Essence for each enemy Cursed. Does not work with enemies who are already Cursed with Iron Maiden.`,
+		description: `Iron Maiden no longer costs Essência. Instead, gain {#} Essência for each enemy Cursed. Does not work with enemies who are already Cursed with Iron Maiden.`,
 		id: 56,
 		maxPoints: 1,
 		values: [ "5" ],
@@ -635,7 +635,7 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 	},
 	"Horrid Iron Maiden": {
 		baseSkill: "Iron Maiden",
-		connections: [ "Enhanced Iron Maiden" ],
+		connections: [ "Melhorado Iron Maiden" ],
 		description: `When at least {#} enemies are afflicted by Iron Maiden, its damage is increased by x{#}%.`,
 		id: 57,
 		maxPoints: 1,
@@ -645,7 +645,7 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 	},
 	"Abhorrent Iron Maiden": {
 		baseSkill: "Iron Maiden",
-		connections: [ "Enhanced Iron Maiden" ],
+		connections: [ "Melhorado Iron Maiden" ],
 		description: `Heal for {#}% of your Maximum Life ({#}) when an enemy dies while afflicted with Iron Maiden.`,
 		id: 58,
 		maxPoints: 1,
@@ -654,7 +654,7 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 		y: -372.255
 	},
 	"Skeletal Mage Mastery": {
-		connections: [ "Corruption" ],
+		connections: [ "Corrupção" ],
 		description: `Increase the damage and Life of your Skeletal Mages by x{#}%.`,
 		id: 59,
 		maxPoints: 3,
@@ -663,7 +663,7 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 		y: 322.683
 	},
 	"Amplify Damage": {
-		connections: [ "Corruption" ],
+		connections: [ "Corrupção" ],
 		description: `You deal x{#}% increased damage to Cursed enemies.`,
 		id: 60,
 		maxPoints: 3,
@@ -672,8 +672,8 @@ Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each ti
 		y: 1.584
 	},
 	"Decrepify": {
-		connections: [ "Enhanced Decrepify", "Corruption" ],
-		description: `Essence Cost: {#}
+		connections: [ "Melhorado Decrepify", "Corrupção" ],
+		description: `Essência Cost: {#}
 Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and deal {#}% less damage for {#} segundos.`,
 		id: 61,
 		maxPoints: 5,
@@ -681,7 +681,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 		x: -457.14,
 		y: 240.226
 	},
-	"Enhanced Decrepify": {
+	"Melhorado Decrepify": {
 		baseSkill: "Decrepify",
 		connections: [ "Decrepify", "Abhorrent Decrepify", "Horrid Decrepify" ],
 		description: `Lucky Hit: Enemies hit while afflicted with Decrepify have up to a {#}% chance to Stun them for {#} segundos.`,
@@ -693,7 +693,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	},
 	"Abhorrent Decrepify": {
 		baseSkill: "Decrepify",
-		connections: [ "Enhanced Decrepify" ],
+		connections: [ "Melhorado Decrepify" ],
 		description: `Lucky Hit: Enemies hit while afflicted with Decrepify have up to a {#}% chance to reduce your active Cooldowns by {#} second.`,
 		id: 63,
 		maxPoints: 1,
@@ -703,7 +703,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	},
 	"Horrid Decrepify": {
 		baseSkill: "Decrepify",
-		connections: [ "Enhanced Decrepify" ],
+		connections: [ "Melhorado Decrepify" ],
 		description: `When you or your Minions hit an enemy afflicted with Decrepify below {#}% Life, they are instantly killed. Does not work on Bosses.`,
 		id: 64,
 		maxPoints: 1,
@@ -712,7 +712,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 		y: 533.678
 	},
 	"Death's Embrace": {
-		connections: [ "Corruption" ],
+		connections: [ "Corrupção" ],
 		description: `Close enemies take x{#}% more damage from you and deal {#}% less damage to you.`,
 		id: 65,
 		maxPoints: 3,
@@ -721,7 +721,7 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 		y: -289.131
 	},
 	"Death's Reach": {
-		connections: [ "Corruption" ],
+		connections: [ "Corrupção" ],
 		description: `You deal x{#}% increased damage to Distant enemies.`,
 		id: 66,
 		maxPoints: 3,
@@ -731,9 +731,9 @@ Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and dea
 	},
 };
 
-necromancerData["Summoning"] = {
+necromancerData["Convocação"] = {
 	"Corpse Tendrils": {
-		connections: [ "Enhanced Corpse Tendrils", "Summoning" ],
+		connections: [ "Melhorado Corpse Tendrils", "Convocação" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
 Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos, and dealing {#}% damage to them. Does not consume the Corpse.`,
@@ -743,7 +743,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		x: 444.22,
 		y: -228.515
 	},
-	"Enhanced Corpse Tendrils": {
+	"Melhorado Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
 		connections: [ "Corpse Tendrils", "Plagued Corpse Tendrils", "Blighted Corpse Tendrils" ],
 		description: `Enemies who are in range of Corpse Tendrils are Slowed by {#}% before being Pulled.`,
@@ -755,7 +755,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Plagued Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
-		connections: [ "Enhanced Corpse Tendrils" ],
+		connections: [ "Melhorado Corpse Tendrils" ],
 		description: `Enemies damaged by Corpse Tendrils are made Vulnerable for {#} segundos.`,
 		id: 125,
 		maxPoints: 1,
@@ -765,7 +765,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Blighted Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
-		connections: [ "Enhanced Corpse Tendrils" ],
+		connections: [ "Melhorado Corpse Tendrils" ],
 		description: `Corpse Tendrils has a {#}% chance when damaging enemies to drop a Blood Orb.`,
 		id: 126,
 		maxPoints: 1,
@@ -773,8 +773,8 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		x: 762.735,
 		y: -532.53
 	},
-	"Reaper's Pursuit": {
-		connections: [ "Gloom", "Crippling Darkness", "Summoning" ],
+	"Foiceer's Pursuit": {
+		connections: [ "Gloom", "Crippling Darkness", "Convocação" ],
 		description: `Damaging enemies with Darkness Skills increases your Movement Speed by +{#}% for {#} segundos.`,
 		id: 71,
 		maxPoints: 3,
@@ -783,7 +783,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		y: 0.085
 	},
 	"Gloom": {
-		connections: [ "Reaper's Pursuit", "Terror" ],
+		connections: [ "Foiceer's Pursuit", "Terror" ],
 		description: `When you damage enemies with Darkness Skills, they take x{#}% increased Shadow Damage from you and your Minions for {#} segundos, stacking up to {#} times.`,
 		id: 72,
 		maxPoints: 3,
@@ -801,7 +801,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		y: 1.175
 	},
 	"Crippling Darkness": {
-		connections: [ "Reaper's Pursuit", "Terror" ],
+		connections: [ "Foiceer's Pursuit", "Terror" ],
 		description: `Lucky Hit: Darkness Skills have up to a {#}% chance to Stun for {#} segundos.`,
 		id: 74,
 		maxPoints: 3,
@@ -810,7 +810,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		y: 96.35
 	},
 	"Gruesome Mending": {
-		connections: [ "Transfusion", "Coalesced Blood", "Summoning" ],
+		connections: [ "Transfusion", "Coalesced Blood", "Convocação" ],
 		description: `While below 50% Life, you receive +{#}% more Healing from all sources.`,
 		id: 127,
 		maxPoints: 3,
@@ -855,18 +855,18 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		y: -610.311
 	},
 	"Bone Espirito": {
-		connections: [ "Enhanced Bone Espirito", "Summoning" ],
+		connections: [ "Melhorado Bone Espirito", "Convocação" ],
 		description: `Cooldown: {#} segundos
-Essence Cost: All Remaining Essence
+Essência Cost: All Remaining Essência
 Chande de Golpe de Sorte: {#}%
-Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Upon reaching an enemy, the Espirito explodes, dealing {#}% damage to the target and all surrounding enemies. Damage is increased by x{#}% for each point of Essence spent casting Bone Espirito.`,
+Consume all of your Essência to conjure a Espirito of bone that seeks enemies. Upon reaching an enemy, the Espirito explodes, dealing {#}% damage to the target and all surrounding enemies. Damage is increased by x{#}% for each point of Essência spent casting Bone Espirito.`,
 		id: 80,
 		maxPoints: 5,
 		values: [ "12.0", "33", "80", "3" ],
 		x: 441.425,
 		y: 214.93
 	},
-	"Enhanced Bone Espirito": {
+	"Melhorado Bone Espirito": {
 		baseSkill: "Bone Espirito",
 		connections: [ "Bone Espirito", "Ghastly Bone Espirito", "Dreadful Bone Espirito" ],
 		description: `If Bone Espirito Critically Strikes, its Cooldown is reduced by {#} segundos. This effect can only happen once per cast.`,
@@ -878,7 +878,7 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 	},
 	"Ghastly Bone Espirito": {
 		baseSkill: "Bone Espirito",
-		connections: [ "Enhanced Bone Espirito" ],
+		connections: [ "Melhorado Bone Espirito" ],
 		description: `Bone Espirito has an additional +{#}% Critical Strike Chance.`,
 		id: 82,
 		maxPoints: 1,
@@ -888,8 +888,8 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 	},
 	"Dreadful Bone Espirito": {
 		baseSkill: "Bone Espirito",
-		connections: [ "Enhanced Bone Espirito" ],
-		description: `After Bone Espirito hits an enemy, you generate {#} Essence over the next {#} segundos.`,
+		connections: [ "Melhorado Bone Espirito" ],
+		description: `After Bone Espirito hits an enemy, you generate {#} Essência over the next {#} segundos.`,
 		id: 83,
 		maxPoints: 1,
 		values: [ "30", "4" ],
@@ -897,8 +897,8 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 		y: 492.635
 	},
 	"Serration": {
-		connections: [ "Rapid Ossification", "Compound Fracture", "Summoning" ],
-		description: `Your Bone Skills have a +{#}% increased Critical Strike Chance for each 10 Essence you have upon cast.`,
+		connections: [ "Rapid Ossification", "Compound Fracture", "Convocação" ],
+		description: `Your Bone Skills have a +{#}% increased Critical Strike Chance for each 10 Essência you have upon cast.`,
 		id: 84,
 		maxPoints: 3,
 		values: [ "{0.5/1/1.5}" ],
@@ -907,7 +907,7 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 	},
 	"Rapid Ossification": {
 		connections: [ "Serration", "Evulsion" ],
-		description: `Every {#} Essence you spend reduces the cooldowns of your Bone Skills by {#} segundos.`,
+		description: `Every {#} Essência you spend reduces the cooldowns of your Bone Skills by {#} segundos.`,
 		id: 85,
 		maxPoints: 3,
 		values: [ "100", "{0.5/1/1.5}" ],
@@ -933,7 +933,7 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 		y: 416.205
 	},
 	"Necrotic Carapace": {
-		connections: [ "Summoning" ],
+		connections: [ "Convocação" ],
 		description: `When a Corpse is formed from your Skills or your Minions, Fortify for {#}% Base Life ({#}).`,
 		id: 128,
 		maxPoints: 3,
@@ -944,7 +944,7 @@ Consume all of your Essence to conjure a Espirito of bone that seeks enemies. Up
 };
 
 necromancerData["Ultimate"] = {
-	"Bonded in Essence": {
+	"Bonded in Essência": {
 		connections: [ "Death's Defense", "Ultimate" ],
 		description: `Every {#} segundos, your Skeletal Priest's Healing will Heal your skeletons for {#}% of their Maximum Life.`,
 		id: 89,
@@ -954,7 +954,7 @@ necromancerData["Ultimate"] = {
 		y: 208.59
 	},
 	"Death's Defense": {
-		connections: [ "Bonded in Essence", "Inspiring Leader" ],
+		connections: [ "Bonded in Essência", "Inspiring Leader" ],
 		description: `Your Minions cannot lose more than {#}% of their Maximum Life from a single damage instance.`,
 		id: 90,
 		maxPoints: 3,
@@ -1101,9 +1101,9 @@ A swirling storm of bones appears around you and your Golem, dealing {#}% to sur
 };
 
 necromancerData["Capstone"] = {
-	"Ossified Essence": {
+	"Ossified Essência": {
 		connections: [ "Capstone" ],
-		description: `Your Bone Skills deal x{#}% increased damage for each point of Essence you have above {#} upon cast.`,
+		description: `Your Bone Skills deal x{#}% increased damage for each point of Essência you have above {#} upon cast.`,
 		id: 105,
 		maxPoints: 1,
 		values: [ "1", "50" ],
@@ -1141,7 +1141,7 @@ Every {#}th time an enemy receives Shadow Damage from you or your Minions while 
 	},
 };
 
-necromancerData["Book of the Dead"] = {
+necromancerData["Livro dos Mortos"] = {
 	"Skeletal Warriors": {
 		"Skeletal Skirmishers": {
 			description: `Sword-wielding damage dealers that deal 30% increased damage but have 15% reduced Life.`,
@@ -1161,13 +1161,13 @@ necromancerData["Book of the Dead"] = {
 				`Increase the amount of thorns that Defenders inherit from you from 30% to 50%.`
 			]
 		},
-		"Skeletal Reapers": {
+		"Skeletal Foiceers": {
 			description: `Deals area damage with a slow and powerful scythe, and has a special wind-up attack, dealing heavy damage every 10 segundos.`,
 			id: 112,
 			sacrifice: `You deal x10% increased Shadow Damage but you can no longer raise Skeletal Warriors.`,
 			upgrades: [
-				`Reaper attacks against enemies who are Immobilized, Slowed, Stunned or Vulnerable reduce the cooldown of their powerful wind-up attack by 2 segundos.`,
-				`Reapers have a 10% chance to carve the flesh off enemies, forming a corpse. This cannot happen on the same enemy more than once every 5 segundos.`
+				`Foiceer attacks against enemies who are Immobilized, Slowed, Stunned or Vulnerable reduce the cooldown of their powerful wind-up attack by 2 segundos.`,
+				`Foiceers have a 10% chance to carve the flesh off enemies, forming a corpse. This cannot happen on the same enemy more than once every 5 segundos.`
 			]
 		},
 	},
