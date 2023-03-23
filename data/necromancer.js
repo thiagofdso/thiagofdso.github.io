@@ -453,157 +453,157 @@ Esta chance é dobrada contra chefes.`,
 };
 
 necromancerData["Macabras"] = {
-	"Corpse Explosion": {
-		connections: [ "Melhorado Corpse Explosion", "Macabras" ],
+	"Explosão de Cadáver": {
+		connections: [ "Explosão de Cadáver Melhorada", "Macabras" ],
 		description: `Essência Cost: {#}
 Chande de Golpe de Sorte: {#}%
-Detonate a Corpse, dealing {#}% damage to surrounding enemies.`,
+Detone um Cadáver, causando {#}% de dano aos inimigos ao redor.`,
 		id: 39,
 		maxPoints: 5,
 		values: [ "", "40", "75" ],
 		x: -570.055,
 		y: -2.03
 	},
-	"Melhorado Corpse Explosion": {
-		baseSkill: "Corpse Explosion",
-		connections: [ "Corpse Explosion", "Pragaed Corpse Explosion", "Plagued Corpse Explosion" ],
-		description: `Corpse Explosion's radius is increased by {#}%.`,
+	"Explosão de Cadáver Melhorada": {
+		baseSkill: "Explosão de Cadáver",
+		connections: [ "Explosão de Cadáver", "Explosão de Cadáver Arruinada", "Explosão de Cadáver Atormentada " ],
+		description: `O raio da Explosão de Cadaver é aumentado em {#}%.`,
 		id: 40,
 		maxPoints: 1,
 		values: [ "15" ],
 		x: -964.178,
 		y: -2.155
 	},
-	"Pragaed Corpse Explosion": {
-		baseSkill: "Corpse Explosion",
-		connections: [ "Melhorado Corpse Explosion" ],
-		description: `Corpse Explosion becomes a Darkness Skill and, instead of exploding, releases a vile miasma dealing {#}% Shadow Damage over {#} segundos.`,
+	"Explosão de Cadáver Arruinada": {
+		baseSkill: "Explosão de Cadáver",
+		connections: [ "Explosão de Cadáver Melhorada" ],
+		description: `A Explosão de Cadáver torna-se uma Habilidade das Trevas e, em vez de explodir, libera um miasma vil, causando {#}% de Dano de Sombra em {#} segundos.`,
 		id: 122,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: -1186.325,
 		y: -102.68
 	},
-	"Plagued Corpse Explosion": {
-		baseSkill: "Corpse Explosion",
-		connections: [ "Melhorado Corpse Explosion" ],
-		description: `Corpse Explosion deals x{#}% increased damage to enemies that are Slowed, Stunned or Vulnerable. These damage bonuses can stack.`,
+	"Explosão de Cadáver Atormentada ": {
+		baseSkill: "Explosão de Cadáver",
+		connections: [ "Explosão de Cadáver Melhorada" ],
+		description: `Explosão de Cadáver causa x{#}% a mais de dano a inimigos que estão Lentos, Atordoados ou Vulneráveis. Esses bônus de dano podem se acumular.`,
 		id: 123,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -1183.965,
 		y: 98.81
 	},
-	"Grim Harvest": {
-		connections: [ "Fueled by Death", "Macabras" ],
-		description: `Consuming a Corpse generates {#} Essência.`,
+	"Colheita Terrível": {
+		connections: [ "Alimentado pela Morte", "Macabras" ],
+		description: `Consumir um Cadáver gera {#} Essência.`,
 		id: 43,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -3.265,
 		y: 300.7
 	},
-	"Fueled by Death": {
-		connections: [ "Grim Harvest" ],
-		description: `You deal x{#}% increased damage for {#} segundos after consuming a Corpse.`,
+	"Alimentado pela Morte": {
+		connections: [ "Colheita Terrível" ],
+		description: `Você causa x{#}% de dano a mais por {#} segundos depois de consumir um Cadáver.`,
 		id: 44,
 		maxPoints: 3,
 		values: [ "{4/8/12}", "4" ],
 		x: -0.3,
 		y: 530.055
 	},
-	"Spiked Armor": {
+	"Armadura com Espinhos": {
 		connections: [ "Macabras" ],
-		description: `Gain {#} Thorns.`,
+		description: `Ganha {#} Espinhos.`,
 		id: 124,
 		maxPoints: 3,
 		values: [ "" ],
 		x: 401.03,
 		y: -216.235
 	},
-	"Blood Mist": {
-		connections: [ "Melhorado Blood Mist", "Macabras" ],
+	"Névoa de Sangue": {
+		connections: [ "Névoa de Sangue Melhorada", "Macabras" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Disperse into a bloody mist, becoming Immune for {#} segundos. Your Movement Speed is reduced by {#}% and you periodically deal {#}% damage to enemies and Healing for {#}% of your Maximum Life ({#}).`,
+Dispersa-se em uma névoa sangrenta, tornando-se Imune por {#} segundos. Sua Velocidade de Movimento é reduzida em {#}% e você periodicamente causa {#}% de dano aos inimigos e Cura por {#}% de sua Vida Máxima ({#}).`,
 		id: 46,
 		maxPoints: 5,
 		values: [ "", "", "", "", "", "", "" ],
 		x: 6.515,
 		y: -278.795
 	},
-	"Melhorado Blood Mist": {
-		baseSkill: "Blood Mist",
-		connections: [ "Blood Mist", "Ghastly Blood Mist", "Dreadful Blood Mist" ],
-		description: `Casting a Skill that Overpowers reduces the cooldown of Blood Mist by {#} segundos.`,
+	"Névoa de Sangue Melhorada": {
+		baseSkill: "Névoa de Sangue",
+		connections: [ "Névoa de Sangue", "Névoa de Sangue Medonha", "Névoa de Sangue Terrível" ],
+		description: `Lançar uma Skill que Sobrecarrega reduz o cooldown de Névoa de Sangue em {#} segundos.`,
 		id: 47,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 4.72,
 		y: -504.595
 	},
-	"Ghastly Blood Mist": {
-		baseSkill: "Blood Mist",
-		connections: [ "Melhorado Blood Mist" ],
-		description: `Blood Mist leaves behind a Corpse every {#} second.`,
+	"Névoa de Sangue Medonha": {
+		baseSkill: "Névoa de Sangue",
+		connections: [ "Névoa de Sangue Melhorada" ],
+		description: `Névoa de Sangue deixa um Cadáver a cada {#} segundo.`,
 		id: 48,
 		maxPoints: 1,
 		values: [ "" ],
 		x: -173.752,
 		y: -623.38
 	},
-	"Dreadful Blood Mist": {
-		baseSkill: "Blood Mist",
-		connections: [ "Melhorado Blood Mist" ],
-		description: `Blood Mist Fortifies you for {#}% Base Life ({#}) each time it hits an enemy.`,
+	"Névoa de Sangue Terrível": {
+		baseSkill: "Névoa de Sangue",
+		connections: [ "Névoa de Sangue Melhorada" ],
+		description: `Névoa de Sangue Fortifica você em {#}% de Vida Base ({#}) cada vez que atinge um inimigo.`,
 		id: 49,
 		maxPoints: 1,
 		values: [ "", "" ],
 		x: 195.505,
 		y: -624.15
 	},
-	"Bone Prison": {
-		connections: [ "Melhorado Bone Prison", "Macabras" ],
+	"Prisão de Ossos": {
+		connections: [ "Prisão de Ossos Melhorada", "Macabras" ],
 		description: `Cooldown: {#} segundos
-Unearth a prison of bone with {#} Life that surrounds the target area for {#} segundos.`,
+Desenterre uma prisão de osso com {#} Vida que circunda a área alvo por {#} segundos.`,
 		id: 50,
 		maxPoints: 5,
 		values: [ "20.0", "12", "6" ],
 		x: 411.49,
 		y: 218.61
 	},
-	"Melhorado Bone Prison": {
-		baseSkill: "Bone Prison",
-		connections: [ "Bone Prison", "Ghastly Bone Prison", "Dreadful Bone Prison" ],
-		description: `If an enemy is trapped by Bone Prison, gain {#} Essência, plus an additional {#} per enemy trapped.`,
+	"Prisão de Ossos Melhorada": {
+		baseSkill: "Prisão de Ossos",
+		connections: [ "Prisão de Ossos", "Prisão de Ossos Medonha", "Prisão de Ossos Terrível" ],
+		description: `Se um inimigo for aprisionado por Prisão de Ossos, ganhe {#} Essência, mais {#} adicionais por inimigo aprisionado.`,
 		id: 51,
 		maxPoints: 1,
 		values: [ "3", "" ],
 		x: 725.485,
 		y: 358.205
 	},
-	"Ghastly Bone Prison": {
-		baseSkill: "Bone Prison",
-		connections: [ "Melhorado Bone Prison" ],
-		description: `Enemies inside of Bone Prison are Vulnerable.`,
+	"Prisão de Ossos Medonha": {
+		baseSkill: "Prisão de Ossos",
+		connections: [ "Prisão de Ossos Melhorada" ],
+		description: `Os inimigos dentro da Prisão de Ossos se tornam Vulneráveis.`,
 		id: 52,
 		maxPoints: 1,
 		x: 769.465,
 		y: 494.305
 	},
-	"Dreadful Bone Prison": {
-		baseSkill: "Bone Prison",
-		connections: [ "Melhorado Bone Prison" ],
-		description: `Fortify for {#}% Base Life ({#}) for each enemy trapped by Bone Prison.`,
+	"Prisão de Ossos Terrível": {
+		baseSkill: "Prisão de Ossos",
+		connections: [ "Prisão de Ossos Melhorada" ],
+		description: `Fortifica em {#}% de Vida Base ({#}) para cada inimigo preso por Prisão de Ossos.`,
 		id: 53,
 		maxPoints: 1,
 		values: [ "1.5", "" ],
 		x: 998.005,
 		y: 367.725
 	},
-	"Skeletal Warrior Mastery": {
+	"Maestria do Guerreiro Esquelético": {
 		connections: [ "Macabras" ],
-		description: `Increase the damage and Life of your Skeletal Warriors by x{#}%.`,
+		description: `Aumente o dano e a Vida de seus Guerreiros Esqueléticos em x{#}%.`,
 		id: 54,
 		maxPoints: 3,
 		values: [ "{15/30/45}" ],
@@ -745,7 +745,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 	},
 	"Melhorado Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
-		connections: [ "Corpse Tendrils", "Plagued Corpse Tendrils", "Pragaed Corpse Tendrils" ],
+		connections: [ "Corpse Tendrils", "Atormentada Corpse Tendrils", "Arruinada Corpse Tendrils" ],
 		description: `Enemies who are in range of Corpse Tendrils are Slowed by {#}% before being Pulled.`,
 		id: 68,
 		maxPoints: 1,
@@ -753,7 +753,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		x: 740.58,
 		y: -392.601
 	},
-	"Plagued Corpse Tendrils": {
+	"Atormentada Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
 		connections: [ "Melhorado Corpse Tendrils" ],
 		description: `Enemies damaged by Corpse Tendrils are made Vulnerable for {#} segundos.`,
@@ -763,7 +763,7 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		x: 999.47,
 		y: -388.527
 	},
-	"Pragaed Corpse Tendrils": {
+	"Arruinada Corpse Tendrils": {
 		baseSkill: "Corpse Tendrils",
 		connections: [ "Melhorado Corpse Tendrils" ],
 		description: `Corpse Tendrils has a {#}% chance when damaging enemies to drop a Blood Orb.`,
@@ -868,7 +868,7 @@ Consume all of your Essência to conjure a Espirito of bone that seeks enemies. 
 	},
 	"Melhorado Bone Espirito": {
 		baseSkill: "Bone Espirito",
-		connections: [ "Bone Espirito", "Ghastly Bone Espirito", "Dreadful Bone Espirito" ],
+		connections: [ "Bone Espirito", "Medonha Bone Espirito", "Terrível Bone Espirito" ],
 		description: `If Bone Espirito Critically Strikes, its Cooldown is reduced by {#} segundos. This effect can only happen once per cast.`,
 		id: 81,
 		maxPoints: 1,
@@ -876,7 +876,7 @@ Consume all of your Essência to conjure a Espirito of bone that seeks enemies. 
 		x: 737.945,
 		y: 347.195
 	},
-	"Ghastly Bone Espirito": {
+	"Medonha Bone Espirito": {
 		baseSkill: "Bone Espirito",
 		connections: [ "Melhorado Bone Espirito" ],
 		description: `Bone Espirito has an additional +{#}% Critical Strike Chance.`,
@@ -886,7 +886,7 @@ Consume all of your Essência to conjure a Espirito of bone that seeks enemies. 
 		x: 1016.045,
 		y: 348.86
 	},
-	"Dreadful Bone Espirito": {
+	"Terrível Bone Espirito": {
 		baseSkill: "Bone Espirito",
 		connections: [ "Melhorado Bone Espirito" ],
 		description: `After Bone Espirito hits an enemy, you generate {#} Essência over the next {#} segundos.`,
