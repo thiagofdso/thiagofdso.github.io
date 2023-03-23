@@ -1640,8 +1640,7 @@ function drawAllNodes() {
 			}
 			$("#groupSelector").append(`<option value="${PARAGON_BOARD.replace(/\s/g, "").toLowerCase()}">${PARAGON_BOARD}</option>`);
 		}
-		console.log("classe:");
-        console.log(classText);
+
 		const codexResult = getCodexData(["General", classText]);
 		if (Object.keys(codexResult).length > 0) {
 			const startX = -4000;
@@ -2018,7 +2017,7 @@ function drawBackground() {
 }
 function getCodexData(desiredCategories = null, desiredTypes = null) {
 	let codexResult = {};
-	console.log(codexData);
+	
 	for (const [codexCategoryName, codexCategory] of Object.entries(codexData)) {
 		if (desiredCategories === null || desiredCategories.includes(codexCategoryName)) {
 			for (const [codexTypeName, codexType] of Object.entries(codexCategory)) {
