@@ -323,7 +323,7 @@ Extraia sangue dos inimigos, causando {#}% de dano, e expulse uma nova de sangue
 	"Surto de Sangue Supernatural": {
 		baseSkill: "Surto de Sangue",
 		connections: [ "Surto de Sangue Melhorado" ],
-		description: `Cada vez que um inimigo é atingido pela nova de Surto de Sangue, você é fortificado com {#}% de vida base ({#}). Enquanto você tem Fortificar por mais de {#}% de sua Vida Máxima, Surto de Sangue causa x{#}% de dano a mais.`,
+		description: `Cada vez que um inimigo é atingido pela nova de Surto de Sangue, você é fortificado com {#}% de Vida Base ({#}). Enquanto você tem Fortificar por mais de {#}% de sua Vida Máxima, Surto de Sangue causa x{#}% de dano a mais.`,
 		id: 26,
 		maxPoints: 1,
 		values: [ "", "", "", "" ],
@@ -732,59 +732,59 @@ Amaldiçoe a área alvo. Inimigos atingidos por Decrepificar são desacelerados 
 };
 
 necromancerData["Convocação"] = {
-	"Corpse Tendrils": {
-		connections: [ "Melhorado Corpse Tendrils", "Convocação" ],
+	"Gavinhas de Cadáver": {
+		connections: [ "Gavinhas de Cadáver Melhorada", "Convocação" ],
 		description: `Cooldown: {#} segundos
 Chande de Golpe de Sorte: {#}%
-Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos, and dealing {#}% damage to them. Does not consume the Corpse.`,
+Veias brotam de um Cadáver, Puxando os inimigos, Atordoando-os por {#} segundos e causando {#}% de dano a eles. Não consome o Cadáver.`,
 		id: 67,
 		maxPoints: 5,
 		values: [ "11.0", "20", "3", "20" ],
 		x: 444.22,
 		y: -228.515
 	},
-	"Melhorado Corpse Tendrils": {
-		baseSkill: "Corpse Tendrils",
-		connections: [ "Corpse Tendrils", "Atormentada Corpse Tendrils", "Arruinada Corpse Tendrils" ],
-		description: `Enemies who are in range of Corpse Tendrils are Slowed by {#}% before being Pulled.`,
+	"Gavinhas de Cadáver Melhorada": {
+		baseSkill: "Gavinhas de Cadáver",
+		connections: [ "Gavinhas de Cadáver", "Gavinhas de Cadáver Atormentada", "Gavinhas de Cadáver Arruinada" ],
+		description: `Inimigos que estiverem ao alcance de Gavinhas de Cadáver são Desacelerados em {#}% antes de serem Puxados.`,
 		id: 68,
 		maxPoints: 1,
 		values: [ "50" ],
 		x: 740.58,
 		y: -392.601
 	},
-	"Atormentada Corpse Tendrils": {
-		baseSkill: "Corpse Tendrils",
-		connections: [ "Melhorado Corpse Tendrils" ],
-		description: `Enemies damaged by Corpse Tendrils are made Vulnerable for {#} segundos.`,
+	"Gavinhas de Cadáver Atormentada": {
+		baseSkill: "Gavinhas de Cadáver",
+		connections: [ "Gavinhas de Cadáver Melhorada" ],
+		description: `Inimigos atingidos por Gavinhas de Cadáver ficam Vulneráveis por {#} segundos.`,
 		id: 125,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 999.47,
 		y: -388.527
 	},
-	"Arruinada Corpse Tendrils": {
-		baseSkill: "Corpse Tendrils",
-		connections: [ "Melhorado Corpse Tendrils" ],
-		description: `Corpse Tendrils has a {#}% chance when damaging enemies to drop a Blood Orb.`,
+	"Gavinhas de Cadáver Arruinada": {
+		baseSkill: "Gavinhas de Cadáver",
+		connections: [ "Gavinhas de Cadáver Melhorada" ],
+		description: `Gavinhas de Cadáver tem {#}% de chance de causar dano a inimigos para derrubar um Orbe de Sangue.`,
 		id: 126,
 		maxPoints: 1,
 		values: [ "" ],
 		x: 762.735,
 		y: -532.53
 	},
-	"Foiceer's Pursuit": {
-		connections: [ "Gloom", "Crippling Darkness", "Convocação" ],
-		description: `Damaging enemies with Darkness Skills increases your Movement Speed by +{#}% for {#} segundos.`,
+	"Perseguição da Foice": {
+		connections: [ "Escuridão", "Escuridão Paralisante", "Convocação" ],
+		description: `Causar dano a inimigos com Habilidades de Escuridão aumenta sua Velocidade de Movimento em +{#}% por {#} segundos.`,
 		id: 71,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "3" ],
 		x: -539.448,
 		y: 0.085
 	},
-	"Gloom": {
-		connections: [ "Foiceer's Pursuit", "Terror" ],
-		description: `When you damage enemies with Darkness Skills, they take x{#}% increased Shadow Damage from you and your Lacaios for {#} segundos, stacking up to {#} times.`,
+	"Escuridão": {
+		connections: [ "Perseguição da Foice", "Terror" ],
+		description: `Quando você causa dano a inimigos com Habilidades de Escuridão, eles recebem x{#}% de Dano de Sombra aumentado de você e de seus Lacaios por {#} segundos, acumulando até {#} vezes.`,
 		id: 72,
 		maxPoints: 3,
 		values: [ "{2/4/6}", "2", "3" ],
@@ -792,149 +792,149 @@ Veins burst out of a Corpse, Pulling in enemies, Stunning them for {#} segundos,
 		y: -96.84
 	},
 	"Terror": {
-		connections: [ "Gloom", "Crippling Darkness" ],
-		description: `Darkness Skills deal x{#}% bonus damage to enemies who are Slowed, and x{#}% bonus damage to enemies who are Stunned or Immobilized. These bonuses stack and apply to Shadow Damage dealt by your Lacaios.`,
+		connections: [ "Escuridão", "Escuridão Paralisante" ],
+		description: `As Habilidades da Escuridão causam x{#}% de dano adicional a inimigos que estão com Lentidão e x{#}% de dano adicional a inimigos que estão Atordoados ou Imobilizados. Esses bônus se acumulam e se aplicam ao Dano de Sombra causado pelo seu Lacaios.`,
 		id: 73,
 		maxPoints: 3,
 		values: [ "{5/10/15}", "" ],
 		x: -1072.725,
 		y: 1.175
 	},
-	"Crippling Darkness": {
-		connections: [ "Foiceer's Pursuit", "Terror" ],
-		description: `Golpe de Sorte: Darkness Skills have up to a {#}% chance to Stun for {#} segundos.`,
+	"Escuridão Paralisante": {
+		connections: [ "Perseguição da Foice", "Terror" ],
+		description: `Golpe de Sorte: As habilidades da escuridão têm até {#}% de chance de Atordoar por {#} segundos.`,
 		id: 74,
 		maxPoints: 3,
 		values: [ "15", "{1/2/3}" ],
 		x: -812.306,
 		y: 96.35
 	},
-	"Gruesome Mending": {
-		connections: [ "Transfusion", "Coalesced Blood", "Convocação" ],
-		description: `While below 50% Life, you receive +{#}% more Healing from all sources.`,
+	"Conserto Horrível": {
+		connections: [ "Transfusão", "Sangue Coagulado", "Convocação" ],
+		description: `Enquanto estiver com menos de 50% de Vida, você recebe +{#}% a mais de Cura de todas as fontes.`,
 		id: 127,
 		maxPoints: 3,
 		values: [ "" ],
 		x: 1.18,
 		y: -309.335
 	},
-	"Transfusion": {
-		connections: [ "Tides of Blood", "Gruesome Mending" ],
-		description: `Blood Orbs also Heal your Lacaios for {#}% of the amount.`,
+	"Transfusão": {
+		connections: [ "Marés de Sangue", "Conserto Horrível" ],
+		description: `Orbs de Sangue também curam seus Lacaios em {#}% do valor.`,
 		id: 77,
 		maxPoints: 3,
 		values: [ "{15/30/45}" ],
 		x: 191.07,
 		y: -457.803
 	},
-	"Tides of Blood": {
-		connections: [ "Transfusion", "Coalesced Blood" ],
-		description: `Your Blood Skills deal x{#}% increased Overpower damage. This bonus is doubled while you are Healthy.`,
+	"Marés de Sangue": {
+		connections: [ "Transfusão", "Sangue Coagulado" ],
+		description: `Suas Habilidades de Sangue causam x{#}% de aumento de dano de Sobrecarga. Este bônus é dobrado enquanto você estiver Saudável.`,
 		id: 78,
 		maxPoints: 3,
 		values: [ "{5/10/15}" ],
 		x: 3.55,
 		y: -609.869
 	},
-	"Coalesced Blood": {
-		connections: [ "Drain Vitality", "Tides of Blood", "Gruesome Mending" ],
-		description: `While Healthy your Blood Skills deal x{#}% increased damage.`,
+	"Sangue Coagulado": {
+		connections: [ "Drenar Vitalidade", "Marés de Sangue", "Conserto Horrível" ],
+		description: `Enquanto estiver Saudável, suas Habilidades de Sangue causam x{#}% de dano aumentado.`,
 		id: 76,
 		maxPoints: 3,
 		values: [ "" ],
 		x: -190.339,
 		y: -455.995
 	},
-	"Drain Vitality": {
-		connections: [ "Coalesced Blood" ],
-		description: `Golpe de Sorte: Hitting enemies with Blood Skills has up to a {#}% chance to Fortify you for {#}% Base Life ({#}).`,
+	"Drenar Vitalidade": {
+		connections: [ "Sangue Coagulado" ],
+		description: `Golpe de Sorte: Atingir inimigos com Habilidades de Sangue tem até {#}% de chance de Fortificar em {#}% de Vida Base ({#}).`,
 		id: 79,
 		maxPoints: 3,
 		values: [ "{25/50/75}", "1", "" ],
 		x: -382.557,
 		y: -610.311
 	},
-	"Bone Espirito": {
-		connections: [ "Melhorado Bone Espirito", "Convocação" ],
+	"Espirito de Ossos": {
+		connections: [ "Espirito de Ossos Melhorado", "Convocação" ],
 		description: `Cooldown: {#} segundos
-Essência Cost: All Remaining Essência
+Custo de Essência: Todo restante de Essência
 Chande de Golpe de Sorte: {#}%
-Consume all of your Essência to conjure a Espirito of bone that seeks enemies. Upon reaching an enemy, the Espirito explodes, dealing {#}% damage to the target and all surrounding enemies. Damage is increased by x{#}% for each point of Essência spent casting Bone Espirito.`,
+Consuma toda a sua Essência para conjurar um Espírito de Osso que busca inimigos. Ao atingir um inimigo, o Espirito explode, causando {#}% de dano ao alvo e a todos os inimigos ao redor. O dano é aumentado em x{#}% para cada ponto de Essência gasto lançando Espírito de Ossos.`,
 		id: 80,
 		maxPoints: 5,
 		values: [ "12.0", "33", "80", "3" ],
 		x: 441.425,
 		y: 214.93
 	},
-	"Melhorado Bone Espirito": {
-		baseSkill: "Bone Espirito",
-		connections: [ "Bone Espirito", "Medonha Bone Espirito", "Terrível Bone Espirito" ],
-		description: `If Bone Espirito Critically Strikes, its Cooldown is reduced by {#} segundos. This effect can only happen once per cast.`,
+	"Espirito de Ossos Melhorado": {
+		baseSkill: "Espirito de Ossos",
+		connections: [ "Espirito de Ossos", "Espirito de Ossos Medonho", "Espirito de Ossos Terrível" ],
+		description: `Se o Espirito de Ossos Acertar Criticamente, seu Tempo de Recarga é reduzido em {#} segundos. Este efeito só pode acontecer uma vez por conjuração.`,
 		id: 81,
 		maxPoints: 1,
 		values: [ "6" ],
 		x: 737.945,
 		y: 347.195
 	},
-	"Medonha Bone Espirito": {
-		baseSkill: "Bone Espirito",
-		connections: [ "Melhorado Bone Espirito" ],
-		description: `Bone Espirito has an additional +{#}% Critical Strike Chance.`,
+	"Espirito de Ossos Medonho": {
+		baseSkill: "Espirito de Ossos",
+		connections: [ "Espirito de Ossos Melhorado" ],
+		description: `Espírito de Ossos tem +{#}% de Chance de Acerto Crítico adicional.`,
 		id: 82,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: 1016.045,
 		y: 348.86
 	},
-	"Terrível Bone Espirito": {
-		baseSkill: "Bone Espirito",
-		connections: [ "Melhorado Bone Espirito" ],
-		description: `After Bone Espirito hits an enemy, you generate {#} Essência over the next {#} segundos.`,
+	"Espirito de Ossos Terrível": {
+		baseSkill: "Espirito de Ossos",
+		connections: [ "Espirito de Ossos Melhorado" ],
+		description: `Depois que Espírito de Ossos atinge um inimigo, você gera {#} Essência nos próximos {#} segundos.`,
 		id: 83,
 		maxPoints: 1,
 		values: [ "30", "4" ],
 		x: 787.835,
 		y: 492.635
 	},
-	"Serration": {
-		connections: [ "Rapid Ossification", "Compound Fracture", "Convocação" ],
-		description: `Your Bone Skills have a +{#}% increased Critical Strike Chance for each 10 Essência you have upon cast.`,
+	"Serração": {
+		connections: [ "Ossificação Rápida", "Fratura Exposta", "Convocação" ],
+		description: `Suas Habilidades Ósseas têm uma Chance de Acerto Crítico +{#}% aumentada para cada 10 Essências que você tiver ao lançar.`,
 		id: 84,
 		maxPoints: 3,
 		values: [ "{0.5/1/1.5}" ],
 		x: -3.41,
 		y: 280.62
 	},
-	"Rapid Ossification": {
-		connections: [ "Serration", "Evulsion" ],
-		description: `Every {#} Essência you spend reduces the cooldowns of your Bone Skills by {#} segundos.`,
+	"Ossificação Rápida": {
+		connections: [ "Serração", "Extração" ],
+		description: `Cada {#} Essência que você gasta reduz os cooldowns de suas Habilidades Ósseas em {#} segundos.`,
 		id: 85,
 		maxPoints: 3,
 		values: [ "100", "{0.5/1/1.5}" ],
 		x: -187.052,
 		y: 416.56
 	},
-	"Evulsion": {
-		connections: [ "Compound Fracture", "Rapid Ossification" ],
-		description: `Your Bone Skills deal x{#}% increased Critical Strike Damage to Vulnerable enemies.`,
+	"Extração": {
+		connections: [ "Fratura Exposta", "Ossificação Rápida" ],
+		description: `Suas Habilidades Ósseas causam x{#}% de aumento de Dano de Ataque Crítico a inimigos Vulneráveis.`,
 		id: 86,
 		maxPoints: 3,
 		values: [ "{6/12/18}" ],
 		x: -3.545,
 		y: 558.38
 	},
-	"Compound Fracture": {
-		connections: [ "Serration", "Evulsion" ],
-		description: `After Critically Striking {#} times with Bone Skills, your Bone Skills deal x{#}% increased damage for {#} segundos.`,
+	"Fratura Exposta": {
+		connections: [ "Serração", "Extração" ],
+		description: `Depois de Acertar Criticamente {#} vezes com Habilidades Ósseas, suas Habilidades Ósseas causam x{#}% de dano a mais por {#} segundos.`,
 		id: 87,
 		maxPoints: 3,
 		values: [ "10", "{6/12/18}", "5" ],
 		x: 183.23,
 		y: 416.205
 	},
-	"Necrotic Carapace": {
+	"Carapaça Necrótica": {
 		connections: [ "Convocação" ],
-		description: `When a Corpse is formed from your Skills or your Lacaios, Fortify for {#}% Base Life ({#}).`,
+		description: `Quando um Cadáver for formado a partir de suas Habilidades ou Lacaios, Fortifica em {#}% de Vida Base ({#}).`,
 		id: 128,
 		maxPoints: 3,
 		values: [ "", "" ],
