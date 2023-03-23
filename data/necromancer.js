@@ -613,116 +613,116 @@ Desenterre uma prisão de osso com {#} Vida que circunda a área alvo por {#} se
 };
 
 necromancerData["Corrupção"] = {
-	"Iron Maiden": {
-		connections: [ "Melhorado Iron Maiden", "Corrupção" ],
+	"Dama de Ferro": {
+		connections: [ "Dama de Ferro Melhorada", "Corrupção" ],
 		description: `Essência Cost: {#}
-Curse the target area. Enemies afflicted by Iron Maiden take {#}% damage each time they deal direct damage. Lasts {#} segundos.`,
+Amaldiçoe a área alvo. Inimigos atingidos por Dama de Ferro recebem {#}% de dano toda vez que causam dano direto. Dura {#} segundos.`,
 		id: 55,
 		maxPoints: 5,
 		values: [ "10", "10", "10" ],
 		x: -452.675,
 		y: -233.982
 	},
-	"Melhorado Iron Maiden": {
-		baseSkill: "Iron Maiden",
-		connections: [ "Iron Maiden", "Horrid Iron Maiden", "Abhorrent Iron Maiden" ],
-		description: `Iron Maiden no longer costs Essência. Instead, gain {#} Essência for each enemy Cursed. Does not work with enemies who are already Cursed with Iron Maiden.`,
+	"Dama de Ferro Melhorada": {
+		baseSkill: "Dama de Ferro",
+		connections: [ "Dama de Ferro", "Dama de Ferro Horrível", "Dama de Ferro Abominável" ],
+		description: `Dama de Ferro já não custa Essência. Em vez disso, ganhe {#} Essência para cada inimigo Amaldiçoado. Não funciona com inimigos que já estejam Amaldiçoados com Dama de Ferro.`,
 		id: 56,
 		maxPoints: 1,
 		values: [ "5" ],
 		x: -771.585,
 		y: -385.35
 	},
-	"Horrid Iron Maiden": {
-		baseSkill: "Iron Maiden",
-		connections: [ "Melhorado Iron Maiden" ],
-		description: `When at least {#} enemies are afflicted by Iron Maiden, its damage is increased by x{#}%.`,
+	"Dama de Ferro Horrível": {
+		baseSkill: "Dama de Ferro",
+		connections: [ "Dama de Ferro Melhorada" ],
+		description: `Quando pelo menos {#} inimigos são atingidos por Dama de Ferro, seu dano aumenta em x{#}%.`,
 		id: 57,
 		maxPoints: 1,
 		values: [ "3", "15" ],
 		x: -806.375,
 		y: -523.514
 	},
-	"Abhorrent Iron Maiden": {
-		baseSkill: "Iron Maiden",
-		connections: [ "Melhorado Iron Maiden" ],
-		description: `Heal for {#}% of your Maximum Life ({#}) when an enemy dies while afflicted with Iron Maiden.`,
+	"Dama de Ferro Abominável": {
+		baseSkill: "Dama de Ferro",
+		connections: [ "Dama de Ferro Melhorada" ],
+		description: `Cure {#}% de sua Vida Máxima ({#}) quando um inimigo morrer enquanto estiver sob efeito de Dama de Ferro.`,
 		id: 58,
 		maxPoints: 1,
 		values: [ "5", "" ],
 		x: -1050.125,
 		y: -372.255
 	},
-	"Skeletal Mage Mastery": {
+	"Maestria Mago Esqueleto": {
 		connections: [ "Corrupção" ],
-		description: `Increase the damage and Life of your Skeletal Mages by x{#}%.`,
+		description: `Aumente o dano e a vida de seus Magos Esqueletos em x{#}%.`,
 		id: 59,
 		maxPoints: 3,
 		values: [ "{15/30/45}" ],
 		x: -2.93,
 		y: 322.683
 	},
-	"Amplify Damage": {
+	"Amplificar Dano": {
 		connections: [ "Corrupção" ],
-		description: `You deal x{#}% increased damage to Cursed enemies.`,
+		description: `Você causa x{#}% de dano aumentado a inimigos Amaldiçoados.`,
 		id: 60,
 		maxPoints: 3,
 		values: [ "{3/6/9}" ],
 		x: -558.415,
 		y: 1.584
 	},
-	"Decrepify": {
-		connections: [ "Melhorado Decrepify", "Corrupção" ],
+	"Decrepificar": {
+		connections: [ "Decrepificar Melhorado", "Corrupção" ],
 		description: `Essência Cost: {#}
-Curse the target area. Enemies afflicted by Decrepify are Slowed by {#}% and deal {#}% less damage for {#} segundos.`,
+Amaldiçoe a área alvo. Inimigos atingidos por Decrepificar são desacelerados em {#}% e causam {#}% menos dano por {#} segundos.`,
 		id: 61,
 		maxPoints: 5,
 		values: [ "10", "50", "25", "10" ],
 		x: -457.14,
 		y: 240.226
 	},
-	"Melhorado Decrepify": {
-		baseSkill: "Decrepify",
-		connections: [ "Decrepify", "Abhorrent Decrepify", "Horrid Decrepify" ],
-		description: `Golpe de Sorte: Enemies hit while afflicted with Decrepify have up to a {#}% chance to Stun them for {#} segundos.`,
+	"Decrepificar Melhorado": {
+		baseSkill: "Decrepificar",
+		connections: [ "Decrepificar", "Decrepificar Abominável", "Decrepificar Horrível" ],
+		description: `Golpe de Sorte: Inimigos atingidos enquanto afetados pelo Decrepificador têm até {#}% de chance de Atordoá-los por {#} segundos.`,
 		id: 62,
 		maxPoints: 1,
 		values: [ "10", "2" ],
 		x: -757.225,
 		y: 392.89
 	},
-	"Abhorrent Decrepify": {
-		baseSkill: "Decrepify",
-		connections: [ "Melhorado Decrepify" ],
-		description: `Golpe de Sorte: Enemies hit while afflicted with Decrepify have up to a {#}% chance to reduce your active Cooldowns by {#} second.`,
+	"Decrepificar Abominável": {
+		baseSkill: "Decrepificar",
+		connections: [ "Decrepificar Melhorado" ],
+		description: `Golpe de Sorte: Inimigos atingidos enquanto afetados por Decrepificar têm até {#}% de chance de reduzir seus Tempos de Recarga ativos em {#} segundos.`,
 		id: 63,
 		maxPoints: 1,
 		values: [ "15", "1.5" ],
 		x: -1026.955,
 		y: 390.108
 	},
-	"Horrid Decrepify": {
-		baseSkill: "Decrepify",
-		connections: [ "Melhorado Decrepify" ],
-		description: `When you or your Lacaios hit an enemy afflicted with Decrepify below {#}% Life, they are instantly killed. Does not work on Bosses.`,
+	"Decrepificar Horrível": {
+		baseSkill: "Decrepificar",
+		connections: [ "Decrepificar Melhorado" ],
+		description: `Quando você ou seu Lacaios atingem um inimigo afetado por Decrepificar com menos de {#}% de Vida, eles são mortos instantaneamente. Não funciona em chefes.`,
 		id: 64,
 		maxPoints: 1,
 		values: [ "10" ],
 		x: -810.09,
 		y: 533.678
 	},
-	"Death's Embrace": {
+	"Abraço da Morte": {
 		connections: [ "Corrupção" ],
-		description: `Close enemies take x{#}% more damage from you and deal {#}% less damage to you.`,
+		description: `Inimigos próximos recebem x{#}% mais dano de você e causam {#}% menos dano a você.`,
 		id: 65,
 		maxPoints: 3,
 		values: [ "{2/4/6}", "{3/6/9}" ],
 		x: 1.235,
 		y: -289.131
 	},
-	"Death's Reach": {
+	"Alcance da Morte": {
 		connections: [ "Corrupção" ],
-		description: `You deal x{#}% increased damage to Distant enemies.`,
+		description: `Você causa x{#}% de dano aumentado a inimigos distantes.`,
 		id: 66,
 		maxPoints: 3,
 		values: [ "{4/8/12}" ],
