@@ -1640,8 +1640,10 @@ function drawAllNodes() {
 			}
 			$("#groupSelector").append(`<option value="${PARAGON_BOARD.replace(/\s/g, "").toLowerCase()}">${PARAGON_BOARD}</option>`);
 		}
-
+		print("classe:");
+        print(classText);
 		const codexResult = getCodexData(["General", classText]);
+		
 		if (Object.keys(codexResult).length > 0) {
 			const startX = -4000;
 			const startY = 0;
